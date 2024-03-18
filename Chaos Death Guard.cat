@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="4733-f9f6-faa7-ae42" name="Chaos: Death Guard" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="21" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <forceEntries>
+    <forceEntry id="39bd-547d-3d4d-5ffb" name="Death Guard Sepis Cohort" hidden="false">
+      <rules>
+        <rule id="496e-d161-e178-0c9c" name="Heart of the Legion (Death Guard Sepis Cohort)" hidden="false">
+          <description>Compulsory Core Detachment slots in this Formation must be filled with Plague Marine Detachments. All non-Infantry models within this Formation increase their Tactical Strength by 1 when contesting an Objective marker that an Infantry model within this Formation is also contesting.</description>
+        </rule>
+        <rule id="cb48-cf6e-0703-a259" name="Dedicated Transports (Death Guard Sepis Cohort)" hidden="false">
+          <description>Any Chaos: Death Guard Detachment within the Formation that contains only Infantry models may be upgraded with Nurgle Rhinos as Dedicated Transports.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="3627-f584-1077-2350" name="Configuration" hidden="false" targetId="08eb75aa-6fda-497e-a7ea-d7239064ba58" primary="false"/>
+        <categoryLink id="9fd9-c307-9de1-21ae" name="HQ" hidden="false" targetId="d950-ad23-9b2-9325" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5710-b5b1-0754-f313" type="min"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f9c-c991-8002-33b4" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="50eb-4634-f7de-fa59" name="Core" hidden="false" targetId="e0fe110f-b15d-4340-9583-557d57cd2981" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d41-daa4-1ef5-5639" type="min"/>
+            <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8bbe-1b2e-19cd-0b53" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="ec25-7f33-46ab-ea9f" name="Air Support" hidden="false" targetId="406ab93a-60ea-4fd5-9553-feef5a28ba12" primary="false">
+          <modifiers>
+            <modifier type="set" field="11bf-2dc3-d3dd-d67d" value="0.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="17079afa-e39f-4f33-9207-cc02fd3a3520" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="11bf-2dc3-d3dd-d67d" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="e6bf-dc99-2459-526e" name="Artillery" hidden="false" targetId="45d6c947-80a0-4e29-a4be-a4089467fc2d" primary="false">
+          <modifiers>
+            <modifier type="set" field="43de-11db-0d0e-0c91" value="0.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="32eb0e0c-78c3-4ab0-ab6a-5160a47cb924" type="atLeast"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c5ec467a-696c-49ec-9a60-dc95ee465cf5" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="43de-11db-0d0e-0c91" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="641f-8477-a842-d8e7" name="Bastion" hidden="false" targetId="7f7126c2-fd49-4c60-ab12-b5e25b945127" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2bd0-9cc6-cf2f-2753" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="9f66-2673-9bbb-b695" name="Battle Tank" hidden="false" targetId="32eb0e0c-78c3-4ab0-ab6a-5160a47cb924" primary="false">
+          <modifiers>
+            <modifier type="set" field="9ba2-c079-a60f-9dec" value="0.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c5ec467a-696c-49ec-9a60-dc95ee465cf5" type="atLeast"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="45d6c947-80a0-4e29-a4be-a4089467fc2d" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ba2-c079-a60f-9dec" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="4069-180a-ead4-454f" name="Heavy Armour" hidden="false" targetId="c5ec467a-696c-49ec-9a60-dc95ee465cf5" primary="false">
+          <modifiers>
+            <modifier type="set" field="7b26-4a46-70fe-66d5" value="0.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="45d6c947-80a0-4e29-a4be-a4089467fc2d" type="atLeast"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="32eb0e0c-78c3-4ab0-ab6a-5160a47cb924" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b26-4a46-70fe-66d5" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="68f1-261f-4f82-2c3c" name="Light Armour" hidden="false" targetId="17079afa-e39f-4f33-9207-cc02fd3a3520" primary="false">
+          <modifiers>
+            <modifier type="set" field="9bd5-6748-ae78-2e82" value="0.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="406ab93a-60ea-4fd5-9553-feef5a28ba12" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9bd5-6748-ae78-2e82" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="a64e-4af3-c238-e4aa" name="Support" hidden="false" targetId="ae9be095-043a-4fd4-b809-d160d4b5e1fa" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2bed-2bd8-a41f-9757" type="min"/>
+            <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b27-b2a9-d23d-79e2" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="69e5-dec7-276a-2c8c" name="Transport" hidden="false" targetId="9fa29675-77f7-4bfd-b045-1dd4833d7c9e" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="01c7-ef8d-4e39-cf49" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="8984-743a-35a5-6f12" name="Vanguard" hidden="false" targetId="8416-456c-a6f-e059" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb44-5eb6-73c1-096a" type="max"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+  <selectionEntries>
+    <selectionEntry id="e45d-3b55-bf76-bb0f" name="Death Guard Colony Detachment" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a23d-e690-635d-7ef4" type="min"/>
+        <constraint field="1804a1ce-97f8-474c-bef5-d308d28bd093" scope="parent" value="-4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="150f-0a0a-ef2c-1e45" type="min"/>
+        <constraint field="1804a1ce-97f8-474c-bef5-d308d28bd093" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e54e-387b-8370-13e4" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="9969-2a7c-858c-6417" name="Core" hidden="false" targetId="e0fe110f-b15d-4340-9583-557d57cd2981" primary="true"/>
+        <categoryLink id="f57d-3a95-ee93-0dff" name="Infantry (1)" hidden="false" targetId="3e3d12cf-27be-4415-af5e-e47be58e343c" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="41aa-931b-0b46-8e7b" name="Models" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3654-ef1f-196a-718a" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7471-a590-ff6f-d8d4" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="d2f1-af63-27a3-d571" name="2 Plague Marines" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d81-adff-7a51-453e" type="min"/>
+                <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8581-f890-3bb8-cbdc" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="1236-880b-a001-1a91" name="Plague Marines" hidden="false" collective="false" import="true" targetId="f00b-af41-73e7-c6d5" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="215f-5518-9f49-0bc9" type="min"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="855d-9d40-d1ac-cd8b" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="‏‏‎‏‏‎ ‎points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="11.0"/>
+        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <sharedSelectionEntries>
+    <selectionEntry id="f00b-af41-73e7-c6d5" name="Plague Marines" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="90f5-9e1f-03d7-5916" name="Plague Marines" hidden="false" typeId="746bcfa7-66de-4644-97e8-07da9cec42b6" typeName="Detachment">
+          <characteristics>
+            <characteristic name="Move" typeId="d2bd2fb5-fd8a-4566-842e-dd987e88f298">5&quot;</characteristic>
+            <characteristic name="Sv" typeId="2d7dcb0f-f0aa-4ab9-8c47-b3db3f611a39">5+</characteristic>
+            <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+2</characteristic>
+            <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">3+</characteristic>
+            <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="e03e-ff74-d315-2e7c" name="Feel No Pain" hidden="false" targetId="43073af9-85d3-497c-818d-35eaffdc41f7" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="c552-f49d-fb18-024a" name="Infantry (1)" hidden="false" targetId="3e3d12cf-27be-4415-af5e-e47be58e343c" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="5b5b-1d89-a32e-6ecf" name="Legion bolters" hidden="false" collective="false" import="true" targetId="0fae-98b6-be32-aed2" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="deaa-45da-effe-1c3e" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ac6-992b-e7e5-2119" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="‏‏‎‏‏‎ ‎points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="6.0"/>
+        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0fae-98b6-be32-aed2" name="Legion bolters" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="103b-d085-0687-b58f" name="Legion bolters" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">8&quot;</characteristic>
+            <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">1</characteristic>
+            <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">5+</characteristic>
+            <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">0</characteristic>
+            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Assault, Light</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="e616-f2d5-f82a-8892" name="Assault" hidden="false" targetId="db223b76-7613-4dce-ac45-f28d7a03dc16" type="rule"/>
+        <infoLink id="871f-ec1a-f548-1806" name="Light" hidden="false" targetId="bb25fe8e-6b0a-40a9-bc11-d9508716ded5" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="‏‏‎‏‏‎ ‎points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+</catalogue>
