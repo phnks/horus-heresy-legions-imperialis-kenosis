@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="2c9332de-54e2-4bfc-9423-269293af3a88" name="Horus Heresy: Legions Imperialis: Kenosis Edition" revision="21" battleScribeVersion="2.03" authorName="BSData Team" authorContact="" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="2c9332de-54e2-4bfc-9423-269293af3a88" name="Horus Heresy: Legions Imperialis: Kenosis Edition" revision="22" battleScribeVersion="2.03" authorName="BSData Team" authorContact="" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="c3da3c2a-6a3a-4fb8-8b85-7f94e2c8f894" name="Legions Imperialis Rulebook" shortName="LI" publicationDate="2023" publisherUrl="https://thehorusheresy.com/legions-imperialis"/>
     <publication id="641fbf79-252a-4a03-8af3-8e3cc6988f81" name="GitHub" shortName="BSData/Horus-Heresy-Legions-Imperialis" publisherUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis"/>
     <publication id="ceccb1f7-b527-4079-aef2-343dc6808745" name="Legions Imperialis FAQs and Errata" shortName="LIE" publisher="Legions Imperialis Rulebook Errata" publicationDate="2023" publisherUrl="https://www.warhammer-community.com/legions-imperialis-downloads/"/>
   </publications>
   <costTypes>
-    <costType id="dc992662-6d4b-4120-a6a2-9acf4516238a" name="‏‏‎‏‏‎ ‎points" defaultCostLimit="3000.0" hidden="false"/>
-    <costType id="1804a1ce-97f8-474c-bef5-d308d28bd093" name="‏‏‎‏‏‎ ‎Transport Usage" defaultCostLimit="-1.0" hidden="true"/>
+    <costType id="dc992662-6d4b-4120-a6a2-9acf4516238a" name="points" defaultCostLimit="3000.0" hidden="false"/>
+    <costType id="1804a1ce-97f8-474c-bef5-d308d28bd093" name="Transport Usage" defaultCostLimit="-1.0" hidden="true"/>
   </costTypes>
   <profileTypes>
     <profileType id="746bcfa7-66de-4644-97e8-07da9cec42b6" name="Detachment">
@@ -108,8 +108,8 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a-6e7d-947f-b554" type="max"/>
               </constraints>
               <costs>
-                <cost name="‏‏‎‏‏‎ ‎points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
-                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+                <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+                <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="123d7f71-5b23-4f0e-ae03-35a8c5f816d7" name="Traitor" hidden="false" collective="false" import="true" type="upgrade">
@@ -124,16 +124,16 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1035e539-f59e-4f1e-b476-36eb3ad5e04e" type="max"/>
               </constraints>
               <costs>
-                <cost name="‏‏‎‏‏‎ ‎points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
-                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+                <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+                <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="‏‏‎‏‏‎ ‎points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
-        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6552a329-f7c1-4313-b8d4-f682bd3a8537" name="Primary Army" publicationId="c3da3c2a-6a3a-4fb8-8b85-7f94e2c8f894" page="127" hidden="false" collective="false" import="true" type="upgrade">
@@ -165,22 +165,28 @@
           <selectionEntries>
             <selectionEntry id="4b37805f-5b5a-4633-a3a4-19f054fa5413" name="Solar Auxilia" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
-                <cost name="‏‏‎‏‏‎ ‎points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
-                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+                <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+                <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="288d-7913-984c-5d0" name="Legiones Astartes" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
-                <cost name="‏‏‎‏‏‎ ‎points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
-                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+                <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+                <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="3543-ed3b-3fea-0cd4" name="Chaos: Death Guard" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+                <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="‏‏‎‏‏‎ ‎points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
-        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4733-f9f6-faa7-ae42" name="Chaos: Death Guard" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="21" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4733-f9f6-faa7-ae42" name="Chaos: Death Guard" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="22" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="39bd-547d-3d4d-5ffb" name="Death Guard Sepis Cohort" hidden="false">
       <rules>
@@ -137,33 +137,21 @@
       <selectionEntryGroups>
         <selectionEntryGroup id="41aa-931b-0b46-8e7b" name="Models" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3654-ef1f-196a-718a" type="max"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7471-a590-ff6f-d8d4" type="min"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6eaa-834a-0951-cbfc" type="min"/>
+            <constraint field="selections" scope="parent" value="12.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d203-f222-9bab-f436" type="max"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="d2f1-af63-27a3-d571" name="2 Plague Marines" hidden="false" collective="false" import="true" type="upgrade">
+          <entryLinks>
+            <entryLink id="1092-717b-30e0-d187" name="Plague Marines" hidden="false" collective="false" import="true" targetId="f00b-af41-73e7-c6d5" type="selectionEntry">
               <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d81-adff-7a51-453e" type="min"/>
-                <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8581-f890-3bb8-cbdc" type="max"/>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1108-315c-32bc-f743" type="min"/>
               </constraints>
-              <entryLinks>
-                <entryLink id="1236-880b-a001-1a91" name="Plague Marines" hidden="false" collective="false" import="true" targetId="f00b-af41-73e7-c6d5" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="215f-5518-9f49-0bc9" type="min"/>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="855d-9d40-d1ac-cd8b" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="‏‏‎‏‏‎ ‎points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="11.0"/>
-        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="11.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
@@ -172,16 +160,17 @@
       <profiles>
         <profile id="90f5-9e1f-03d7-5916" name="Plague Marines" hidden="false" typeId="746bcfa7-66de-4644-97e8-07da9cec42b6" typeName="Detachment">
           <characteristics>
-            <characteristic name="Move" typeId="d2bd2fb5-fd8a-4566-842e-dd987e88f298">5&quot;</characteristic>
+            <characteristic name="Move" typeId="d2bd2fb5-fd8a-4566-842e-dd987e88f298">4&quot;</characteristic>
             <characteristic name="Sv" typeId="2d7dcb0f-f0aa-4ab9-8c47-b3db3f611a39">5+</characteristic>
             <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+2</characteristic>
-            <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">3+</characteristic>
+            <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">2+</characteristic>
             <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">1</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink id="e03e-ff74-d315-2e7c" name="Feel No Pain" hidden="false" targetId="43073af9-85d3-497c-818d-35eaffdc41f7" type="rule"/>
+        <infoLink id="6c12-8e45-6c0e-19f1" name="Implacable" hidden="false" targetId="c5dc7dc8-1358-4fab-9167-abb36b8184a2" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="c552-f49d-fb18-024a" name="Infantry (1)" hidden="false" targetId="3e3d12cf-27be-4415-af5e-e47be58e343c" primary="false"/>
@@ -195,8 +184,8 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="‏‏‎‏‏‎ ‎points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="6.0"/>
-        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="8.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0fae-98b6-be32-aed2" name="Legion bolters" hidden="false" collective="false" import="true" type="upgrade">
@@ -216,8 +205,8 @@
         <infoLink id="871f-ec1a-f548-1806" name="Light" hidden="false" targetId="bb25fe8e-6b0a-40a9-bc11-d9508716ded5" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name="‏‏‎‏‏‎ ‎points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
-        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
