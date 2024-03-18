@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4733-f9f6-faa7-ae42" name="Chaos: Death Guard" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="24" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4733-f9f6-faa7-ae42" name="Chaos: Death Guard" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="24" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="39bd-547d-3d4d-5ffb" name="Death Guard Sepis Cohort" hidden="false">
       <rules>
@@ -147,12 +147,40 @@
               </constraints>
             </entryLink>
             <entryLink id="448c-30fd-da2b-b09c" name="Pox Walkers" hidden="false" collective="false" import="true" targetId="c4b0-06c8-bc5f-3247" type="selectionEntry"/>
+            <entryLink id="1a7b-20fc-b418-df06" name="Blightlord Terminators" hidden="false" collective="false" import="true" targetId="89e1-0cfb-69cd-1f42" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
         <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="11.0"/>
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3b6d-a47f-497c-13b2" name="Terminator Detachment" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e28f-6f43-6b98-db0f" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="8aed-9af3-6d51-766b" name="Infantry (1)" hidden="false" targetId="3e3d12cf-27be-4415-af5e-e47be58e343c" primary="false"/>
+        <categoryLink id="81c9-ea25-8fdf-d15d" name="New CategoryLink" hidden="false" targetId="ae9be095-043a-4fd4-b809-d160d4b5e1fa" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="1bb8-5e88-e337-6d29" name="Models" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b4c9-a603-736a-9cad" type="min"/>
+            <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc36-83ad-7ba0-7589" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="2e27-17ed-6acc-f452" name="Blightlord Terminators" hidden="false" collective="false" import="true" targetId="89e1-0cfb-69cd-1f42" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a9b7-9343-1099-196a" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="20.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
@@ -238,7 +266,7 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="4.0"/>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="5.0"/>
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -251,6 +279,89 @@
             <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">-</characteristic>
             <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-</characteristic>
             <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="89e1-0cfb-69cd-1f42" name="Blightlord Terminators" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="82d4-487b-90d6-66aa" name="Blightlord Terminators" hidden="false" typeId="746bcfa7-66de-4644-97e8-07da9cec42b6" typeName="Detachment">
+          <characteristics>
+            <characteristic name="Move" typeId="d2bd2fb5-fd8a-4566-842e-dd987e88f298">4&quot;</characteristic>
+            <characteristic name="Sv" typeId="2d7dcb0f-f0aa-4ab9-8c47-b3db3f611a39">4+</characteristic>
+            <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+4</characteristic>
+            <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">2+</characteristic>
+            <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="6fa8-8d0e-5ed9-6c71" name="Feel No Pain" hidden="false" targetId="43073af9-85d3-497c-818d-35eaffdc41f7" type="rule"/>
+        <infoLink id="c519-1f12-23fe-a158" name="Implacable" hidden="false" targetId="c5dc7dc8-1358-4fab-9167-abb36b8184a2" type="rule"/>
+        <infoLink id="68ad-9005-407e-dbbc" name="Bulky" hidden="false" targetId="e8e6-1f3a-a46-9aa0" type="rule"/>
+        <infoLink id="2db6-08d2-240b-f09f" name="Steadfast" hidden="false" targetId="4350ea8f-f741-44f9-b51b-9da9b07e9a11" type="rule"/>
+        <infoLink id="86e5-fa9f-f3fb-15d2" name="Invulnerable Save (X)" hidden="false" targetId="336f61d9-f104-4e49-888d-72b222b7565c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Invulnerable Save (6+)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="9d60-6950-db54-7c81" name="Infantry (1)" hidden="false" targetId="3e3d12cf-27be-4415-af5e-e47be58e343c" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="1ba0-4e2f-5990-1f68" name="Plaguespewers" hidden="false" collective="false" import="true" targetId="f5a1-3c7f-4fdf-2058" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c11e-ed16-06a0-4f56" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d6fe-15d8-9db6-3f7a" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="fdad-701c-098f-a402" name="Baleswords &amp; Flails" hidden="false" collective="false" import="true" targetId="d34d-b1d0-ef19-c0e7" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8bec-2101-d53c-c00c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57f4-a3f3-e0ce-e524" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="10.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f5a1-3c7f-4fdf-2058" name="Plaguespewers" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="562e-59a1-3ac5-e3bc" name="Plaguespewers" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">6&quot;</characteristic>
+            <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">1</characteristic>
+            <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">4+</characteristic>
+            <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">0</characteristic>
+            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Ignores Cover, Light</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="0e39-71e8-726e-4357" name="Light" hidden="false" targetId="bb25fe8e-6b0a-40a9-bc11-d9508716ded5" type="rule"/>
+        <infoLink id="630f-f1bc-d7c9-8d5c" name="Ignores Cover" hidden="false" targetId="6a7e8b3f-d8bd-4d50-aec6-f4893069b255" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d34d-b1d0-ef19-c0e7" name="Baleswords &amp; Flails" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="99e2-b620-fc4e-5dd5" name="Baleswords &amp; Flails" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">-</characteristic>
+            <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">-</characteristic>
+            <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">-</characteristic>
+            <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-</characteristic>
+            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Rend</characteristic>
           </characteristics>
         </profile>
       </profiles>
