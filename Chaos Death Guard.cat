@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4733-f9f6-faa7-ae42" name="Chaos: Death Guard" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="25" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4733-f9f6-faa7-ae42" name="Chaos: Death Guard" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="25" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="39bd-547d-3d4d-5ffb" name="Death Guard Sepis Cohort" hidden="false">
       <rules>
@@ -127,8 +127,6 @@
     <selectionEntry id="e45d-3b55-bf76-bb0f" name="Colony Detachment" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a23d-e690-635d-7ef4" type="min"/>
-        <constraint field="1804a1ce-97f8-474c-bef5-d308d28bd093" scope="parent" value="-4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="150f-0a0a-ef2c-1e45" type="min"/>
-        <constraint field="1804a1ce-97f8-474c-bef5-d308d28bd093" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e54e-387b-8370-13e4" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="9969-2a7c-858c-6417" name="Core" hidden="false" targetId="e0fe110f-b15d-4340-9583-557d57cd2981" primary="true"/>
@@ -149,6 +147,49 @@
             <entryLink id="448c-30fd-da2b-b09c" name="Pox Walkers" hidden="false" collective="false" import="true" targetId="c4b0-06c8-bc5f-3247" type="selectionEntry"/>
             <entryLink id="1a7b-20fc-b418-df06" name="Blightlord Terminators" hidden="false" collective="false" import="true" targetId="89e1-0cfb-69cd-1f42" type="selectionEntry"/>
           </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="b0e7-cbee-5733-dd3c" name="Dedicated Transports" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="5fe1-d308-11e1-e3b0" name="Dedicated Transports" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2669-554a-3ba8-dddd" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c43-5a17-394e-a6fd" type="min"/>
+              </constraints>
+              <costs>
+                <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+                <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="e0c1-1862-0083-c38b" name="Rhinos" hidden="false" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="1ef2-2822-cf18-d2db" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="e45d-3b55-bf76-bb0f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1a7b-20fc-b418-df06" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5fe1-d308-11e1-e3b0" type="lessThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ef2-2822-cf18-d2db" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="880c-74bb-8bad-3921" name="Nurgle Rhino w/ Combi-Bolter" hidden="false" collective="false" import="true" targetId="fd2d-cc71-db9d-2b9b" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9297-6bb4-b444-887b" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="‏‏‎ ‎Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="-2.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -181,6 +222,32 @@
       </selectionEntryGroups>
       <costs>
         <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="20.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0cf9-42a8-e1a5-c502" name="Transport Detachment" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7840-d4f7-6cc4-90b2" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="b8d2-3b72-b433-6ef1" name="New CategoryLink" hidden="false" targetId="9fa29675-77f7-4bfd-b045-1dd4833d7c9e" primary="true"/>
+        <categoryLink id="3725-ed1b-4f53-a2fa" name="Vehicle (2)" hidden="false" targetId="49b3-dae7-33f8-f8e" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="31aa-e415-12c7-acf1" name="Models" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d36c-bbf2-52bf-5471" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="123a-61c3-39d4-df65" name="Nurgle Rhino w/ Combi-Bolter" hidden="false" collective="false" import="true" targetId="fd2d-cc71-db9d-2b9b" type="selectionEntry">
+              <costs>
+                <cost name="‏‏‎ ‎Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="-2.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -350,5 +417,69 @@
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="fd2d-cc71-db9d-2b9b" name="Nurgle Rhino w/ Combi-Bolter" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="690c-4d8d-1108-69f3" name="Nurgle Rhino" hidden="false" typeId="746bcfa7-66de-4644-97e8-07da9cec42b6" typeName="Detachment">
+          <characteristics>
+            <characteristic name="Move" typeId="d2bd2fb5-fd8a-4566-842e-dd987e88f298">9&quot;</characteristic>
+            <characteristic name="Sv" typeId="2d7dcb0f-f0aa-4ab9-8c47-b3db3f611a39">4+</characteristic>
+            <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+0</characteristic>
+            <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">2+</characteristic>
+            <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="af11-3944-a6fe-32cb" name="Transport (X)" hidden="false" targetId="b82-1269-e912-cb88" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Transport (2)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="d33d-a59b-89a6-1384" name="Disgustingly Resilient" hidden="false" targetId="18f5-c278-291e-0e9d" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="dd49-10d8-f672-08fa" name="Vehicle (2)" hidden="false" targetId="49b3-dae7-33f8-f8e" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="0a5c-dfd0-bdd4-36a5" name="Pintle Mounted Combi-Bolter" hidden="false" collective="false" import="true" targetId="57e9-dfd9-04c9-0490" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="508c-9e47-d47e-df81" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d27-a363-4eb4-507a" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="12.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="57e9-dfd9-04c9-0490" name="Pintle Mounted Combi-Bolter" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="1876-39ab-b54b-9edb" name="Pintle Mounted Combi-Bolter" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">8&quot;</characteristic>
+            <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">1</characteristic>
+            <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">5+</characteristic>
+            <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">0</characteristic>
+            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Arc (Front), Assault, Light, Point Defence</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="13d9-3dfd-2319-0580" name="Assault" hidden="false" targetId="db223b76-7613-4dce-ac45-f28d7a03dc16" type="rule"/>
+        <infoLink id="6b5c-d6b6-3a44-6a04" name="Light" hidden="false" targetId="bb25fe8e-6b0a-40a9-bc11-d9508716ded5" type="rule"/>
+        <infoLink id="d0b9-24d8-44f6-0d24" name="Point Defence" hidden="false" targetId="ddbfcec5-daab-4124-abb7-0eb88a1960e6" type="rule"/>
+        <infoLink id="30d7-185c-3d19-4ee7" name="Arc (Front/Rear)" hidden="false" targetId="4b5a744f-9cc6-4201-9423-f3c580a16854" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
+  <sharedRules>
+    <rule id="18f5-c278-291e-0e9d" name="Disgustingly Resilient" hidden="false">
+      <description>Hits scored by a weapon against a model with the Disgustingly Resilient special rule reduce their AP by 1 (to a minimum of 0). </description>
+    </rule>
+  </sharedRules>
 </catalogue>
