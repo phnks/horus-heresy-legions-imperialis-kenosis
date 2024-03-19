@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="2c9332de-54e2-4bfc-9423-269293af3a88" name="Horus Heresy: Legions Imperialis: Kenosis Edition" revision="24" battleScribeVersion="2.03" authorName="BSData Team" authorContact="" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="2c9332de-54e2-4bfc-9423-269293af3a88" name="Horus Heresy: Legions Imperialis: Kenosis Edition" revision="25" battleScribeVersion="2.03" authorName="BSData Team" authorContact="" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="c3da3c2a-6a3a-4fb8-8b85-7f94e2c8f894" name="Legions Imperialis Rulebook" shortName="LI" publicationDate="2023" publisherUrl="https://thehorusheresy.com/legions-imperialis"/>
     <publication id="641fbf79-252a-4a03-8af3-8e3cc6988f81" name="GitHub" shortName="BSData/Horus-Heresy-Legions-Imperialis" publisherUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis"/>
@@ -196,6 +196,49 @@
       </costs>
     </selectionEntry>
   </selectionEntries>
+  <sharedSelectionEntries>
+    <selectionEntry id="1bd1-9494-a0ad-838c" name="Power Axes" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="927a-487e-c631-7d94" name="Power Axes" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">-</characteristic>
+            <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">-</characteristic>
+            <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">-</characteristic>
+            <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-</characteristic>
+            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Rend</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="7e35-8e19-3276-41e8" name="Rend" hidden="false" targetId="b1094ac5-aa6f-45ff-9360-9e9cad6491af" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f284-bbb1-291c-349e" name="Bolters" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="19a1-217a-b874-ceeb" name="Bolters" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">8&quot;</characteristic>
+            <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">1</characteristic>
+            <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">5+</characteristic>
+            <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">0</characteristic>
+            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Assault, Light</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="cb68-9f2a-c15b-69aa" name="Assault" hidden="false" targetId="db223b76-7613-4dce-ac45-f28d7a03dc16" type="rule"/>
+        <infoLink id="5777-66a2-f486-5c9f" name="Light" hidden="false" targetId="bb25fe8e-6b0a-40a9-bc11-d9508716ded5" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
   <sharedRules>
     <rule id="db223b76-7613-4dce-ac45-f28d7a03dc16" name="Assault" publicationId="c3da3c2a-6a3a-4fb8-8b85-7f94e2c8f894" page="77" hidden="false">
       <description>When firing a weapon with the Assault trait, a model doubles its Dice value if it is within a number of inches equal to half the weapon&apos;s Range of at least one model from the target Detachment.</description>

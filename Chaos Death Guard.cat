@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4733-f9f6-faa7-ae42" name="Chaos: Death Guard" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="24" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4733-f9f6-faa7-ae42" name="Chaos: Death Guard" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="25" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="39bd-547d-3d4d-5ffb" name="Death Guard Sepis Cohort" hidden="false">
       <rules>
@@ -181,6 +181,7 @@
       </selectionEntryGroups>
       <costs>
         <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="20.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
@@ -205,7 +206,7 @@
         <categoryLink id="c552-f49d-fb18-024a" name="Infantry (1)" hidden="false" targetId="3e3d12cf-27be-4415-af5e-e47be58e343c" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="5b5b-1d89-a32e-6ecf" name="Legion bolters" hidden="false" collective="false" import="true" targetId="0fae-98b6-be32-aed2" type="selectionEntry">
+        <entryLink id="5b5b-1d89-a32e-6ecf" name="Bolters" hidden="false" collective="false" import="true" targetId="f284-bbb1-291c-349e" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="deaa-45da-effe-1c3e" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ac6-992b-e7e5-2119" type="max"/>
@@ -214,27 +215,6 @@
       </entryLinks>
       <costs>
         <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="8.0"/>
-        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="0fae-98b6-be32-aed2" name="Legion bolters" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="103b-d085-0687-b58f" name="Legion bolters" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">8&quot;</characteristic>
-            <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">1</characteristic>
-            <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">5+</characteristic>
-            <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">0</characteristic>
-            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Assault, Light</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="e616-f2d5-f82a-8892" name="Assault" hidden="false" targetId="db223b76-7613-4dce-ac45-f28d7a03dc16" type="rule"/>
-        <infoLink id="871f-ec1a-f548-1806" name="Light" hidden="false" targetId="bb25fe8e-6b0a-40a9-bc11-d9508716ded5" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
       </costs>
     </selectionEntry>

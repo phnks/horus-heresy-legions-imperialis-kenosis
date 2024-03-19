@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="30cb-c173-1e8e-037f" name="Adeptus Mechanicus" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="24" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="30cb-c173-1e8e-037f" name="Adeptus Mechanicus" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="25" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
-    <selectionEntry id="9dea-9582-0c62-6092" name="Skitarii Cohort Detachment" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="9dea-9582-0c62-6092" name="Scout Battle Maniple Detachment" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="523c-e865-b9be-46cb" type="min"/>
         <constraint field="1804a1ce-97f8-474c-bef5-d308d28bd093" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bbfd-e9c6-daef-6d42" type="max"/>
@@ -19,12 +19,77 @@
           </constraints>
           <entryLinks>
             <entryLink id="53b3-f52a-08a0-8a11" name="Skitarii Vanguard" hidden="false" collective="false" import="true" targetId="27c4-3dd7-d0d9-4700" type="selectionEntry"/>
-            <entryLink id="f715-2775-760e-28ce" name="Skitarii Rangers" hidden="false" collective="false" import="true" targetId="2f93-82fb-3632-1e34" type="selectionEntry"/>
+            <entryLink id="f715-2775-760e-28ce" name="Skitarii Rangers" hidden="false" collective="false" import="true" targetId="2f93-82fb-3632-1e34" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="099a-ab95-c79f-8812" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="9ec3-0f70-5031-58cb" name="Myrmidon Secutors" hidden="false" collective="false" import="true" targetId="f447-3e92-2f2d-45dd" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
         <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="6.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e69e-2ac2-19fb-d750" name="Vanguard Battle Maniple Detachment" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef93-d98c-5532-a2aa" type="min"/>
+        <constraint field="1804a1ce-97f8-474c-bef5-d308d28bd093" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c5b9-f375-530c-038d" type="max"/>
+        <constraint field="1804a1ce-97f8-474c-bef5-d308d28bd093" scope="parent" value="-3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5725-8c9b-bed2-b269" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="80fa-6755-b179-00ce" name="Infantry (1)" hidden="false" targetId="3e3d12cf-27be-4415-af5e-e47be58e343c" primary="false"/>
+        <categoryLink id="fbc4-a01e-2ebe-933a" name="New CategoryLink" hidden="false" targetId="e0fe110f-b15d-4340-9583-557d57cd2981" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="72f4-ca54-122d-b42d" name="Models" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="16.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7848-4678-e332-4fbf" type="max"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba0e-8664-a388-e82f" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="e421-cd9f-9a32-0171" name="Skitarii Vanguard" hidden="false" collective="false" import="true" targetId="27c4-3dd7-d0d9-4700" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aef6-94fc-d3fc-ede3" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="477e-a608-a047-5170" name="Skitarii Rangers" hidden="false" collective="false" import="true" targetId="2f93-82fb-3632-1e34" type="selectionEntry"/>
+            <entryLink id="cb88-28f6-a6d6-242e" name="Myrmidon Secutors" hidden="false" collective="false" import="true" targetId="f447-3e92-2f2d-45dd" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="6.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8620-a445-f8a6-be72" name="Myrmidon Detachment" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="66cc-b0c8-1d09-b3fa" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="0efe-c1b2-4b32-b31c" name="Infantry (1)" hidden="false" targetId="3e3d12cf-27be-4415-af5e-e47be58e343c" primary="false"/>
+        <categoryLink id="c3fa-f643-ac49-1b8d" name="New CategoryLink" hidden="false" targetId="ae9be095-043a-4fd4-b809-d160d4b5e1fa" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="c83b-82d2-419b-b4e6" name="Models" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d12c-0359-11a3-8819" type="max"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="00e7-9064-6914-35fa" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="4569-1fc4-d340-8dfc" name="Myrmidon Secutors" hidden="false" collective="false" import="true" targetId="f447-3e92-2f2d-45dd" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c48-1fe0-6c43-ec27" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="20.0"/>
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -121,6 +186,64 @@
       </profiles>
       <infoLinks>
         <infoLink id="0547-2b30-f308-81e6" name="Light" hidden="false" targetId="bb25fe8e-6b0a-40a9-bc11-d9508716ded5" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f447-3e92-2f2d-45dd" name="Myrmidon Secutors" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="998b-cb0f-8b0b-b7f2" name="Myrmidon Secutors" hidden="false" typeId="746bcfa7-66de-4644-97e8-07da9cec42b6" typeName="Detachment">
+          <characteristics>
+            <characteristic name="Move" typeId="d2bd2fb5-fd8a-4566-842e-dd987e88f298">5&quot;</characteristic>
+            <characteristic name="Sv" typeId="2d7dcb0f-f0aa-4ab9-8c47-b3db3f611a39">4+</characteristic>
+            <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+4</characteristic>
+            <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">3+</characteristic>
+            <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="0c37-bb29-2ae0-180c" name="Bulky" hidden="false" targetId="e8e6-1f3a-a46-9aa0" type="rule"/>
+        <infoLink id="ddca-79f7-52c4-28fc" name="Implacable" hidden="false" targetId="c5dc7dc8-1358-4fab-9167-abb36b8184a2" type="rule"/>
+        <infoLink id="a3a6-fae6-cacd-609e" name="Steadfast" hidden="false" targetId="4350ea8f-f741-44f9-b51b-9da9b07e9a11" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="beb1-a0a8-2a43-d3e8" name="Maxima Bolters" hidden="false" collective="false" import="true" targetId="8ed1-4541-e660-c275" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c457-832e-733e-2274" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e58-4f97-4c7a-f36a" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="3e41-05d4-09c8-df78" name="Power Axes" hidden="false" collective="false" import="true" targetId="1bd1-9494-a0ad-838c" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a2ca-43c9-05f2-3481" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f75d-b0e3-9ce1-381c" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="8.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8ed1-4541-e660-c275" name="Maxima Bolters" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="1834-c5e5-ff0f-4c32" name="Maxima Bolters" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">8&quot;</characteristic>
+            <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">1</characteristic>
+            <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">5+</characteristic>
+            <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">0</characteristic>
+            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Accurate, Assault, Light</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="b90c-1f34-94d6-abff" name="Accurate" hidden="false" targetId="09fffa4e-76ab-4d9e-a749-d57d60897581" type="rule"/>
+        <infoLink id="607c-22a2-b8ac-4313" name="Assault" hidden="false" targetId="db223b76-7613-4dce-ac45-f28d7a03dc16" type="rule"/>
+        <infoLink id="e56e-0ccc-92b8-d76c" name="Light" hidden="false" targetId="bb25fe8e-6b0a-40a9-bc11-d9508716ded5" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
