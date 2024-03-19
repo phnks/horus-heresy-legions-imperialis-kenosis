@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4733-f9f6-faa7-ae42" name="Chaos: Death Guard" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="25" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4733-f9f6-faa7-ae42" name="Chaos: Death Guard" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="25" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="39bd-547d-3d4d-5ffb" name="Death Guard Sepis Cohort" hidden="false">
       <rules>
@@ -127,6 +127,8 @@
     <selectionEntry id="e45d-3b55-bf76-bb0f" name="Colony Detachment" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a23d-e690-635d-7ef4" type="min"/>
+        <constraint field="1804a1ce-97f8-474c-bef5-d308d28bd093" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2bf0-a49f-9b3b-ad7a" type="max"/>
+        <constraint field="1804a1ce-97f8-474c-bef5-d308d28bd093" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf51-223e-2290-abe1" type="min"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="9969-2a7c-858c-6417" name="Core" hidden="false" targetId="e0fe110f-b15d-4340-9583-557d57cd2981" primary="true"/>
@@ -140,11 +142,26 @@
           </constraints>
           <entryLinks>
             <entryLink id="1092-717b-30e0-d187" name="Plague Marines" hidden="false" collective="false" import="true" targetId="f00b-af41-73e7-c6d5" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="1804a1ce-97f8-474c-bef5-d308d28bd093" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="e45d-3b55-bf76-bb0f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5fe1-d308-11e1-e3b0" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1108-315c-32bc-f743" type="min"/>
               </constraints>
             </entryLink>
-            <entryLink id="448c-30fd-da2b-b09c" name="Pox Walkers" hidden="false" collective="false" import="true" targetId="c4b0-06c8-bc5f-3247" type="selectionEntry"/>
+            <entryLink id="448c-30fd-da2b-b09c" name="Pox Walkers" hidden="false" collective="false" import="true" targetId="c4b0-06c8-bc5f-3247" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="1804a1ce-97f8-474c-bef5-d308d28bd093" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="e45d-3b55-bf76-bb0f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5fe1-d308-11e1-e3b0" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
             <entryLink id="1a7b-20fc-b418-df06" name="Blightlord Terminators" hidden="false" collective="false" import="true" targetId="89e1-0cfb-69cd-1f42" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
@@ -450,7 +467,7 @@
       </entryLinks>
       <costs>
         <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="12.0"/>
-        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="-2.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="57e9-dfd9-04c9-0490" name="Pintle Mounted Combi-Bolter" hidden="false" collective="false" import="true" type="upgrade">
