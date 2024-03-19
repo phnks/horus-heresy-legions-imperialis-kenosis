@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="30cb-c173-1e8e-037f" name="Adeptus Mechanicus" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="25" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="30cb-c173-1e8e-037f" name="Adeptus Mechanicus" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="28" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="9dea-9582-0c62-6092" name="Scout Battle Maniple Detachment" hidden="false" collective="false" import="true" type="unit">
       <constraints>
@@ -91,6 +91,107 @@
       <costs>
         <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="20.0"/>
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="88e5-098a-2ead-2425" name="Karacnos Assault Tank Detachment" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="271a-7548-d869-1b75" name="Vehicle (2)" hidden="false" targetId="49b3-dae7-33f8-f8e" primary="false"/>
+        <categoryLink id="2aa8-427d-6892-5b2d" name="New CategoryLink" hidden="false" targetId="32eb0e0c-78c3-4ab0-ab6a-5160a47cb924" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="76f8-15c1-b0f2-9bbe" name="Models" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="49ef-a535-7cc4-b57c" type="min"/>
+            <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b1e6-bc98-52a8-3155" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="f812-2503-b6bd-d5d3" name="Karacnos Assault Tank" hidden="false" collective="false" import="true" targetId="77c4-65f0-9a79-2cb7" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed56-1ee3-20dc-52af" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a95c-f8fa-34aa-da33" name="Onager Dunecrawler Detachment" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="9a35-b44c-e2ef-7c6c" name="Vehicle (2)" hidden="false" targetId="49b3-dae7-33f8-f8e" primary="false"/>
+        <categoryLink id="e45a-d16a-f01e-6fae" name="New CategoryLink" hidden="false" targetId="17079afa-e39f-4f33-9207-cc02fd3a3520" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="ba58-8de1-b825-e48f" name="Models" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02a2-a9fb-e9cb-494d" type="min"/>
+            <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c81-7501-7548-e3e1" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="4a7b-3a8c-1ade-ab28" name="Onager Dunecrawler w/ Neutron Laser" hidden="false" collective="false" import="true" targetId="0877-1ec6-e48b-62dc" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a33-129a-5605-7df4" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1af4-c1c9-27c8-bbda" name="Dominus Destructor Detachment" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10bc-1f05-0046-7133" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2629-d1a4-2780-734c" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="7a97-c65b-c9b8-e4c5" name="Infantry (1)" hidden="false" targetId="3e3d12cf-27be-4415-af5e-e47be58e343c" primary="false"/>
+        <categoryLink id="8793-4de0-1fff-521e" name="New CategoryLink" hidden="false" targetId="d950-ad23-9b2-9325" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="d956-3f18-ce95-fe8f" name="Myrmidon Secutors w/ Tech-Priest Dominus" hidden="false" collective="false" import="true" targetId="bc23-72aa-358b-653d" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="eac6-7ce4-8a15-a428" name="Dominus Scout Detachment" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="29dc-6450-5555-fb24" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b32-7a65-f973-d651" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="47ba-ad5b-7d13-144c" name="Infantry (1)" hidden="false" targetId="3e3d12cf-27be-4415-af5e-e47be58e343c" primary="false"/>
+        <categoryLink id="7ec0-63f1-44f3-64de" name="New CategoryLink" hidden="false" targetId="d950-ad23-9b2-9325" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="5135-c963-9ccf-6054" name="Skitarii Rangers w/ Tech-Priest Dominus" hidden="false" collective="false" import="true" targetId="8f64-fd77-070f-9f9e" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f53f-550b-a927-56eb" name="Dominus Vanguard Detachment" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9c4-1823-adbb-0670" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6cd7-11b0-cd4d-cf8c" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="f41f-1101-ff85-e033" name="Infantry (1)" hidden="false" targetId="3e3d12cf-27be-4415-af5e-e47be58e343c" primary="false"/>
+        <categoryLink id="9f09-0104-9d08-bbf4" name="New CategoryLink" hidden="false" targetId="d950-ad23-9b2-9325" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="3eb8-7d18-937a-30dc" name="Skitarii Vanguard w/ Tech-Priest Dominus" hidden="false" collective="false" import="true" targetId="3b8e-760d-86d0-a06f" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
@@ -248,6 +349,241 @@
       <costs>
         <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="77c4-65f0-9a79-2cb7" name="Karacnos Assault Tank" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="aa36-04b4-c79d-e7bd" name="Karacnos Assault Tank" hidden="false" typeId="746bcfa7-66de-4644-97e8-07da9cec42b6" typeName="Detachment">
+          <characteristics>
+            <characteristic name="Move" typeId="d2bd2fb5-fd8a-4566-842e-dd987e88f298">9&quot;</characteristic>
+            <characteristic name="Sv" typeId="2d7dcb0f-f0aa-4ab9-8c47-b3db3f611a39">2+</characteristic>
+            <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+4</characteristic>
+            <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">3+</characteristic>
+            <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink id="261a-37fc-4695-1aa9" name="Sponson Mounted Lightning Locks" hidden="false" collective="false" import="true" targetId="2921-8ff1-0d2b-dd2a" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ea4-8d45-0d62-cc01" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a85-42d0-0f8d-5ae4" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="ef51-713c-d134-83e8" name="Karacnos Mortar Battery" hidden="false" collective="false" import="true" targetId="4c18-d36f-8d7a-cce0" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c64d-80da-ae6a-7295" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a33c-c524-e8fb-ddda" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="40.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2921-8ff1-0d2b-dd2a" name="Sponson Mounted Lightning Locks" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="4730-a0e7-1b06-39a6" name="Sponson Mounted Lightning Locks" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">12&quot;</characteristic>
+            <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">2</characteristic>
+            <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">5+</characteristic>
+            <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-2</characteristic>
+            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Arc (Front)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="7cc9-094e-b098-e5c6" name="Arc (Front/Rear)" hidden="false" targetId="4b5a744f-9cc6-4201-9423-f3c580a16854" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Arc (Front)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0877-1ec6-e48b-62dc" name="Onager Dunecrawler w/ Neutron Laser" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="f972-4b4f-3fb8-af97" name="Onager Dunecrawler" hidden="false" typeId="746bcfa7-66de-4644-97e8-07da9cec42b6" typeName="Detachment">
+          <characteristics>
+            <characteristic name="Move" typeId="d2bd2fb5-fd8a-4566-842e-dd987e88f298">8&quot;</characteristic>
+            <characteristic name="Sv" typeId="2d7dcb0f-f0aa-4ab9-8c47-b3db3f611a39">4+</characteristic>
+            <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+2</characteristic>
+            <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">3+</characteristic>
+            <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="a54b-8b34-849a-8e0e" name="Explorator Adaption" hidden="false" targetId="2e95f354-63d6-436c-a468-e03635c83937" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="d3b9-2bbe-be33-d4d1" name="Neutron Laser" hidden="false" collective="false" import="true" targetId="c46a-5883-f5e2-4d54" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b606-540c-b391-e903" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9fe4-c429-1489-249b" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="dc61-6d31-15ac-0d1a" name="Cognis Heavy Stubber" hidden="false" collective="false" import="true" targetId="cf49-401c-c782-cf1e" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e6b-d4d4-1413-c213" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ffc-4ac1-f155-1cb0" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="37.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bc23-72aa-358b-653d" name="Myrmidon Secutors w/ Tech-Priest Dominus" hidden="false" collective="false" import="true" type="model">
+      <entryLinks>
+        <entryLink id="6c34-2ea6-b2b5-75ec" name="Myrmidon Secutors" hidden="false" collective="false" import="true" targetId="f447-3e92-2f2d-45dd" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="71bd-4de7-2d79-c9f9" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ea8-5a51-c4dc-45af" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="84a3-a6b2-310e-c2fd" name="Tech-Priest Dominus" hidden="false" collective="false" import="true" targetId="1247-1f84-4b6f-b9fb" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9af2-4f6e-ff10-09d0" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2932-4134-c9f1-a835" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1247-1f84-4b6f-b9fb" name="Tech-Priest Dominus" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="b52a-8679-a829-cc21" name="Tech-Priest Dominus" hidden="false" typeId="746bcfa7-66de-4644-97e8-07da9cec42b6" typeName="Detachment">
+          <characteristics>
+            <characteristic name="Move" typeId="d2bd2fb5-fd8a-4566-842e-dd987e88f298">5&quot;</characteristic>
+            <characteristic name="Sv" typeId="2d7dcb0f-f0aa-4ab9-8c47-b3db3f611a39">5+</characteristic>
+            <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+2</characteristic>
+            <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">3+</characteristic>
+            <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="bdb1-b6e1-9773-f89d" name="Commander" hidden="false" targetId="9501d65d-30ac-43cf-a8ba-cb5c3a5e9f29" type="rule"/>
+        <infoLink id="9340-5b87-023b-b89a" name="Inspire (X)" hidden="false" targetId="d16f4b5d-89fd-4c84-8b4f-bce603816cf8" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Inspire (8&quot;)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="e619-845b-049d-9a24" name="Invulnerable Save (X)" hidden="false" targetId="336f61d9-f104-4e49-888d-72b222b7565c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Invulnerable Save (6+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="1c41-c086-1fb3-d74d" name="Master Tactician" hidden="false" targetId="66564d31-c529-4730-89b5-cce45f6863be" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="9350-4082-19aa-81fb" name="Omnissian Axe" hidden="false" collective="false" import="true" targetId="c171-2565-4cad-0361" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0d2-a120-c50c-7f9d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="263d-3984-f017-9d87" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="6e30-41d8-c388-71c1" name="Eradication Ray" hidden="false" collective="false" import="true" targetId="1a3e-051d-1b32-7455" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc90-2760-f59a-6f4e" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79c9-ed52-74bb-ef80" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="17.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c171-2565-4cad-0361" name="Omnissian Axe" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="bae4-bfb5-0b14-e1a8" name="Omnissian Axe" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">-</characteristic>
+            <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">-</characteristic>
+            <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">-</characteristic>
+            <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-</characteristic>
+            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Rend</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="90d5-244e-a944-fc98" name="Rend" hidden="false" targetId="b1094ac5-aa6f-45ff-9360-9e9cad6491af" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1a3e-051d-1b32-7455" name="Eradication Ray" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="45b1-64e6-c539-488c" name="Eradication Ray" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">8&quot;</characteristic>
+            <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">1</characteristic>
+            <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">4+</characteristic>
+            <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-3</characteristic>
+            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Anti-tank, Demolisher</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="7110-930c-2f64-cf96" name="Anti-tank" hidden="false" targetId="bea2b218-c79e-4c95-9405-8461a8779800" type="rule"/>
+        <infoLink id="1e69-a337-ba9b-8aad" name="Demolisher" hidden="false" targetId="788-9d12-3358-b236" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8f64-fd77-070f-9f9e" name="Skitarii Rangers w/ Tech-Priest Dominus" hidden="false" collective="false" import="true" type="model">
+      <entryLinks>
+        <entryLink id="c988-ec9d-ffb7-b0f5" name="Skitarii Rangers" hidden="false" collective="false" import="true" targetId="2f93-82fb-3632-1e34" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5291-785a-e144-db17" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="920c-393c-ad78-25a3" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="7b1d-1864-85db-9831" name="Tech-Priest Dominus" hidden="false" collective="false" import="true" targetId="1247-1f84-4b6f-b9fb" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b30a-12e3-aae8-f1c5" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8606-eba9-535b-af21" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3b8e-760d-86d0-a06f" name="Skitarii Vanguard w/ Tech-Priest Dominus" hidden="false" collective="false" import="true" type="model">
+      <entryLinks>
+        <entryLink id="b6b8-b6d1-4569-c428" name="Skitarii Vanguard" hidden="false" collective="false" import="true" targetId="27c4-3dd7-d0d9-4700" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b92-7f48-ee8e-28e1" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="905a-9586-5f52-2e19" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="17f0-d5d6-21dc-b344" name="Tech-Priest Dominus" hidden="false" collective="false" import="true" targetId="1247-1f84-4b6f-b9fb" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2338-9f42-d5ff-a70a" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="70c4-60c5-193e-17c5" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>

@@ -182,14 +182,14 @@
             <selectionEntryGroup id="e0c1-1862-0083-c38b" name="Rhinos" hidden="false" collective="false" import="true">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="e45d-3b55-bf76-bb0f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1a7b-20fc-b418-df06" type="atLeast"/>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5fe1-d308-11e1-e3b0" type="lessThan"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5fe1-d308-11e1-e3b0" type="lessThan"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="1ef2-2822-cf18-d2db" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="e45d-3b55-bf76-bb0f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1a7b-20fc-b418-df06" type="atLeast"/>
+                  </conditions>
                 </modifier>
               </modifiers>
               <constraints>
