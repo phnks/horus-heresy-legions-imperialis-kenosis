@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="30cb-c173-1e8e-037f" name="Adeptus Mechanicus" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="28" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="30cb-c173-1e8e-037f" name="Adeptus Mechanicus" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="28" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="9dea-9582-0c62-6092" name="Scout Battle Maniple Detachment" hidden="false" collective="false" import="true" type="unit">
       <constraints>
@@ -144,16 +144,16 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="1af4-c1c9-27c8-bbda" name="Dominus Destructor Detachment" hidden="false" collective="false" import="true" type="unit">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10bc-1f05-0046-7133" type="min"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2629-d1a4-2780-734c" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="7a97-c65b-c9b8-e4c5" name="Infantry (1)" hidden="false" targetId="3e3d12cf-27be-4415-af5e-e47be58e343c" primary="false"/>
         <categoryLink id="8793-4de0-1fff-521e" name="New CategoryLink" hidden="false" targetId="d950-ad23-9b2-9325" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="d956-3f18-ce95-fe8f" name="Myrmidon Secutors w/ Tech-Priest Dominus" hidden="false" collective="false" import="true" targetId="bc23-72aa-358b-653d" type="selectionEntry"/>
+        <entryLink id="d956-3f18-ce95-fe8f" name="Myrmidon Secutors w/ Tech-Priest Dominus" hidden="false" collective="false" import="true" targetId="bc23-72aa-358b-653d" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="989b-d933-7ea0-fb3c" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
@@ -161,16 +161,16 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="eac6-7ce4-8a15-a428" name="Dominus Scout Detachment" hidden="false" collective="false" import="true" type="unit">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="29dc-6450-5555-fb24" type="min"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b32-7a65-f973-d651" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="47ba-ad5b-7d13-144c" name="Infantry (1)" hidden="false" targetId="3e3d12cf-27be-4415-af5e-e47be58e343c" primary="false"/>
         <categoryLink id="7ec0-63f1-44f3-64de" name="New CategoryLink" hidden="false" targetId="d950-ad23-9b2-9325" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="5135-c963-9ccf-6054" name="Skitarii Rangers w/ Tech-Priest Dominus" hidden="false" collective="false" import="true" targetId="8f64-fd77-070f-9f9e" type="selectionEntry"/>
+        <entryLink id="5135-c963-9ccf-6054" name="Skitarii Rangers w/ Tech-Priest Dominus" hidden="false" collective="false" import="true" targetId="8f64-fd77-070f-9f9e" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0b2-5d71-75f9-c287" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
@@ -178,16 +178,16 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="f53f-550b-a927-56eb" name="Dominus Vanguard Detachment" hidden="false" collective="false" import="true" type="unit">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9c4-1823-adbb-0670" type="min"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6cd7-11b0-cd4d-cf8c" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="f41f-1101-ff85-e033" name="Infantry (1)" hidden="false" targetId="3e3d12cf-27be-4415-af5e-e47be58e343c" primary="false"/>
         <categoryLink id="9f09-0104-9d08-bbf4" name="New CategoryLink" hidden="false" targetId="d950-ad23-9b2-9325" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="3eb8-7d18-937a-30dc" name="Skitarii Vanguard w/ Tech-Priest Dominus" hidden="false" collective="false" import="true" targetId="3b8e-760d-86d0-a06f" type="selectionEntry"/>
+        <entryLink id="3eb8-7d18-937a-30dc" name="Skitarii Vanguard w/ Tech-Priest Dominus" hidden="false" collective="false" import="true" targetId="3b8e-760d-86d0-a06f" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8939-2c59-c534-a773" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
@@ -441,17 +441,31 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="bc23-72aa-358b-653d" name="Myrmidon Secutors w/ Tech-Priest Dominus" hidden="false" collective="false" import="true" type="model">
+      <infoLinks>
+        <infoLink id="9756-2404-42ad-194f" name="Bulky" hidden="false" targetId="e8e6-1f3a-a46-9aa0" type="rule"/>
+        <infoLink id="b17f-367c-5150-942b" name="Implacable" hidden="false" targetId="c5dc7dc8-1358-4fab-9167-abb36b8184a2" type="rule"/>
+        <infoLink id="efa0-3d53-9d80-9801" name="Steadfast" hidden="false" targetId="4350ea8f-f741-44f9-b51b-9da9b07e9a11" type="rule"/>
+      </infoLinks>
       <entryLinks>
-        <entryLink id="6c34-2ea6-b2b5-75ec" name="Myrmidon Secutors" hidden="false" collective="false" import="true" targetId="f447-3e92-2f2d-45dd" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="71bd-4de7-2d79-c9f9" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ea8-5a51-c4dc-45af" type="min"/>
-          </constraints>
-        </entryLink>
         <entryLink id="84a3-a6b2-310e-c2fd" name="Tech-Priest Dominus" hidden="false" collective="false" import="true" targetId="1247-1f84-4b6f-b9fb" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="name" value="Tech-Priest Dominus w/ Myrmidon Secutors"/>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9af2-4f6e-ff10-09d0" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2932-4134-c9f1-a835" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="ee62-b113-be62-f835" name="Maxima Bolters" hidden="false" collective="false" import="true" targetId="8ed1-4541-e660-c275" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="240c-bb41-e1b1-157e" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f18-8300-74d5-4be3" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="3c43-94c9-8834-acc4" name="Power Axes" hidden="false" collective="false" import="true" targetId="1bd1-9494-a0ad-838c" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f566-0232-47a3-e203" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a873-e743-96c3-1434" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -467,7 +481,7 @@
             <characteristic name="Move" typeId="d2bd2fb5-fd8a-4566-842e-dd987e88f298">5&quot;</characteristic>
             <characteristic name="Sv" typeId="2d7dcb0f-f0aa-4ab9-8c47-b3db3f611a39">5+</characteristic>
             <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+2</characteristic>
-            <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">3+</characteristic>
+            <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">2+</characteristic>
             <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">1</characteristic>
           </characteristics>
         </profile>
@@ -547,17 +561,24 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="8f64-fd77-070f-9f9e" name="Skitarii Rangers w/ Tech-Priest Dominus" hidden="false" collective="false" import="true" type="model">
+      <infoLinks>
+        <infoLink id="f09d-5d80-b2b0-07d8" name="Line" hidden="false" targetId="994bb804-192b-4b85-beab-a07282102470" type="rule"/>
+        <infoLink id="e570-2a40-bb40-653e" name="Scout" hidden="false" targetId="ea1-6996-9b3e-1dc1" type="rule"/>
+      </infoLinks>
       <entryLinks>
-        <entryLink id="c988-ec9d-ffb7-b0f5" name="Skitarii Rangers" hidden="false" collective="false" import="true" targetId="2f93-82fb-3632-1e34" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5291-785a-e144-db17" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="920c-393c-ad78-25a3" type="min"/>
-          </constraints>
-        </entryLink>
         <entryLink id="7b1d-1864-85db-9831" name="Tech-Priest Dominus" hidden="false" collective="false" import="true" targetId="1247-1f84-4b6f-b9fb" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="name" value="Tech-Priest Dominus w/ Skitarii Rangers"/>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b30a-12e3-aae8-f1c5" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8606-eba9-535b-af21" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="ebe8-1e76-5318-0029" name="Galvanic Rifles" hidden="false" collective="false" import="true" targetId="c7fb-fbf9-e8be-fe0e" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5daf-9270-7b18-88b8" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba76-dbd1-7a8b-f181" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -567,17 +588,23 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="3b8e-760d-86d0-a06f" name="Skitarii Vanguard w/ Tech-Priest Dominus" hidden="false" collective="false" import="true" type="model">
+      <infoLinks>
+        <infoLink id="401d-98d5-7b73-5b68" name="Line" hidden="false" targetId="994bb804-192b-4b85-beab-a07282102470" type="rule"/>
+      </infoLinks>
       <entryLinks>
-        <entryLink id="b6b8-b6d1-4569-c428" name="Skitarii Vanguard" hidden="false" collective="false" import="true" targetId="27c4-3dd7-d0d9-4700" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b92-7f48-ee8e-28e1" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="905a-9586-5f52-2e19" type="min"/>
-          </constraints>
-        </entryLink>
         <entryLink id="17f0-d5d6-21dc-b344" name="Tech-Priest Dominus" hidden="false" collective="false" import="true" targetId="1247-1f84-4b6f-b9fb" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="name" value="Tech-Priest Dominus w/ Skitarii Vanguard"/>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2338-9f42-d5ff-a70a" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="70c4-60c5-193e-17c5" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="895f-563d-833b-5f4c" name="Radium Carbines" hidden="false" collective="false" import="true" targetId="4cd7-b981-7972-ad21" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="25cd-0889-efd0-00fb" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="38cd-7946-e567-b3fa" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
