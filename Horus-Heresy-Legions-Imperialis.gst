@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="2c9332de-54e2-4bfc-9423-269293af3a88" name="Horus Heresy: Legions Imperialis: Kenosis Edition" revision="28" battleScribeVersion="2.03" authorName="BSData Team" authorContact="" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="2c9332de-54e2-4bfc-9423-269293af3a88" name="Horus Heresy: Legions Imperialis: Kenosis Edition" revision="30" battleScribeVersion="2.03" authorName="BSData Team" authorContact="" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="c3da3c2a-6a3a-4fb8-8b85-7f94e2c8f894" name="Legions Imperialis Rulebook" shortName="LI" publicationDate="2023" publisherUrl="https://thehorusheresy.com/legions-imperialis"/>
     <publication id="641fbf79-252a-4a03-8af3-8e3cc6988f81" name="GitHub" shortName="BSData/Horus-Heresy-Legions-Imperialis" publisherUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis"/>
@@ -309,6 +309,27 @@
         </infoLink>
         <infoLink id="7b7e-d621-dca8-a885" name="Point Defence" hidden="false" targetId="ddbfcec5-daab-4124-abb7-0eb88a1960e6" type="rule"/>
         <infoLink id="e343-95c4-43fd-b12f" name="Light" hidden="false" targetId="bb25fe8e-6b0a-40a9-bc11-d9508716ded5" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7b10-fbca-e1b9-3d26" name="Neutron Beam Laser" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="878f-34f9-a236-0038" name="Neutron beam laser" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">22&quot;</characteristic>
+            <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">1</characteristic>
+            <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">4+</characteristic>
+            <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-3</characteristic>
+            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Arc (Front), Shock Pulse</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="bfa1-abb7-0edb-6efc" name="Arc (Front/Rear)" hidden="false" targetId="4b5a744f-9cc6-4201-9423-f3c580a16854" type="rule"/>
+        <infoLink id="7322-0350-36c0-d601" name="Shock Pulse" hidden="false" targetId="495a-71fc-de48-96a" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
@@ -763,6 +784,9 @@ During the End phase, in the Resolve End Phase Effects stage, a model with the V
 
 
 If a Detachment contains more than one model with this rule, the controlling player can choose which models detonate and which do not, doing so before resolving any detonation. Models that detonate are not affected by friendly models that are detonating at the same time. Any model that does not detonate is affected if it is under the Blast template as normal.</description>
+    </rule>
+    <rule id="c160-4b79-14e6-4f5b" name="Subordinate" hidden="false">
+      <description>A model with the Subordinate special rule counts its Tactical Strength as zero unless it is part of a detachment that contains models without the Subordinate special rule. </description>
     </rule>
   </sharedRules>
 </gameSystem>

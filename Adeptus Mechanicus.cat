@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="30cb-c173-1e8e-037f" name="Adeptus Mechanicus" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="28" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="30cb-c173-1e8e-037f" name="Adeptus Mechanicus" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="9dea-9582-0c62-6092" name="Scout Battle Maniple Detachment" hidden="false" collective="false" import="true" type="unit">
       <constraints>
@@ -152,6 +152,7 @@
         <entryLink id="d956-3f18-ce95-fe8f" name="Myrmidon Secutors w/ Tech-Priest Dominus" hidden="false" collective="false" import="true" targetId="bc23-72aa-358b-653d" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="989b-d933-7ea0-fb3c" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e43-a85f-0a59-354c" type="min"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -169,6 +170,7 @@
         <entryLink id="5135-c963-9ccf-6054" name="Skitarii Rangers w/ Tech-Priest Dominus" hidden="false" collective="false" import="true" targetId="8f64-fd77-070f-9f9e" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0b2-5d71-75f9-c287" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f0b-a36d-c9c6-a6ae" type="min"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -186,6 +188,7 @@
         <entryLink id="3eb8-7d18-937a-30dc" name="Skitarii Vanguard w/ Tech-Priest Dominus" hidden="false" collective="false" import="true" targetId="3b8e-760d-86d0-a06f" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8939-2c59-c534-a773" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="13f3-c04e-7775-b4a0" type="min"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -232,12 +235,13 @@
             <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">1</characteristic>
             <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">5+</characteristic>
             <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">0</characteristic>
-            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Light</characteristic>
+            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Light, Rapid Fire</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink id="a4bd-0c4c-6390-8f92" name="Light" hidden="false" targetId="bb25fe8e-6b0a-40a9-bc11-d9508716ded5" type="rule"/>
+        <infoLink id="009c-db6e-2736-4564" name="Rapid Fire" hidden="false" targetId="8e369f05-86ca-40a8-8496-954ba836c21b" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
@@ -406,7 +410,7 @@
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0877-1ec6-e48b-62dc" name="Onager Dunecrawler w/ Neutron Laser" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="0877-1ec6-e48b-62dc" name="Onager Dunecrawler w/ Neutron Beam Laser" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="f972-4b4f-3fb8-af97" name="Onager Dunecrawler" hidden="false" typeId="746bcfa7-66de-4644-97e8-07da9cec42b6" typeName="Detachment">
           <characteristics>
@@ -420,9 +424,10 @@
       </profiles>
       <infoLinks>
         <infoLink id="a54b-8b34-849a-8e0e" name="Explorator Adaption" hidden="false" targetId="2e95f354-63d6-436c-a468-e03635c83937" type="rule"/>
+        <infoLink id="227f-d901-fc7e-e5a1" name="Nimble" hidden="false" targetId="4e652d67-da9f-42e6-867a-900f862cc219" type="rule"/>
       </infoLinks>
       <entryLinks>
-        <entryLink id="d3b9-2bbe-be33-d4d1" name="Neutron Laser" hidden="false" collective="false" import="true" targetId="c46a-5883-f5e2-4d54" type="selectionEntry">
+        <entryLink id="d3b9-2bbe-be33-d4d1" name="Neutron Beam Laser" hidden="false" collective="false" import="true" targetId="7b10-fbca-e1b9-3d26" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b606-540c-b391-e903" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9fe4-c429-1489-249b" type="min"/>
@@ -445,17 +450,25 @@
         <infoLink id="9756-2404-42ad-194f" name="Bulky" hidden="false" targetId="e8e6-1f3a-a46-9aa0" type="rule"/>
         <infoLink id="b17f-367c-5150-942b" name="Implacable" hidden="false" targetId="c5dc7dc8-1358-4fab-9167-abb36b8184a2" type="rule"/>
         <infoLink id="efa0-3d53-9d80-9801" name="Steadfast" hidden="false" targetId="4350ea8f-f741-44f9-b51b-9da9b07e9a11" type="rule"/>
+        <infoLink id="7c07-5c08-0a67-e47e" name="Tech-Priest Dominus" hidden="false" targetId="b4c4-de68-128a-9a14" type="profile">
+          <modifiers>
+            <modifier type="set" field="name" value="Tech-Priest Dominus w/ Skitarii Vanguard"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="6b64-b9b1-97b7-112b" name="Commander" hidden="false" targetId="9501d65d-30ac-43cf-a8ba-cb5c3a5e9f29" type="rule"/>
+        <infoLink id="f3ca-834d-0a42-2bd8" name="Inspire (X)" hidden="false" targetId="d16f4b5d-89fd-4c84-8b4f-bce603816cf8" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Inspire (8&quot;)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="4825-1bda-bb04-00e6" name="Invulnerable Save (X)" hidden="false" targetId="336f61d9-f104-4e49-888d-72b222b7565c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Invulnerable Save (6+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="079d-c9c6-e26b-419a" name="Master Tactician" hidden="false" targetId="66564d31-c529-4730-89b5-cce45f6863be" type="rule"/>
       </infoLinks>
       <entryLinks>
-        <entryLink id="84a3-a6b2-310e-c2fd" name="Tech-Priest Dominus" hidden="false" collective="false" import="true" targetId="1247-1f84-4b6f-b9fb" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="name" value="Tech-Priest Dominus w/ Myrmidon Secutors"/>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9af2-4f6e-ff10-09d0" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2932-4134-c9f1-a835" type="min"/>
-          </constraints>
-        </entryLink>
         <entryLink id="ee62-b113-be62-f835" name="Maxima Bolters" hidden="false" collective="false" import="true" targetId="8ed1-4541-e660-c275" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="240c-bb41-e1b1-157e" type="min"/>
@@ -468,55 +481,22 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a873-e743-96c3-1434" type="max"/>
           </constraints>
         </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
-        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="1247-1f84-4b6f-b9fb" name="Tech-Priest Dominus" hidden="false" collective="false" import="true" type="model">
-      <profiles>
-        <profile id="b52a-8679-a829-cc21" name="Tech-Priest Dominus" hidden="false" typeId="746bcfa7-66de-4644-97e8-07da9cec42b6" typeName="Detachment">
-          <characteristics>
-            <characteristic name="Move" typeId="d2bd2fb5-fd8a-4566-842e-dd987e88f298">5&quot;</characteristic>
-            <characteristic name="Sv" typeId="2d7dcb0f-f0aa-4ab9-8c47-b3db3f611a39">5+</characteristic>
-            <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+2</characteristic>
-            <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">2+</characteristic>
-            <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">1</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="bdb1-b6e1-9773-f89d" name="Commander" hidden="false" targetId="9501d65d-30ac-43cf-a8ba-cb5c3a5e9f29" type="rule"/>
-        <infoLink id="9340-5b87-023b-b89a" name="Inspire (X)" hidden="false" targetId="d16f4b5d-89fd-4c84-8b4f-bce603816cf8" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Inspire (8&quot;)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="e619-845b-049d-9a24" name="Invulnerable Save (X)" hidden="false" targetId="336f61d9-f104-4e49-888d-72b222b7565c" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Invulnerable Save (6+)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="1c41-c086-1fb3-d74d" name="Master Tactician" hidden="false" targetId="66564d31-c529-4730-89b5-cce45f6863be" type="rule"/>
-      </infoLinks>
-      <entryLinks>
-        <entryLink id="9350-4082-19aa-81fb" name="Omnissian Axe" hidden="false" collective="false" import="true" targetId="c171-2565-4cad-0361" type="selectionEntry">
+        <entryLink id="a4dc-f740-63c9-5646" name="Eradication Ray" hidden="false" collective="false" import="true" targetId="1a3e-051d-1b32-7455" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0d2-a120-c50c-7f9d" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="263d-3984-f017-9d87" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0745-27c8-be48-591b" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6dda-9be5-208d-4b1b" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="6e30-41d8-c388-71c1" name="Eradication Ray" hidden="false" collective="false" import="true" targetId="1a3e-051d-1b32-7455" type="selectionEntry">
+        <entryLink id="7fd6-a95b-cd32-6f27" name="Omnissian Axe" hidden="false" collective="false" import="true" targetId="c171-2565-4cad-0361" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc90-2760-f59a-6f4e" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79c9-ed52-74bb-ef80" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52a4-86d4-c1aa-b527" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="22b4-52fd-b4ca-0202" type="min"/>
           </constraints>
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="17.0"/>
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="25.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c171-2565-4cad-0361" name="Omnissian Axe" hidden="false" collective="false" import="true" type="upgrade">
@@ -547,13 +527,12 @@
             <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">1</characteristic>
             <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">4+</characteristic>
             <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-3</characteristic>
-            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Anti-tank, Demolisher</characteristic>
+            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Light AT</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="7110-930c-2f64-cf96" name="Anti-tank" hidden="false" targetId="bea2b218-c79e-4c95-9405-8461a8779800" type="rule"/>
-        <infoLink id="1e69-a337-ba9b-8aad" name="Demolisher" hidden="false" targetId="788-9d12-3358-b236" type="rule"/>
+        <infoLink id="0533-b518-e4da-17a2" name="Light AT" hidden="false" targetId="58c6bbe7-51c3-4eff-aa9f-a5c17b976571" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
@@ -564,54 +543,105 @@
       <infoLinks>
         <infoLink id="f09d-5d80-b2b0-07d8" name="Line" hidden="false" targetId="994bb804-192b-4b85-beab-a07282102470" type="rule"/>
         <infoLink id="e570-2a40-bb40-653e" name="Scout" hidden="false" targetId="ea1-6996-9b3e-1dc1" type="rule"/>
-      </infoLinks>
-      <entryLinks>
-        <entryLink id="7b1d-1864-85db-9831" name="Tech-Priest Dominus" hidden="false" collective="false" import="true" targetId="1247-1f84-4b6f-b9fb" type="selectionEntry">
+        <infoLink id="a81f-1194-ec35-d0e9" name="Commander" hidden="false" targetId="9501d65d-30ac-43cf-a8ba-cb5c3a5e9f29" type="rule"/>
+        <infoLink id="5eda-972e-61d5-66e6" name="Inspire (X)" hidden="false" targetId="d16f4b5d-89fd-4c84-8b4f-bce603816cf8" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Inspire (8&quot;)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="b4b4-e112-4d73-a198" name="Invulnerable Save (X)" hidden="false" targetId="336f61d9-f104-4e49-888d-72b222b7565c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Invulnerable Save (6+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="861b-1cb2-72da-a93a" name="Master Tactician" hidden="false" targetId="66564d31-c529-4730-89b5-cce45f6863be" type="rule"/>
+        <infoLink id="ec82-e9d6-4783-db30" name="Tech-Priest Dominus" hidden="false" targetId="b4c4-de68-128a-9a14" type="profile">
           <modifiers>
             <modifier type="set" field="name" value="Tech-Priest Dominus w/ Skitarii Rangers"/>
           </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b30a-12e3-aae8-f1c5" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8606-eba9-535b-af21" type="min"/>
-          </constraints>
-        </entryLink>
+        </infoLink>
+      </infoLinks>
+      <entryLinks>
         <entryLink id="ebe8-1e76-5318-0029" name="Galvanic Rifles" hidden="false" collective="false" import="true" targetId="c7fb-fbf9-e8be-fe0e" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5daf-9270-7b18-88b8" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba76-dbd1-7a8b-f181" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="29b8-3917-8120-03ff" name="Eradication Ray" hidden="false" collective="false" import="true" targetId="1a3e-051d-1b32-7455" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c648-ec42-19d4-c77d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="665e-91aa-8a4a-98eb" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="6bd1-51ea-9e5c-3ce5" name="Omnissian Axe" hidden="false" collective="false" import="true" targetId="c171-2565-4cad-0361" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="55e6-8aa7-e696-3861" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f3a0-acaa-5582-bb23" type="min"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
-        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="23.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3b8e-760d-86d0-a06f" name="Skitarii Vanguard w/ Tech-Priest Dominus" hidden="false" collective="false" import="true" type="model">
       <infoLinks>
         <infoLink id="401d-98d5-7b73-5b68" name="Line" hidden="false" targetId="994bb804-192b-4b85-beab-a07282102470" type="rule"/>
-      </infoLinks>
-      <entryLinks>
-        <entryLink id="17f0-d5d6-21dc-b344" name="Tech-Priest Dominus" hidden="false" collective="false" import="true" targetId="1247-1f84-4b6f-b9fb" type="selectionEntry">
+        <infoLink id="bcc9-6f7d-9a25-1fde" name="Tech-Priest Dominus" hidden="false" targetId="b4c4-de68-128a-9a14" type="profile">
           <modifiers>
             <modifier type="set" field="name" value="Tech-Priest Dominus w/ Skitarii Vanguard"/>
           </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2338-9f42-d5ff-a70a" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="70c4-60c5-193e-17c5" type="min"/>
-          </constraints>
-        </entryLink>
+        </infoLink>
+        <infoLink id="5b20-9df8-a4ac-df00" name="Commander" hidden="false" targetId="9501d65d-30ac-43cf-a8ba-cb5c3a5e9f29" type="rule"/>
+        <infoLink id="3e94-d0f3-9684-dbdc" name="Inspire (X)" hidden="false" targetId="d16f4b5d-89fd-4c84-8b4f-bce603816cf8" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Inspire (8&quot;)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="ac72-8b43-1be6-543a" name="Invulnerable Save (X)" hidden="false" targetId="336f61d9-f104-4e49-888d-72b222b7565c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Invulnerable Save (6+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="2894-dc88-938b-48f1" name="Master Tactician" hidden="false" targetId="66564d31-c529-4730-89b5-cce45f6863be" type="rule"/>
+      </infoLinks>
+      <entryLinks>
         <entryLink id="895f-563d-833b-5f4c" name="Radium Carbines" hidden="false" collective="false" import="true" targetId="4cd7-b981-7972-ad21" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="25cd-0889-efd0-00fb" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="38cd-7946-e567-b3fa" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="d2e5-807b-0212-4873" name="Eradication Ray" hidden="false" collective="false" import="true" targetId="1a3e-051d-1b32-7455" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="206b-8da9-37f2-27c1" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4753-d288-400a-8666" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="4b3f-99f6-7301-eec4" name="Omnissian Axe" hidden="false" collective="false" import="true" targetId="c171-2565-4cad-0361" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1502-a6ad-fbb6-a341" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="744a-9ce7-9221-8437" type="min"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
-        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="23.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
+  <sharedProfiles>
+    <profile id="b4c4-de68-128a-9a14" name="Tech-Priest Dominus" hidden="false" typeId="746bcfa7-66de-4644-97e8-07da9cec42b6" typeName="Detachment">
+      <characteristics>
+        <characteristic name="Move" typeId="d2bd2fb5-fd8a-4566-842e-dd987e88f298">5&quot;</characteristic>
+        <characteristic name="Sv" typeId="2d7dcb0f-f0aa-4ab9-8c47-b3db3f611a39">5+</characteristic>
+        <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+2</characteristic>
+        <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">2+</characteristic>
+        <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">1</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
 </catalogue>
