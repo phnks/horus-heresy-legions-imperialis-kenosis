@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="30cb-c173-1e8e-037f" name="Adeptus Mechanicus" revision="16" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="34" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="30cb-c173-1e8e-037f" name="Adeptus Mechanicus" revision="17" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="34" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="9dea-9582-0c62-6092" name="Scout Battle Maniple Detachment" hidden="false" collective="false" import="true" type="unit">
       <constraints>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="523c-e865-b9be-46cb" type="min"/>
         <constraint field="1804a1ce-97f8-474c-bef5-d308d28bd093" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bbfd-e9c6-daef-6d42" type="max"/>
         <constraint field="1804a1ce-97f8-474c-bef5-d308d28bd093" scope="parent" value="-3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10af-a011-179e-3d8e" type="min"/>
       </constraints>
@@ -35,7 +34,6 @@
     </selectionEntry>
     <selectionEntry id="e69e-2ac2-19fb-d750" name="Vanguard Battle Maniple Detachment" hidden="false" collective="false" import="true" type="unit">
       <constraints>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef93-d98c-5532-a2aa" type="min"/>
         <constraint field="1804a1ce-97f8-474c-bef5-d308d28bd093" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c5b9-f375-530c-038d" type="max"/>
         <constraint field="1804a1ce-97f8-474c-bef5-d308d28bd093" scope="parent" value="-3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5725-8c9b-bed2-b269" type="min"/>
       </constraints>
@@ -66,9 +64,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="8620-a445-f8a6-be72" name="Myrmidon Detachment" hidden="false" collective="false" import="true" type="unit">
-      <constraints>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="66cc-b0c8-1d09-b3fa" type="min"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="0efe-c1b2-4b32-b31c" name="Infantry (1)" hidden="false" targetId="3e3d12cf-27be-4415-af5e-e47be58e343c" primary="false"/>
         <categoryLink id="c3fa-f643-ac49-1b8d" name="New CategoryLink" hidden="false" targetId="ae9be095-043a-4fd4-b809-d160d4b5e1fa" primary="true"/>
@@ -144,10 +139,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="eac6-7ce4-8a15-a428" name="Battle Maniple Command Detachment" hidden="false" collective="false" import="true" type="unit">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6bb9-4329-2ee7-4eb9" type="min"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c7f-c8d8-72b4-ce7f" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="47ba-ad5b-7d13-144c" name="Infantry (1)" hidden="false" targetId="3e3d12cf-27be-4415-af5e-e47be58e343c" primary="false"/>
         <categoryLink id="7ec0-63f1-44f3-64de" name="New CategoryLink" hidden="false" targetId="d950-ad23-9b2-9325" primary="true"/>

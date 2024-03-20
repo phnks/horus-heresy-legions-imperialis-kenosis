@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d70e008e-64a5-4e51-ac3e-7c35e5d2e0f4" name="Strategic Assets" revision="19" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d70e008e-64a5-4e51-ac3e-7c35e5d2e0f4" name="Strategic Assets" revision="20" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="34" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="757d2bdd-f3bf-49ad-a93b-63a124cbf603" name="Titan (5)" hidden="false"/>
     <categoryEntry id="78b89726-6a6c-4914-b075-1baea7eb4070" name="Knight (4)" hidden="false"/>
@@ -70,6 +70,7 @@
                     <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+10</characteristic>
                     <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">-</characteristic>
                     <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">4</characteristic>
+                    <characteristic name="Traits" typeId="060a-0c06-20a0-e62c"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -491,6 +492,7 @@
             <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+10</characteristic>
             <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">-</characteristic>
             <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">4</characteristic>
+            <characteristic name="Traits" typeId="060a-0c06-20a0-e62c"/>
           </characteristics>
         </profile>
       </profiles>
@@ -667,6 +669,7 @@
             <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+12</characteristic>
             <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">-</characteristic>
             <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">5</characteristic>
+            <characteristic name="Traits" typeId="060a-0c06-20a0-e62c"/>
           </characteristics>
         </profile>
       </profiles>
@@ -997,6 +1000,7 @@
             <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+12</characteristic>
             <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">-</characteristic>
             <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">5</characteristic>
+            <characteristic name="Traits" typeId="060a-0c06-20a0-e62c"/>
           </characteristics>
         </profile>
       </profiles>
@@ -1126,6 +1130,7 @@
             <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+14</characteristic>
             <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">-</characteristic>
             <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">6</characteristic>
+            <characteristic name="Traits" typeId="060a-0c06-20a0-e62c"/>
           </characteristics>
         </profile>
       </profiles>
@@ -1160,16 +1165,6 @@
     </selectionEntry>
     <selectionEntry id="415d2031-9259-407d-9e69-8f82107fcd4e" name="Questoris Knight Banner" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="set" field="dc992662-6d4b-4120-a6a2-9acf4516238a" value="360">
-          <conditions>
-            <condition field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="954a8ad9-8c9b-49ab-9114-15ffe3161ce0" type="equalTo"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" field="dc992662-6d4b-4120-a6a2-9acf4516238a" value="520.0">
-          <conditions>
-            <condition field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="954a8ad9-8c9b-49ab-9114-15ffe3161ce0" type="greaterThan"/>
-          </conditions>
-        </modifier>
         <modifier type="remove" field="category" value="4df5be74-f6f9-448b-8a05-4336c54baa7d">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7463c8ee-68d1-4659-b949-2a93f386e957" type="instanceOf"/>
@@ -1686,6 +1681,7 @@
       </selectionEntryGroups>
       <costs>
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="880610fa-5974-4039-ad08-e523cf50dd65" name="Cerastus Knight Banner" hidden="false" collective="false" import="true" type="unit">
@@ -1753,6 +1749,7 @@
                     <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+11</characteristic>
                     <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">2</characteristic>
                     <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">3</characteristic>
+                    <characteristic name="Traits" typeId="060a-0c06-20a0-e62c"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1860,6 +1857,7 @@
                     <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+11</characteristic>
                     <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">2</characteristic>
                     <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">3</characteristic>
+                    <characteristic name="Traits" typeId="060a-0c06-20a0-e62c"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1947,6 +1945,7 @@
                     <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+11</characteristic>
                     <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">2</characteristic>
                     <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">3</characteristic>
+                    <characteristic name="Traits" typeId="060a-0c06-20a0-e62c"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2032,6 +2031,7 @@
                     <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+11</characteristic>
                     <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">2</characteristic>
                     <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">3</characteristic>
+                    <characteristic name="Traits" typeId="060a-0c06-20a0-e62c"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2177,6 +2177,7 @@
                     <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+7</characteristic>
                     <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">2+</characteristic>
                     <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">3</characteristic>
+                    <characteristic name="Traits" typeId="060a-0c06-20a0-e62c"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2311,6 +2312,7 @@
                     <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+7</characteristic>
                     <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">2+</characteristic>
                     <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">3</characteristic>
+                    <characteristic name="Traits" typeId="060a-0c06-20a0-e62c"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2504,6 +2506,7 @@
             <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+14</characteristic>
             <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">-</characteristic>
             <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">6</characteristic>
+            <characteristic name="Traits" typeId="060a-0c06-20a0-e62c"/>
           </characteristics>
         </profile>
       </profiles>
@@ -2654,6 +2657,7 @@
             <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+18</characteristic>
             <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">-</characteristic>
             <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">7</characteristic>
+            <characteristic name="Traits" typeId="060a-0c06-20a0-e62c"/>
           </characteristics>
         </profile>
       </profiles>
@@ -2785,6 +2789,7 @@
             <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+18</characteristic>
             <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">-</characteristic>
             <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">7</characteristic>
+            <characteristic name="Traits" typeId="060a-0c06-20a0-e62c"/>
           </characteristics>
         </profile>
       </profiles>
@@ -3180,6 +3185,7 @@
             <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+6</characteristic>
             <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">2+</characteristic>
             <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">2</characteristic>
+            <characteristic name="Traits" typeId="060a-0c06-20a0-e62c"/>
           </characteristics>
         </profile>
       </profiles>
@@ -3281,6 +3287,7 @@
             <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+6</characteristic>
             <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">2+</characteristic>
             <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">2</characteristic>
+            <characteristic name="Traits" typeId="060a-0c06-20a0-e62c"/>
           </characteristics>
         </profile>
       </profiles>
@@ -4215,6 +4222,7 @@
         <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+8</characteristic>
         <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">2+</characteristic>
         <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">3</characteristic>
+        <characteristic name="Traits" typeId="060a-0c06-20a0-e62c"/>
       </characteristics>
     </profile>
   </sharedProfiles>
