@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4733-f9f6-faa7-ae42" name="Chaos: Death Guard" revision="13" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4733-f9f6-faa7-ae42" name="Chaos: Death Guard" revision="16" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="34" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="39bd-547d-3d4d-5ffb" name="Death Guard Sepis Cohort" hidden="false">
       <rules>
@@ -135,7 +135,7 @@
         <categoryLink id="f57d-3a95-ee93-0dff" name="Infantry (1)" hidden="false" targetId="3e3d12cf-27be-4415-af5e-e47be58e343c" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="41aa-931b-0b46-8e7b" name="Models" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="41aa-931b-0b46-8e7b" name="Models" hidden="false" collective="false" import="true" defaultSelectionEntryId="1092-717b-30e0-d187">
           <constraints>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6eaa-834a-0951-cbfc" type="min"/>
             <constraint field="selections" scope="parent" value="12.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d203-f222-9bab-f436" type="max"/>
@@ -179,7 +179,7 @@
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
-            <selectionEntryGroup id="e0c1-1862-0083-c38b" name="Rhinos" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="e0c1-1862-0083-c38b" name="Rhinos" hidden="false" collective="false" import="true" defaultSelectionEntryId="880c-74bb-8bad-3921">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
@@ -223,7 +223,7 @@
         <categoryLink id="81c9-ea25-8fdf-d15d" name="New CategoryLink" hidden="false" targetId="ae9be095-043a-4fd4-b809-d160d4b5e1fa" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="1bb8-5e88-e337-6d29" name="Models" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="1bb8-5e88-e337-6d29" name="Models" hidden="false" collective="false" import="true" defaultSelectionEntryId="2e27-17ed-6acc-f452">
           <constraints>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b4c9-a603-736a-9cad" type="min"/>
             <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc36-83ad-7ba0-7589" type="max"/>
@@ -251,7 +251,7 @@
         <categoryLink id="3725-ed1b-4f53-a2fa" name="Vehicle (2)" hidden="false" targetId="49b3-dae7-33f8-f8e" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="31aa-e415-12c7-acf1" name="Models" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="31aa-e415-12c7-acf1" name="Models" hidden="false" collective="false" import="true" defaultSelectionEntryId="123a-61c3-39d4-df65">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d36c-bbf2-52bf-5471" type="min"/>
           </constraints>
@@ -291,6 +291,7 @@
       </selectionEntryGroups>
       <costs>
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
@@ -304,6 +305,7 @@
             <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+2</characteristic>
             <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">2+</characteristic>
             <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">1</characteristic>
+            <characteristic name="Traits" typeId="060a-0c06-20a0-e62c">Feel No Pain, Implacable</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -336,6 +338,7 @@
             <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+0</characteristic>
             <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">-</characteristic>
             <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">1</characteristic>
+            <characteristic name="Traits" typeId="060a-0c06-20a0-e62c">Feel No Pain, Furious Charge, Subordinate</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -386,6 +389,7 @@
             <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+4</characteristic>
             <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">2+</characteristic>
             <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">1</characteristic>
+            <characteristic name="Traits" typeId="060a-0c06-20a0-e62c">Bulky, Feel No Pain, Implacable, Invulnerable Save (6+), Steadfast</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -469,6 +473,7 @@
             <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+0</characteristic>
             <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">2+</characteristic>
             <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">1</characteristic>
+            <characteristic name="Traits" typeId="060a-0c06-20a0-e62c">Disgustingly Resilient, Transport (2)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -484,43 +489,16 @@
         <categoryLink id="dd49-10d8-f672-08fa" name="Vehicle (2)" hidden="false" targetId="49b3-dae7-33f8-f8e" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="0a5c-dfd0-bdd4-36a5" name="Pintle Mounted Combi-Bolter" hidden="false" collective="false" import="true" targetId="57e9-dfd9-04c9-0490" type="selectionEntry">
+        <entryLink id="77a5-31bf-f5fe-f59d" name="Pintle Mounted Combi-Bolter" hidden="false" collective="false" import="true" targetId="30dd-f172-ff2a-4be6" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="508c-9e47-d47e-df81" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d27-a363-4eb4-507a" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f002-86a1-4147-d68e" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="07f2-53d7-72a2-b332" type="min"/>
           </constraints>
         </entryLink>
       </entryLinks>
       <costs>
         <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="12.0"/>
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="-2.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="57e9-dfd9-04c9-0490" name="Pintle Mounted Combi-Bolter" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="1876-39ab-b54b-9edb" name="Pintle Mounted Combi-Bolter" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">8&quot;</characteristic>
-            <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">1</characteristic>
-            <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">5+</characteristic>
-            <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">0</characteristic>
-            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Arc (Front), Assault, Light, Point Defence</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="13d9-3dfd-2319-0580" name="Assault" hidden="false" targetId="db223b76-7613-4dce-ac45-f28d7a03dc16" type="rule"/>
-        <infoLink id="6b5c-d6b6-3a44-6a04" name="Light" hidden="false" targetId="bb25fe8e-6b0a-40a9-bc11-d9508716ded5" type="rule"/>
-        <infoLink id="d0b9-24d8-44f6-0d24" name="Point Defence" hidden="false" targetId="ddbfcec5-daab-4124-abb7-0eb88a1960e6" type="rule"/>
-        <infoLink id="30d7-185c-3d19-4ee7" name="Arc (Front/Rear)" hidden="false" targetId="4b5a744f-9cc6-4201-9423-f3c580a16854" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Arc (Front)"/>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
-      <costs>
-        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
-        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f289-2de8-8af8-d997" name="Plagueburst Crawler" hidden="false" collective="false" import="true" type="model">
@@ -532,6 +510,7 @@
             <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+2</characteristic>
             <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">3+</characteristic>
             <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">1</characteristic>
+            <characteristic name="Traits" typeId="060a-0c06-20a0-e62c">Disgustingly Resilient, Explorator Adaption</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -540,16 +519,22 @@
         <infoLink id="3930-46dc-cdfe-34c6" name="Disgustingly Resilient" hidden="false" targetId="18f5-c278-291e-0e9d" type="rule"/>
       </infoLinks>
       <entryLinks>
-        <entryLink id="966d-7d7c-f607-cdf1" name="Sponson Mounted Entropy Cannons" hidden="false" collective="false" import="true" targetId="59d7-9bd2-c0b0-7c96" type="selectionEntry">
+        <entryLink id="966d-7d7c-f607-cdf1" name="Entropy Cannons" hidden="false" collective="false" import="true" targetId="59d7-9bd2-c0b0-7c96" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad3c-2c29-b656-6b62" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="58b5-2d0e-7496-8df6" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="8964-0bac-2f0c-7296" name="Plagueburst Mortar" hidden="false" collective="false" import="true" targetId="adec-b633-88b7-2b4c" type="selectionEntry">
+        <entryLink id="8964-0bac-2f0c-7296" name="Hull Mounted Plagueburst Mortar" hidden="false" collective="false" import="true" targetId="adec-b633-88b7-2b4c" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d71-6e9f-bab3-ba69" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d210-b809-2200-a3f2" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="43bd-4b12-22ea-3d7e" name="Rothail Volley Gun" hidden="false" collective="false" import="true" targetId="b8ad-57a9-9861-b7ce" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5554-62be-cc01-394c" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd66-2e0d-c1b7-c59d" type="min"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -558,9 +543,9 @@
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="59d7-9bd2-c0b0-7c96" name="Sponson Mounted Entropy Cannons" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="59d7-9bd2-c0b0-7c96" name="Entropy Cannons" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="3058-afff-d84f-1474" name="Sponson Mounted Entropy Cannons" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
+        <profile id="3058-afff-d84f-1474" name="Entropy Cannons" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">22&quot;</characteristic>
             <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">1</characteristic>
@@ -603,6 +588,32 @@
         </infoLink>
         <infoLink id="ac83-3cb6-fdb7-015e" name="Barrage" hidden="false" targetId="df28f074-c82b-418a-8fa6-25754402ada8" type="rule"/>
         <infoLink id="f39d-33d2-ac0d-b4e5" name="Ignores Cover" hidden="false" targetId="6a7e8b3f-d8bd-4d50-aec6-f4893069b255" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b8ad-57a9-9861-b7ce" name="Rothail Volley Gun" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="1905-2ab1-13b5-bde5" name="Rothail Volley Gun" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">14&quot;</characteristic>
+            <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">1</characteristic>
+            <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">5+</characteristic>
+            <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">0</characteristic>
+            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Arc (Front), Light, Point Defence</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="ffc8-1758-06ff-5f24" name="Arc (Front/Rear)" hidden="false" targetId="4b5a744f-9cc6-4201-9423-f3c580a16854" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Arc (Front)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="cd93-b154-d6ba-6117" name="Point Defence" hidden="false" targetId="ddbfcec5-daab-4124-abb7-0eb88a1960e6" type="rule"/>
+        <infoLink id="17d9-7fe1-2844-5103" name="Light" hidden="false" targetId="bb25fe8e-6b0a-40a9-bc11-d9508716ded5" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
