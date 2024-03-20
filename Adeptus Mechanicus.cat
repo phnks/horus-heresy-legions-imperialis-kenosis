@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="30cb-c173-1e8e-037f" name="Adeptus Mechanicus" revision="15" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="34" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="30cb-c173-1e8e-037f" name="Adeptus Mechanicus" revision="16" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="34" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="9dea-9582-0c62-6092" name="Scout Battle Maniple Detachment" hidden="false" collective="false" import="true" type="unit">
       <constraints>
@@ -143,25 +143,11 @@
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1af4-c1c9-27c8-bbda" name="Dominus Secutor Detachment" hidden="false" collective="false" import="true" type="unit">
-      <categoryLinks>
-        <categoryLink id="7a97-c65b-c9b8-e4c5" name="Infantry (1)" hidden="false" targetId="3e3d12cf-27be-4415-af5e-e47be58e343c" primary="false"/>
-        <categoryLink id="8793-4de0-1fff-521e" name="New CategoryLink" hidden="false" targetId="d950-ad23-9b2-9325" primary="true"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="d956-3f18-ce95-fe8f" name="Myrmidon Secutors w/ Tech-Priest Dominus" hidden="false" collective="false" import="true" targetId="bc23-72aa-358b-653d" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="989b-d933-7ea0-fb3c" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e43-a85f-0a59-354c" type="min"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
-        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="eac6-7ce4-8a15-a428" name="Dominus Scout Detachment" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="eac6-7ce4-8a15-a428" name="Battle Maniple Command Detachment" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6bb9-4329-2ee7-4eb9" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c7f-c8d8-72b4-ce7f" type="max"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="47ba-ad5b-7d13-144c" name="Infantry (1)" hidden="false" targetId="3e3d12cf-27be-4415-af5e-e47be58e343c" primary="false"/>
         <categoryLink id="7ec0-63f1-44f3-64de" name="New CategoryLink" hidden="false" targetId="d950-ad23-9b2-9325" primary="true"/>
@@ -170,25 +156,16 @@
         <entryLink id="5135-c963-9ccf-6054" name="Skitarii Rangers w/ Tech-Priest Dominus" hidden="false" collective="false" import="true" targetId="8f64-fd77-070f-9f9e" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0b2-5d71-75f9-c287" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f0b-a36d-c9c6-a6ae" type="min"/>
           </constraints>
         </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
-        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="f53f-550b-a927-56eb" name="Dominus Vanguard Detachment" hidden="false" collective="false" import="true" type="unit">
-      <categoryLinks>
-        <categoryLink id="f41f-1101-ff85-e033" name="Infantry (1)" hidden="false" targetId="3e3d12cf-27be-4415-af5e-e47be58e343c" primary="false"/>
-        <categoryLink id="9f09-0104-9d08-bbf4" name="New CategoryLink" hidden="false" targetId="d950-ad23-9b2-9325" primary="true"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="3eb8-7d18-937a-30dc" name="Skitarii Vanguard w/ Tech-Priest Dominus" hidden="false" collective="false" import="true" targetId="3b8e-760d-86d0-a06f" type="selectionEntry">
+        <entryLink id="71e5-8759-568c-78e0" name="Myrmidon Secutors w/ Tech-Priest Dominus" hidden="false" collective="false" import="true" targetId="bc23-72aa-358b-653d" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8939-2c59-c534-a773" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="13f3-c04e-7775-b4a0" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f77-8c14-ef3e-223b" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="c8b5-10e7-26f5-16a2" name="Skitarii Vanguard w/ Tech-Priest Dominus" hidden="false" collective="false" import="true" targetId="3b8e-760d-86d0-a06f" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f30c-75ac-98fb-5175" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>

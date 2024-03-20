@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4733-f9f6-faa7-ae42" name="Chaos: Death Guard" revision="16" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="34" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4733-f9f6-faa7-ae42" name="Chaos: Death Guard" revision="17" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="34" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="39bd-547d-3d4d-5ffb" name="Death Guard Sepis Cohort" hidden="false">
       <rules>
@@ -294,6 +294,33 @@
         <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="d7b0-ebf4-0fd0-a9e5" name="Colony Command Detachment" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b4d6-228a-b137-1bf8" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2409-a742-fafd-90a7" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="5f8f-b196-419c-ff46" name="New CategoryLink" hidden="false" targetId="d950-ad23-9b2-9325" primary="true"/>
+        <categoryLink id="2182-f458-8317-edbb" name="Infantry (1)" hidden="false" targetId="3e3d12cf-27be-4415-af5e-e47be58e343c" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="8b97-9f68-7464-492d" name="Plague Marines w/ Lord of Contagion" hidden="false" collective="false" import="true" targetId="26d9-bf99-cd1d-0267" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="340a-7543-89ba-7112" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="df5c-a91a-6be1-fd24" name="Blightlord Terminators w/ Lord of Contagion" hidden="false" collective="false" import="true" targetId="6aa4-9554-13d1-4318" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b4e0-f13c-aae6-b4ee" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="b207-7a0f-f7b2-d242" name="Pox Walkers w/ Lord of Contagion" hidden="false" collective="false" import="true" targetId="7367-f3a3-9674-91de" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac28-7348-221d-8857" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry id="f00b-af41-73e7-c6d5" name="Plague Marines" hidden="false" collective="false" import="true" type="model">
@@ -459,6 +486,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="6dc4-6613-c2a8-21ff" name="Rend" hidden="false" targetId="b1094ac5-aa6f-45ff-9360-9e9cad6491af" type="rule"/>
+      </infoLinks>
       <costs>
         <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
@@ -620,10 +650,172 @@
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="26d9-bf99-cd1d-0267" name="Plague Marines w/ Lord of Contagion" hidden="false" collective="false" import="true" type="model">
+      <infoLinks>
+        <infoLink id="45d2-b453-0402-3d3f" name="Bulky" hidden="false" targetId="e8e6-1f3a-a46-9aa0" type="rule"/>
+        <infoLink id="c299-b0ec-a92a-6720" name="Implacable" hidden="false" targetId="c5dc7dc8-1358-4fab-9167-abb36b8184a2" type="rule"/>
+        <infoLink id="43df-fd9e-c7a1-045c" name="Steadfast" hidden="false" targetId="4350ea8f-f741-44f9-b51b-9da9b07e9a11" type="rule"/>
+        <infoLink id="cb71-5f97-5491-9cb8" name="Lord of Contagion" hidden="false" targetId="985b-18c9-fa8f-9f97" type="profile">
+          <modifiers>
+            <modifier type="set" field="name" value="Plague Marines w/ Lord of Contagion"/>
+            <modifier type="set" field="060a-0c06-20a0-e62c" value="Commander, Inspire (8&quot;), Invulnerable Save (6+), Bulky, Implacable, Steadfast, Feel No Pain"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="4a58-6213-8132-98f4" name="Commander" hidden="false" targetId="9501d65d-30ac-43cf-a8ba-cb5c3a5e9f29" type="rule"/>
+        <infoLink id="8216-54eb-9d8b-2863" name="Inspire (X)" hidden="false" targetId="d16f4b5d-89fd-4c84-8b4f-bce603816cf8" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Inspire (8&quot;)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="8d7a-c55a-322d-e93e" name="Invulnerable Save (X)" hidden="false" targetId="336f61d9-f104-4e49-888d-72b222b7565c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Invulnerable Save (6+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="1021-dc58-3e59-3066" name="Feel No Pain" hidden="false" targetId="43073af9-85d3-497c-818d-35eaffdc41f7" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="0a4a-64c5-7549-283b" name="Bolters" hidden="false" collective="false" import="true" targetId="f284-bbb1-291c-349e" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f13e-356c-47f8-fd92" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e311-0aae-ac70-ffc8" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="fa0e-1f7b-ea28-0fab" name="Plaguereaper" hidden="false" collective="false" import="true" targetId="c393-eb8c-e079-d688" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d97c-7ee2-126c-a7c5" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0901-fff4-0827-8b8c" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="27.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c393-eb8c-e079-d688" name="Plaguereaper" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="ed29-d393-dea1-80f3" name="Plaguereaper" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">-</characteristic>
+            <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">-</characteristic>
+            <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">-</characteristic>
+            <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-</characteristic>
+            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Rend</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="3786-b6a2-038d-152f" name="Rend" hidden="false" targetId="b1094ac5-aa6f-45ff-9360-9e9cad6491af" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6aa4-9554-13d1-4318" name="Blightlord Terminators w/ Lord of Contagion" hidden="false" collective="false" import="true" type="model">
+      <infoLinks>
+        <infoLink id="fdfc-88ca-5313-6e39" name="Bulky" hidden="false" targetId="e8e6-1f3a-a46-9aa0" type="rule"/>
+        <infoLink id="fbb3-5f2f-290f-7aea" name="Implacable" hidden="false" targetId="c5dc7dc8-1358-4fab-9167-abb36b8184a2" type="rule"/>
+        <infoLink id="2492-5aa6-9d52-d84a" name="Steadfast" hidden="false" targetId="4350ea8f-f741-44f9-b51b-9da9b07e9a11" type="rule"/>
+        <infoLink id="e168-d459-ed72-a0ed" name="Lord of Contagion" hidden="false" targetId="985b-18c9-fa8f-9f97" type="profile">
+          <modifiers>
+            <modifier type="set" field="name" value="Blightlord Terminators w/ Lord of Contagion"/>
+            <modifier type="set" field="060a-0c06-20a0-e62c" value="Commander, Inspire (8&quot;), Invulnerable Save (6+), Bulky, Implacable, Steadfast, Feel No Pain"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="52e8-ccd7-bb17-0399" name="Commander" hidden="false" targetId="9501d65d-30ac-43cf-a8ba-cb5c3a5e9f29" type="rule"/>
+        <infoLink id="2ac7-0208-1ee8-6224" name="Inspire (X)" hidden="false" targetId="d16f4b5d-89fd-4c84-8b4f-bce603816cf8" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Inspire (8&quot;)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="52b6-4bf1-626e-3322" name="Invulnerable Save (X)" hidden="false" targetId="336f61d9-f104-4e49-888d-72b222b7565c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Invulnerable Save (6+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="a5ee-93e4-22f6-d26b" name="Feel No Pain" hidden="false" targetId="43073af9-85d3-497c-818d-35eaffdc41f7" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="2303-6ee0-f858-1dea" name="Plaguereaper" hidden="false" collective="false" import="true" targetId="c393-eb8c-e079-d688" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4951-36fb-44d4-f1e6" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="291a-33da-9444-20a5" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="e05f-72f2-05ba-43d3" name="Plaguespewers" hidden="false" collective="false" import="true" targetId="f5a1-3c7f-4fdf-2058" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ad5-dd0e-cfed-db4f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c1d6-2fe6-8061-2bc1" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="27.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7367-f3a3-9674-91de" name="Pox Walkers w/ Lord of Contagion" hidden="false" collective="false" import="true" type="model">
+      <infoLinks>
+        <infoLink id="5a38-4f24-55ab-26f9" name="Bulky" hidden="false" targetId="e8e6-1f3a-a46-9aa0" type="rule"/>
+        <infoLink id="aeba-3cab-5560-0182" name="Implacable" hidden="false" targetId="c5dc7dc8-1358-4fab-9167-abb36b8184a2" type="rule"/>
+        <infoLink id="bfce-3f4d-9859-79c5" name="Steadfast" hidden="false" targetId="4350ea8f-f741-44f9-b51b-9da9b07e9a11" type="rule"/>
+        <infoLink id="49de-c629-840e-79fa" name="Lord of Contagion" hidden="false" targetId="985b-18c9-fa8f-9f97" type="profile">
+          <modifiers>
+            <modifier type="set" field="name" value="Pox Walkers w/ Lord of Contagion"/>
+            <modifier type="set" field="060a-0c06-20a0-e62c" value="Commander, Inspire (8&quot;), Invulnerable Save (6+), Bulky, Implacable, Steadfast, Feel No Pain, Furious Charge"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="3ceb-7738-e9dd-dfe9" name="Commander" hidden="false" targetId="9501d65d-30ac-43cf-a8ba-cb5c3a5e9f29" type="rule"/>
+        <infoLink id="53f1-03c0-8adf-7f92" name="Inspire (X)" hidden="false" targetId="d16f4b5d-89fd-4c84-8b4f-bce603816cf8" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Inspire (8&quot;)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="aa47-cf35-a458-94f6" name="Invulnerable Save (X)" hidden="false" targetId="336f61d9-f104-4e49-888d-72b222b7565c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Invulnerable Save (6+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="a999-00a0-5734-23c2" name="Feel No Pain" hidden="false" targetId="43073af9-85d3-497c-818d-35eaffdc41f7" type="rule"/>
+        <infoLink id="a252-2e42-ddbb-54b6" name="Furious Charge" hidden="false" targetId="2b0a691d-4bbc-4f7b-8dec-a134fd9f923e" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="8423-93ed-6e99-4393" name="Plaguereaper" hidden="false" collective="false" import="true" targetId="c393-eb8c-e079-d688" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="73a6-54a6-cc79-a493" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5511-e9d3-f891-316a" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="c6fb-8d80-6703-e573" name="Improvised Weapons" hidden="false" collective="false" import="true" targetId="bff5-c4e8-5ec0-f52a" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="68c6-d46f-4ffe-2948" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b6a7-5c4a-6373-2509" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="22.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="18f5-c278-291e-0e9d" name="Disgustingly Resilient" hidden="false">
       <description>Hits scored by a weapon against a model with the Disgustingly Resilient special rule reduce their AP by 1 (to a minimum of 0). </description>
     </rule>
   </sharedRules>
+  <sharedProfiles>
+    <profile id="985b-18c9-fa8f-9f97" name="Lord of Contagion" hidden="false" typeId="746bcfa7-66de-4644-97e8-07da9cec42b6" typeName="Detachment">
+      <characteristics>
+        <characteristic name="Move" typeId="d2bd2fb5-fd8a-4566-842e-dd987e88f298">4&quot;</characteristic>
+        <characteristic name="Sv" typeId="2d7dcb0f-f0aa-4ab9-8c47-b3db3f611a39">4+</characteristic>
+        <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+5</characteristic>
+        <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">2+</characteristic>
+        <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">1</characteristic>
+        <characteristic name="Traits" typeId="060a-0c06-20a0-e62c">Commander, Inspire (8&quot;), Invulnerable Save (6+), Bulky, Implacable, Steadfast, Feel No Pain</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
 </catalogue>
