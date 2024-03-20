@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4733-f9f6-faa7-ae42" name="Chaos: Death Guard" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="29" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4733-f9f6-faa7-ae42" name="Chaos: Death Guard" revision="13" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="39bd-547d-3d4d-5ffb" name="Death Guard Sepis Cohort" hidden="false">
       <rules>
@@ -269,6 +269,30 @@
         <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="b8b1-9936-394b-05db" name="Plagueburst Crawler Squadron" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="78cf-ff8e-862c-7eb1" name="Battle Tank" hidden="false" targetId="32eb0e0c-78c3-4ab0-ab6a-5160a47cb924" primary="true"/>
+        <categoryLink id="82fd-ca7f-77c8-fe18" name="Vehicle (2)" hidden="false" targetId="49b3-dae7-33f8-f8e" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="afa6-e6a6-8eba-3d70" name="Models" hidden="false" collective="false" import="true" defaultSelectionEntryId="6fe6-f383-17c7-367a">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a0f-4ba9-b0ab-f7f8" type="min"/>
+            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="32f2-bf5a-3fbf-88a3" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="6fe6-f383-17c7-367a" name="Plagueburst Crawler" hidden="false" collective="false" import="true" targetId="f289-2de8-8af8-d997" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10e0-56bd-d35d-e8dc" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry id="f00b-af41-73e7-c6d5" name="Plague Marines" hidden="false" collective="false" import="true" type="model">
@@ -488,7 +512,97 @@
         <infoLink id="13d9-3dfd-2319-0580" name="Assault" hidden="false" targetId="db223b76-7613-4dce-ac45-f28d7a03dc16" type="rule"/>
         <infoLink id="6b5c-d6b6-3a44-6a04" name="Light" hidden="false" targetId="bb25fe8e-6b0a-40a9-bc11-d9508716ded5" type="rule"/>
         <infoLink id="d0b9-24d8-44f6-0d24" name="Point Defence" hidden="false" targetId="ddbfcec5-daab-4124-abb7-0eb88a1960e6" type="rule"/>
-        <infoLink id="30d7-185c-3d19-4ee7" name="Arc (Front/Rear)" hidden="false" targetId="4b5a744f-9cc6-4201-9423-f3c580a16854" type="rule"/>
+        <infoLink id="30d7-185c-3d19-4ee7" name="Arc (Front/Rear)" hidden="false" targetId="4b5a744f-9cc6-4201-9423-f3c580a16854" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Arc (Front)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f289-2de8-8af8-d997" name="Plagueburst Crawler" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="851d-3be1-ba0e-ed57" name="Plagueburst Crawler" hidden="false" typeId="746bcfa7-66de-4644-97e8-07da9cec42b6" typeName="Detachment">
+          <characteristics>
+            <characteristic name="Move" typeId="d2bd2fb5-fd8a-4566-842e-dd987e88f298">8&quot;</characteristic>
+            <characteristic name="Sv" typeId="2d7dcb0f-f0aa-4ab9-8c47-b3db3f611a39">2+</characteristic>
+            <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+2</characteristic>
+            <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">3+</characteristic>
+            <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="7c8d-9f17-04d2-30f4" name="Explorator Adaption" hidden="false" targetId="2e95f354-63d6-436c-a468-e03635c83937" type="rule"/>
+        <infoLink id="3930-46dc-cdfe-34c6" name="Disgustingly Resilient" hidden="false" targetId="18f5-c278-291e-0e9d" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="966d-7d7c-f607-cdf1" name="Sponson Mounted Entropy Cannons" hidden="false" collective="false" import="true" targetId="59d7-9bd2-c0b0-7c96" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad3c-2c29-b656-6b62" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="58b5-2d0e-7496-8df6" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="8964-0bac-2f0c-7296" name="Plagueburst Mortar" hidden="false" collective="false" import="true" targetId="adec-b633-88b7-2b4c" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d71-6e9f-bab3-ba69" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d210-b809-2200-a3f2" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="46.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="59d7-9bd2-c0b0-7c96" name="Sponson Mounted Entropy Cannons" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="3058-afff-d84f-1474" name="Sponson Mounted Entropy Cannons" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">22&quot;</characteristic>
+            <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">1</characteristic>
+            <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">4+</characteristic>
+            <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-1</characteristic>
+            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Arc (Front), Anti-Tank</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="4a39-45f7-7af5-c118" name="Arc (Front/Rear)" hidden="false" targetId="4b5a744f-9cc6-4201-9423-f3c580a16854" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Arc (Front)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="2dce-1f1b-a11c-f8d1" name="Anti-tank" hidden="false" targetId="bea2b218-c79e-4c95-9405-8461a8779800" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="adec-b633-88b7-2b4c" name="Plagueburst Mortar" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="ad88-eaba-743b-bf23" name="Plagueburst Mortar" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">30&quot;</characteristic>
+            <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">2</characteristic>
+            <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">4+</characteristic>
+            <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-1</characteristic>
+            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Arc (Front), Barrage, Ignores Cover</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="cffe-a3c1-ab8e-0452" name="Arc (Front/Rear)" hidden="false" targetId="4b5a744f-9cc6-4201-9423-f3c580a16854" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Arc (Front)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="ac83-3cb6-fdb7-015e" name="Barrage" hidden="false" targetId="df28f074-c82b-418a-8fa6-25754402ada8" type="rule"/>
+        <infoLink id="f39d-33d2-ac0d-b4e5" name="Ignores Cover" hidden="false" targetId="6a7e8b3f-d8bd-4d50-aec6-f4893069b255" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
