@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4733-f9f6-faa7-ae42" name="Chaos: Death Guard" revision="23" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4733-f9f6-faa7-ae42" name="Chaos: Death Guard" revision="24" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="39bd-547d-3d4d-5ffb" name="Death Guard Maladictum" hidden="false">
       <categoryLinks>
@@ -542,6 +542,11 @@ Two Structures can be selected in place of a single area of terrain. Each time a
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="39bd-547d-3d4d-5ffb" type="lessThan"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="8770-436e-6f77-3194" value="0.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="39bd-547d-3d4d-5ffb" type="lessThan"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8770-436e-6f77-3194" type="min"/>
@@ -579,6 +584,11 @@ Two Structures can be selected in place of a single area of terrain. Each time a
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="39bd-547d-3d4d-5ffb" type="lessThan"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="b156-9c82-fb59-a9b1" value="0.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="39bd-547d-3d4d-5ffb" type="lessThan"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b156-9c82-fb59-a9b1" type="min"/>
@@ -611,6 +621,11 @@ Two Structures can be selected in place of a single area of terrain. Each time a
     </selectionEntry>
     <selectionEntry id="0f33-1de7-72cd-6b46" name="Dedicated Transports (Death Guard Drop Pod Assault)" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
+        <modifier type="set" field="e42c-b46c-ba9b-c5a0" value="0.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4327-09cd-4b9e-8a64" type="lessThan"/>
+          </conditions>
+        </modifier>
         <modifier type="set" field="hidden" value="true">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4327-09cd-4b9e-8a64" type="lessThan"/>
