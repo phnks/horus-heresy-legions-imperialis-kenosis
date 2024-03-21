@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5df0-8413-3cb7-97df" name="Nurgle Strategic Assets" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="39" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5df0-8413-3cb7-97df" name="Nurgle Strategic Assets" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="39" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="265b-4776-0ca7-d01f" name="Nurgle Knight Household Lance" hidden="false">
       <categoryLinks>
@@ -52,7 +52,7 @@
             </modifier>
             <modifier type="decrement" field="ad42-e666-cca8-f44a" value="1.0">
               <repeats>
-                <repeat field="dc992662-6d4b-4120-a6a2-9acf4516238a" scope="roster" value="3.33" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6b49f139-82c0-402f-815b-1cf743b3e47d" repeats="1" roundUp="false"/>
+                <repeat field="dc992662-6d4b-4120-a6a2-9acf4516238a" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6b49f139-82c0-402f-815b-1cf743b3e47d" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="ad42-e666-cca8-f44a" value="1.0">
@@ -120,7 +120,7 @@
             </modifier>
             <modifier type="decrement" field="d433-8116-9932-090d" value="1.0">
               <repeats>
-                <repeat field="dc992662-6d4b-4120-a6a2-9acf4516238a" scope="roster" value="3.33" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2fdadb91-76c5-4160-88b3-b56bc092de2a" repeats="1" roundUp="false"/>
+                <repeat field="dc992662-6d4b-4120-a6a2-9acf4516238a" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2fdadb91-76c5-4160-88b3-b56bc092de2a" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="d433-8116-9932-090d" value="1.0">
