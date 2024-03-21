@@ -1,68 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d70e008e-64a5-4e51-ac3e-7c35e5d2e0f4" name="Strategic Assets" revision="28" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="39" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d70e008e-64a5-4e51-ac3e-7c35e5d2e0f4" name="Strategic Assets" revision="30" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="39" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="5e4ad6a9-f6dc-4b9d-8888-a4c02d576c71" name="Knight Household Lance" hidden="false">
       <categoryLinks>
         <categoryLink id="ddf9fc78-f5e4-4cab-b576-0508ec6e678e" name="Knight" hidden="false" targetId="2fdadb91-76c5-4160-88b3-b56bc092de2a" primary="false">
           <modifiers>
-            <modifier type="increment" field="9fa4-27fa-c6d0-5ab7" value="1.0">
-              <repeats>
-                <repeat field="dc992662-6d4b-4120-a6a2-9acf4516238a" scope="roster" value="3.33" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9fa29675-77f7-4bfd-b045-1dd4833d7c9e" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="9fa4-27fa-c6d0-5ab7" value="1.0">
-              <repeats>
-                <repeat field="dc992662-6d4b-4120-a6a2-9acf4516238a" scope="roster" value="3.33" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ae9be095-043a-4fd4-b809-d160d4b5e1fa" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="9fa4-27fa-c6d0-5ab7" value="1.0">
-              <repeats>
-                <repeat field="dc992662-6d4b-4120-a6a2-9acf4516238a" scope="roster" value="3.33" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="406ab93a-60ea-4fd5-9553-feef5a28ba12" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="9fa4-27fa-c6d0-5ab7" value="1.0">
-              <repeats>
-                <repeat field="dc992662-6d4b-4120-a6a2-9acf4516238a" scope="roster" value="3.33" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="32eb0e0c-78c3-4ab0-ab6a-5160a47cb924" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="9fa4-27fa-c6d0-5ab7" value="1.0">
-              <repeats>
-                <repeat field="dc992662-6d4b-4120-a6a2-9acf4516238a" scope="roster" value="3.33" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8416-456c-a6f-e059" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="9fa4-27fa-c6d0-5ab7" value="1.0">
-              <repeats>
-                <repeat field="dc992662-6d4b-4120-a6a2-9acf4516238a" scope="roster" value="3.33" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d950-ad23-9b2-9325" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="9fa4-27fa-c6d0-5ab7" value="1.0">
-              <repeats>
-                <repeat field="dc992662-6d4b-4120-a6a2-9acf4516238a" scope="roster" value="3.33" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e0fe110f-b15d-4340-9583-557d57cd2981" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="9fa4-27fa-c6d0-5ab7" value="1.0">
-              <repeats>
-                <repeat field="dc992662-6d4b-4120-a6a2-9acf4516238a" scope="roster" value="3.33" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="17079afa-e39f-4f33-9207-cc02fd3a3520" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="9fa4-27fa-c6d0-5ab7" value="1.0">
-              <repeats>
-                <repeat field="dc992662-6d4b-4120-a6a2-9acf4516238a" scope="roster" value="3.33" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c5ec467a-696c-49ec-9a60-dc95ee465cf5" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="9fa4-27fa-c6d0-5ab7" value="1.0">
-              <repeats>
-                <repeat field="dc992662-6d4b-4120-a6a2-9acf4516238a" scope="roster" value="3.33" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7f7126c2-fd49-4c60-ab12-b5e25b945127" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="9fa4-27fa-c6d0-5ab7" value="1.0">
-              <repeats>
-                <repeat field="dc992662-6d4b-4120-a6a2-9acf4516238a" scope="roster" value="3.33" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="45d6c947-80a0-4e29-a4be-a4089467fc2d" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
             <modifier type="decrement" field="9fa4-27fa-c6d0-5ab7" value="1.0">
               <repeats>
                 <repeat field="dc992662-6d4b-4120-a6a2-9acf4516238a" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6b49f139-82c0-402f-815b-1cf743b3e47d" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="9fa4-27fa-c6d0-5ab7" value="1.0">
+              <repeats>
+                <repeat field="dc992662-6d4b-4120-a6a2-9acf4516238a" scope="roster" value="3.33" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
           </modifiers>
@@ -80,57 +30,7 @@
           <modifiers>
             <modifier type="increment" field="ebc7-bade-0a51-6deb" value="1.0">
               <repeats>
-                <repeat field="dc992662-6d4b-4120-a6a2-9acf4516238a" scope="roster" value="3.33" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ae9be095-043a-4fd4-b809-d160d4b5e1fa" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="ebc7-bade-0a51-6deb" value="1.0">
-              <repeats>
-                <repeat field="dc992662-6d4b-4120-a6a2-9acf4516238a" scope="roster" value="3.33" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e0fe110f-b15d-4340-9583-557d57cd2981" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="ebc7-bade-0a51-6deb" value="1.0">
-              <repeats>
-                <repeat field="dc992662-6d4b-4120-a6a2-9acf4516238a" scope="roster" value="3.33" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9fa29675-77f7-4bfd-b045-1dd4833d7c9e" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="ebc7-bade-0a51-6deb" value="1.0">
-              <repeats>
-                <repeat field="dc992662-6d4b-4120-a6a2-9acf4516238a" scope="roster" value="3.33" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7f7126c2-fd49-4c60-ab12-b5e25b945127" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="ebc7-bade-0a51-6deb" value="1.0">
-              <repeats>
-                <repeat field="dc992662-6d4b-4120-a6a2-9acf4516238a" scope="roster" value="3.33" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d950-ad23-9b2-9325" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="ebc7-bade-0a51-6deb" value="1.0">
-              <repeats>
-                <repeat field="dc992662-6d4b-4120-a6a2-9acf4516238a" scope="roster" value="3.33" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8416-456c-a6f-e059" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="ebc7-bade-0a51-6deb" value="1.0">
-              <repeats>
-                <repeat field="dc992662-6d4b-4120-a6a2-9acf4516238a" scope="roster" value="3.33" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="17079afa-e39f-4f33-9207-cc02fd3a3520" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="ebc7-bade-0a51-6deb" value="1.0">
-              <repeats>
-                <repeat field="dc992662-6d4b-4120-a6a2-9acf4516238a" scope="roster" value="3.33" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c5ec467a-696c-49ec-9a60-dc95ee465cf5" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="ebc7-bade-0a51-6deb" value="1.0">
-              <repeats>
-                <repeat field="dc992662-6d4b-4120-a6a2-9acf4516238a" scope="roster" value="3.33" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="45d6c947-80a0-4e29-a4be-a4089467fc2d" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="ebc7-bade-0a51-6deb" value="1.0">
-              <repeats>
-                <repeat field="dc992662-6d4b-4120-a6a2-9acf4516238a" scope="roster" value="3.33" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="406ab93a-60ea-4fd5-9553-feef5a28ba12" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="ebc7-bade-0a51-6deb" value="1.0">
-              <repeats>
-                <repeat field="dc992662-6d4b-4120-a6a2-9acf4516238a" scope="roster" value="3.33" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="32eb0e0c-78c3-4ab0-ab6a-5160a47cb924" repeats="1" roundUp="false"/>
+                <repeat field="dc992662-6d4b-4120-a6a2-9acf4516238a" scope="roster" value="3.33" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="ebc7-bade-0a51-6deb" value="1.0">
@@ -903,483 +803,43 @@
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea81e11d-256a-4c92-bacd-a8bc21196346" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf019e79-1318-47d8-adbc-8a9fc9cd4352" type="min"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="bdb051e8-359d-4c74-8e25-dccabbd882bd" name="Knight Styrix" hidden="false" collective="false" import="true" type="model">
-              <infoLinks>
-                <infoLink id="a393a358-d525-4765-82e3-27bafd3ce95f" name="Nimble" hidden="false" targetId="4e652d67-da9f-42e6-867a-900f862cc219" type="rule"/>
-                <infoLink id="033b39d8-fc01-4cf8-9be4-e64404f0419a" name="Ion Shield (X)" hidden="false" targetId="e746d542-2673-4210-a2fb-2699ed4ecc0b" type="rule">
-                  <modifiers>
-                    <modifier type="set" field="name" value="Ion Shield (4+)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="de9d2810-6c52-4929-8597-f61bc62bff67" name="Independent" hidden="false" targetId="5a10f2e5-ecc1-4a2a-8d7d-1e5ebe972994" type="rule"/>
-                <infoLink id="d1dbc197-71b5-4e56-a093-cdda212ae3b9" name="Blessed Auto-simulacra" hidden="false" targetId="51284793-9dd5-435f-a0c1-20a5ba46daee" type="rule"/>
-                <infoLink id="470d2295-233d-4645-93eb-7ba11a5aefab" name="Questoris Knight" hidden="false" targetId="46f60590-9cb4-43c7-af68-91e19b6affbc" type="profile"/>
-              </infoLinks>
-              <selectionEntries>
-                <selectionEntry id="c08d929e-28ce-4a00-aba4-0639bda0f6d3" name="Volkite Chieorovile" hidden="false" collective="true" import="true" type="upgrade">
-                  <profiles>
-                    <profile id="d2bae529-cbb6-44ec-baa1-132bc2e3ff4d" name="Volkite Chieorovile" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
-                      <characteristics>
-                        <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">12&quot;</characteristic>
-                        <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">3</characteristic>
-                        <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">4+</characteristic>
-                        <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-2</characteristic>
-                        <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Arc (Front), Deflagrate, Light AT, Shieldbane</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
-                    <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="61c26d0a-dd73-446c-b36b-6c96de539848" name="Hekaton Siege Claw" hidden="false" collective="true" import="true" type="upgrade">
-                  <profiles>
-                    <profile id="8a1892da-1bb1-45fb-a8c7-ff278c032d27" name="Hekaton Siege Claw" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
-                      <characteristics>
-                        <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">-</characteristic>
-                        <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">-</characteristic>
-                        <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">-</characteristic>
-                        <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-5</characteristic>
-                        <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Rend, Wrecker (3)</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
-                    <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="51f3933a-3aec-4ab3-9811-81f7c719b10c" name="Graviton Gun" hidden="false" collective="true" import="true" type="upgrade">
-                  <profiles>
-                    <profile id="8b3cde38-af14-47fc-9106-5d37b8da899a" name="Graviton Gun" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
-                      <characteristics>
-                        <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">6&quot;</characteristic>
-                        <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">1</characteristic>
-                        <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">-</characteristic>
-                        <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-1</characteristic>
-                        <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Arc (Front), Graviton Pulse</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
-                    <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <costs>
-                <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="188.0"/>
-                <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="1b4607c2-75bd-4779-8bce-0e824c61afde" name="Knight Magaera" hidden="false" collective="false" import="true" type="model">
+          <entryLinks>
+            <entryLink id="c44f-59df-729c-4004" name="Knight Crusader" hidden="false" collective="false" import="true" targetId="c538-1c4f-9a49-8d58" type="selectionEntry">
               <constraints>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4eecdd05-432e-4de5-9958-c7c0c86baeba" type="max"/>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd1b-6c2c-9207-5cd9" type="max"/>
               </constraints>
-              <infoLinks>
-                <infoLink id="8a2eb9d6-c528-43b9-9108-05d69d496965" name="Blessed Auto-simulacra" hidden="false" targetId="51284793-9dd5-435f-a0c1-20a5ba46daee" type="rule"/>
-                <infoLink id="59712921-c105-40b3-8e11-1334b15050e9" name="Independent" hidden="false" targetId="5a10f2e5-ecc1-4a2a-8d7d-1e5ebe972994" type="rule"/>
-                <infoLink id="92a2192b-3a78-4b09-99c4-9b72f1a6b278" name="Nimble" hidden="false" targetId="4e652d67-da9f-42e6-867a-900f862cc219" type="rule"/>
-                <infoLink id="c3f0a53d-5383-47fa-b63a-2ddeb6f4d59d" name="Ion Shield (X)" hidden="false" targetId="e746d542-2673-4210-a2fb-2699ed4ecc0b" type="rule">
-                  <modifiers>
-                    <modifier type="set" field="name" value="Ion Shield (4+)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="45d59c32-654c-423c-8f91-c220eef907ce" name="Questoris Knight" hidden="false" targetId="46f60590-9cb4-43c7-af68-91e19b6affbc" type="profile"/>
-              </infoLinks>
-              <selectionEntries>
-                <selectionEntry id="cd4ec784-21fa-4783-a6fd-b0a6f0c79ab9" name="Hekaton Siege Claw" hidden="false" collective="true" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="46f634bf-23dd-4a42-b2c6-187fd257b67d" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4cb73b06-9309-45dc-b4e6-46dfb2613d94" type="min"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="34b6a5ba-144a-4e26-9117-60ae0ccb021a" name="Hekaton Siege Claw" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
-                      <characteristics>
-                        <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">-</characteristic>
-                        <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">-</characteristic>
-                        <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">-</characteristic>
-                        <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-5</characteristic>
-                        <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Rend, Wrecker (3)</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
-                    <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="9c0c2c8d-afac-4e47-af7d-b517944c8dc4" name="Phased Plasma-Fusil" hidden="false" collective="true" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2fa8969-479e-43f3-adb4-500b10a8ede7" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4dbe8933-df5e-442f-a7c4-cebe35e93a2d" type="min"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="5bade696-5bf0-4194-b4c3-4312f7746a08" name="Phased Plasma-Fusil" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
-                      <characteristics>
-                        <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">10&quot;</characteristic>
-                        <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">1</characteristic>
-                        <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">4+</characteristic>
-                        <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-2</characteristic>
-                        <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Arc (Front), Light AT</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
-                    <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="20557870-0264-4b9c-9f84-e2fcea9ac27b" name="Lightning Cannon" hidden="false" collective="true" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="06d7cc03-534c-4cab-8518-194331f5641b" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c85f0c1-7905-4e53-b9da-7b2fcaf035cc" type="min"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="58f4fc74-e357-441b-a2dd-5017c2e264e7" name="Lightning Cannon" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
-                      <characteristics>
-                        <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">22&quot;</characteristic>
-                        <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">6</characteristic>
-                        <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">5+</characteristic>
-                        <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-2</characteristic>
-                        <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Arc (Front), Blast (3&quot;)</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
-                    <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <costs>
-                <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="188.0"/>
-                <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="b1fc7b66-fdc0-4e00-a87d-4817732a2991" name="Knight Warden" hidden="false" collective="false" import="true" type="model">
+            </entryLink>
+            <entryLink id="1114-f766-6f55-8d67" name="Knight Errant" hidden="false" collective="false" import="true" targetId="113d-727b-4f2e-3007" type="selectionEntry">
               <constraints>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d4551699-5022-4d41-8539-7fdef8a9e568" type="max"/>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d0a0-b1bf-61b8-65ff" type="max"/>
               </constraints>
-              <infoLinks>
-                <infoLink id="ee6dd1cb-f8c1-4442-866e-9aa5eaee04a9" name="Independent" hidden="false" targetId="5a10f2e5-ecc1-4a2a-8d7d-1e5ebe972994" type="rule"/>
-                <infoLink id="a3282b70-aa22-40e7-983a-bf7c32bde337" name="Ion Shield (X)" hidden="false" targetId="e746d542-2673-4210-a2fb-2699ed4ecc0b" type="rule">
-                  <modifiers>
-                    <modifier type="set" field="name" value="Ion Shield (4+)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="a4ea513f-850f-4cb0-a1a2-d68ecf8e2faa" name="Nimble" hidden="false" targetId="4e652d67-da9f-42e6-867a-900f862cc219" type="rule"/>
-                <infoLink id="a442e2a5-db94-4d5f-877b-39e77fc2d85f" name="Questoris Knight" hidden="false" targetId="46f60590-9cb4-43c7-af68-91e19b6affbc" type="profile"/>
-              </infoLinks>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="50074b75-a4c8-47df-bbbe-504388ceeff0" name="Melee Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="84146cb6-f788-4c05-aee7-ce6020d392d4">
-                  <modifiers>
-                    <modifier type="increment" field="cd912554-bf47-48ea-9a48-8f3cf3be6351" value="1">
-                      <repeats>
-                        <repeat field="selections" scope="415d2031-9259-407d-9e69-8f82107fcd4e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1fc7b66-fdc0-4e00-a87d-4817732a2991" repeats="1" roundUp="false"/>
-                      </repeats>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd912554-bf47-48ea-9a48-8f3cf3be6351" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d73781b7-3ab2-4dd9-82f1-9eae6b017ee6" type="min"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="84146cb6-f788-4c05-aee7-ce6020d392d4" name="Reaper Chainsword" hidden="false" collective="false" import="true" targetId="6edabef8-094d-4758-9451-a83bcb3a0f3e" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2fe1b89c-7244-4b2f-8b63-cee3dff3f931" type="max"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink id="4d88d5cc-649e-478c-9e6b-1c0b0b15d841" name="Thunderstrike Gauntlet" hidden="false" collective="false" import="true" targetId="8af4ba9d-ea36-45b9-9a3a-30e056ac9294" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0227d6ee-b559-439e-b6c0-32a9aa2660fb" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name="‏‏‎‏‏‎ ‎points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="2.0"/>
-                      </costs>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <entryLinks>
-                <entryLink id="aad52fd4-526f-46b6-ae79-83f153d184e2" name="Questoris Avenger Gatling Cannon" hidden="false" collective="false" import="true" targetId="d3d135e8-3c1c-4b9f-a52c-9f4e21d36809" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3edebdde-7b5b-4fe3-9c9c-5b09b7660758" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c569ba0c-427b-4a4d-b03f-f261077a4d7a" type="min"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="86e3f51d-6622-454e-8132-f34fcb782b53" name="Meltagun" hidden="false" collective="false" import="true" targetId="c5ea7ad4-69c2-4dc0-84e9-9d5dc1e973fd" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce02e253-17e6-45df-acd2-374d2ac182ec" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df7de46e-210e-4722-8fe6-5fead1337a94" type="min"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="7116e191-e855-42f9-b9cd-e0b4bd8fd961" name="Rocket Pods" hidden="false" collective="false" import="true" targetId="88bc6069-4203-4c3a-93ee-fd52a7debe2d" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e45b9d79-e03a-4bb8-91b0-944fad254a1a" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name="‏‏‎‏‏‎ ‎points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="5.0"/>
-                  </costs>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="173.0"/>
-                <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="6b7624db-a138-4e3c-a87a-17bf6a01e3e4" name="Knight Paladin" hidden="false" collective="false" import="true" type="model">
+            </entryLink>
+            <entryLink id="c554-aaaa-7c4f-6e87" name="Knight Gallant" hidden="false" collective="false" import="true" targetId="bf63-edc5-c21a-4a77" type="selectionEntry">
               <constraints>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7f27afd-67d8-4116-bc9a-0666678f5e44" type="max"/>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="544e-9fbb-7215-245e" type="max"/>
               </constraints>
-              <infoLinks>
-                <infoLink id="494ea71b-73d2-47c0-a6ee-ab7fb5d656ec" name="Independent" hidden="false" targetId="5a10f2e5-ecc1-4a2a-8d7d-1e5ebe972994" type="rule"/>
-                <infoLink id="fbfdef23-ea98-48d3-a31b-0bd8796b0e4a" name="Ion Shield (X)" hidden="false" targetId="e746d542-2673-4210-a2fb-2699ed4ecc0b" type="rule">
-                  <modifiers>
-                    <modifier type="set" field="name" value="Ion Shield (4+)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="21ce6938-20c1-459a-bcbf-100b3510c745" name="Nimble" hidden="false" targetId="4e652d67-da9f-42e6-867a-900f862cc219" type="rule"/>
-                <infoLink id="75a1cfe2-5137-4ed3-9a4b-97ece14bc491" name="Questoris Knight" hidden="false" targetId="46f60590-9cb4-43c7-af68-91e19b6affbc" type="profile"/>
-              </infoLinks>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="e73199d9-2619-40b6-adcc-349b276b859a" name="Melee Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="51d01939-9f99-4ea4-8392-7dca7dbb85ff">
-                  <modifiers>
-                    <modifier type="increment" field="51af6b53-2de0-45d8-88dd-b1b39b1eefd4" value="1">
-                      <repeats>
-                        <repeat field="selections" scope="415d2031-9259-407d-9e69-8f82107fcd4e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6b7624db-a138-4e3c-a87a-17bf6a01e3e4" repeats="1" roundUp="false"/>
-                      </repeats>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51af6b53-2de0-45d8-88dd-b1b39b1eefd4" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae4c39ab-d1ac-4734-a8d9-dbbbc67e0e60" type="min"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="51d01939-9f99-4ea4-8392-7dca7dbb85ff" name="Reaper Chainsword" hidden="false" collective="false" import="true" targetId="6edabef8-094d-4758-9451-a83bcb3a0f3e" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c8f71181-cf09-49cd-b441-cd93ec39974c" type="max"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink id="e979f4fa-c077-4194-ab39-7cb73eaede67" name="Thunderstrike Gauntlet" hidden="false" collective="false" import="true" targetId="8af4ba9d-ea36-45b9-9a3a-30e056ac9294" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b4c53d5-1fe5-4d87-8e2a-3b32af0c7a31" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name="‏‏‎‏‏‎ ‎points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="2.0"/>
-                      </costs>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <entryLinks>
-                <entryLink id="5f8da97f-b2d5-4877-98db-19438b470cc5" name="Heavy Stubber" hidden="false" collective="true" import="true" targetId="cc479e05-02cc-48a7-be65-aed8b63be141" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d9796e9-b69e-4de3-a923-2a75501ec6cc" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ecd36502-5309-4af5-9967-a21ea0c49ef7" type="min"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="627ba207-2083-4bfb-826e-78a9ccb626cb" name="Rapid-fire Battlecannon" hidden="false" collective="false" import="true" targetId="68eeff5b-7692-440f-9d49-a6157aec5545" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa58dae9-b335-4d62-bc2b-98921468e63d" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bee1e576-ff1d-4b1c-9251-e5b236bd330e" type="min"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="29d15faf-7ba8-4437-a90a-9909687e9f39" name="Rocket Pods" hidden="false" collective="false" import="true" targetId="88bc6069-4203-4c3a-93ee-fd52a7debe2d" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="005420c5-013b-4bf6-b0d0-dfc669d5bf9a" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name="‏‏‎‏‏‎ ‎points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="5.0"/>
-                  </costs>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="173.0"/>
-                <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="a640f184-e471-4635-ada1-895110f9b117" name="Knight Gallant" hidden="false" collective="false" import="true" type="model">
+            </entryLink>
+            <entryLink id="5b1a-739f-762f-1119" name="Knight Magaera" hidden="false" collective="false" import="true" targetId="a4cc-a0bd-8e14-28be" type="selectionEntry">
               <constraints>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb58f2db-6d68-40eb-9e7d-d3c2dbb7ad21" type="max"/>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d569-e098-3ca1-40a6" type="max"/>
               </constraints>
-              <infoLinks>
-                <infoLink id="fef9ea0b-5b84-4a14-9877-4622614e6e15" name="Independent" hidden="false" targetId="5a10f2e5-ecc1-4a2a-8d7d-1e5ebe972994" type="rule"/>
-                <infoLink id="5d9c7052-543d-4104-affa-e61021605282" name="Ion Shield (X)" hidden="false" targetId="e746d542-2673-4210-a2fb-2699ed4ecc0b" type="rule">
-                  <modifiers>
-                    <modifier type="set" field="name" value="Ion Shield (4+)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="67103a59-c937-4012-9837-b326d67842e7" name="Nimble" hidden="false" targetId="4e652d67-da9f-42e6-867a-900f862cc219" type="rule"/>
-                <infoLink id="381a0875-7d78-4ab3-b431-2056b4f15ee1" name="Questoris Knight" hidden="false" targetId="46f60590-9cb4-43c7-af68-91e19b6affbc" type="profile"/>
-              </infoLinks>
-              <entryLinks>
-                <entryLink id="43c127c6-9d19-4eb6-95e0-97c763613fdf" name="Meltagun" hidden="false" collective="true" import="true" targetId="c5ea7ad4-69c2-4dc0-84e9-9d5dc1e973fd" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2efc4c55-707f-4d32-a0e9-83149c67737a" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af40ac4b-51f7-4399-aa14-6f8e7af5db47" type="min"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="f8f1e993-b819-4ee7-a243-f4f68574949c" name="Reaper Chainsword" hidden="false" collective="true" import="true" targetId="6edabef8-094d-4758-9451-a83bcb3a0f3e" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e3140a3-d130-4be6-9592-7c85058290e5" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e7c6c7c3-6719-4fea-bef0-5a3f5df6d2d8" type="min"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="b1626666-0ab4-438f-9cc7-b1306a367329" name="Thunderstrike Gauntlet" hidden="false" collective="true" import="true" targetId="8af4ba9d-ea36-45b9-9a3a-30e056ac9294" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aefe0481-73c2-4cb4-8c95-108e1548eb24" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="14b0a342-77eb-4cbc-b272-511a10548e3a" type="min"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="a6f8a8fe-8b7a-42cc-be37-a4bd2fcb79c0" name="Rocket Pods" hidden="false" collective="false" import="true" targetId="88bc6069-4203-4c3a-93ee-fd52a7debe2d" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ac-b791-1416-82fb" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name="‏‏‎‏‏‎ ‎points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="5.0"/>
-                  </costs>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="173.0"/>
-                <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="70412017-b92a-4aa6-8bba-8925cb71eb48" name="Knight Errant" hidden="false" collective="false" import="true" type="model">
+            </entryLink>
+            <entryLink id="567d-af18-a7ff-e9ee" name="Knight Paladin" hidden="false" collective="false" import="true" targetId="0fab-6235-8da3-1664" type="selectionEntry">
               <constraints>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1612d53c-392f-4b75-ae59-18ed6b489cad" type="max"/>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b79-d8f8-6c7a-6971" type="max"/>
               </constraints>
-              <infoLinks>
-                <infoLink id="bfac2187-d7f7-4867-bc9b-310c1482aea1" name="Independent" hidden="false" targetId="5a10f2e5-ecc1-4a2a-8d7d-1e5ebe972994" type="rule"/>
-                <infoLink id="11b58e3f-a52c-4b7f-a7af-e27c0077bd88" name="Ion Shield (X)" hidden="false" targetId="e746d542-2673-4210-a2fb-2699ed4ecc0b" type="rule">
-                  <modifiers>
-                    <modifier type="set" field="name" value="Ion Shield (4+)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="6eb54100-74fe-4b19-9008-522282865f36" name="Nimble" hidden="false" targetId="4e652d67-da9f-42e6-867a-900f862cc219" type="rule"/>
-                <infoLink id="e7a21bb9-bbf0-4a2d-af96-4dab98c08236" name="Questoris Knight" hidden="false" targetId="46f60590-9cb4-43c7-af68-91e19b6affbc" type="profile"/>
-              </infoLinks>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="3685ec1a-2888-4cbb-823c-48c37b24a63c" name="Melee Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="bfd0484f-ee1e-475f-a9cd-078afee2f54f">
-                  <modifiers>
-                    <modifier type="increment" field="ea5b6a5e-ab28-4dc2-bd01-d2c20b509fcc" value="1">
-                      <repeats>
-                        <repeat field="selections" scope="415d2031-9259-407d-9e69-8f82107fcd4e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="70412017-b92a-4aa6-8bba-8925cb71eb48" repeats="1" roundUp="false"/>
-                      </repeats>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea5b6a5e-ab28-4dc2-bd01-d2c20b509fcc" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="40353f8f-0ceb-4bd7-b36c-8fc8ea40005f" type="min"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="bfd0484f-ee1e-475f-a9cd-078afee2f54f" name="Reaper Chainsword" hidden="false" collective="false" import="true" targetId="6edabef8-094d-4758-9451-a83bcb3a0f3e" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41015db4-c70c-476b-a5a6-71cc7b65090d" type="max"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink id="576d28da-3ecc-4232-87aa-3e762d0f4306" name="Thunderstrike Gauntlet" hidden="false" collective="false" import="true" targetId="8af4ba9d-ea36-45b9-9a3a-30e056ac9294" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e00074a-3d39-4447-af45-2e55d1365e23" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name="‏‏‎‏‏‎ ‎points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="2.0"/>
-                      </costs>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <entryLinks>
-                <entryLink id="f8dd4f5d-d2fe-4199-9590-6125a34bcf24" name="Thermal Cannon" hidden="false" collective="true" import="true" targetId="7fc633e4-8f3d-4c72-9091-8318bfcc1742" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="212e4cf2-4625-4056-a6da-3b722ca66f3a" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b38e8111-50f3-4339-911e-ced113192f92" type="min"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="af7c757c-2e79-4f6d-a926-eaa6ac23287d" name="Heavy Stubber" hidden="false" collective="true" import="true" targetId="cc479e05-02cc-48a7-be65-aed8b63be141" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30cacad4-4c34-4694-bb2e-1e495b410ba3" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de99150c-6b91-47ee-9bef-0da8c23b39ea" type="min"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="29b1db9a-d25b-4d14-b22d-b059f77e758b" name="Rocket Pods" hidden="false" collective="false" import="true" targetId="88bc6069-4203-4c3a-93ee-fd52a7debe2d" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ddbc2d28-b924-4f4e-bb86-a74ed1a1ee97" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name="‏‏‎‏‏‎ ‎points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="5.0"/>
-                  </costs>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="173.0"/>
-                <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="f7c3dc8f-9402-4e95-9ee7-e4cd7b092ede" name="Knight Crusader" hidden="false" collective="false" import="true" type="model">
+            </entryLink>
+            <entryLink id="6369-701b-30ca-e085" name="Knight Styrix" hidden="false" collective="false" import="true" targetId="5bc0-9513-a869-ce81" type="selectionEntry">
               <constraints>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cfa5a0c7-c6b2-4fbb-8ce7-48b9b041375d" type="max"/>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6bf8-c483-aabd-e745" type="max"/>
               </constraints>
-              <infoLinks>
-                <infoLink id="968e168e-ac3e-4149-8a8f-9d593848c341" name="Independent" hidden="false" targetId="5a10f2e5-ecc1-4a2a-8d7d-1e5ebe972994" type="rule"/>
-                <infoLink id="d45e6854-140e-45eb-88e8-d288e3590fce" name="Ion Shield (X)" hidden="false" targetId="e746d542-2673-4210-a2fb-2699ed4ecc0b" type="rule">
-                  <modifiers>
-                    <modifier type="set" field="name" value="Ion Shield (4+)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="32fbe69d-42c7-4c03-9619-c2b39a8b6110" name="Nimble" hidden="false" targetId="4e652d67-da9f-42e6-867a-900f862cc219" type="rule"/>
-                <infoLink id="348a07aa-05af-4fb7-aad9-fedb9809a00a" name="Questoris Knight" hidden="false" targetId="46f60590-9cb4-43c7-af68-91e19b6affbc" type="profile"/>
-              </infoLinks>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="85c09972-1ee3-493f-865e-276fb1b7ee33" name="Arm Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="066101b7-fa21-4189-bff7-36f358c47809">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc4f0e5c-6070-461b-b421-8892ea816231" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6edd0df9-b989-407c-b8b4-4482925f5fa5" type="max"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="066101b7-fa21-4189-bff7-36f358c47809" name="Questoris Avenger Gatling Cannon" hidden="false" collective="false" import="true" targetId="d3d135e8-3c1c-4b9f-a52c-9f4e21d36809" type="selectionEntry"/>
-                    <entryLink id="d246c12d-86fa-4533-b3dd-d558132e67a9" name="Rapid-fire Battlecannon" hidden="false" collective="false" import="true" targetId="68eeff5b-7692-440f-9d49-a6157aec5545" type="selectionEntry"/>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <entryLinks>
-                <entryLink id="c9c4a218-fb01-4128-a850-6d9ca1845502" name="Thermal Cannon" hidden="false" collective="true" import="true" targetId="7fc633e4-8f3d-4c72-9091-8318bfcc1742" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="899924d8-966d-45e4-a341-058d365eb0e7" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="77fd4d11-3c65-45ec-a39f-de9a89949fb9" type="min"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="6bb08827-677f-42eb-b314-e9f9b5c73a4f" name="Heavy Stubber" hidden="false" collective="true" import="true" targetId="cc479e05-02cc-48a7-be65-aed8b63be141" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="abc72fed-9c14-4ccd-a366-d62a237336f7" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb0b8f99-b3d4-40f5-a813-69d71d7e1297" type="min"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="10e545e8-43cd-4180-95e1-fefccd841135" name="Rocket Pods" hidden="false" collective="false" import="true" targetId="88bc6069-4203-4c3a-93ee-fd52a7debe2d" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="f56c-5c54-431-ce65" value="0">
-                      <conditions>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="68eeff5b-7692-440f-9d49-a6157aec5545" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f56c-5c54-431-ce65" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name="‏‏‎‏‏‎ ‎points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="5.0"/>
-                  </costs>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="173.0"/>
-                <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+            <entryLink id="ada1-970c-7837-d816" name="Knight Warden" hidden="false" collective="false" import="true" targetId="7c29-9aae-55e0-b1fd" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb59-8582-1130-e172" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -3726,6 +3186,442 @@
       </infoLinks>
       <costs>
         <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c538-1c4f-9a49-8d58" name="Knight Crusader" hidden="false" collective="false" import="true" type="model">
+      <infoLinks>
+        <infoLink id="3edd-c88d-8f30-40d6" name="Independent" hidden="false" targetId="5a10f2e5-ecc1-4a2a-8d7d-1e5ebe972994" type="rule"/>
+        <infoLink id="d881-4627-8499-5278" name="Ion Shield (X)" hidden="false" targetId="e746d542-2673-4210-a2fb-2699ed4ecc0b" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Ion Shield (4+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="5c3a-d6bc-6678-db60" name="Nimble" hidden="false" targetId="4e652d67-da9f-42e6-867a-900f862cc219" type="rule"/>
+        <infoLink id="8550-8fac-28f8-8104" name="Questoris Knight" hidden="false" targetId="46f60590-9cb4-43c7-af68-91e19b6affbc" type="profile"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="4a8f-1a4d-dd66-b753" name="Arm Weapon" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="65b8-d35b-45f1-2f46" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7cc1-81ea-c3f9-e048" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="446c-af67-667a-2983" name="Questoris Avenger Gatling Cannon" hidden="false" collective="false" import="true" targetId="d3d135e8-3c1c-4b9f-a52c-9f4e21d36809" type="selectionEntry"/>
+            <entryLink id="b943-4985-33a2-a929" name="Rapid-fire Battlecannon" hidden="false" collective="false" import="true" targetId="68eeff5b-7692-440f-9d49-a6157aec5545" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="6c53-8420-328d-7624" name="Thermal Cannon" hidden="false" collective="true" import="true" targetId="7fc633e4-8f3d-4c72-9091-8318bfcc1742" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac58-8444-8bb7-56a1" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b0c9-12f1-9767-31ca" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="9288-ce2d-5c0f-4f14" name="Heavy Stubber" hidden="false" collective="true" import="true" targetId="cc479e05-02cc-48a7-be65-aed8b63be141" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dbed-2d9b-c2d4-57e6" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="705f-5d9a-497f-838b" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="efcc-dcd7-cde7-bf37" name="Rocket Pods" hidden="false" collective="false" import="true" targetId="88bc6069-4203-4c3a-93ee-fd52a7debe2d" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="15dd-dccc-030b-0f1f" value="0.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="68eeff5b-7692-440f-9d49-a6157aec5545" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15dd-dccc-030b-0f1f" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="‏‏‎‏‏‎ ‎points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="5.0"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="173.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="113d-727b-4f2e-3007" name="Knight Errant" hidden="false" collective="false" import="true" type="model">
+      <infoLinks>
+        <infoLink id="e0aa-7399-0933-1e54" name="Independent" hidden="false" targetId="5a10f2e5-ecc1-4a2a-8d7d-1e5ebe972994" type="rule"/>
+        <infoLink id="4a9a-44f7-24e4-be18" name="Ion Shield (X)" hidden="false" targetId="e746d542-2673-4210-a2fb-2699ed4ecc0b" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Ion Shield (4+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="bbb2-8295-19bc-ffb9" name="Nimble" hidden="false" targetId="4e652d67-da9f-42e6-867a-900f862cc219" type="rule"/>
+        <infoLink id="6af0-7dfb-73ee-e890" name="Questoris Knight" hidden="false" targetId="46f60590-9cb4-43c7-af68-91e19b6affbc" type="profile"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="a05f-61ad-2b13-ca5e" name="Melee Weapons" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c6e-f845-bf7c-2d75" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f500-f840-b7ce-d59d" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="d340-7c2d-4542-03c5" name="Reaper Chainsword" hidden="false" collective="false" import="true" targetId="6edabef8-094d-4758-9451-a83bcb3a0f3e" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a66-9bea-0a52-3161" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="493a-db81-c5e1-f193" name="Thunderstrike Gauntlet" hidden="false" collective="false" import="true" targetId="8af4ba9d-ea36-45b9-9a3a-30e056ac9294" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="33c7-0387-d305-8e84" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="‏‏‎‏‏‎ ‎points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="2.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="e922-258a-0f01-a896" name="Thermal Cannon" hidden="false" collective="true" import="true" targetId="7fc633e4-8f3d-4c72-9091-8318bfcc1742" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="983a-01b6-4abf-3ff1" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f10-b14f-26ac-793b" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="270e-a072-3e41-5292" name="Heavy Stubber" hidden="false" collective="true" import="true" targetId="cc479e05-02cc-48a7-be65-aed8b63be141" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c0b4-40e6-3741-b85e" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2567-fbc1-6eba-b83f" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="01a6-48ea-1ec3-55f3" name="Rocket Pods" hidden="false" collective="false" import="true" targetId="88bc6069-4203-4c3a-93ee-fd52a7debe2d" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0f5-45a4-6aae-083a" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="‏‏‎‏‏‎ ‎points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="5.0"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="173.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bf63-edc5-c21a-4a77" name="Knight Gallant" hidden="false" collective="false" import="true" type="model">
+      <infoLinks>
+        <infoLink id="83b2-c19f-78e5-97b6" name="Independent" hidden="false" targetId="5a10f2e5-ecc1-4a2a-8d7d-1e5ebe972994" type="rule"/>
+        <infoLink id="cb75-5d21-f582-60fc" name="Ion Shield (X)" hidden="false" targetId="e746d542-2673-4210-a2fb-2699ed4ecc0b" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Ion Shield (4+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="5a38-406e-6e5d-2e1c" name="Nimble" hidden="false" targetId="4e652d67-da9f-42e6-867a-900f862cc219" type="rule"/>
+        <infoLink id="3e60-9c68-780a-9f66" name="Questoris Knight" hidden="false" targetId="46f60590-9cb4-43c7-af68-91e19b6affbc" type="profile"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="bdf9-227f-9f7c-073e" name="Meltagun" hidden="false" collective="true" import="true" targetId="c5ea7ad4-69c2-4dc0-84e9-9d5dc1e973fd" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d591-01d5-6727-4f46" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0151-51b7-8c9f-a613" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="24ff-e0a6-3129-3bfb" name="Reaper Chainsword" hidden="false" collective="true" import="true" targetId="6edabef8-094d-4758-9451-a83bcb3a0f3e" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6245-28f3-eb84-a46f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2097-160d-409a-d80a" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="389c-1922-46ea-f58a" name="Thunderstrike Gauntlet" hidden="false" collective="true" import="true" targetId="8af4ba9d-ea36-45b9-9a3a-30e056ac9294" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b363-d447-0461-423a" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8535-f15c-53b9-3838" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="1989-e200-2c13-b80a" name="Rocket Pods" hidden="false" collective="false" import="true" targetId="88bc6069-4203-4c3a-93ee-fd52a7debe2d" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb1d-9f95-16d5-65c0" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="‏‏‎‏‏‎ ‎points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="5.0"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="173.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a4cc-a0bd-8e14-28be" name="Knight Magaera" hidden="false" collective="false" import="true" type="model">
+      <infoLinks>
+        <infoLink id="1285-df1a-6377-c957" name="Blessed Auto-simulacra" hidden="false" targetId="51284793-9dd5-435f-a0c1-20a5ba46daee" type="rule"/>
+        <infoLink id="eaf1-8bad-8126-0d3c" name="Independent" hidden="false" targetId="5a10f2e5-ecc1-4a2a-8d7d-1e5ebe972994" type="rule"/>
+        <infoLink id="99b8-aaf5-fb2c-8b11" name="Nimble" hidden="false" targetId="4e652d67-da9f-42e6-867a-900f862cc219" type="rule"/>
+        <infoLink id="8342-5a07-1982-cb15" name="Ion Shield (X)" hidden="false" targetId="e746d542-2673-4210-a2fb-2699ed4ecc0b" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Ion Shield (4+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="facb-7400-f3be-8225" name="Questoris Knight" hidden="false" targetId="46f60590-9cb4-43c7-af68-91e19b6affbc" type="profile"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="92a6-9722-a6e0-b5ee" name="Hekaton Siege Claw" hidden="false" collective="true" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ac5-34d0-de6d-86d0" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2328-06a3-5168-3bc9" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="1d77-a197-1917-af89" name="Hekaton Siege Claw" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">-</characteristic>
+                <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">-</characteristic>
+                <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">-</characteristic>
+                <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-5</characteristic>
+                <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Rend, Wrecker (3)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+            <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="ebbb-e8dc-d1e0-6fd4" name="Phased Plasma-Fusil" hidden="false" collective="true" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2740-67c6-e592-0fa9" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c34a-b6ba-84fe-4bb3" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="a8b6-dd27-fc68-8574" name="Phased Plasma-Fusil" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">10&quot;</characteristic>
+                <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">1</characteristic>
+                <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">4+</characteristic>
+                <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-2</characteristic>
+                <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Arc (Front), Light AT</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+            <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="bb35-83b4-ae22-be85" name="Lightning Cannon" hidden="false" collective="true" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c3a0-e17a-07dc-00e2" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fe5d-c5be-dd27-0521" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="8e0d-61c0-4b9d-d28f" name="Lightning Cannon" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">22&quot;</characteristic>
+                <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">6</characteristic>
+                <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">5+</characteristic>
+                <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-2</characteristic>
+                <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Arc (Front), Blast (3&quot;)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+            <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="188.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0fab-6235-8da3-1664" name="Knight Paladin" hidden="false" collective="false" import="true" type="model">
+      <infoLinks>
+        <infoLink id="0a0a-8976-a5b9-b1e4" name="Independent" hidden="false" targetId="5a10f2e5-ecc1-4a2a-8d7d-1e5ebe972994" type="rule"/>
+        <infoLink id="6fa2-a8bb-3695-9bfe" name="Ion Shield (X)" hidden="false" targetId="e746d542-2673-4210-a2fb-2699ed4ecc0b" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Ion Shield (4+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="4d31-624c-5e48-7d13" name="Nimble" hidden="false" targetId="4e652d67-da9f-42e6-867a-900f862cc219" type="rule"/>
+        <infoLink id="2438-5652-4381-bcd6" name="Questoris Knight" hidden="false" targetId="46f60590-9cb4-43c7-af68-91e19b6affbc" type="profile"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="972e-de8b-d2b2-4d8c" name="Melee Weapons" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ce2-e652-b8bb-cc69" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b4a0-94a8-3530-d13e" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="2c2e-f142-a6d0-5d4d" name="Reaper Chainsword" hidden="false" collective="false" import="true" targetId="6edabef8-094d-4758-9451-a83bcb3a0f3e" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="277a-98f4-31cf-b287" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="33ef-1b8e-5a18-581b" name="Thunderstrike Gauntlet" hidden="false" collective="false" import="true" targetId="8af4ba9d-ea36-45b9-9a3a-30e056ac9294" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e822-2674-c6d9-f178" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="‏‏‎‏‏‎ ‎points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="2.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="3900-d73f-77de-f843" name="Heavy Stubber" hidden="false" collective="true" import="true" targetId="cc479e05-02cc-48a7-be65-aed8b63be141" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1145-a9a6-8b88-a9fe" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c3f3-5f50-cd0f-3ddf" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="3801-f7c2-d13a-10c9" name="Rapid-fire Battlecannon" hidden="false" collective="false" import="true" targetId="68eeff5b-7692-440f-9d49-a6157aec5545" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3fca-8e73-9329-1a8e" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b35-7d50-a683-0b0d" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="f545-f71c-ff79-9d9c" name="Rocket Pods" hidden="false" collective="false" import="true" targetId="88bc6069-4203-4c3a-93ee-fd52a7debe2d" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9619-f721-86cf-6789" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="‏‏‎‏‏‎ ‎points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="5.0"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="173.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5bc0-9513-a869-ce81" name="Knight Styrix" hidden="false" collective="false" import="true" type="model">
+      <infoLinks>
+        <infoLink id="9021-dd81-0e91-081a" name="Nimble" hidden="false" targetId="4e652d67-da9f-42e6-867a-900f862cc219" type="rule"/>
+        <infoLink id="17e9-72d0-7905-7071" name="Ion Shield (X)" hidden="false" targetId="e746d542-2673-4210-a2fb-2699ed4ecc0b" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Ion Shield (4+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="7462-5b5c-4e93-0093" name="Independent" hidden="false" targetId="5a10f2e5-ecc1-4a2a-8d7d-1e5ebe972994" type="rule"/>
+        <infoLink id="77b8-42ed-18ab-93d3" name="Blessed Auto-simulacra" hidden="false" targetId="51284793-9dd5-435f-a0c1-20a5ba46daee" type="rule"/>
+        <infoLink id="adc6-e357-3def-9883" name="Questoris Knight" hidden="false" targetId="46f60590-9cb4-43c7-af68-91e19b6affbc" type="profile"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="54d3-0d83-81e8-b6e9" name="Volkite Chieorovile" hidden="false" collective="true" import="true" type="upgrade">
+          <profiles>
+            <profile id="eb46-5c1d-ae27-bbf8" name="Volkite Chieorovile" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">12&quot;</characteristic>
+                <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">3</characteristic>
+                <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">4+</characteristic>
+                <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-2</characteristic>
+                <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Arc (Front), Deflagrate, Light AT, Shieldbane</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+            <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="a27b-42f7-62f6-615c" name="Hekaton Siege Claw" hidden="false" collective="true" import="true" type="upgrade">
+          <profiles>
+            <profile id="cfa2-4803-f1ad-f1fa" name="Hekaton Siege Claw" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">-</characteristic>
+                <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">-</characteristic>
+                <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">-</characteristic>
+                <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-5</characteristic>
+                <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Rend, Wrecker (3)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+            <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7f23-38c3-b74a-bf9a" name="Graviton Gun" hidden="false" collective="true" import="true" type="upgrade">
+          <profiles>
+            <profile id="76ba-21a6-4f06-7e19" name="Graviton Gun" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">6&quot;</characteristic>
+                <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">1</characteristic>
+                <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">-</characteristic>
+                <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-1</characteristic>
+                <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Arc (Front), Graviton Pulse</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+            <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="188.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7c29-9aae-55e0-b1fd" name="Knight Warden" hidden="false" collective="false" import="true" type="model">
+      <infoLinks>
+        <infoLink id="7aa2-e5e3-d911-270d" name="Independent" hidden="false" targetId="5a10f2e5-ecc1-4a2a-8d7d-1e5ebe972994" type="rule"/>
+        <infoLink id="c656-425b-5414-b308" name="Ion Shield (X)" hidden="false" targetId="e746d542-2673-4210-a2fb-2699ed4ecc0b" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Ion Shield (4+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="caef-f158-f5c4-c8ac" name="Nimble" hidden="false" targetId="4e652d67-da9f-42e6-867a-900f862cc219" type="rule"/>
+        <infoLink id="9ca2-6989-a7d6-18e7" name="Questoris Knight" hidden="false" targetId="46f60590-9cb4-43c7-af68-91e19b6affbc" type="profile"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="2e42-f985-8d63-5069" name="Melee Weapons" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ef8-6fcf-5661-cef3" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ba6-2bbc-56fb-d272" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="a52f-faa7-8043-c435" name="Reaper Chainsword" hidden="false" collective="false" import="true" targetId="6edabef8-094d-4758-9451-a83bcb3a0f3e" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a739-ccf7-b30c-6ac5" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="1713-0a5d-5ec9-34d6" name="Thunderstrike Gauntlet" hidden="false" collective="false" import="true" targetId="8af4ba9d-ea36-45b9-9a3a-30e056ac9294" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3522-d92a-9c31-5782" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="‏‏‎‏‏‎ ‎points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="2.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="1e42-4945-d19c-ede9" name="Questoris Avenger Gatling Cannon" hidden="false" collective="false" import="true" targetId="d3d135e8-3c1c-4b9f-a52c-9f4e21d36809" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6aaf-04fe-bcbf-e8ac" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="46e2-f874-7d91-4a99" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="856a-983d-e8a4-b3cc" name="Meltagun" hidden="false" collective="false" import="true" targetId="c5ea7ad4-69c2-4dc0-84e9-9d5dc1e973fd" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c8a3-e14e-268d-7f5f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d03-6b47-19fd-084d" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="4292-8b79-81b5-fa14" name="Rocket Pods" hidden="false" collective="false" import="true" targetId="88bc6069-4203-4c3a-93ee-fd52a7debe2d" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a64-6e57-964a-b77a" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="‏‏‎‏‏‎ ‎points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="5.0"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="173.0"/>
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
       </costs>
     </selectionEntry>

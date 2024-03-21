@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5df0-8413-3cb7-97df" name="Nurgle Strategic Assets" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="39" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5df0-8413-3cb7-97df" name="Nurgle Strategic Assets" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="39" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="265b-4776-0ca7-d01f" name="Nurgle Knight Household Lance" hidden="false">
       <categoryLinks>
@@ -172,6 +172,59 @@
           <entryLinks>
             <entryLink id="a49e-5b88-30a0-10f6" name="Nurgle Warhound Titan" hidden="false" collective="false" import="true" targetId="b268-7057-16ef-7439" type="selectionEntry"/>
           </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d890-b74c-0ebc-cab0" name="Nurgle Questoris Knight Banner" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="remove" field="category" value="4df5be74-f6f9-448b-8a05-4336c54baa7d">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7463c8ee-68d1-4659-b949-2a93f386e957" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="7c33-1cbd-79d8-5e60" name="Allied Units" hidden="false" targetId="4df5be74-f6f9-448b-8a05-4336c54baa7d" primary="false"/>
+        <categoryLink id="d29c-c2cc-4f51-9fb6" name="Knight" hidden="false" targetId="2fdadb91-76c5-4160-88b3-b56bc092de2a" primary="true"/>
+        <categoryLink id="a3db-caef-73da-b829" name="Knight (4)" hidden="false" targetId="a5a9-2f65-dd50-418d" primary="false"/>
+        <categoryLink id="4f05-4678-ead5-6d4e" name="Strategic Assets" hidden="false" targetId="9eee-b8eb-ea7b-8ee4" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="b0d2-2059-2aab-b290" name="Nurgle Questoris Knights" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="17eb-e370-d648-2732" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c00-1723-bcc5-3f05" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="44d9-cc53-8354-6d7b" name="Nurgle Knight Despoiler" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b287-8406-af28-2a35" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="179.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1de5-c384-82fa-729f" name="Nurgle Knight Desecrator" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c76-f828-def1-a2d4" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="179.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c141-1ee8-af33-1cc2" name="Nurgle Knight Rampager" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="59c5-94fc-5190-d350" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="179.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
