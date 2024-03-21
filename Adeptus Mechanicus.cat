@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="30cb-c173-1e8e-037f" name="Adeptus Mechanicus" revision="21" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="39" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="30cb-c173-1e8e-037f" name="Adeptus Mechanicus" revision="22" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="4e75-ca8c-415c-3af3" name="Mechanicus Armoured Company" hidden="false">
       <categoryLinks>
@@ -499,7 +499,7 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="9a35-b44c-e2ef-7c6c" name="Vehicle (2)" hidden="false" targetId="49b3-dae7-33f8-f8e" primary="false"/>
-        <categoryLink id="e45a-d16a-f01e-6fae" name="New CategoryLink" hidden="false" targetId="17079afa-e39f-4f33-9207-cc02fd3a3520" primary="true"/>
+        <categoryLink id="01bc-6ac9-ec79-ad9c" name="New CategoryLink" hidden="false" targetId="32eb0e0c-78c3-4ab0-ab6a-5160a47cb924" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="ba58-8de1-b825-e48f" name="Models" hidden="false" collective="false" import="true" defaultSelectionEntryId="4a7b-3a8c-1ade-ab28">
