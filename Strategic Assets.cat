@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d70e008e-64a5-4e51-ac3e-7c35e5d2e0f4" name="Strategic Assets" revision="25" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="39" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d70e008e-64a5-4e51-ac3e-7c35e5d2e0f4" name="Strategic Assets" revision="27" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="39" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="5e4ad6a9-f6dc-4b9d-8888-a4c02d576c71" name="Knight Household Lance" hidden="false">
       <categoryLinks>
-        <categoryLink id="960f6f28-c2cd-488a-9571-53c8e8592676" name="Configuration" hidden="false" targetId="08eb75aa-6fda-497e-a7ea-d7239064ba58" primary="false"/>
         <categoryLink id="ddf9fc78-f5e4-4cab-b576-0508ec6e678e" name="Knight" hidden="false" targetId="2fdadb91-76c5-4160-88b3-b56bc092de2a" primary="false">
           <modifiers>
             <modifier type="increment" field="9fa4-27fa-c6d0-5ab7" value="1.0">
@@ -61,6 +60,11 @@
                 <repeat field="dc992662-6d4b-4120-a6a2-9acf4516238a" scope="roster" value="3.33" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="45d6c947-80a0-4e29-a4be-a4089467fc2d" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
+            <modifier type="decrement" field="9fa4-27fa-c6d0-5ab7" value="1.0">
+              <repeats>
+                <repeat field="dc992662-6d4b-4120-a6a2-9acf4516238a" scope="roster" value="3.33" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6b49f139-82c0-402f-815b-1cf743b3e47d" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d55e7af-0d7f-4c29-8e77-82a8b3cc5634" type="max"/>
@@ -72,7 +76,6 @@
     </forceEntry>
     <forceEntry id="13d14f76-9bf7-4dc8-989f-b51fff0d8fe1" name="Legion Support" hidden="false">
       <categoryLinks>
-        <categoryLink id="72ed6d25-ea22-4368-ab39-0ea988b48ece" name="Configuration" hidden="false" targetId="08eb75aa-6fda-497e-a7ea-d7239064ba58" primary="false"/>
         <categoryLink id="060ac832-c908-4c85-9437-4942b55cb727" name="Titan" hidden="false" targetId="6b49f139-82c0-402f-815b-1cf743b3e47d" primary="false">
           <modifiers>
             <modifier type="increment" field="ebc7-bade-0a51-6deb" value="1.0">
@@ -128,6 +131,11 @@
             <modifier type="increment" field="ebc7-bade-0a51-6deb" value="1.0">
               <repeats>
                 <repeat field="dc992662-6d4b-4120-a6a2-9acf4516238a" scope="roster" value="3.33" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="32eb0e0c-78c3-4ab0-ab6a-5160a47cb924" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="ebc7-bade-0a51-6deb" value="1.0">
+              <repeats>
+                <repeat field="dc992662-6d4b-4120-a6a2-9acf4516238a" scope="roster" value="3.33" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2fdadb91-76c5-4160-88b3-b56bc092de2a" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
           </modifiers>
