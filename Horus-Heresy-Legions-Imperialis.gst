@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="2c9332de-54e2-4bfc-9423-269293af3a88" name="Horus Heresy: Legions Imperialis: Kenosis Edition" revision="39" battleScribeVersion="2.03" authorName="BSData Team" authorContact="" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="2c9332de-54e2-4bfc-9423-269293af3a88" name="Horus Heresy: Legions Imperialis: Kenosis Edition" revision="42" battleScribeVersion="2.03" authorName="BSData Team" authorContact="" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="c3da3c2a-6a3a-4fb8-8b85-7f94e2c8f894" name="Legions Imperialis Rulebook" shortName="LI" publicationDate="2023" publisherUrl="https://thehorusheresy.com/legions-imperialis"/>
     <publication id="641fbf79-252a-4a03-8af3-8e3cc6988f81" name="GitHub" shortName="BSData/Horus-Heresy-Legions-Imperialis" publisherUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis"/>
@@ -63,6 +63,7 @@
     <categoryEntry id="a5a9-2f65-dd50-418d" name="Knight (4)" hidden="false"/>
     <categoryEntry id="9eee-b8eb-ea7b-8ee4" name="Strategic Assets" hidden="false"/>
     <categoryEntry id="7d6c-efb4-d237-a868" name="Titan (5)" hidden="false"/>
+    <categoryEntry id="4a85-3a47-7491-7bf1" name="Daemon" publicationId="c3da3c2a-6a3a-4fb8-8b85-7f94e2c8f894" page="128" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="7463c8ee-68d1-4659-b949-2a93f386e957" name="Unbound Formation (Open Play)" hidden="true">
@@ -805,6 +806,9 @@ If a Detachment contains more than one model with this rule, the controlling pla
     </rule>
     <rule id="c160-4b79-14e6-4f5b" name="Subordinate" hidden="false">
       <description>A model with the Subordinate special rule counts its Tactical Strength as zero unless it is part of a detachment that contains models without the Subordinate special rule. </description>
+    </rule>
+    <rule id="b9ff-5594-6936-1a03" name="Disgustingly Resilient" hidden="false">
+      <description>Hits scored by a weapon against a model with the Disgustingly Resilient special rule reduce their AP by 1 (to a minimum of 0). </description>
     </rule>
   </sharedRules>
 </gameSystem>

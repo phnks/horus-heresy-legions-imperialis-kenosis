@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4733-f9f6-faa7-ae42" name="Chaos: Death Guard" revision="25" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="39" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4733-f9f6-faa7-ae42" name="Chaos: Death Guard" revision="26" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="40" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="39bd-547d-3d4d-5ffb" name="Death Guard Maladictum" hidden="false">
       <categoryLinks>
@@ -858,7 +858,7 @@ Two Structures can be selected in place of a single area of terrain. Each time a
             <modifier type="set" field="name" value="Transport (2)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="d33d-a59b-89a6-1384" name="Disgustingly Resilient" hidden="false" targetId="18f5-c278-291e-0e9d" type="rule"/>
+        <infoLink id="d33d-a59b-89a6-1384" name="Disgustingly Resilient" hidden="false" targetId="b9ff-5594-6936-1a03" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="dd49-10d8-f672-08fa" name="Vehicle (2)" hidden="false" targetId="49b3-dae7-33f8-f8e" primary="false"/>
@@ -891,7 +891,7 @@ Two Structures can be selected in place of a single area of terrain. Each time a
       </profiles>
       <infoLinks>
         <infoLink id="7c8d-9f17-04d2-30f4" name="Explorator Adaption" hidden="false" targetId="2e95f354-63d6-436c-a468-e03635c83937" type="rule"/>
-        <infoLink id="3930-46dc-cdfe-34c6" name="Disgustingly Resilient" hidden="false" targetId="18f5-c278-291e-0e9d" type="rule"/>
+        <infoLink id="3930-46dc-cdfe-34c6" name="Disgustingly Resilient" hidden="false" targetId="b9ff-5594-6936-1a03" type="rule"/>
       </infoLinks>
       <entryLinks>
         <entryLink id="966d-7d7c-f607-cdf1" name="Entropy Cannons" hidden="false" collective="false" import="true" targetId="59d7-9bd2-c0b0-7c96" type="selectionEntry">
@@ -1152,11 +1152,6 @@ Two Structures can be selected in place of a single area of terrain. Each time a
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
-  <sharedRules>
-    <rule id="18f5-c278-291e-0e9d" name="Disgustingly Resilient" hidden="false">
-      <description>Hits scored by a weapon against a model with the Disgustingly Resilient special rule reduce their AP by 1 (to a minimum of 0). </description>
-    </rule>
-  </sharedRules>
   <sharedProfiles>
     <profile id="985b-18c9-fa8f-9f97" name="Lord of Contagion" hidden="false" typeId="746bcfa7-66de-4644-97e8-07da9cec42b6" typeName="Detachment">
       <characteristics>

@@ -1,48 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5df0-8413-3cb7-97df" name="Nurgle Strategic Assets" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="39" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5df0-8413-3cb7-97df" name="Nurgle Strategic Assets" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
-    <forceEntry id="265b-4776-0ca7-d01f" name="Nurgle Knight Household Lance" hidden="false">
+    <forceEntry id="ba56-feb3-ae8f-f5eb" name="Daemon Host" hidden="false">
       <categoryLinks>
-        <categoryLink id="d43f-95f1-595d-f0d0" name="Knight" hidden="false" targetId="2fdadb91-76c5-4160-88b3-b56bc092de2a" primary="false">
+        <categoryLink id="7632-e290-69bc-5ed5" name="Daemon" hidden="false" targetId="4a85-3a47-7491-7bf1" primary="false">
           <modifiers>
-            <modifier type="increment" field="ad42-e666-cca8-f44a" value="1.0">
+            <modifier type="increment" field="ae8d-078d-a56e-11f9" value="1.0">
               <repeats>
                 <repeat field="dc992662-6d4b-4120-a6a2-9acf4516238a" scope="roster" value="3.33" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
-            <modifier type="decrement" field="ad42-e666-cca8-f44a" value="1.0">
+            <modifier type="decrement" field="ae8d-078d-a56e-11f9" value="1.0">
+              <repeats>
+                <repeat field="dc992662-6d4b-4120-a6a2-9acf4516238a" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2fdadb91-76c5-4160-88b3-b56bc092de2a" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="ae8d-078d-a56e-11f9" value="1.0">
               <repeats>
                 <repeat field="dc992662-6d4b-4120-a6a2-9acf4516238a" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6b49f139-82c0-402f-815b-1cf743b3e47d" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6a1-ef2f-b788-1915" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="25b8-adaf-5388-ddaa" type="min"/>
-            <constraint field="dc992662-6d4b-4120-a6a2-9acf4516238a" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad42-e666-cca8-f44a" type="max"/>
-          </constraints>
-        </categoryLink>
-      </categoryLinks>
-    </forceEntry>
-    <forceEntry id="8444-e172-6abd-ea86" name="Nurgle Legion Support" hidden="false">
-      <categoryLinks>
-        <categoryLink id="105c-a746-da3a-f210" name="Titan" hidden="false" targetId="6b49f139-82c0-402f-815b-1cf743b3e47d" primary="false">
-          <modifiers>
-            <modifier type="increment" field="d433-8116-9932-090d" value="1.0">
-              <repeats>
-                <repeat field="dc992662-6d4b-4120-a6a2-9acf4516238a" scope="roster" value="3.33" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="decrement" field="d433-8116-9932-090d" value="1.0">
-              <repeats>
-                <repeat field="dc992662-6d4b-4120-a6a2-9acf4516238a" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2fdadb91-76c5-4160-88b3-b56bc092de2a" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8019-c253-3b30-d0da" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c14-389c-a445-f80e" type="min"/>
-            <constraint field="dc992662-6d4b-4120-a6a2-9acf4516238a" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d433-8116-9932-090d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b0cc-0b7f-7b91-ce44" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fab7-3eb1-16c5-c345" type="min"/>
+            <constraint field="dc992662-6d4b-4120-a6a2-9acf4516238a" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae8d-078d-a56e-11f9" type="max"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -151,7 +133,7 @@
             <modifier type="set" field="060a-0c06-20a0-e62c" value="Agile, Void Shields (2), Disgustingly Resilient"/>
           </modifiers>
         </infoLink>
-        <infoLink id="8d2e-982f-3a2a-7e80" name="Disgustingly Resilient" hidden="false" targetId="18f5-c278-291e-0e9d" type="rule"/>
+        <infoLink id="8d2e-982f-3a2a-7e80" name="Disgustingly Resilient" hidden="false" targetId="b9ff-5594-6936-1a03" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="9ebe-5bec-d7a3-62b5" name="Weapons" hidden="false" collective="false" import="true">
@@ -231,6 +213,5 @@
   </sharedSelectionEntries>
   <catalogueLinks>
     <catalogueLink id="0889-c247-1a41-354b" name="Strategic Assets" targetId="d70e008e-64a5-4e51-ac3e-7c35e5d2e0f4" type="catalogue" importRootEntries="false"/>
-    <catalogueLink id="1748-5c83-5045-9c84" name="Chaos: Death Guard" targetId="4733-f9f6-faa7-ae42" type="catalogue" importRootEntries="false"/>
   </catalogueLinks>
 </catalogue>
