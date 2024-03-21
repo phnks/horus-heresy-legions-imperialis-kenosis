@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="30cb-c173-1e8e-037f" name="Adeptus Mechanicus" revision="22" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="30cb-c173-1e8e-037f" name="Adeptus Mechanicus" revision="23" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="4e75-ca8c-415c-3af3" name="Mechanicus Armoured Company" hidden="false">
       <categoryLinks>
@@ -915,7 +915,7 @@
             </modifier>
           </modifiers>
           <characteristics>
-            <characteristic name="Move" typeId="d2bd2fb5-fd8a-4566-842e-dd987e88f298">9&quot;</characteristic>
+            <characteristic name="Move" typeId="d2bd2fb5-fd8a-4566-842e-dd987e88f298">10&quot;</characteristic>
             <characteristic name="Sv" typeId="2d7dcb0f-f0aa-4ab9-8c47-b3db3f611a39">2+</characteristic>
             <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+4</characteristic>
             <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">3+</characteristic>
@@ -925,7 +925,7 @@
         </profile>
       </profiles>
       <entryLinks>
-        <entryLink id="261a-37fc-4695-1aa9" name="Sponson Mounted Lightning Locks" hidden="false" collective="false" import="true" targetId="2921-8ff1-0d2b-dd2a" type="selectionEntry">
+        <entryLink id="261a-37fc-4695-1aa9" name="Lightning Locks" hidden="false" collective="false" import="true" targetId="2921-8ff1-0d2b-dd2a" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ea4-8d45-0d62-cc01" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a85-42d0-0f8d-5ae4" type="max"/>
@@ -979,7 +979,7 @@
           </modifiers>
           <characteristics>
             <characteristic name="Move" typeId="d2bd2fb5-fd8a-4566-842e-dd987e88f298">8&quot;</characteristic>
-            <characteristic name="Sv" typeId="2d7dcb0f-f0aa-4ab9-8c47-b3db3f611a39">4+</characteristic>
+            <characteristic name="Sv" typeId="2d7dcb0f-f0aa-4ab9-8c47-b3db3f611a39">3+</characteristic>
             <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+2</characteristic>
             <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">3+</characteristic>
             <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">1</characteristic>
@@ -1018,11 +1018,7 @@
         <infoLink id="7c07-5c08-0a67-e47e" name="Tech-Priest Dominus" hidden="false" targetId="b4c4-de68-128a-9a14" type="profile">
           <modifiers>
             <modifier type="set" field="name" value="Tech-Priest Dominus w/ Myrmidon Secutors"/>
-            <modifier type="set" field="060a-0c06-20a0-e62c" value="Commander, Inspire (8&quot;), Invulnerable Save (6+), Master Tactician, Bulky, Implacable, Steadfast">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3190-c92e-6ee3-973f" type="lessThan"/>
-              </conditions>
-            </modifier>
+            <modifier type="set" field="060a-0c06-20a0-e62c" value="Commander, Inspire (8&quot;), Invulnerable Save (6+), Master Tactician, Bulky, Implacable, Steadfast"/>
             <modifier type="set" field="060a-0c06-20a0-e62c" value="Commander, Inspire (8&quot;), Invulnerable Save (6+), Master Tactician, Bulky, Implacable, Steadfast, Infiltrate">
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3190-c92e-6ee3-973f" type="greaterThan"/>
@@ -1133,11 +1129,7 @@
         <infoLink id="ec82-e9d6-4783-db30" name="Tech-Priest Dominus" hidden="false" targetId="b4c4-de68-128a-9a14" type="profile">
           <modifiers>
             <modifier type="set" field="name" value="Tech-Priest Dominus w/ Skitarii Rangers"/>
-            <modifier type="set" field="060a-0c06-20a0-e62c" value="Commander, Inspire (8&quot;), Invulnerable Save (6+), Master Tactician, Line, Scout">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3190-c92e-6ee3-973f" type="lessThan"/>
-              </conditions>
-            </modifier>
+            <modifier type="set" field="060a-0c06-20a0-e62c" value="Commander, Inspire (8&quot;), Invulnerable Save (6+), Master Tactician, Line, Scout"/>
             <modifier type="set" field="060a-0c06-20a0-e62c" value="Commander, Inspire (8&quot;), Invulnerable Save (6+), Master Tactician, Line, Scout, Infiltrate">
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3190-c92e-6ee3-973f" type="greaterThan"/>
@@ -1177,11 +1169,7 @@
         <infoLink id="bcc9-6f7d-9a25-1fde" name="Tech-Priest Dominus" hidden="false" targetId="b4c4-de68-128a-9a14" type="profile">
           <modifiers>
             <modifier type="set" field="name" value="Tech-Priest Dominus w/ Skitarii Vanguard"/>
-            <modifier type="set" field="060a-0c06-20a0-e62c" value="Commander, Inspire (8&quot;), Invulnerable Save (6+), Master Tactician, Line">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3190-c92e-6ee3-973f" type="lessThan"/>
-              </conditions>
-            </modifier>
+            <modifier type="set" field="060a-0c06-20a0-e62c" value="Commander, Inspire (8&quot;), Invulnerable Save (6+), Master Tactician, Line"/>
             <modifier type="set" field="060a-0c06-20a0-e62c" value="Commander, Inspire (8&quot;), Invulnerable Save (6+), Master Tactician, Line, Infiltrate">
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3190-c92e-6ee3-973f" type="greaterThan"/>
