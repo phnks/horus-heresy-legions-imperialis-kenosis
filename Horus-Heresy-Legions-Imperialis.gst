@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="2c9332de-54e2-4bfc-9423-269293af3a88" name="Horus Heresy: Legions Imperialis: Kenosis Edition" revision="37" battleScribeVersion="2.03" authorName="BSData Team" authorContact="" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="2c9332de-54e2-4bfc-9423-269293af3a88" name="Horus Heresy: Legions Imperialis: Kenosis Edition" revision="39" battleScribeVersion="2.03" authorName="BSData Team" authorContact="" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="c3da3c2a-6a3a-4fb8-8b85-7f94e2c8f894" name="Legions Imperialis Rulebook" shortName="LI" publicationDate="2023" publisherUrl="https://thehorusheresy.com/legions-imperialis"/>
     <publication id="641fbf79-252a-4a03-8af3-8e3cc6988f81" name="GitHub" shortName="BSData/Horus-Heresy-Legions-Imperialis" publisherUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis"/>
@@ -60,6 +60,9 @@
     <categoryEntry id="2fdadb91-76c5-4160-88b3-b56bc092de2a" name="Knight" publicationId="c3da3c2a-6a3a-4fb8-8b85-7f94e2c8f894" page="128" hidden="false"/>
     <categoryEntry id="6b49f139-82c0-402f-815b-1cf743b3e47d" name="Titan" publicationId="c3da3c2a-6a3a-4fb8-8b85-7f94e2c8f894" page="128" hidden="false"/>
     <categoryEntry id="576893f6-87c3-48f1-b5a0-0b183af75602" name="Cavalry (1)" hidden="false"/>
+    <categoryEntry id="a5a9-2f65-dd50-418d" name="Knight (4)" hidden="false"/>
+    <categoryEntry id="9eee-b8eb-ea7b-8ee4" name="Strategic Assets" hidden="false"/>
+    <categoryEntry id="7d6c-efb4-d237-a868" name="Titan (5)" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="7463c8ee-68d1-4659-b949-2a93f386e957" name="Unbound Formation (Open Play)" hidden="true">
