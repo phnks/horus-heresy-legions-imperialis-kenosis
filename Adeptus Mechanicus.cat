@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="30cb-c173-1e8e-037f" name="Adeptus Mechanicus" revision="20" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="30cb-c173-1e8e-037f" name="Adeptus Mechanicus" revision="21" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="39" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="4e75-ca8c-415c-3af3" name="Mechanicus Armoured Company" hidden="false">
       <categoryLinks>
@@ -91,7 +91,7 @@
         </categoryLink>
       </categoryLinks>
     </forceEntry>
-    <forceEntry id="8ac3-b555-5dce-a9ad" name="Mechanicus Destructor Infantry Sub-cohort" hidden="false">
+    <forceEntry id="8ac3-b555-5dce-a9ad" name="Mechanicus Destructor Infantry Cohort" hidden="false">
       <categoryLinks>
         <categoryLink id="1ec0-312c-9b42-8aaf" name="Configuration" hidden="false" targetId="08eb75aa-6fda-497e-a7ea-d7239064ba58" primary="false"/>
         <categoryLink id="6b22-23c3-a74a-8b1b" name="HQ" hidden="false" targetId="d950-ad23-9b2-9325" primary="false">
@@ -314,9 +314,17 @@
   </forceEntries>
   <selectionEntries>
     <selectionEntry id="9dea-9582-0c62-6092" name="Scout Battle Maniple Detachment" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="38bd-6a84-9981-0b07" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3190-c92e-6ee3-973f" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="1804a1ce-97f8-474c-bef5-d308d28bd093" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bbfd-e9c6-daef-6d42" type="max"/>
         <constraint field="1804a1ce-97f8-474c-bef5-d308d28bd093" scope="parent" value="-3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10af-a011-179e-3d8e" type="min"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="38bd-6a84-9981-0b07" type="min"/>
       </constraints>
       <infoLinks>
         <infoLink id="d6a9-cc91-44d3-280b" name="Infiltrate" hidden="false" targetId="d33a99a4-35ea-4862-ba44-e212643ad36a" type="rule">
@@ -356,9 +364,17 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="e69e-2ac2-19fb-d750" name="Vanguard Battle Maniple Detachment" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="1c95-586f-6e9a-6546" value="0.0">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3190-c92e-6ee3-973f" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="1804a1ce-97f8-474c-bef5-d308d28bd093" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c5b9-f375-530c-038d" type="max"/>
         <constraint field="1804a1ce-97f8-474c-bef5-d308d28bd093" scope="parent" value="-3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5725-8c9b-bed2-b269" type="min"/>
+        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c95-586f-6e9a-6546" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="8217-b8b7-c3e0-60fb" name="Infiltrate" hidden="false" targetId="d33a99a4-35ea-4862-ba44-e212643ad36a" type="rule">
@@ -711,6 +727,13 @@
     <selectionEntry id="27c4-3dd7-d0d9-4700" name="Skitarii Vanguard" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="5017-98f4-5e7c-fb19" name="Skitarii Vanguard" hidden="false" typeId="746bcfa7-66de-4644-97e8-07da9cec42b6" typeName="Detachment">
+          <modifiers>
+            <modifier type="set" field="060a-0c06-20a0-e62c" value="Line, Infiltrate">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3190-c92e-6ee3-973f" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="Move" typeId="d2bd2fb5-fd8a-4566-842e-dd987e88f298">5&quot;</characteristic>
             <characteristic name="Sv" typeId="2d7dcb0f-f0aa-4ab9-8c47-b3db3f611a39">6+</characteristic>
@@ -761,6 +784,13 @@
     <selectionEntry id="2f93-82fb-3632-1e34" name="Skitarii Rangers" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="cd56-8d13-2fcf-e638" name="Skitarii Rangers" hidden="false" typeId="746bcfa7-66de-4644-97e8-07da9cec42b6" typeName="Detachment">
+          <modifiers>
+            <modifier type="set" field="060a-0c06-20a0-e62c" value="Line, Scout, Infiltrate">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3190-c92e-6ee3-973f" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="Move" typeId="d2bd2fb5-fd8a-4566-842e-dd987e88f298">5&quot;</characteristic>
             <characteristic name="Sv" typeId="2d7dcb0f-f0aa-4ab9-8c47-b3db3f611a39">6+</characteristic>
@@ -811,6 +841,13 @@
     <selectionEntry id="f447-3e92-2f2d-45dd" name="Myrmidon Secutors" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="998b-cb0f-8b0b-b7f2" name="Myrmidon Secutors" hidden="false" typeId="746bcfa7-66de-4644-97e8-07da9cec42b6" typeName="Detachment">
+          <modifiers>
+            <modifier type="set" field="060a-0c06-20a0-e62c" value="Bulky, Implacable, Steadfast, Infiltrate">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3190-c92e-6ee3-973f" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="Move" typeId="d2bd2fb5-fd8a-4566-842e-dd987e88f298">5&quot;</characteristic>
             <characteristic name="Sv" typeId="2d7dcb0f-f0aa-4ab9-8c47-b3db3f611a39">4+</characteristic>
@@ -870,6 +907,13 @@
     <selectionEntry id="77c4-65f0-9a79-2cb7" name="Karacnos Assault Tank" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="aa36-04b4-c79d-e7bd" name="Karacnos Assault Tank" hidden="false" typeId="746bcfa7-66de-4644-97e8-07da9cec42b6" typeName="Detachment">
+          <modifiers>
+            <modifier type="set" field="060a-0c06-20a0-e62c" value="Forward Deployment">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3190-c92e-6ee3-973f" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="Move" typeId="d2bd2fb5-fd8a-4566-842e-dd987e88f298">9&quot;</characteristic>
             <characteristic name="Sv" typeId="2d7dcb0f-f0aa-4ab9-8c47-b3db3f611a39">2+</characteristic>
@@ -926,6 +970,13 @@
     <selectionEntry id="0877-1ec6-e48b-62dc" name="Onager Dunecrawler w/ Neutron Beam Laser" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="f972-4b4f-3fb8-af97" name="Onager Dunecrawler" hidden="false" typeId="746bcfa7-66de-4644-97e8-07da9cec42b6" typeName="Detachment">
+          <modifiers>
+            <modifier type="set" field="060a-0c06-20a0-e62c" value="Explorator Adaption, Nimble, Forward Deployment">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3190-c92e-6ee3-973f" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="Move" typeId="d2bd2fb5-fd8a-4566-842e-dd987e88f298">8&quot;</characteristic>
             <characteristic name="Sv" typeId="2d7dcb0f-f0aa-4ab9-8c47-b3db3f611a39">4+</characteristic>
@@ -967,7 +1018,16 @@
         <infoLink id="7c07-5c08-0a67-e47e" name="Tech-Priest Dominus" hidden="false" targetId="b4c4-de68-128a-9a14" type="profile">
           <modifiers>
             <modifier type="set" field="name" value="Tech-Priest Dominus w/ Myrmidon Secutors"/>
-            <modifier type="set" field="060a-0c06-20a0-e62c" value="Commander, Inspire (8&quot;), Invulnerable Save (6+), Master Tactician, Bulky, Implacable, Steadfast"/>
+            <modifier type="set" field="060a-0c06-20a0-e62c" value="Commander, Inspire (8&quot;), Invulnerable Save (6+), Master Tactician, Bulky, Implacable, Steadfast">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3190-c92e-6ee3-973f" type="lessThan"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="060a-0c06-20a0-e62c" value="Commander, Inspire (8&quot;), Invulnerable Save (6+), Master Tactician, Bulky, Implacable, Steadfast, Infiltrate">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3190-c92e-6ee3-973f" type="greaterThan"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </infoLink>
         <infoLink id="6b64-b9b1-97b7-112b" name="Commander" hidden="false" targetId="9501d65d-30ac-43cf-a8ba-cb5c3a5e9f29" type="rule"/>
@@ -1073,7 +1133,16 @@
         <infoLink id="ec82-e9d6-4783-db30" name="Tech-Priest Dominus" hidden="false" targetId="b4c4-de68-128a-9a14" type="profile">
           <modifiers>
             <modifier type="set" field="name" value="Tech-Priest Dominus w/ Skitarii Rangers"/>
-            <modifier type="set" field="060a-0c06-20a0-e62c" value="Commander, Inspire (8&quot;), Invulnerable Save (6+), Master Tactician, Line, Scout"/>
+            <modifier type="set" field="060a-0c06-20a0-e62c" value="Commander, Inspire (8&quot;), Invulnerable Save (6+), Master Tactician, Line, Scout">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3190-c92e-6ee3-973f" type="lessThan"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="060a-0c06-20a0-e62c" value="Commander, Inspire (8&quot;), Invulnerable Save (6+), Master Tactician, Line, Scout, Infiltrate">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3190-c92e-6ee3-973f" type="greaterThan"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -1108,7 +1177,16 @@
         <infoLink id="bcc9-6f7d-9a25-1fde" name="Tech-Priest Dominus" hidden="false" targetId="b4c4-de68-128a-9a14" type="profile">
           <modifiers>
             <modifier type="set" field="name" value="Tech-Priest Dominus w/ Skitarii Vanguard"/>
-            <modifier type="set" field="060a-0c06-20a0-e62c" value="Commander, Inspire (8&quot;), Invulnerable Save (6+), Master Tactician, Line"/>
+            <modifier type="set" field="060a-0c06-20a0-e62c" value="Commander, Inspire (8&quot;), Invulnerable Save (6+), Master Tactician, Line">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3190-c92e-6ee3-973f" type="lessThan"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="060a-0c06-20a0-e62c" value="Commander, Inspire (8&quot;), Invulnerable Save (6+), Master Tactician, Line, Infiltrate">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3190-c92e-6ee3-973f" type="greaterThan"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </infoLink>
         <infoLink id="5b20-9df8-a4ac-df00" name="Commander" hidden="false" targetId="9501d65d-30ac-43cf-a8ba-cb5c3a5e9f29" type="rule"/>
