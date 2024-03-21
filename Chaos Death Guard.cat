@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4733-f9f6-faa7-ae42" name="Chaos: Death Guard" revision="21" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4733-f9f6-faa7-ae42" name="Chaos: Death Guard" revision="23" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="39bd-547d-3d4d-5ffb" name="Death Guard Maladictum" hidden="false">
-      <rules>
-        <rule id="496e-d161-e178-0c9c" name="Heart of the Legion (Death Guard Maladictum)" hidden="false">
-          <description>Compulsory Core Detachment slots in this Formation must be filled with Colony Detachments. All non-Infantry models within this Formation increase their Tactical Strength by 1 when contesting an Objective marker that an Infantry model within this Formation is also contesting.</description>
-        </rule>
-        <rule id="cb48-cf6e-0703-a259" name="Dedicated Transports (Death Guard Maladictum)" hidden="false">
-          <description>Any Chaos: Death Guard Detachment within the Formation that contains only Infantry models may be upgraded with Nurgle Rhinos as Dedicated Transports.</description>
-        </rule>
-      </rules>
       <categoryLinks>
         <categoryLink id="3627-f584-1077-2350" name="Configuration" hidden="false" targetId="08eb75aa-6fda-497e-a7ea-d7239064ba58" primary="false"/>
         <categoryLink id="9fd9-c307-9de1-21ae" name="HQ" hidden="false" targetId="d950-ad23-9b2-9325" primary="false">
@@ -118,6 +110,132 @@
         <categoryLink id="8984-743a-35a5-6f12" name="Vanguard" hidden="false" targetId="8416-456c-a6f-e059" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb44-5eb6-73c1-096a" type="max"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry id="ee06-0f07-2f43-4dbe" name="Death Guard Armoured Company" hidden="false">
+      <categoryLinks>
+        <categoryLink id="51fc-0857-fb6b-cc2d" name="Configuration" hidden="false" targetId="08eb75aa-6fda-497e-a7ea-d7239064ba58" primary="false"/>
+        <categoryLink id="1de7-2807-218c-39c2" name="Air Support" hidden="false" targetId="406ab93a-60ea-4fd5-9553-feef5a28ba12" primary="false">
+          <modifiers>
+            <modifier type="set" field="6fcb-82ce-82b2-0bba" value="0.0">
+              <conditions>
+                <condition field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c5ec467a-696c-49ec-9a60-dc95ee465cf5" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fcb-82ce-82b2-0bba" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="a111-1daf-e440-a5a8" name="Battle Tank" hidden="false" targetId="32eb0e0c-78c3-4ab0-ab6a-5160a47cb924" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30e1-7143-f51a-82a5" type="min"/>
+            <constraint field="selections" scope="force" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="92d8-b502-edfc-5a09" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="8d12-4fd5-cf86-151e" name="Heavy Armour" hidden="false" targetId="c5ec467a-696c-49ec-9a60-dc95ee465cf5" primary="false">
+          <modifiers>
+            <modifier type="set" field="6e22-2a9d-a71c-d83f" value="2.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="406ab93a-60ea-4fd5-9553-feef5a28ba12" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3674-8c5b-a67d-c69b" type="min"/>
+            <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e22-2a9d-a71c-d83f" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="5c68-4321-ca0b-2cd4" name="Light Armour" hidden="false" targetId="17079afa-e39f-4f33-9207-cc02fd3a3520" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5559-d098-0405-8775" type="max"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry id="4327-09cd-4b9e-8a64" name="Death Guard Drop Pod Assault" hidden="false">
+      <categoryLinks>
+        <categoryLink id="28e3-31ac-9d4f-d542" name="Configuration" hidden="false" targetId="08eb75aa-6fda-497e-a7ea-d7239064ba58" primary="false"/>
+        <categoryLink id="a3f0-6749-1eb9-a6d8" name="HQ" hidden="false" targetId="d950-ad23-9b2-9325" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9c0-1012-edea-d153" type="min"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="809b-9bdf-3244-95bf" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="72e8-8ced-3995-05e4" name="Core" hidden="false" targetId="e0fe110f-b15d-4340-9583-557d57cd2981" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6df7-247b-1ea9-1228" type="min"/>
+            <constraint field="selections" scope="force" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="283b-00ed-02e9-1f84" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="9561-93a3-be37-8654" name="Air Support" hidden="false" targetId="406ab93a-60ea-4fd5-9553-feef5a28ba12" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9790-9bb4-28fe-58f7" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="3d6f-3b8f-78aa-ead8" name="Support" hidden="false" targetId="ae9be095-043a-4fd4-b809-d160d4b5e1fa" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="39cc-66bd-9636-5c4a" type="min"/>
+            <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="550f-6aad-1bf7-a743" type="max"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry id="4631-f0cd-2846-7ef2" name="Death Guard Garrison Force" hidden="false">
+      <categoryLinks>
+        <categoryLink id="9434-746b-020d-977a" name="Configuration" hidden="false" targetId="08eb75aa-6fda-497e-a7ea-d7239064ba58" primary="false"/>
+        <categoryLink id="5a9d-71b3-eb2c-31a7" name="HQ" hidden="false" targetId="d950-ad23-9b2-9325" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37c7-f1f4-607a-05c6" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="6822-37c8-d1a5-0dd6" name="Core" hidden="false" targetId="e0fe110f-b15d-4340-9583-557d57cd2981" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="934f-92d8-163e-8fe1" type="min"/>
+            <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="40e4-5086-6976-f23b" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="65fc-7038-e63a-bbff" name="Air Support" hidden="false" targetId="406ab93a-60ea-4fd5-9553-feef5a28ba12" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b4e-07c1-b66e-ef1d" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="e7a0-4551-34db-2b63" name="Artillery" hidden="false" targetId="45d6c947-80a0-4e29-a4be-a4089467fc2d" primary="false">
+          <modifiers>
+            <modifier type="set" field="9dea-a8ef-ed86-cce7" value="1.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c5ec467a-696c-49ec-9a60-dc95ee465cf5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9dea-a8ef-ed86-cce7" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="f613-1bad-f2aa-eac2" name="Bastion" hidden="false" targetId="7f7126c2-fd49-4c60-ab12-b5e25b945127" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="947b-af16-58f3-cf39" type="min"/>
+            <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c9e-07eb-c293-2e62" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="8739-4440-ca89-1e89" name="Heavy Armour" hidden="false" targetId="c5ec467a-696c-49ec-9a60-dc95ee465cf5" primary="false">
+          <modifiers>
+            <modifier type="set" field="a1e6-d2fe-6def-2432" value="0.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="45d6c947-80a0-4e29-a4be-a4089467fc2d" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a1e6-d2fe-6def-2432" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="0e32-797c-851c-a4ac" name="Support" hidden="false" targetId="ae9be095-043a-4fd4-b809-d160d4b5e1fa" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e08-382c-2f97-cc59" type="min"/>
+            <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a450-f0cf-30cd-92fd" type="max"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -355,9 +473,6 @@
           </conditionGroups>
         </modifier>
       </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2409-a742-fafd-90a7" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="5f8f-b196-419c-ff46" name="New CategoryLink" hidden="false" targetId="d950-ad23-9b2-9325" primary="true"/>
         <categoryLink id="2182-f458-8317-edbb" name="Infantry (1)" hidden="false" targetId="3e3d12cf-27be-4415-af5e-e47be58e343c" primary="false"/>
@@ -409,6 +524,117 @@ Two Structures can be selected in place of a single area of terrain. Each time a
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+            <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c5c4-f1cf-0e83-ce96" name="Dedicated Transports (Death Guard Maladictum)" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="39bd-547d-3d4d-5ffb" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8770-436e-6f77-3194" type="min"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f8b-8649-e798-bc82" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="8a9b-5d5b-4886-01ce" name="Configuration" hidden="false" targetId="08eb75aa-6fda-497e-a7ea-d7239064ba58" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="9045-5c74-c068-6968" name="Dedicated Transports (Death Guard Maladictum)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="192b-a8ee-ddc5-158e" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db38-5f50-f396-8cf6" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="4715-ae61-2769-79d3" name="Dedicated Transports (Death Guard Maladictum)" hidden="false">
+              <description>Any Chaos: Death Guard Detachment within the Formation that contains only Infantry models may be upgraded with Nurgle Rhinos as Dedicated Transports.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+            <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="39cb-9600-939c-df54" name="Heart of the Legion (Death Guard Maladictum)" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="39bd-547d-3d4d-5ffb" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b156-9c82-fb59-a9b1" type="min"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d08-71ad-13ec-0097" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="bb43-7345-2ec4-4aae" name="Configuration" hidden="false" targetId="08eb75aa-6fda-497e-a7ea-d7239064ba58" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="4620-4d45-423b-b0ce" name="Heart of the Legion (Death Guard Maladictum)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f55-9c0f-cf1a-df70" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2603-fc22-c28a-f68b" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="9bb6-e585-b325-6212" name="Heart of the Legion (Death Guard Maladictum)" hidden="false">
+              <description>Compulsory Core Detachment slots in this Formation must be filled with Colony Detachments. All non-Infantry models within this Formation increase their Tactical Strength by 1 when contesting an Objective marker that an Infantry model within this Formation is also contesting.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+            <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0f33-1de7-72cd-6b46" name="Dedicated Transports (Death Guard Drop Pod Assault)" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4327-09cd-4b9e-8a64" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e42c-b46c-ba9b-c5a0" type="min"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d9cc-82ea-1d85-84c3" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="761c-cc86-6c5c-c471" name="Configuration" hidden="false" targetId="08eb75aa-6fda-497e-a7ea-d7239064ba58" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="95b5-850c-6be3-aaa7" name="Dedicated Transports (Death Guard Drop Pod Assault)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0393-3376-c1a0-650b" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="34b5-92dd-9adf-6284" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="4f76-afe2-e7f7-0924" name="Dedicated Transports (Death Guard Drop Pod Assault)" hidden="false">
+              <description>All Chaos: Death Guard Detachments within the Formation that contains only Infantry models (excluding models with the Deep Strike special rule) must be upgraded with Drop Pods as Dedicated Transports, and all Chaos: Death Guard Detachments within the Formation that contains only Walker models (excluding models with the Deep Strike special rule) must be upgraded with Dreadnought Drop Pods as Dedicated Transports</description>
+            </rule>
+          </rules>
           <costs>
             <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
             <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
