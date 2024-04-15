@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="2c9332de-54e2-4bfc-9423-269293af3a88" name="Horus Heresy: Legions Imperialis: Kenosis Edition" revision="42" battleScribeVersion="2.03" authorName="BSData Team" authorContact="" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="2c9332de-54e2-4bfc-9423-269293af3a88" name="Horus Heresy: Legions Imperialis: Kenosis Edition" revision="45" battleScribeVersion="2.03" authorName="BSData Team" authorContact="" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="c3da3c2a-6a3a-4fb8-8b85-7f94e2c8f894" name="Legions Imperialis Rulebook" shortName="LI" publicationDate="2023" publisherUrl="https://thehorusheresy.com/legions-imperialis"/>
     <publication id="641fbf79-252a-4a03-8af3-8e3cc6988f81" name="GitHub" shortName="BSData/Horus-Heresy-Legions-Imperialis" publisherUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis"/>
@@ -354,6 +354,63 @@
         <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="4a4b-1752-c7eb-570a" name="Pintle Mounted Volkite Caliver" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="cd37-2d72-4e76-7c70" name="Point Defence" hidden="false" targetId="ddbfcec5-daab-4124-abb7-0eb88a1960e6" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="8a03-0da3-b04a-e1b5" name="Volkite Caliver" hidden="false" collective="false" import="true" targetId="5825-dbb9-5045-8fb1" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="eccb-3654-fde3-52e9" name="Pintle Mounted Mauler Bolt Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="f0ea-3e8b-3f05-798c" name="Point Defence" hidden="false" targetId="ddbfcec5-daab-4124-abb7-0eb88a1960e6" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="36c9-55e8-d29f-b699" name="Mauler Bolt Cannon" hidden="false" collective="false" import="true" targetId="761c-c979-ba95-f018" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5825-dbb9-5045-8fb1" name="Volkite Caliver" page="" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="1578-c749-b7f4-d78d" name="Volkite Caliver" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">12&quot;</characteristic>
+            <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">1</characteristic>
+            <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">4+</characteristic>
+            <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">0</characteristic>
+            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Deflagrate, Light</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="2c4b-685c-24cb-3c5c" name="Deflagrate" hidden="false" targetId="77cbdd47-e81f-43fe-9b70-148ab9bbd53a" type="rule"/>
+        <infoLink id="b2cd-f846-e7f0-1378" name="Light" hidden="false" targetId="bb25fe8e-6b0a-40a9-bc11-d9508716ded5" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="761c-c979-ba95-f018" name="Mauler Bolt Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="4d2e-0570-1c0e-fbaa" name="Mauler Bolt Cannon" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">8&quot;</characteristic>
+            <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">1</characteristic>
+            <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">5+</characteristic>
+            <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-2</characteristic>
+            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Light AT, Point Defence</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="9a27-8557-ff1f-0b39" name="Light AT" hidden="false" targetId="58c6bbe7-51c3-4eff-aa9f-a5c17b976571" type="rule"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
@@ -809,6 +866,9 @@ If a Detachment contains more than one model with this rule, the controlling pla
     </rule>
     <rule id="b9ff-5594-6936-1a03" name="Disgustingly Resilient" hidden="false">
       <description>Hits scored by a weapon against a model with the Disgustingly Resilient special rule reduce their AP by 1 (to a minimum of 0). </description>
+    </rule>
+    <rule id="dfac-86e3-280a-c6ac" name="Rad-Phage" publicationId="c3da3c2a-6a3a-4fb8-8b85-7f94e2c8f894" page="94" hidden="false">
+      <description>Infantry, Cavalry, and Walker models suffer -1 to their save when within 4&quot; of a model with the Rad-Phage special rule.</description>
     </rule>
   </sharedRules>
 </gameSystem>
