@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="30cb-c173-1e8e-037f" name="Adeptus Mechanicus" revision="29" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="46" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="30cb-c173-1e8e-037f" name="Adeptus Mechanicus" revision="30" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="46" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="4e75-ca8c-415c-3af3" name="Mechanicus Armoured Company" hidden="false">
       <categoryLinks>
@@ -845,6 +845,285 @@
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cf0a-3db9-fd9f-52cc" name="Mechanicus Destructor Infantry Sub-cohort" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ac3-b555-5dce-a9ad" type="lessThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="ce2d-0263-6652-644b" value="0.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ac3-b555-5dce-a9ad" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce2d-0263-6652-644b" type="min"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4363-9d3d-957b-0770" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="8fcf-c25f-8d10-7377" name="Configuration" hidden="false" targetId="08eb75aa-6fda-497e-a7ea-d7239064ba58" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="c701-d199-27ae-ba90" name="Mechanicus Destructor Infantry Sub-cohort" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f161-4c95-ce26-f7cc" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ba2-0cd5-0c4e-83b1" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="7cea-4b86-1282-f117" name="Mechanicus Destructor Infantry Sub-cohort" hidden="false">
+              <description>Compulsory Detachments:
+1 HQ
+1 Support
+2 Core
+
+Optional Detachments:
+2 Vanguard
+1 Air Support
+1 Support
+
+Requires dedicated transports for all Infantry detachments.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+            <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="120f-b592-dc37-4e02" name="Mechanicus Armoured Company" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4e75-ca8c-415c-3af3" type="lessThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="785f-e323-451a-0346" value="0.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4e75-ca8c-415c-3af3" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="785f-e323-451a-0346" type="min"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5951-fd40-2382-7e26" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="5127-6c87-f124-e0ee" name="Configuration" hidden="false" targetId="08eb75aa-6fda-497e-a7ea-d7239064ba58" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="d09b-8370-5f84-5f3d" name="Mechanicus Armoured Company" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c17-037c-bdc9-c058" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd1a-9127-7689-21c8" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="d38d-fccf-5f28-5eeb" name="Mechanicus Armoured Company" hidden="false">
+              <description>Compulsory Detachments:
+2 Battle Tanks
+1 Heavy Armour
+
+Optional Detachments:
+2 Battle Tanks
+1 Heavy Armour
+
+Can include one of the following:
+1 Battle Tank
+1 Artillery
+1 Air Support</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+            <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0009-3168-a4cc-1b78" name="Mechanicus Scout Company" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3190-c92e-6ee3-973f" type="lessThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="ecd1-7ab4-f5ce-fefa" value="0.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3190-c92e-6ee3-973f" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ecd1-7ab4-f5ce-fefa" type="min"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8cc7-2e36-0f5f-22f8" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="b4ef-fabf-1eec-7c54" name="Configuration" hidden="false" targetId="08eb75aa-6fda-497e-a7ea-d7239064ba58" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="69c2-c3cd-cafb-5745" name="Mechanicus Scout Company" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="84a1-e730-28f6-0c24" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a6e-ade3-29ff-5e27" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="0214-eb95-f979-7cec" name="Mechanicus Scout Company" hidden="false">
+              <description>Compulsory Detachments:
+1 HQ
+2 Bastion
+1 Scout Battle Maniple
+
+Optional Detachments:
+1 Support
+1 Core
+1 Air Support
+2 Vanguard
+
+Can include one of the following:
+1 Battle Tank
+1 Artillery
+1 Air Support
+
+All Infantry detachments gain Infiltrate. All other detachments gain Forward Deployment.
+
+</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+            <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="abb6-0d1d-9208-29d7" name="Mechanicus War Cohort" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2eb4-a887-2bf6-0683" type="lessThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="3687-0b02-3247-d3be" value="0.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2eb4-a887-2bf6-0683" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3687-0b02-3247-d3be" type="min"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f82-8511-eee6-a1f6" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="b519-3c6f-0d52-f3e9" name="Configuration" hidden="false" targetId="08eb75aa-6fda-497e-a7ea-d7239064ba58" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="9f4e-dd7f-15e3-2046" name="Mechanicus War Cohort" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f4a-9fdf-37d4-96d0" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0e8-639f-11a0-8de3" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="9afe-357c-ae93-399d" name="Mechanicus War Cohort" hidden="false">
+              <description>Compulsory Detachments:
+1 HQ
+2 Core
+1 Support
+
+Optional Detachments:
+2 Support
+3 Transport
+1 Core
+1 Battle Tank
+
+Can include one of the following:
+1 Light Armour
+1 Vanguard
+
+Can include one of the following:
+1 Battle Tank
+1 Artillery
+1 Air Support
+
+</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+            <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a3d4-42a3-5bf1-11de" name="Mechanicus Artillery Company" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bfdc-b61d-b16b-6bb4" type="lessThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="bd04-5dbf-3e6b-cef5" value="0.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bfdc-b61d-b16b-6bb4" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd04-5dbf-3e6b-cef5" type="min"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d0f2-0cd7-807d-ae77" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="0273-5049-d56a-f2f6" name="Configuration" hidden="false" targetId="08eb75aa-6fda-497e-a7ea-d7239064ba58" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="914f-b8fb-8022-de6b" name="Mechanicus Artillery Company" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3263-251c-421c-1816" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="445a-69bc-9245-3ff5" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="e8cd-0237-57e5-a3b2" name="Mechanicus Artillery Company" hidden="false">
+              <description>Compulsory Detachments:
+1 HQ
+3 Artillery
+
+Optional Detachments:
+2 Support
+2 Bastion
+
+Artillery detachments do not suffer -1 to hit when firing indirectly with Barrage.
+
+</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+            <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <costs>
         <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>

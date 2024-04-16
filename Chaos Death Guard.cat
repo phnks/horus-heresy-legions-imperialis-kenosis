@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4733-f9f6-faa7-ae42" name="Chaos: Death Guard" revision="28" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4733-f9f6-faa7-ae42" name="Chaos: Death Guard" revision="29" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="46" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="39bd-547d-3d4d-5ffb" name="Death Guard Maladictum" hidden="false">
       <categoryLinks>
@@ -653,6 +653,239 @@ Two Structures can be selected in place of a single area of terrain. Each time a
           <rules>
             <rule id="4f76-afe2-e7f7-0924" name="Dedicated Transports (Death Guard Drop Pod Assault)" hidden="false">
               <description>All Chaos: Death Guard Detachments within the Formation that contains only Infantry models (excluding models with the Deep Strike special rule) must be upgraded with Drop Pods as Dedicated Transports, and all Chaos: Death Guard Detachments within the Formation that contains only Walker models (excluding models with the Deep Strike special rule) must be upgraded with Dreadnought Drop Pods as Dedicated Transports</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+            <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1a9b-7dde-b083-3962" name="Death Guard Drop Pod Assault" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="0f27-1648-5f12-4090" value="0.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4327-09cd-4b9e-8a64" type="lessThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4327-09cd-4b9e-8a64" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f27-1648-5f12-4090" type="min"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a35-4c10-6c0a-8460" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="973a-fe3d-56ed-161c" name="Configuration" hidden="false" targetId="08eb75aa-6fda-497e-a7ea-d7239064ba58" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="0310-dbe0-61fa-a695" name="Death Guard Drop Pod Assault" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e8e-ea81-312f-bb26" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa0d-9fc7-2f4f-1523" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="9f71-32b0-c5e9-5c67" name="Death Guard Drop Pod Assault" hidden="false">
+              <description>Compulsory Detachments:
+1 HQ
+1 Support
+2 Core
+
+Optional Detachments:
+2 Support
+2 Core
+1 Air Support
+
+All Infantry and Walker detachments (without Deep Strike) must take Nurgle Drop Pods as dedicated transport. 
+
+</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+            <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="dfb2-5a1e-6e93-1276" name="Death Guard Maladictum" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="39bd-547d-3d4d-5ffb" type="lessThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="e4bd-407c-3b16-737e" value="0.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="39bd-547d-3d4d-5ffb" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4bd-407c-3b16-737e" type="min"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e884-ed54-3061-2636" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="c10e-cfaa-9302-26b3" name="Configuration" hidden="false" targetId="08eb75aa-6fda-497e-a7ea-d7239064ba58" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="0f0e-dd8b-7be6-eba5" name="Death Guard Maladictum" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ba9-f840-ff7c-5d07" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a61-e7bc-383c-4f3c" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="d079-64fc-4e45-1a8a" name="Death Guard Maladictum" hidden="false">
+              <description>Compulsory Detachments:
+1 HQ
+1 Support
+2 Core
+
+Optional Detachments:
+2 Support
+1 Core
+1 Bastion
+2 Transport
+1 Vanguard
+
+Can include one of the following:
+1 Light Armour
+1 Air Support
+
+Can include one of the following:
+1 Artillery
+1 Battle Tank
+1 Heavy Armour
+
+All Infatry detachments may take Nurgle Rhinos as dedicated transports. All non-Infantry detachments in this formation increase their tactical strength by 1 when contesting an Objective with other allied Infantry detachments.
+
+</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+            <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c311-d084-60ba-dca4" name="Death Guard Garrison Force" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4631-f0cd-2846-7ef2" type="lessThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="63c1-7a89-1876-851f" value="0.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4631-f0cd-2846-7ef2" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="63c1-7a89-1876-851f" type="min"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f802-d338-cf99-0e48" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="3580-9df7-1be4-062c" name="Configuration" hidden="false" targetId="08eb75aa-6fda-497e-a7ea-d7239064ba58" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="6382-e7eb-3b7b-a829" name="Death Guard Garrison Force" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a39d-3b78-4aa8-59de" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d88d-6d7d-3db7-07b3" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="0559-a869-aa57-00f8" name="Death Guard Garrison Force" hidden="false">
+              <description>Compulsory Detachments:
+1 HQ
+1 Support
+1 Core
+1 Bastion
+
+Optional Detachments:
+2 Support
+1 Core
+2 Bastion
+1 Artillery
+1 Air Support
+
+Can include one of the following:
+1 Artillery
+1 Heavy Armour
+
+</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+            <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bf2c-a2e3-5887-fab3" name="Death Guard Armoured Company" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ee06-0f07-2f43-4dbe" type="lessThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="4d9f-7e1f-1196-7661" value="0.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ee06-0f07-2f43-4dbe" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d9f-7e1f-1196-7661" type="min"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e57-c133-fd69-1fb4" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="ed25-9502-3010-bdda" name="Configuration" hidden="false" targetId="08eb75aa-6fda-497e-a7ea-d7239064ba58" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="20c1-7636-8551-0a61" name="Death Guard Armoured Company" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="108b-59f6-11ff-5d9c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="397d-f582-e589-66b6" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="f1d8-d214-7dc3-98c1" name="Death Guard Armoured Company" hidden="false">
+              <description>Compulsory Detachments:
+2 Battle Tank
+1 Heavy Armour
+
+Optional Detachments:
+1 Light Armour
+1 Heavy Armour
+2 Battle Tank
+
+Can include one of the following:
+1 Air Support
+1 Heavy Armour
+
+</description>
             </rule>
           </rules>
           <costs>
