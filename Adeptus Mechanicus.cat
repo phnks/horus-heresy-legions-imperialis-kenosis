@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="30cb-c173-1e8e-037f" name="Adeptus Mechanicus" revision="30" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="46" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="30cb-c173-1e8e-037f" name="Adeptus Mechanicus" revision="33" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="46" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="4e75-ca8c-415c-3af3" name="Mechanicus Armoured Company" hidden="false">
       <categoryLinks>
@@ -323,7 +323,7 @@
       </modifiers>
       <constraints>
         <constraint field="1804a1ce-97f8-474c-bef5-d308d28bd093" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bbfd-e9c6-daef-6d42" type="max"/>
-        <constraint field="1804a1ce-97f8-474c-bef5-d308d28bd093" scope="parent" value="-3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10af-a011-179e-3d8e" type="min"/>
+        <constraint field="1804a1ce-97f8-474c-bef5-d308d28bd093" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10af-a011-179e-3d8e" type="min"/>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="38bd-6a84-9981-0b07" type="min"/>
       </constraints>
       <infoLinks>
@@ -348,13 +348,36 @@
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="34ef-ed1b-f205-6d9b" type="min"/>
           </constraints>
           <entryLinks>
-            <entryLink id="53b3-f52a-08a0-8a11" name="Skitarii Vanguard" hidden="false" collective="false" import="true" targetId="27c4-3dd7-d0d9-4700" type="selectionEntry"/>
+            <entryLink id="53b3-f52a-08a0-8a11" name="Skitarii Vanguard" hidden="false" collective="false" import="true" targetId="27c4-3dd7-d0d9-4700" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="1804a1ce-97f8-474c-bef5-d308d28bd093" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="9dea-9582-0c62-6092" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d405-4fa0-c112-3aae" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
             <entryLink id="f715-2775-760e-28ce" name="Skitarii Rangers" hidden="false" collective="false" import="true" targetId="2f93-82fb-3632-1e34" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="1804a1ce-97f8-474c-bef5-d308d28bd093" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="9dea-9582-0c62-6092" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d405-4fa0-c112-3aae" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="099a-ab95-c79f-8812" type="min"/>
               </constraints>
             </entryLink>
-            <entryLink id="9ec3-0f70-5031-58cb" name="Myrmidon Secutors" hidden="false" collective="false" import="true" targetId="f447-3e92-2f2d-45dd" type="selectionEntry"/>
+            <entryLink id="9ec3-0f70-5031-58cb" name="Myrmidon Secutors" hidden="false" collective="false" import="true" targetId="f447-3e92-2f2d-45dd" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="1804a1ce-97f8-474c-bef5-d308d28bd093" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="9dea-9582-0c62-6092" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d405-4fa0-c112-3aae" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="06ad-c17a-1a5a-2df9" name="Dedicated Transports" hidden="false" collective="false" import="true">
@@ -425,7 +448,7 @@
       </modifiers>
       <constraints>
         <constraint field="1804a1ce-97f8-474c-bef5-d308d28bd093" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c5b9-f375-530c-038d" type="max"/>
-        <constraint field="1804a1ce-97f8-474c-bef5-d308d28bd093" scope="parent" value="-3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5725-8c9b-bed2-b269" type="min"/>
+        <constraint field="1804a1ce-97f8-474c-bef5-d308d28bd093" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5725-8c9b-bed2-b269" type="min"/>
         <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c95-586f-6e9a-6546" type="max"/>
       </constraints>
       <infoLinks>
@@ -451,12 +474,35 @@
           </constraints>
           <entryLinks>
             <entryLink id="e421-cd9f-9a32-0171" name="Skitarii Vanguard" hidden="false" collective="false" import="true" targetId="27c4-3dd7-d0d9-4700" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="1804a1ce-97f8-474c-bef5-d308d28bd093" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="e69e-2ac2-19fb-d750" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d798-dfb2-59f5-dd0d" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aef6-94fc-d3fc-ede3" type="min"/>
               </constraints>
             </entryLink>
-            <entryLink id="477e-a608-a047-5170" name="Skitarii Rangers" hidden="false" collective="false" import="true" targetId="2f93-82fb-3632-1e34" type="selectionEntry"/>
-            <entryLink id="cb88-28f6-a6d6-242e" name="Myrmidon Secutors" hidden="false" collective="false" import="true" targetId="f447-3e92-2f2d-45dd" type="selectionEntry"/>
+            <entryLink id="477e-a608-a047-5170" name="Skitarii Rangers" hidden="false" collective="false" import="true" targetId="2f93-82fb-3632-1e34" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="1804a1ce-97f8-474c-bef5-d308d28bd093" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="e69e-2ac2-19fb-d750" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d798-dfb2-59f5-dd0d" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="cb88-28f6-a6d6-242e" name="Myrmidon Secutors" hidden="false" collective="false" import="true" targetId="f447-3e92-2f2d-45dd" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="1804a1ce-97f8-474c-bef5-d308d28bd093" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="e69e-2ac2-19fb-d750" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d798-dfb2-59f5-dd0d" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="f821-b289-05d7-a176" name="Dedicated Transports" hidden="false" collective="false" import="true">
@@ -626,38 +672,46 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="eac6-7ce4-8a15-a428" name="Battle Maniple Command Detachment" hidden="false" collective="false" import="true" type="unit">
-      <infoLinks>
-        <infoLink id="36c0-082a-be99-c7d6" name="Infiltrate" hidden="false" targetId="d33a99a4-35ea-4862-ba44-e212643ad36a" type="rule">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3190-c92e-6ee3-973f" type="notInstanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
       <categoryLinks>
         <categoryLink id="47ba-ad5b-7d13-144c" name="Infantry (1)" hidden="false" targetId="3e3d12cf-27be-4415-af5e-e47be58e343c" primary="false"/>
         <categoryLink id="7ec0-63f1-44f3-64de" name="New CategoryLink" hidden="false" targetId="d950-ad23-9b2-9325" primary="true"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="5135-c963-9ccf-6054" name="Skitarii Rangers w/ Tech-Priest Dominus" hidden="false" collective="false" import="true" targetId="8f64-fd77-070f-9f9e" type="selectionEntry">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="15b7-6ad1-81b2-117c" name="Models" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0b2-5d71-75f9-c287" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a9f-21be-723f-2814" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b15-8313-dddb-54be" type="min"/>
           </constraints>
-        </entryLink>
-        <entryLink id="71e5-8759-568c-78e0" name="Myrmidon Secutors w/ Tech-Priest Dominus" hidden="false" collective="false" import="true" targetId="bc23-72aa-358b-653d" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f77-8c14-ef3e-223b" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="c8b5-10e7-26f5-16a2" name="Skitarii Vanguard w/ Tech-Priest Dominus" hidden="false" collective="false" import="true" targetId="3b8e-760d-86d0-a06f" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f30c-75ac-98fb-5175" type="max"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
+          <infoLinks>
+            <infoLink id="296c-92dc-0178-410c" name="Infiltrate" hidden="false" targetId="d33a99a4-35ea-4862-ba44-e212643ad36a" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3190-c92e-6ee3-973f" type="notInstanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <entryLinks>
+            <entryLink id="6eea-ec91-65d8-f479" name="Myrmidon Secutors w/ Tech-Priest Dominus" hidden="false" collective="false" import="true" targetId="bc23-72aa-358b-653d" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b371-4878-1b19-4618" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="0fc1-110d-1b97-6eec" name="Skitarii Rangers w/ Tech-Priest Dominus" hidden="false" collective="false" import="true" targetId="8f64-fd77-070f-9f9e" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0891-739a-453e-55ae" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="9e59-2c52-af64-6c89" name="Skitarii Vanguard w/ Tech-Priest Dominus" hidden="false" collective="false" import="true" targetId="3b8e-760d-86d0-a06f" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="736d-de34-fea6-80e6" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
         <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
@@ -1325,7 +1379,7 @@ Artillery detachments do not suffer -1 to hit when firing indirectly with Barrag
           <characteristics>
             <characteristic name="Move" typeId="d2bd2fb5-fd8a-4566-842e-dd987e88f298">10&quot;</characteristic>
             <characteristic name="Sv" typeId="2d7dcb0f-f0aa-4ab9-8c47-b3db3f611a39">2+</characteristic>
-            <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+4</characteristic>
+            <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+2</characteristic>
             <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">3+</characteristic>
             <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">1</characteristic>
             <characteristic name="Traits" typeId="060a-0c06-20a0-e62c"/>
@@ -1388,7 +1442,7 @@ Artillery detachments do not suffer -1 to hit when firing indirectly with Barrag
           <characteristics>
             <characteristic name="Move" typeId="d2bd2fb5-fd8a-4566-842e-dd987e88f298">8&quot;</characteristic>
             <characteristic name="Sv" typeId="2d7dcb0f-f0aa-4ab9-8c47-b3db3f611a39">3+</characteristic>
-            <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+2</characteristic>
+            <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+0</characteristic>
             <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">3+</characteristic>
             <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">1</characteristic>
             <characteristic name="Traits" typeId="060a-0c06-20a0-e62c">Explorator Adaption, Nimble</characteristic>
@@ -1659,7 +1713,7 @@ Artillery detachments do not suffer -1 to hit when firing indirectly with Barrag
           <characteristics>
             <characteristic name="Move" typeId="d2bd2fb5-fd8a-4566-842e-dd987e88f298">10&quot;</characteristic>
             <characteristic name="Sv" typeId="2d7dcb0f-f0aa-4ab9-8c47-b3db3f611a39">2+</characteristic>
-            <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+4</characteristic>
+            <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+2</characteristic>
             <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">3+</characteristic>
             <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">1</characteristic>
             <characteristic name="Traits" typeId="060a-0c06-20a0-e62c"/>

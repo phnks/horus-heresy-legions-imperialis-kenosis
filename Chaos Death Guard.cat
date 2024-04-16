@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4733-f9f6-faa7-ae42" name="Chaos: Death Guard" revision="29" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="46" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4733-f9f6-faa7-ae42" name="Chaos: Death Guard" revision="30" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="46" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="39bd-547d-3d4d-5ffb" name="Death Guard Maladictum" hidden="false">
       <categoryLinks>
@@ -466,39 +466,47 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="d7b0-ebf4-0fd0-a9e5" name="Colony Command Detachment" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="add" field="category" value="4df5be74-f6f9-448b-8a05-4336c54baa7d">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3543-ed3b-3fea-0cd4" type="lessThan"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7463c8ee-68d1-4659-b949-2a93f386e957" type="notInstanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
       <categoryLinks>
         <categoryLink id="5f8f-b196-419c-ff46" name="New CategoryLink" hidden="false" targetId="d950-ad23-9b2-9325" primary="true"/>
         <categoryLink id="2182-f458-8317-edbb" name="Infantry (1)" hidden="false" targetId="3e3d12cf-27be-4415-af5e-e47be58e343c" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="8b97-9f68-7464-492d" name="Plague Marines w/ Lord of Contagion" hidden="false" collective="false" import="true" targetId="26d9-bf99-cd1d-0267" type="selectionEntry">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="933c-ad97-86df-c47e" name="Models" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="add" field="category" value="4df5be74-f6f9-448b-8a05-4336c54baa7d">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3543-ed3b-3fea-0cd4" type="lessThan"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7463c8ee-68d1-4659-b949-2a93f386e957" type="notInstanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="340a-7543-89ba-7112" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb78-f525-b6a3-d402" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2fbe-c7a7-d2ec-cbdc" type="max"/>
           </constraints>
-        </entryLink>
-        <entryLink id="df5c-a91a-6be1-fd24" name="Blightlord Terminators w/ Lord of Contagion" hidden="false" collective="false" import="true" targetId="6aa4-9554-13d1-4318" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b4e0-f13c-aae6-b4ee" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="b207-7a0f-f7b2-d242" name="Pox Walkers w/ Lord of Contagion" hidden="false" collective="false" import="true" targetId="7367-f3a3-9674-91de" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac28-7348-221d-8857" type="max"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
+          <entryLinks>
+            <entryLink id="a45a-bdae-b996-1ac2" name="Blightlord Terminators w/ Lord of Contagion" hidden="false" collective="false" import="true" targetId="6aa4-9554-13d1-4318" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f709-28c0-7863-a264" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="70e9-9534-7c4c-3f52" name="Plague Marines w/ Lord of Contagion" hidden="false" collective="false" import="true" targetId="26d9-bf99-cd1d-0267" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fe50-12f8-a8f6-087d" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="ebcc-493d-05bb-f6fd" name="Pox Walkers w/ Lord of Contagion" hidden="false" collective="false" import="true" targetId="7367-f3a3-9674-91de" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="48d9-3df2-a1c0-8577" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
         <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
