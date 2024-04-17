@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4733-f9f6-faa7-ae42" name="Chaos: Death Guard" revision="33" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="48" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4733-f9f6-faa7-ae42" name="Chaos: Death Guard" revision="34" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="48" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="39bd-547d-3d4d-5ffb" name="Death Guard Maladictum" hidden="false">
       <categoryLinks>
@@ -1445,7 +1445,6 @@ Can include one of the following:
       <infoLinks>
         <infoLink id="4396-5587-5bf6-fabc" name="Automated Sentry" hidden="false" targetId="eca1d66d-e157-4661-93e6-faf1105418b1" type="rule"/>
         <infoLink id="eb4e-ba85-7bda-bc09" name="Infiltrate" hidden="false" targetId="d33a99a4-35ea-4862-ba44-e212643ad36a" type="rule"/>
-        <infoLink id="db9a-bfa4-caf7-5104" name="Independent" hidden="false" targetId="5a10f2e5-ecc1-4a2a-8d7d-1e5ebe972994" type="rule"/>
         <infoLink id="d4d7-4551-6bfc-6a64" name="Feel No Pain" hidden="false" targetId="43073af9-85d3-497c-818d-35eaffdc41f7" type="rule"/>
         <infoLink id="f7d4-a48b-f310-fda0" name="Smokescreen Aura (X)" hidden="false" targetId="5ab9-32f8-32d1-2aa1" type="rule">
           <modifiers>
