@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="2c9332de-54e2-4bfc-9423-269293af3a88" name="Horus Heresy: Legions Imperialis: Kenosis Edition" revision="46" battleScribeVersion="2.03" authorName="BSData Team" authorContact="" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="2c9332de-54e2-4bfc-9423-269293af3a88" name="Horus Heresy: Legions Imperialis: Kenosis Edition" revision="48" battleScribeVersion="2.03" authorName="BSData Team" authorContact="" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="c3da3c2a-6a3a-4fb8-8b85-7f94e2c8f894" name="Legions Imperialis Rulebook" shortName="LI" publicationDate="2023" publisherUrl="https://thehorusheresy.com/legions-imperialis"/>
     <publication id="641fbf79-252a-4a03-8af3-8e3cc6988f81" name="GitHub" shortName="BSData/Horus-Heresy-Legions-Imperialis" publisherUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis"/>
@@ -908,8 +908,14 @@ If a Detachment contains more than one model with this rule, the controlling pla
     <rule id="b9ff-5594-6936-1a03" name="Disgustingly Resilient" hidden="false">
       <description>Hits scored by a weapon against a model with the Disgustingly Resilient special rule reduce their AP by 1 (to a minimum of 0). </description>
     </rule>
-    <rule id="dfac-86e3-280a-c6ac" name="Rad-Phage" publicationId="c3da3c2a-6a3a-4fb8-8b85-7f94e2c8f894" page="94" hidden="false">
-      <description>Infantry, Cavalry, and Walker models suffer -1 to their save when within 4&quot; of a model with the Rad-Phage special rule.</description>
+    <rule id="dfac-86e3-280a-c6ac" name="Rad-Phage Aura (X)" publicationId="c3da3c2a-6a3a-4fb8-8b85-7f94e2c8f894" page="94" hidden="false">
+      <description>All hits against Detachments within a number of inches equal to the value shown in brackets of one or more models with the Rad-Phage Aura special rule gain the Fleshbane special rule.</description>
+    </rule>
+    <rule id="b145-8744-ca5c-7953" name="Fleshbane" publicationId="c3da3c2a-6a3a-4fb8-8b85-7f94e2c8f894" page="77" hidden="false">
+      <description>Any successful Save rolls made for a Infantry, Cavalry, or Walker model using its Armour Save characteristic against a Hit scored by a weapon with the Fleshbane trait must be re-rolled.</description>
+    </rule>
+    <rule id="5ab9-32f8-32d1-2aa1" name="Smokescreen Aura (X)" publicationId="c3da3c2a-6a3a-4fb8-8b85-7f94e2c8f894" page="94" hidden="false">
+      <description>Friendly Detachments within a number of inches equal to the value shown in brackets of one or more models with the Smokescreen Aura special rule gain the benefits of Difficult Terrain.</description>
     </rule>
   </sharedRules>
 </gameSystem>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="30cb-c173-1e8e-037f" name="Adeptus Mechanicus" revision="34" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="46" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="30cb-c173-1e8e-037f" name="Adeptus Mechanicus" revision="35" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="48" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="4e75-ca8c-415c-3af3" name="Mechanicus Armoured Company" hidden="false">
       <categoryLinks>
@@ -1201,13 +1201,17 @@ Artillery detachments do not suffer -1 to hit when firing indirectly with Barrag
             <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+0</characteristic>
             <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">3+</characteristic>
             <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">1</characteristic>
-            <characteristic name="Traits" typeId="060a-0c06-20a0-e62c">Line, Rad-Phage</characteristic>
+            <characteristic name="Traits" typeId="060a-0c06-20a0-e62c">Line, Rad-Phage Aura (4&quot;)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink id="4a31-3bb3-ed45-fc82" name="Line" hidden="false" targetId="994bb804-192b-4b85-beab-a07282102470" type="rule"/>
-        <infoLink id="8567-ddf9-6ab4-aa3c" name="Rad-Phage" hidden="false" targetId="dfac-86e3-280a-c6ac" type="rule"/>
+        <infoLink id="8567-ddf9-6ab4-aa3c" name="Rad-Phage Aura (X)" hidden="false" targetId="dfac-86e3-280a-c6ac" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rad-Phage Aura (4&quot;)"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <entryLinks>
         <entryLink id="29cd-00f3-0b30-c515" name="Radium Carbines" hidden="false" collective="false" import="true" targetId="4cd7-b981-7972-ad21" type="selectionEntry">
@@ -1633,8 +1637,8 @@ Artillery detachments do not suffer -1 to hit when firing indirectly with Barrag
         <infoLink id="bcc9-6f7d-9a25-1fde" name="Tech-Priest Dominus" hidden="false" targetId="b4c4-de68-128a-9a14" type="profile">
           <modifiers>
             <modifier type="set" field="name" value="Tech-Priest Dominus w/ Skitarii Vanguard"/>
-            <modifier type="set" field="060a-0c06-20a0-e62c" value="Commander, Inspire (8&quot;), Invulnerable Save (6+), Master Tactician, Battlesmith, Line, Rad-Phage"/>
-            <modifier type="set" field="060a-0c06-20a0-e62c" value="Commander, Inspire (8&quot;), Invulnerable Save (6+), Master Tactician, Battlesmith, Line, Rad-Phage, Infiltrate">
+            <modifier type="set" field="060a-0c06-20a0-e62c" value="Commander, Inspire (8&quot;), Invulnerable Save (6+), Master Tactician, Battlesmith, Line, Rad-Phage Aura (4&quot;)"/>
+            <modifier type="set" field="060a-0c06-20a0-e62c" value="Commander, Inspire (8&quot;), Invulnerable Save (6+), Master Tactician, Battlesmith, Line, Rad-Phage Aura (4&quot;), Infiltrate">
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3190-c92e-6ee3-973f" type="greaterThan"/>
               </conditions>
@@ -1654,7 +1658,11 @@ Artillery detachments do not suffer -1 to hit when firing indirectly with Barrag
         </infoLink>
         <infoLink id="2894-dc88-938b-48f1" name="Master Tactician" hidden="false" targetId="66564d31-c529-4730-89b5-cce45f6863be" type="rule"/>
         <infoLink id="2afb-3da5-63cd-d25f" name="Battlesmith" hidden="false" targetId="90f7e900-e6cf-4a29-a2e5-80ccc7f146d8" type="rule"/>
-        <infoLink id="fd43-685e-c6ae-afe0" name="Rad-Phage" hidden="false" targetId="dfac-86e3-280a-c6ac" type="rule"/>
+        <infoLink id="cbf1-a70b-3d06-c0d9" name="Rad-Phage Aura (X)" hidden="false" targetId="dfac-86e3-280a-c6ac" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rad-Phage Aura (4&quot;)"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <entryLinks>
         <entryLink id="895f-563d-833b-5f4c" name="Radium Carbines" hidden="false" collective="false" import="true" targetId="4cd7-b981-7972-ad21" type="selectionEntry">
