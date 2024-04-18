@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4733-f9f6-faa7-ae42" name="Chaos: Death Guard" revision="34" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="48" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4733-f9f6-faa7-ae42" name="Chaos: Death Guard" revision="36" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="49" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="39bd-547d-3d4d-5ffb" name="Death Guard Maladictum" hidden="false">
       <categoryLinks>
@@ -338,6 +338,13 @@
               </constraints>
               <entryLinks>
                 <entryLink id="880c-74bb-8bad-3921" name="Nurgle Rhino w/ Combi-Bolter" hidden="false" collective="false" import="true" targetId="fd2d-cc71-db9d-2b9b" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="1804a1ce-97f8-474c-bef5-d308d28bd093" value="-2.0">
+                      <conditions>
+                        <condition field="selections" scope="e45d-3b55-bf76-bb0f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5fe1-d308-11e1-e3b0" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9297-6bb4-b444-887b" type="max"/>
                   </constraints>
@@ -921,8 +928,8 @@ Can include one of the following:
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="5ef6-12b0-6740-b41e" name="Infantry (1)" hidden="false" targetId="3e3d12cf-27be-4415-af5e-e47be58e343c" primary="false"/>
         <categoryLink id="1b42-e4e0-8344-c625" name="New CategoryLink" hidden="false" targetId="7f7126c2-fd49-4c60-ab12-b5e25b945127" primary="true"/>
+        <categoryLink id="ef9b-1dec-41e9-3b18" name="Vehicle (2)" hidden="false" targetId="49b3-dae7-33f8-f8e" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="9c7d-e2fd-c485-734f" name="Models" hidden="false" collective="false" import="true">
@@ -1151,7 +1158,7 @@ Can include one of the following:
       </entryLinks>
       <costs>
         <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="12.0"/>
-        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="-2.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f289-2de8-8af8-d997" name="Plagueburst Crawler" hidden="false" collective="false" import="true" type="model">
@@ -1438,19 +1445,20 @@ Can include one of the following:
             <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">-3</characteristic>
             <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">-</characteristic>
             <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">1</characteristic>
-            <characteristic name="Traits" typeId="060a-0c06-20a0-e62c">Automated Sentry, Infiltrate, Independent, Smokescreen Aura (4&quot;)</characteristic>
+            <characteristic name="Traits" typeId="060a-0c06-20a0-e62c">Automated Sentry, Infiltrate, Smokescreen Aura (4&quot;)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink id="4396-5587-5bf6-fabc" name="Automated Sentry" hidden="false" targetId="eca1d66d-e157-4661-93e6-faf1105418b1" type="rule"/>
         <infoLink id="eb4e-ba85-7bda-bc09" name="Infiltrate" hidden="false" targetId="d33a99a4-35ea-4862-ba44-e212643ad36a" type="rule"/>
-        <infoLink id="d4d7-4551-6bfc-6a64" name="Feel No Pain" hidden="false" targetId="43073af9-85d3-497c-818d-35eaffdc41f7" type="rule"/>
         <infoLink id="f7d4-a48b-f310-fda0" name="Smokescreen Aura (X)" hidden="false" targetId="5ab9-32f8-32d1-2aa1" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Smokescreen Aura (4&quot;)"/>
           </modifiers>
         </infoLink>
+        <infoLink id="5572-d01d-8fd2-44f1" name="Disgustingly Resilient" hidden="false" targetId="b9ff-5594-6936-1a03" type="rule"/>
+        <infoLink id="2e21-24f8-d3e0-9740" name="Patrol" hidden="false" targetId="a94d-77d2-74c1-0f2f" type="rule"/>
       </infoLinks>
       <entryLinks>
         <entryLink id="a352-c8b3-3bd7-3836" name="Noxious Stink" hidden="false" collective="false" import="true" targetId="2cfc-1283-ce6b-1e4d" type="selectionEntry">

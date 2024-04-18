@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="2c9332de-54e2-4bfc-9423-269293af3a88" name="Horus Heresy: Legions Imperialis: Kenosis Edition" revision="48" battleScribeVersion="2.03" authorName="BSData Team" authorContact="" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="2c9332de-54e2-4bfc-9423-269293af3a88" name="Horus Heresy: Legions Imperialis: Kenosis Edition" revision="49" battleScribeVersion="2.03" authorName="BSData Team" authorContact="" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="c3da3c2a-6a3a-4fb8-8b85-7f94e2c8f894" name="Legions Imperialis Rulebook" shortName="LI" publicationDate="2023" publisherUrl="https://thehorusheresy.com/legions-imperialis"/>
     <publication id="641fbf79-252a-4a03-8af3-8e3cc6988f81" name="GitHub" shortName="BSData/Horus-Heresy-Legions-Imperialis" publisherUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis"/>
@@ -916,6 +916,10 @@ If a Detachment contains more than one model with this rule, the controlling pla
     </rule>
     <rule id="5ab9-32f8-32d1-2aa1" name="Smokescreen Aura (X)" publicationId="c3da3c2a-6a3a-4fb8-8b85-7f94e2c8f894" page="94" hidden="false">
       <description>Friendly Detachments within a number of inches equal to the value shown in brackets of one or more models with the Smokescreen Aura special rule gain the benefits of Difficult Terrain.</description>
+    </rule>
+    <rule id="a94d-77d2-74c1-0f2f" name="Patrol" hidden="false">
+      <description>Models with the Patrol special rule function with a greater degree of autonomy. All models with this special rule within a Detachment must maintain a 6&quot; Detachment Coherency with other models in the same Detachment instead of 2&quot;.
+</description>
     </rule>
   </sharedRules>
 </gameSystem>
