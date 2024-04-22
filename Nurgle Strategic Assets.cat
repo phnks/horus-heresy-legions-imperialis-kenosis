@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5df0-8413-3cb7-97df" name="Nurgle Strategic Assets" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5df0-8413-3cb7-97df" name="Nurgle Strategic Assets" revision="14" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="50" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="ba56-feb3-ae8f-f5eb" name="Daemon Host" hidden="false">
       <categoryLinks>
@@ -31,36 +31,6 @@
     </forceEntry>
   </forceEntries>
   <selectionEntries>
-    <selectionEntry id="fe35-275c-5b57-e5b8" name="Nurgle Warhound Hunting Pack" hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="remove" field="category" value="4df5be74-f6f9-448b-8a05-4336c54baa7d">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7463c8ee-68d1-4659-b949-2a93f386e957" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink id="f552-ad02-2868-65bd" name="Allied Units" hidden="false" targetId="4df5be74-f6f9-448b-8a05-4336c54baa7d" primary="false"/>
-        <categoryLink id="bb4c-66c7-858e-8228" name="Titan" hidden="false" targetId="6b49f139-82c0-402f-815b-1cf743b3e47d" primary="true"/>
-        <categoryLink id="ef93-bc48-c1b9-7853" name="Titan (5)" hidden="false" targetId="7d6c-efb4-d237-a868" primary="false"/>
-        <categoryLink id="0006-adc5-d99f-1261" name="Strategic Assets" hidden="false" targetId="9eee-b8eb-ea7b-8ee4" primary="false"/>
-      </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="ad03-4680-ede4-edaf" name="Nurgle Warhound Titans" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15a6-92f8-09f3-a0e7" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e0e-b991-eb35-a82c" type="min"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="a49e-5b88-30a0-10f6" name="Nurgle Warhound Titan" hidden="false" collective="false" import="true" targetId="b268-7057-16ef-7439" type="selectionEntry"/>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
-        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="d890-b74c-0ebc-cab0" name="Nurgle Questoris Knight Banner" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="remove" field="category" value="4df5be74-f6f9-448b-8a05-4336c54baa7d">
@@ -81,35 +51,23 @@
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="17eb-e370-d648-2732" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c00-1723-bcc5-3f05" type="min"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="44d9-cc53-8354-6d7b" name="Nurgle Knight Despoiler" hidden="false" collective="false" import="true" type="upgrade">
+          <entryLinks>
+            <entryLink id="628c-1be4-b0b1-c371" name="Nurgle Knight Despoiler-Crusader" hidden="false" collective="false" import="true" targetId="164e-fd0a-9b76-cb1e" type="selectionEntry">
               <constraints>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b287-8406-af28-2a35" type="max"/>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e2b8-62db-4676-beae" type="max"/>
               </constraints>
-              <costs>
-                <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="179.0"/>
-                <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="1de5-c384-82fa-729f" name="Nurgle Knight Desecrator" hidden="false" collective="false" import="true" type="upgrade">
+            </entryLink>
+            <entryLink id="8e5d-e262-b62e-4d18" name="Nurgle Knight Despoiler-Paladin" hidden="false" collective="false" import="true" targetId="5dcd-4e4c-04b9-016f" type="selectionEntry">
               <constraints>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c76-f828-def1-a2d4" type="max"/>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f48-6310-a1fc-da67" type="max"/>
               </constraints>
-              <costs>
-                <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="179.0"/>
-                <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="c141-1ee8-af33-1cc2" name="Nurgle Knight Rampager" hidden="false" collective="false" import="true" type="upgrade">
+            </entryLink>
+            <entryLink id="deea-d102-e768-1cb9" name="Nurgle Knight Despoiler-Warden" hidden="false" collective="false" import="true" targetId="07c4-519f-1741-e2c5" type="selectionEntry">
               <constraints>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="59c5-94fc-5190-d350" type="max"/>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5754-0ee3-a694-1014" type="max"/>
               </constraints>
-              <costs>
-                <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="179.0"/>
-                <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -119,99 +77,192 @@
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
-    <selectionEntry id="b268-7057-16ef-7439" name="Nurgle Warhound Titan" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="164e-fd0a-9b76-cb1e" name="Nurgle Knight Despoiler-Crusader" hidden="false" collective="false" import="true" type="model">
       <infoLinks>
-        <infoLink id="4b57-a25a-35bf-633a" name="Agile" hidden="false" targetId="36b7-c82d-3af9-3a0" type="rule"/>
-        <infoLink id="7dc0-197b-d85f-2362" name="Void Shields (X)" hidden="false" targetId="1ff6bd17-a03a-44ae-8263-ecef08583dcf" type="rule">
+        <infoLink id="0335-85e7-e67a-d8d3" name="Independent" hidden="false" targetId="5a10f2e5-ecc1-4a2a-8d7d-1e5ebe972994" type="rule"/>
+        <infoLink id="96eb-dc08-dad5-b4aa" name="Ion Shield (X)" hidden="false" targetId="e746d542-2673-4210-a2fb-2699ed4ecc0b" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Void Shields (2)"/>
+            <modifier type="set" field="name" value="Ion Shield (4+)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="e405-23b7-c19c-76ba" name="Warhound Titan" hidden="false" targetId="8dc8-aeaf-22f1-12f5" type="profile">
+        <infoLink id="d418-cad0-cb9c-cb3f" name="Nimble" hidden="false" targetId="4e652d67-da9f-42e6-867a-900f862cc219" type="rule"/>
+        <infoLink id="a8e6-7093-9304-d234" name="Questoris Knight" hidden="false" targetId="18dd-11cf-c8af-c54b" type="profile">
           <modifiers>
-            <modifier type="set" field="name" value="Nurgle Warhound Titan"/>
-            <modifier type="set" field="060a-0c06-20a0-e62c" value="Agile, Void Shields (2), Disgustingly Resilient"/>
+            <modifier type="set" field="060a-0c06-20a0-e62c" value="Independent, Ion Shield (4+), Nimble, Disgustingly Resilient"/>
           </modifiers>
         </infoLink>
-        <infoLink id="8d2e-982f-3a2a-7e80" name="Disgustingly Resilient" hidden="false" targetId="b9ff-5594-6936-1a03" type="rule"/>
+        <infoLink id="a51b-149b-3246-f099" name="Disgustingly Resilient" hidden="false" targetId="b9ff-5594-6936-1a03" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="9ebe-5bec-d7a3-62b5" name="Weapons" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="2afa-8ae0-4c0e-940a" name="Arm Weapon" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="605d-a1d9-3b32-fcc6" type="max"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="44ef-4288-3f35-6d55" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="26cf-baee-6bc6-312e" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4cdb-946d-b710-ebf0" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="4786-3310-1acb-ace0" name="Conversion Beam Dissolutor" hidden="false" collective="false" import="true" targetId="695b-2d5c-843b-96bf" type="selectionEntry">
+            <entryLink id="ed93-9ad0-0275-8284" name="Questoris Avenger Gatling Cannon" hidden="false" collective="false" import="true" targetId="fd3e-82c8-a42d-d907" type="selectionEntry"/>
+            <entryLink id="4177-747a-e540-de02" name="Rapid-fire Battlecannon" hidden="false" collective="false" import="true" targetId="c1eb-449b-6cd0-8f8d" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="003c-eeef-9e30-08bf" name="Thermal Cannon" hidden="false" collective="false" import="true" targetId="1421-faeb-098c-87f0" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e212-0674-08ed-567c" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c23-05f8-45f4-e74f" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="be2f-3c97-559a-ffa6" name="Heavy Stubber" hidden="false" collective="false" import="true" targetId="69bb-8929-bc99-fc75" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e8d-641d-7fc8-7611" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a446-0a8f-b81a-e776" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="48ea-7770-e68f-c56b" name="Rocket Pods" hidden="false" collective="false" import="true" targetId="323c-43d6-1f49-86e9" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8cbd-2752-e2ee-45ee" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="‏‏‎‏‏‎ ‎points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="5.0"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="179.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5dcd-4e4c-04b9-016f" name="Nurgle Knight Despoiler-Paladin" hidden="false" collective="false" import="true" type="model">
+      <infoLinks>
+        <infoLink id="677a-7cc2-44a1-350a" name="Independent" hidden="false" targetId="5a10f2e5-ecc1-4a2a-8d7d-1e5ebe972994" type="rule"/>
+        <infoLink id="7f0d-c353-98fa-3b82" name="Ion Shield (X)" hidden="false" targetId="e746d542-2673-4210-a2fb-2699ed4ecc0b" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Ion Shield (4+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="f097-3c92-4a51-06db" name="Nimble" hidden="false" targetId="4e652d67-da9f-42e6-867a-900f862cc219" type="rule"/>
+        <infoLink id="7bc6-2009-e562-45c3" name="Questoris Knight" hidden="false" targetId="18dd-11cf-c8af-c54b" type="profile">
+          <modifiers>
+            <modifier type="set" field="060a-0c06-20a0-e62c" value="Independent, Ion Shield (4+), Nimble, Disgustingly Resilient"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="d98d-15a3-54c9-18b4" name="Disgustingly Resilient" hidden="false" targetId="b9ff-5594-6936-1a03" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="dcd5-6bce-0776-83d9" name="Melee Weapons" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="035b-dc92-e071-dbfa" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e45f-b3de-f400-b796" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="6f59-98cf-7039-6587" name="Reaper Chainsword" hidden="false" collective="false" import="true" targetId="6edabef8-094d-4758-9451-a83bcb3a0f3e" type="selectionEntry">
               <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb72-d8db-c2b9-3669" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a27-0b2d-e2fc-1c75" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="6fad-ee72-47c3-a3e4" name="Graviton Eradicator" hidden="false" collective="false" import="true" targetId="b349-3735-3692-4e7b" type="selectionEntry">
+            <entryLink id="96fa-e689-2a65-4daf" name="Thunderstrike Gauntlet" hidden="false" collective="false" import="true" targetId="8af4ba9d-ea36-45b9-9a3a-30e056ac9294" type="selectionEntry">
               <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f83-0aef-48b0-27c5" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7cda-4264-8e0f-a6c1" type="max"/>
               </constraints>
-            </entryLink>
-            <entryLink id="81fa-d847-4fc5-3ffa" name="Warhound Swarmer Missiles" hidden="false" collective="false" import="true" targetId="609d-091d-ed3a-84e5" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="333a-4a8c-5ffd-1cec" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="34e6-23a0-04fe-b901" name="Warhound Shudder Missiles" hidden="false" collective="false" import="true" targetId="cf91-a09a-fc40-704f" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e25-b479-1d5b-d44c" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="ee24-5ad4-781b-2b8d" name="Vulcan Mega-bolter" hidden="false" collective="false" import="true" targetId="460a-886c-3d1a-69f0" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="267f-708c-9842-aae7" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="aa98-c4cd-5218-caa4" name="Volkite Eradicator" hidden="false" collective="false" import="true" targetId="d6ef-d268-b736-1952" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af3a-cf9d-01d6-18ac" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="a022-6952-4926-72cb" name="Ursus Claw" hidden="false" collective="false" import="true" targetId="383e-dc0a-6d6b-a1b9" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b01e-3aaf-3bc7-0e42" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="0a1f-6ad1-cb39-e71b" name="Turbo-laser Destructor" hidden="false" collective="false" import="true" targetId="ceec-759e-ca4f-30c3" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ea7-5ee0-e85c-0710" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="f6f7-084e-0007-976c" name="Plasma Blastgun" hidden="false" collective="false" import="true" targetId="5bd7-d1db-e6ed-3029" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0776-21f1-2807-5caf" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="ba15-7e67-f379-ecc6" name="Natrix Shock Lance" hidden="false" collective="false" import="true" targetId="f018-4a7b-70a8-c816" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="196d-d379-9c2c-2b28" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="db21-2aab-10e3-bfb0" name="Inferno Gun" hidden="false" collective="false" import="true" targetId="421f-cdc7-7d4f-67f3" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="acd5-bf1a-d20c-df9a" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="f855-c8ad-168b-ca0a" name="Incisor Pattern Melta Lance" hidden="false" collective="false" import="true" targetId="0fe0-0923-5fea-1a5c" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9220-bc3c-ebf4-5d2e" type="max"/>
-              </constraints>
+              <costs>
+                <cost name="‏‏‎‏‏‎ ‎points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="2.0"/>
+              </costs>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="203c-3826-00f0-3779" name="Heavy Stubber" hidden="false" collective="false" import="true" targetId="69bb-8929-bc99-fc75" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7904-57c3-84ab-702f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aed2-a2e8-911f-ef17" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="efd4-0427-acae-cb5c" name="Rapid-fire Battlecannon" hidden="false" collective="false" import="true" targetId="c1eb-449b-6cd0-8f8d" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="497e-56d5-1cad-8015" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="122a-1c8d-b885-202a" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="0eb4-09ad-8f4b-c4c7" name="Rocket Pods" hidden="false" collective="false" import="true" targetId="323c-43d6-1f49-86e9" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e3e9-320b-b4f9-7312" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="‏‏‎‏‏‎ ‎points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="5.0"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
       <costs>
-        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="331.0"/>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="179.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="07c4-519f-1741-e2c5" name="Nurgle Knight Despoiler-Warden" hidden="false" collective="false" import="true" type="model">
+      <infoLinks>
+        <infoLink id="c860-b7bb-2e9a-94f5" name="Independent" hidden="false" targetId="5a10f2e5-ecc1-4a2a-8d7d-1e5ebe972994" type="rule"/>
+        <infoLink id="87e6-e44b-820d-b8b5" name="Ion Shield (X)" hidden="false" targetId="e746d542-2673-4210-a2fb-2699ed4ecc0b" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Ion Shield (4+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="ae8f-acfd-a985-62c2" name="Nimble" hidden="false" targetId="4e652d67-da9f-42e6-867a-900f862cc219" type="rule"/>
+        <infoLink id="6c38-7755-ce92-e263" name="Questoris Knight" hidden="false" targetId="18dd-11cf-c8af-c54b" type="profile">
+          <modifiers>
+            <modifier type="set" field="060a-0c06-20a0-e62c" value="Independent, Ion Shield (4+), Nimble, Disgustingly Resilient"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="a998-e9c4-af35-d124" name="Disgustingly Resilient" hidden="false" targetId="b9ff-5594-6936-1a03" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="5b5f-68e0-4eb9-3da2" name="Melee Weapons" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9336-a3aa-c4cf-ca8b" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47ef-429d-2d8f-3409" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="2e72-62ba-549e-9281" name="Reaper Chainsword" hidden="false" collective="false" import="true" targetId="6edabef8-094d-4758-9451-a83bcb3a0f3e" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae94-4251-e5b3-1245" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="7855-de4d-0f45-9d6b" name="Thunderstrike Gauntlet" hidden="false" collective="false" import="true" targetId="8af4ba9d-ea36-45b9-9a3a-30e056ac9294" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="463c-aa1a-eb7e-a90c" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="‏‏‎‏‏‎ ‎points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="2.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="b4b4-3022-178d-381c" name="Questoris Avenger Gatling Cannon" hidden="false" collective="false" import="true" targetId="fd3e-82c8-a42d-d907" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc9a-f297-5abb-4e15" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="523f-9557-bca2-e9b8" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="d240-b577-4e24-8a7d" name="Meltagun" hidden="false" collective="false" import="true" targetId="c5ea7ad4-69c2-4dc0-84e9-9d5dc1e973fd" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0eee-50f8-7a41-a276" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0be1-ebf9-5c4c-e7eb" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="55ea-d82a-26ec-8f21" name="Rocket Pods" hidden="false" collective="false" import="true" targetId="323c-43d6-1f49-86e9" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4465-fa9a-8cc8-32be" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="‏‏‎‏‏‎ ‎points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="5.0"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="173.0"/>
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
-  <catalogueLinks>
-    <catalogueLink id="0889-c247-1a41-354b" name="Strategic Assets" targetId="d70e008e-64a5-4e51-ac3e-7c35e5d2e0f4" type="catalogue" importRootEntries="false"/>
-  </catalogueLinks>
 </catalogue>

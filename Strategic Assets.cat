@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d70e008e-64a5-4e51-ac3e-7c35e5d2e0f4" name="Strategic Assets" revision="32" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="46" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d70e008e-64a5-4e51-ac3e-7c35e5d2e0f4" name="Strategic Assets" revision="33" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="49" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="5e4ad6a9-f6dc-4b9d-8888-a4c02d576c71" name="Knight Household Lance" hidden="false">
       <categoryLinks>
@@ -2250,46 +2250,6 @@
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7fc633e4-8f3d-4c72-9091-8318bfcc1742" name="Thermal Cannon" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="a0d60f73-34ad-4383-be79-3bfb13eedb6c" name="Thermal Cannon (Far)" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">12&quot;</characteristic>
-            <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">2</characteristic>
-            <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">4+</characteristic>
-            <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-3</characteristic>
-            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Anti-tank, Arc (Front), Demolisher</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="f7952835-e0f0-45c3-8a3d-06a674c3fbfa" name="Thermal Cannon (Close)" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">6&quot;</characteristic>
-            <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">1</characteristic>
-            <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">3+</characteristic>
-            <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-4</characteristic>
-            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Anti-tank, Arc (Front), Demolisher, Engine Killer (1)</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="29689866-a38f-4108-b476-a64c81438cf0" name="Engine Killer (X)" hidden="false" targetId="9fbc675f-1e60-4d81-bc5b-779d0555693b" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Engine Killer (1)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="fd441fc3-7822-4f1b-a60c-b5fff4cece31" name="Arc (Front/Rear)" hidden="false" targetId="4b5a744f-9cc6-4201-9423-f3c580a16854" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Arc (Front)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="6d1b411f-498f-47d9-8f1f-d8cfbd4aadb0" name="Anti-tank" hidden="false" targetId="bea2b218-c79e-4c95-9405-8461a8779800" type="rule"/>
-        <infoLink id="dfde62c5-76ed-49dd-9ffd-8c80434fec42" name="Demolisher" hidden="false" targetId="788-9d12-3358-b236" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
-        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="383a778c-48e2-4887-8c84-d42231f4d758" name="Mori Quake Cannon" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="d59a1937-a0c8-4b33-8206-429bdeb50d5f" name="Mori Quake Cannon" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
@@ -2552,32 +2512,6 @@
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="cc479e05-02cc-48a7-be65-aed8b63be141" name="Heavy Stubber" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="454d278b-2527-46b1-854a-922b428a626a" name="Heavy Stubber" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">14&quot;</characteristic>
-            <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">1</characteristic>
-            <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">5+</characteristic>
-            <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">0</characteristic>
-            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Arc (Front), Light, Point Defence</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="212923c5-587d-4b25-ac1b-1d393e1f435c" name="Arc (Front/Rear)" hidden="false" targetId="4b5a744f-9cc6-4201-9423-f3c580a16854" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Arc (Front)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="8fc36b4d-ed6c-4fd4-b202-46cb4c7b8eed" name="Point Defence" hidden="false" targetId="ddbfcec5-daab-4124-abb7-0eb88a1960e6" type="rule"/>
-        <infoLink id="d7696273-4b84-4b19-8a8a-9a855a03f20f" name="Light" hidden="false" targetId="bb25fe8e-6b0a-40a9-bc11-d9508716ded5" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
-        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="c5ea7ad4-69c2-4dc0-84e9-9d5dc1e973fd" name="Meltagun" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="2210bcce-029f-4fe1-90a4-d9e34b47241f" name="Meltagun" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
@@ -2628,31 +2562,6 @@
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="88bc6069-4203-4c3a-93ee-fd52a7debe2d" name="Rocket Pods" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="a90f9bf8-0c78-415a-8f5d-949d44b58277" name="Rocket Pods" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">16&quot;</characteristic>
-            <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">2</characteristic>
-            <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">4+</characteristic>
-            <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-1</characteristic>
-            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Arc (Front), Barrage</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="7a6cf25d-bc47-4e3a-ab91-312b1fc7d547" name="Arc (Front/Rear)" hidden="false" targetId="4b5a744f-9cc6-4201-9423-f3c580a16854" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Arc (Front)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="6461f2b7-d0cd-4926-8e59-57d0a8c37a23" name="Barrage" hidden="false" targetId="df28f074-c82b-418a-8fa6-25754402ada8" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
-        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="6edabef8-094d-4758-9451-a83bcb3a0f3e" name="Reaper Chainsword" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="7b8ab735-056e-40b5-a9b3-42e32b049e9e" name="Reaper Chainsword" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
@@ -2667,57 +2576,6 @@
       </profiles>
       <infoLinks>
         <infoLink id="4a538fca-0508-43ec-9399-731f7edca371" name="Rend" hidden="false" targetId="b1094ac5-aa6f-45ff-9360-9e9cad6491af" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
-        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="d3d135e8-3c1c-4b9f-a52c-9f4e21d36809" name="Questoris Avenger Gatling Cannon" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="3c34f87e-3cce-4627-942f-eb4bd674326c" name="Questoris Avenger Gatling Cannon" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">16&quot;</characteristic>
-            <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">5</characteristic>
-            <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">5+</characteristic>
-            <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-2</characteristic>
-            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Arc (Front), Light AT, Rapid Fire</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="bfd8a272-2f7f-4b77-b462-3d22606d3d4f" name="Arc (Front/Rear)" hidden="false" targetId="4b5a744f-9cc6-4201-9423-f3c580a16854" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Arc (Front)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="8045df7c-4efb-4892-906f-9dbec7b1b64f" name="Light AT" hidden="false" targetId="58c6bbe7-51c3-4eff-aa9f-a5c17b976571" type="rule"/>
-        <infoLink id="864364a4-6cbe-4cda-a435-0f75c02dade4" name="Rapid Fire" hidden="false" targetId="8e369f05-86ca-40a8-8496-954ba836c21b" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
-        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="68eeff5b-7692-440f-9d49-a6157aec5545" name="Rapid-fire Battlecannon" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="e120ca80-4cd0-491b-998c-61b2e4827022" name="Rapid-fire Battlecannon" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">28&quot;</characteristic>
-            <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">2</characteristic>
-            <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">4+</characteristic>
-            <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-2</characteristic>
-            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Arc (Front), Rapid Fire</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="6dd2f690-0534-412b-b099-98cda88517f9" name="Arc (Front/Rear)" hidden="false" targetId="4b5a744f-9cc6-4201-9423-f3c580a16854" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Arc (Front)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="b20dd56d-d7b1-4ab0-9702-39a0951764e5" name="Rapid Fire" hidden="false" targetId="8e369f05-86ca-40a8-8496-954ba836c21b" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
@@ -3208,7 +3066,7 @@
           </modifiers>
         </infoLink>
         <infoLink id="5c3a-d6bc-6678-db60" name="Nimble" hidden="false" targetId="4e652d67-da9f-42e6-867a-900f862cc219" type="rule"/>
-        <infoLink id="8550-8fac-28f8-8104" name="Questoris Knight" hidden="false" targetId="46f60590-9cb4-43c7-af68-91e19b6affbc" type="profile"/>
+        <infoLink id="8550-8fac-28f8-8104" name="Questoris Knight" hidden="false" targetId="18dd-11cf-c8af-c54b" type="profile"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="4a8f-1a4d-dd66-b753" name="Arm Weapon" hidden="false" collective="false" import="true">
@@ -3217,25 +3075,25 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7cc1-81ea-c3f9-e048" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="446c-af67-667a-2983" name="Questoris Avenger Gatling Cannon" hidden="false" collective="false" import="true" targetId="d3d135e8-3c1c-4b9f-a52c-9f4e21d36809" type="selectionEntry"/>
-            <entryLink id="b943-4985-33a2-a929" name="Rapid-fire Battlecannon" hidden="false" collective="false" import="true" targetId="68eeff5b-7692-440f-9d49-a6157aec5545" type="selectionEntry"/>
+            <entryLink id="446c-af67-667a-2983" name="Questoris Avenger Gatling Cannon" hidden="false" collective="false" import="true" targetId="fd3e-82c8-a42d-d907" type="selectionEntry"/>
+            <entryLink id="52d4-a51f-87c2-8df3" name="Rapid-fire Battlecannon" hidden="false" collective="false" import="true" targetId="c1eb-449b-6cd0-8f8d" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="6c53-8420-328d-7624" name="Thermal Cannon" hidden="false" collective="true" import="true" targetId="7fc633e4-8f3d-4c72-9091-8318bfcc1742" type="selectionEntry">
+        <entryLink id="6c53-8420-328d-7624" name="Thermal Cannon" hidden="false" collective="false" import="true" targetId="1421-faeb-098c-87f0" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac58-8444-8bb7-56a1" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b0c9-12f1-9767-31ca" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="9288-ce2d-5c0f-4f14" name="Heavy Stubber" hidden="false" collective="true" import="true" targetId="cc479e05-02cc-48a7-be65-aed8b63be141" type="selectionEntry">
+        <entryLink id="9288-ce2d-5c0f-4f14" name="Heavy Stubber" hidden="false" collective="false" import="true" targetId="69bb-8929-bc99-fc75" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dbed-2d9b-c2d4-57e6" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="705f-5d9a-497f-838b" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="efcc-dcd7-cde7-bf37" name="Rocket Pods" hidden="false" collective="false" import="true" targetId="88bc6069-4203-4c3a-93ee-fd52a7debe2d" type="selectionEntry">
+        <entryLink id="efcc-dcd7-cde7-bf37" name="Rocket Pods" hidden="false" collective="false" import="true" targetId="323c-43d6-1f49-86e9" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15dd-dccc-030b-0f1f" type="max"/>
           </constraints>
@@ -3258,7 +3116,7 @@
           </modifiers>
         </infoLink>
         <infoLink id="bbb2-8295-19bc-ffb9" name="Nimble" hidden="false" targetId="4e652d67-da9f-42e6-867a-900f862cc219" type="rule"/>
-        <infoLink id="6af0-7dfb-73ee-e890" name="Questoris Knight" hidden="false" targetId="46f60590-9cb4-43c7-af68-91e19b6affbc" type="profile"/>
+        <infoLink id="6af0-7dfb-73ee-e890" name="Questoris Knight" hidden="false" targetId="18dd-11cf-c8af-c54b" type="profile"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="a05f-61ad-2b13-ca5e" name="Melee Weapons" hidden="false" collective="false" import="true">
@@ -3284,19 +3142,19 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="e922-258a-0f01-a896" name="Thermal Cannon" hidden="false" collective="true" import="true" targetId="7fc633e4-8f3d-4c72-9091-8318bfcc1742" type="selectionEntry">
+        <entryLink id="e922-258a-0f01-a896" name="Thermal Cannon" hidden="false" collective="false" import="true" targetId="1421-faeb-098c-87f0" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="983a-01b6-4abf-3ff1" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f10-b14f-26ac-793b" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="270e-a072-3e41-5292" name="Heavy Stubber" hidden="false" collective="true" import="true" targetId="cc479e05-02cc-48a7-be65-aed8b63be141" type="selectionEntry">
+        <entryLink id="270e-a072-3e41-5292" name="Heavy Stubber" hidden="false" collective="false" import="true" targetId="69bb-8929-bc99-fc75" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c0b4-40e6-3741-b85e" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2567-fbc1-6eba-b83f" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="01a6-48ea-1ec3-55f3" name="Rocket Pods" hidden="false" collective="false" import="true" targetId="88bc6069-4203-4c3a-93ee-fd52a7debe2d" type="selectionEntry">
+        <entryLink id="01a6-48ea-1ec3-55f3" name="Rocket Pods" hidden="false" collective="false" import="true" targetId="323c-43d6-1f49-86e9" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0f5-45a4-6aae-083a" type="max"/>
           </constraints>
@@ -3319,7 +3177,7 @@
           </modifiers>
         </infoLink>
         <infoLink id="5a38-406e-6e5d-2e1c" name="Nimble" hidden="false" targetId="4e652d67-da9f-42e6-867a-900f862cc219" type="rule"/>
-        <infoLink id="3e60-9c68-780a-9f66" name="Questoris Knight" hidden="false" targetId="46f60590-9cb4-43c7-af68-91e19b6affbc" type="profile"/>
+        <infoLink id="3e60-9c68-780a-9f66" name="Questoris Knight" hidden="false" targetId="18dd-11cf-c8af-c54b" type="profile"/>
       </infoLinks>
       <entryLinks>
         <entryLink id="bdf9-227f-9f7c-073e" name="Meltagun" hidden="false" collective="true" import="true" targetId="c5ea7ad4-69c2-4dc0-84e9-9d5dc1e973fd" type="selectionEntry">
@@ -3340,7 +3198,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8535-f15c-53b9-3838" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="1989-e200-2c13-b80a" name="Rocket Pods" hidden="false" collective="false" import="true" targetId="88bc6069-4203-4c3a-93ee-fd52a7debe2d" type="selectionEntry">
+        <entryLink id="1989-e200-2c13-b80a" name="Rocket Pods" hidden="false" collective="false" import="true" targetId="323c-43d6-1f49-86e9" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb1d-9f95-16d5-65c0" type="max"/>
           </constraints>
@@ -3364,7 +3222,7 @@
             <modifier type="set" field="name" value="Ion Shield (4+)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="facb-7400-f3be-8225" name="Questoris Knight" hidden="false" targetId="46f60590-9cb4-43c7-af68-91e19b6affbc" type="profile"/>
+        <infoLink id="facb-7400-f3be-8225" name="Questoris Knight" hidden="false" targetId="18dd-11cf-c8af-c54b" type="profile"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry id="92a6-9722-a6e0-b5ee" name="Hekaton Siege Claw" hidden="false" collective="true" import="true" type="upgrade">
@@ -3445,7 +3303,7 @@
           </modifiers>
         </infoLink>
         <infoLink id="4d31-624c-5e48-7d13" name="Nimble" hidden="false" targetId="4e652d67-da9f-42e6-867a-900f862cc219" type="rule"/>
-        <infoLink id="2438-5652-4381-bcd6" name="Questoris Knight" hidden="false" targetId="46f60590-9cb4-43c7-af68-91e19b6affbc" type="profile"/>
+        <infoLink id="2438-5652-4381-bcd6" name="Questoris Knight" hidden="false" targetId="18dd-11cf-c8af-c54b" type="profile"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="972e-de8b-d2b2-4d8c" name="Melee Weapons" hidden="false" collective="false" import="true">
@@ -3471,19 +3329,19 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="3900-d73f-77de-f843" name="Heavy Stubber" hidden="false" collective="true" import="true" targetId="cc479e05-02cc-48a7-be65-aed8b63be141" type="selectionEntry">
+        <entryLink id="3900-d73f-77de-f843" name="Heavy Stubber" hidden="false" collective="false" import="true" targetId="69bb-8929-bc99-fc75" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1145-a9a6-8b88-a9fe" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c3f3-5f50-cd0f-3ddf" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="3801-f7c2-d13a-10c9" name="Rapid-fire Battlecannon" hidden="false" collective="false" import="true" targetId="68eeff5b-7692-440f-9d49-a6157aec5545" type="selectionEntry">
+        <entryLink id="3801-f7c2-d13a-10c9" name="Rapid-fire Battlecannon" hidden="false" collective="false" import="true" targetId="c1eb-449b-6cd0-8f8d" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3fca-8e73-9329-1a8e" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b35-7d50-a683-0b0d" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="f545-f71c-ff79-9d9c" name="Rocket Pods" hidden="false" collective="false" import="true" targetId="88bc6069-4203-4c3a-93ee-fd52a7debe2d" type="selectionEntry">
+        <entryLink id="f545-f71c-ff79-9d9c" name="Rocket Pods" hidden="false" collective="false" import="true" targetId="323c-43d6-1f49-86e9" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9619-f721-86cf-6789" type="max"/>
           </constraints>
@@ -3507,7 +3365,7 @@
         </infoLink>
         <infoLink id="7462-5b5c-4e93-0093" name="Independent" hidden="false" targetId="5a10f2e5-ecc1-4a2a-8d7d-1e5ebe972994" type="rule"/>
         <infoLink id="77b8-42ed-18ab-93d3" name="Blessed Auto-simulacra" hidden="false" targetId="51284793-9dd5-435f-a0c1-20a5ba46daee" type="rule"/>
-        <infoLink id="adc6-e357-3def-9883" name="Questoris Knight" hidden="false" targetId="46f60590-9cb4-43c7-af68-91e19b6affbc" type="profile"/>
+        <infoLink id="adc6-e357-3def-9883" name="Questoris Knight" hidden="false" targetId="18dd-11cf-c8af-c54b" type="profile"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry id="54d3-0d83-81e8-b6e9" name="Volkite Chieorovile" hidden="false" collective="true" import="true" type="upgrade">
@@ -3576,7 +3434,7 @@
           </modifiers>
         </infoLink>
         <infoLink id="caef-f158-f5c4-c8ac" name="Nimble" hidden="false" targetId="4e652d67-da9f-42e6-867a-900f862cc219" type="rule"/>
-        <infoLink id="9ca2-6989-a7d6-18e7" name="Questoris Knight" hidden="false" targetId="46f60590-9cb4-43c7-af68-91e19b6affbc" type="profile"/>
+        <infoLink id="9ca2-6989-a7d6-18e7" name="Questoris Knight" hidden="false" targetId="18dd-11cf-c8af-c54b" type="profile"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="2e42-f985-8d63-5069" name="Melee Weapons" hidden="false" collective="false" import="true">
@@ -3602,7 +3460,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="1e42-4945-d19c-ede9" name="Questoris Avenger Gatling Cannon" hidden="false" collective="false" import="true" targetId="d3d135e8-3c1c-4b9f-a52c-9f4e21d36809" type="selectionEntry">
+        <entryLink id="1e42-4945-d19c-ede9" name="Questoris Avenger Gatling Cannon" hidden="false" collective="false" import="true" targetId="fd3e-82c8-a42d-d907" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6aaf-04fe-bcbf-e8ac" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="46e2-f874-7d91-4a99" type="min"/>
@@ -3614,7 +3472,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d03-6b47-19fd-084d" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="4292-8b79-81b5-fa14" name="Rocket Pods" hidden="false" collective="false" import="true" targetId="88bc6069-4203-4c3a-93ee-fd52a7debe2d" type="selectionEntry">
+        <entryLink id="4292-8b79-81b5-fa14" name="Rocket Pods" hidden="false" collective="false" import="true" targetId="323c-43d6-1f49-86e9" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a64-6e57-964a-b77a" type="max"/>
           </constraints>
@@ -4237,16 +4095,6 @@
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedProfiles>
-    <profile id="46f60590-9cb4-43c7-af68-91e19b6affbc" name="Questoris Knight" hidden="false" typeId="746bcfa7-66de-4644-97e8-07da9cec42b6" typeName="Detachment">
-      <characteristics>
-        <characteristic name="Move" typeId="d2bd2fb5-fd8a-4566-842e-dd987e88f298">8&quot;</characteristic>
-        <characteristic name="Sv" typeId="2d7dcb0f-f0aa-4ab9-8c47-b3db3f611a39">3+</characteristic>
-        <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+8</characteristic>
-        <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">2+</characteristic>
-        <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">3</characteristic>
-        <characteristic name="Traits" typeId="060a-0c06-20a0-e62c"/>
-      </characteristics>
-    </profile>
     <profile id="8dc8-aeaf-22f1-12f5" name="Warhound Titan" hidden="false" typeId="746bcfa7-66de-4644-97e8-07da9cec42b6" typeName="Detachment">
       <characteristics>
         <characteristic name="Move" typeId="d2bd2fb5-fd8a-4566-842e-dd987e88f298">7&quot;</characteristic>

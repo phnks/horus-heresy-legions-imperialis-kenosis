@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="2c9332de-54e2-4bfc-9423-269293af3a88" name="Horus Heresy: Legions Imperialis: Kenosis Edition" revision="49" battleScribeVersion="2.03" authorName="BSData Team" authorContact="" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="2c9332de-54e2-4bfc-9423-269293af3a88" name="Horus Heresy: Legions Imperialis: Kenosis Edition" revision="50" battleScribeVersion="2.03" authorName="BSData Team" authorContact="" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="c3da3c2a-6a3a-4fb8-8b85-7f94e2c8f894" name="Legions Imperialis Rulebook" shortName="LI" publicationDate="2023" publisherUrl="https://thehorusheresy.com/legions-imperialis"/>
     <publication id="641fbf79-252a-4a03-8af3-8e3cc6988f81" name="GitHub" shortName="BSData/Horus-Heresy-Legions-Imperialis" publisherUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis"/>
@@ -447,6 +447,148 @@
       </profiles>
       <infoLinks>
         <infoLink id="9a27-8557-ff1f-0b39" name="Light AT" hidden="false" targetId="58c6bbe7-51c3-4eff-aa9f-a5c17b976571" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fd3e-82c8-a42d-d907" name="Questoris Avenger Gatling Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="3c5e-073a-d75c-2d1e" name="Questoris Avenger Gatling Cannon" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">16&quot;</characteristic>
+            <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">5</characteristic>
+            <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">5+</characteristic>
+            <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-2</characteristic>
+            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Arc (Front), Light AT, Rapid Fire</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="71d6-d93a-53b8-4d0e" name="Arc (Front/Rear)" hidden="false" targetId="4b5a744f-9cc6-4201-9423-f3c580a16854" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Arc (Front)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="68f4-0980-0d11-269f" name="Light AT" hidden="false" targetId="58c6bbe7-51c3-4eff-aa9f-a5c17b976571" type="rule"/>
+        <infoLink id="f82d-90ac-7853-0b6b" name="Rapid Fire" hidden="false" targetId="8e369f05-86ca-40a8-8496-954ba836c21b" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c1eb-449b-6cd0-8f8d" name="Rapid-fire Battlecannon" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="b875-dffa-402e-02d5" name="Rapid-fire Battlecannon" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">28&quot;</characteristic>
+            <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">2</characteristic>
+            <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">4+</characteristic>
+            <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-2</characteristic>
+            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Arc (Front), Rapid Fire</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="2b57-141e-edb4-1c4d" name="Arc (Front/Rear)" hidden="false" targetId="4b5a744f-9cc6-4201-9423-f3c580a16854" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Arc (Front)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="d0bb-780c-de2a-edf5" name="Rapid Fire" hidden="false" targetId="8e369f05-86ca-40a8-8496-954ba836c21b" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="69bb-8929-bc99-fc75" name="Heavy Stubber" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="db0f-11a1-b47b-8d81" name="Heavy Stubber" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">14&quot;</characteristic>
+            <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">1</characteristic>
+            <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">5+</characteristic>
+            <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">0</characteristic>
+            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Arc (Front), Light, Point Defence</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="eae6-912c-a90c-6505" name="Arc (Front/Rear)" hidden="false" targetId="4b5a744f-9cc6-4201-9423-f3c580a16854" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Arc (Front)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="1e4c-9639-f9fc-4df8" name="Point Defence" hidden="false" targetId="ddbfcec5-daab-4124-abb7-0eb88a1960e6" type="rule"/>
+        <infoLink id="43b9-e23d-7233-d585" name="Light" hidden="false" targetId="bb25fe8e-6b0a-40a9-bc11-d9508716ded5" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="323c-43d6-1f49-86e9" name="Rocket Pods" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="c4c3-ff70-46c5-0995" name="Rocket Pods" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">16&quot;</characteristic>
+            <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">2</characteristic>
+            <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">4+</characteristic>
+            <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-1</characteristic>
+            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Arc (Front), Barrage</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="8409-9aa7-16d6-a2d0" name="Arc (Front/Rear)" hidden="false" targetId="4b5a744f-9cc6-4201-9423-f3c580a16854" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Arc (Front)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="2fae-cac6-4d80-7d92" name="Barrage" hidden="false" targetId="df28f074-c82b-418a-8fa6-25754402ada8" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1421-faeb-098c-87f0" name="Thermal Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="07e2-65c1-95bc-ca67" name="Thermal Cannon (Far)" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">12&quot;</characteristic>
+            <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">2</characteristic>
+            <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">4+</characteristic>
+            <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-3</characteristic>
+            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Anti-tank, Arc (Front), Demolisher</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fb13-9889-efa8-8bbd" name="Thermal Cannon (Close)" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">6&quot;</characteristic>
+            <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">1</characteristic>
+            <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">3+</characteristic>
+            <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-4</characteristic>
+            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Anti-tank, Arc (Front), Demolisher, Engine Killer (1)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="30dd-949d-61f5-e1a9" name="Engine Killer (X)" hidden="false" targetId="9fbc675f-1e60-4d81-bc5b-779d0555693b" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Engine Killer (1)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="bf01-d136-fbde-13af" name="Arc (Front/Rear)" hidden="false" targetId="4b5a744f-9cc6-4201-9423-f3c580a16854" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Arc (Front)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="8d26-73ba-587e-6089" name="Anti-tank" hidden="false" targetId="bea2b218-c79e-4c95-9405-8461a8779800" type="rule"/>
+        <infoLink id="47b1-0126-c50c-c79d" name="Demolisher" hidden="false" targetId="788-9d12-3358-b236" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
@@ -922,4 +1064,16 @@ If a Detachment contains more than one model with this rule, the controlling pla
 </description>
     </rule>
   </sharedRules>
+  <sharedProfiles>
+    <profile id="18dd-11cf-c8af-c54b" name="Questoris Knight" hidden="false" typeId="746bcfa7-66de-4644-97e8-07da9cec42b6" typeName="Detachment">
+      <characteristics>
+        <characteristic name="Move" typeId="d2bd2fb5-fd8a-4566-842e-dd987e88f298">8&quot;</characteristic>
+        <characteristic name="Sv" typeId="2d7dcb0f-f0aa-4ab9-8c47-b3db3f611a39">3+</characteristic>
+        <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+8</characteristic>
+        <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">2+</characteristic>
+        <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">3</characteristic>
+        <characteristic name="Traits" typeId="060a-0c06-20a0-e62c">Independent, Ion Shield (4+), Nimble</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
 </gameSystem>
