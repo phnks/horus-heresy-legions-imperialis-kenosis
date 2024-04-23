@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d70e008e-64a5-4e51-ac3e-7c35e5d2e0f4" name="Strategic Assets" revision="33" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="49" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d70e008e-64a5-4e51-ac3e-7c35e5d2e0f4" name="Strategic Assets" revision="34" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="51" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="5e4ad6a9-f6dc-4b9d-8888-a4c02d576c71" name="Knight Household Lance" hidden="false">
       <categoryLinks>
@@ -2512,76 +2512,6 @@
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c5ea7ad4-69c2-4dc0-84e9-9d5dc1e973fd" name="Meltagun" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="2210bcce-029f-4fe1-90a4-d9e34b47241f" name="Meltagun" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">6&quot;</characteristic>
-            <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">1</characteristic>
-            <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">4+</characteristic>
-            <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-3</characteristic>
-            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Anti-tank, Arc (Front)</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="557d46df-882a-4284-bcee-057fcbfe5d27" name="Arc (Front/Rear)" hidden="false" targetId="4b5a744f-9cc6-4201-9423-f3c580a16854" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Arc (Front)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="e1d859f9-cd0f-4c58-b679-5f7d76c73139" name="Anti-tank" hidden="false" targetId="bea2b218-c79e-4c95-9405-8461a8779800" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
-        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="8af4ba9d-ea36-45b9-9a3a-30e056ac9294" name="Thunderstrike Gauntlet" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="f33b80bc-a6df-4aa6-9575-0571192cb9ba" name="Thunderstrike Gauntlet" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">-</characteristic>
-            <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">-</characteristic>
-            <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">-</characteristic>
-            <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-2</characteristic>
-            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Rend, Wrecker (1)</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="863ef08c-9772-4ce7-9d95-99fcb5dda522" name="Rend" hidden="false" targetId="b1094ac5-aa6f-45ff-9360-9e9cad6491af" type="rule"/>
-        <infoLink id="9c9dde5b-396d-4488-802b-0366f9d09197" name="Wrecker (X)" hidden="false" targetId="e40-19fc-8c79-9a12" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Wrecker (1)"/>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
-      <costs>
-        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
-        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="6edabef8-094d-4758-9451-a83bcb3a0f3e" name="Reaper Chainsword" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="7b8ab735-056e-40b5-a9b3-42e32b049e9e" name="Reaper Chainsword" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">-</characteristic>
-            <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">-</characteristic>
-            <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">-</characteristic>
-            <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-</characteristic>
-            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Rend</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="4a538fca-0508-43ec-9399-731f7edca371" name="Rend" hidden="false" targetId="b1094ac5-aa6f-45ff-9360-9e9cad6491af" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
-        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="43b9aece-cac6-4495-8dc3-7cc739764d63" name="Ardex-defensor Mauler Bolt Cannon Turrets" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69248bad-5570-448d-a216-86285c6f608c" type="max"/>
@@ -3125,12 +3055,12 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f500-f840-b7ce-d59d" type="min"/>
           </constraints>
           <entryLinks>
-            <entryLink id="d340-7c2d-4542-03c5" name="Reaper Chainsword" hidden="false" collective="false" import="true" targetId="6edabef8-094d-4758-9451-a83bcb3a0f3e" type="selectionEntry">
+            <entryLink id="d340-7c2d-4542-03c5" name="Reaper Chainsword" hidden="false" collective="false" import="true" targetId="9422-bbbd-53d0-5885" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a66-9bea-0a52-3161" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="493a-db81-c5e1-f193" name="Thunderstrike Gauntlet" hidden="false" collective="false" import="true" targetId="8af4ba9d-ea36-45b9-9a3a-30e056ac9294" type="selectionEntry">
+            <entryLink id="493a-db81-c5e1-f193" name="Thunderstrike Gauntlet" hidden="false" collective="false" import="true" targetId="e517-348d-d0eb-a989" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="33c7-0387-d305-8e84" type="max"/>
               </constraints>
@@ -3180,19 +3110,19 @@
         <infoLink id="3e60-9c68-780a-9f66" name="Questoris Knight" hidden="false" targetId="18dd-11cf-c8af-c54b" type="profile"/>
       </infoLinks>
       <entryLinks>
-        <entryLink id="bdf9-227f-9f7c-073e" name="Meltagun" hidden="false" collective="true" import="true" targetId="c5ea7ad4-69c2-4dc0-84e9-9d5dc1e973fd" type="selectionEntry">
+        <entryLink id="bdf9-227f-9f7c-073e" name="Meltagun" hidden="false" collective="false" import="true" targetId="a945-9de3-85fe-f087" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d591-01d5-6727-4f46" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0151-51b7-8c9f-a613" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="24ff-e0a6-3129-3bfb" name="Reaper Chainsword" hidden="false" collective="true" import="true" targetId="6edabef8-094d-4758-9451-a83bcb3a0f3e" type="selectionEntry">
+        <entryLink id="24ff-e0a6-3129-3bfb" name="Reaper Chainsword" hidden="false" collective="false" import="true" targetId="9422-bbbd-53d0-5885" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6245-28f3-eb84-a46f" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2097-160d-409a-d80a" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="389c-1922-46ea-f58a" name="Thunderstrike Gauntlet" hidden="false" collective="true" import="true" targetId="8af4ba9d-ea36-45b9-9a3a-30e056ac9294" type="selectionEntry">
+        <entryLink id="389c-1922-46ea-f58a" name="Thunderstrike Gauntlet" hidden="false" collective="false" import="true" targetId="e517-348d-d0eb-a989" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b363-d447-0461-423a" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8535-f15c-53b9-3838" type="min"/>
@@ -3312,12 +3242,12 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b4a0-94a8-3530-d13e" type="min"/>
           </constraints>
           <entryLinks>
-            <entryLink id="2c2e-f142-a6d0-5d4d" name="Reaper Chainsword" hidden="false" collective="false" import="true" targetId="6edabef8-094d-4758-9451-a83bcb3a0f3e" type="selectionEntry">
+            <entryLink id="2c2e-f142-a6d0-5d4d" name="Reaper Chainsword" hidden="false" collective="false" import="true" targetId="9422-bbbd-53d0-5885" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="277a-98f4-31cf-b287" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="33ef-1b8e-5a18-581b" name="Thunderstrike Gauntlet" hidden="false" collective="false" import="true" targetId="8af4ba9d-ea36-45b9-9a3a-30e056ac9294" type="selectionEntry">
+            <entryLink id="33ef-1b8e-5a18-581b" name="Thunderstrike Gauntlet" hidden="false" collective="false" import="true" targetId="e517-348d-d0eb-a989" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e822-2674-c6d9-f178" type="max"/>
               </constraints>
@@ -3443,12 +3373,12 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ba6-2bbc-56fb-d272" type="min"/>
           </constraints>
           <entryLinks>
-            <entryLink id="a52f-faa7-8043-c435" name="Reaper Chainsword" hidden="false" collective="false" import="true" targetId="6edabef8-094d-4758-9451-a83bcb3a0f3e" type="selectionEntry">
+            <entryLink id="a52f-faa7-8043-c435" name="Reaper Chainsword" hidden="false" collective="false" import="true" targetId="9422-bbbd-53d0-5885" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a739-ccf7-b30c-6ac5" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="1713-0a5d-5ec9-34d6" name="Thunderstrike Gauntlet" hidden="false" collective="false" import="true" targetId="8af4ba9d-ea36-45b9-9a3a-30e056ac9294" type="selectionEntry">
+            <entryLink id="1713-0a5d-5ec9-34d6" name="Thunderstrike Gauntlet" hidden="false" collective="false" import="true" targetId="e517-348d-d0eb-a989" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3522-d92a-9c31-5782" type="max"/>
               </constraints>
@@ -3466,7 +3396,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="46e2-f874-7d91-4a99" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="856a-983d-e8a4-b3cc" name="Meltagun" hidden="false" collective="false" import="true" targetId="c5ea7ad4-69c2-4dc0-84e9-9d5dc1e973fd" type="selectionEntry">
+        <entryLink id="856a-983d-e8a4-b3cc" name="Meltagun" hidden="false" collective="false" import="true" targetId="a945-9de3-85fe-f087" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c8a3-e14e-268d-7f5f" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d03-6b47-19fd-084d" type="min"/>

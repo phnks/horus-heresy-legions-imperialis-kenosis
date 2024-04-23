@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="30cb-c173-1e8e-037f" name="Adeptus Mechanicus" revision="37" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="49" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="30cb-c173-1e8e-037f" name="Adeptus Mechanicus" revision="38" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="51" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="4e75-ca8c-415c-3af3" name="Mechanicus Armoured Company" hidden="false">
       <categoryLinks>
@@ -601,6 +601,13 @@
           </constraints>
           <entryLinks>
             <entryLink id="4569-1fc4-d340-8dfc" name="Myrmidon Secutors" hidden="false" collective="false" import="true" targetId="f447-3e92-2f2d-45dd" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="1804a1ce-97f8-474c-bef5-d308d28bd093" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="8620-a445-f8a6-be72" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f43a-066f-9456-0d91" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c48-1fe0-6c43-ec27" type="min"/>
               </constraints>

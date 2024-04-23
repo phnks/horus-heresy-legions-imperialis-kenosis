@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5df0-8413-3cb7-97df" name="Nurgle Strategic Assets" revision="14" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="50" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5df0-8413-3cb7-97df" name="Nurgle Strategic Assets" revision="16" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="51" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="ba56-feb3-ae8f-f5eb" name="Daemon Host" hidden="false">
       <categoryLinks>
@@ -25,6 +25,34 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b0cc-0b7f-7b91-ce44" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fab7-3eb1-16c5-c345" type="min"/>
             <constraint field="dc992662-6d4b-4120-a6a2-9acf4516238a" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae8d-078d-a56e-11f9" type="max"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry id="694f-8a1a-edcb-ce53" name="Knight Household Lance" hidden="false">
+      <categoryLinks>
+        <categoryLink id="a1ef-f8b0-c0d9-8fe0" name="Knight" hidden="false" targetId="2fdadb91-76c5-4160-88b3-b56bc092de2a" primary="false">
+          <modifiers>
+            <modifier type="decrement" field="bfda-0908-72c2-c086" value="1.0">
+              <repeats>
+                <repeat field="dc992662-6d4b-4120-a6a2-9acf4516238a" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6b49f139-82c0-402f-815b-1cf743b3e47d" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="bfda-0908-72c2-c086" value="1.0">
+              <repeats>
+                <repeat field="dc992662-6d4b-4120-a6a2-9acf4516238a" scope="roster" value="3.33" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="bfda-0908-72c2-c086" value="1.0">
+              <repeats>
+                <repeat field="dc992662-6d4b-4120-a6a2-9acf4516238a" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4a85-3a47-7491-7bf1" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dcae-97f8-2d26-97ab" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="abb6-148d-39fb-1a90" type="min"/>
+            <constraint field="dc992662-6d4b-4120-a6a2-9acf4516238a" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bfda-0908-72c2-c086" type="max"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -155,12 +183,12 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e45f-b3de-f400-b796" type="min"/>
           </constraints>
           <entryLinks>
-            <entryLink id="6f59-98cf-7039-6587" name="Reaper Chainsword" hidden="false" collective="false" import="true" targetId="6edabef8-094d-4758-9451-a83bcb3a0f3e" type="selectionEntry">
+            <entryLink id="6f59-98cf-7039-6587" name="Reaper Chainsword" hidden="false" collective="false" import="true" targetId="9422-bbbd-53d0-5885" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a27-0b2d-e2fc-1c75" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="96fa-e689-2a65-4daf" name="Thunderstrike Gauntlet" hidden="false" collective="false" import="true" targetId="8af4ba9d-ea36-45b9-9a3a-30e056ac9294" type="selectionEntry">
+            <entryLink id="96fa-e689-2a65-4daf" name="Thunderstrike Gauntlet" hidden="false" collective="false" import="true" targetId="e517-348d-d0eb-a989" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7cda-4264-8e0f-a6c1" type="max"/>
               </constraints>
@@ -221,12 +249,12 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47ef-429d-2d8f-3409" type="min"/>
           </constraints>
           <entryLinks>
-            <entryLink id="2e72-62ba-549e-9281" name="Reaper Chainsword" hidden="false" collective="false" import="true" targetId="6edabef8-094d-4758-9451-a83bcb3a0f3e" type="selectionEntry">
+            <entryLink id="2e72-62ba-549e-9281" name="Reaper Chainsword" hidden="false" collective="false" import="true" targetId="9422-bbbd-53d0-5885" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae94-4251-e5b3-1245" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="7855-de4d-0f45-9d6b" name="Thunderstrike Gauntlet" hidden="false" collective="false" import="true" targetId="8af4ba9d-ea36-45b9-9a3a-30e056ac9294" type="selectionEntry">
+            <entryLink id="7855-de4d-0f45-9d6b" name="Thunderstrike Gauntlet" hidden="false" collective="false" import="true" targetId="e517-348d-d0eb-a989" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="463c-aa1a-eb7e-a90c" type="max"/>
               </constraints>
@@ -244,7 +272,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="523f-9557-bca2-e9b8" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="d240-b577-4e24-8a7d" name="Meltagun" hidden="false" collective="false" import="true" targetId="c5ea7ad4-69c2-4dc0-84e9-9d5dc1e973fd" type="selectionEntry">
+        <entryLink id="d240-b577-4e24-8a7d" name="Meltagun" hidden="false" collective="false" import="true" targetId="a945-9de3-85fe-f087" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0eee-50f8-7a41-a276" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0be1-ebf9-5c4c-e7eb" type="min"/>
@@ -260,7 +288,7 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="173.0"/>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="179.0"/>
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
       </costs>
     </selectionEntry>
