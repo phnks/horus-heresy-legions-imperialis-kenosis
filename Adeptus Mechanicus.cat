@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="30cb-c173-1e8e-037f" name="Adeptus Mechanicus" revision="38" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="51" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="30cb-c173-1e8e-037f" name="Adeptus Mechanicus" revision="39" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="52" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="4e75-ca8c-415c-3af3" name="Mechanicus Armoured Company" hidden="false">
       <categoryLinks>
@@ -578,6 +578,10 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="8620-a445-f8a6-be72" name="Myrmidon Detachment" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="1804a1ce-97f8-474c-bef5-d308d28bd093" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b85-4538-2ea0-215e" type="max"/>
+        <constraint field="1804a1ce-97f8-474c-bef5-d308d28bd093" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ca9-d15f-01a0-26b1" type="min"/>
+      </constraints>
       <infoLinks>
         <infoLink id="c741-f370-1243-d408" name="Infiltrate" hidden="false" targetId="d33a99a4-35ea-4862-ba44-e212643ad36a" type="rule">
           <modifiers>
