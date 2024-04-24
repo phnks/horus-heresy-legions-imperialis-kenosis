@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d70e008e-64a5-4e51-ac3e-7c35e5d2e0f4" name="Strategic Assets" revision="34" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="51" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d70e008e-64a5-4e51-ac3e-7c35e5d2e0f4" name="Strategic Assets" revision="36" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="53" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="5e4ad6a9-f6dc-4b9d-8888-a4c02d576c71" name="Knight Household Lance" hidden="false">
       <categoryLinks>
@@ -29,7 +29,7 @@
         </categoryLink>
       </categoryLinks>
     </forceEntry>
-    <forceEntry id="13d14f76-9bf7-4dc8-989f-b51fff0d8fe1" name="Legion Support" hidden="false">
+    <forceEntry id="13d14f76-9bf7-4dc8-989f-b51fff0d8fe1" name="Titan Legion Support" hidden="false">
       <categoryLinks>
         <categoryLink id="060ac832-c908-4c85-9437-4942b55cb727" name="Titan" hidden="false" targetId="6b49f139-82c0-402f-815b-1cf743b3e47d" primary="false">
           <modifiers>
@@ -80,7 +80,11 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc88260c-caeb-4e14-8138-1ed6c8075baa" type="min"/>
           </constraints>
           <entryLinks>
-            <entryLink id="d40e-11c7-1e0b-86ea" name="Warhound Titan" hidden="false" collective="false" import="true" targetId="2e81-d251-045f-28d9" type="selectionEntry"/>
+            <entryLink id="d40e-11c7-1e0b-86ea" name="Warhound Titan" hidden="false" collective="false" import="true" targetId="2e81-d251-045f-28d9" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a07-5cdd-8272-aa46" type="min"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -2575,7 +2579,7 @@
             <modifier type="set" field="name" value="Void Shields (2)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="d4d1-496e-dd32-c79e" name="Warhound Titan" hidden="false" targetId="8dc8-aeaf-22f1-12f5" type="profile"/>
+        <infoLink id="d4d1-496e-dd32-c79e" name="Warhound Titan" hidden="false" targetId="b609-d9cd-b7a6-d47b" type="profile"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="e456-c2e7-5188-ae97" name="Weapons" hidden="false" collective="false" import="true">
@@ -2584,62 +2588,62 @@
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6462-5b26-e812-b43f" type="min"/>
           </constraints>
           <entryLinks>
-            <entryLink id="1219-dfa1-a3e9-6f31" name="Conversion Beam Dissolutor" hidden="false" collective="false" import="true" targetId="695b-2d5c-843b-96bf" type="selectionEntry">
+            <entryLink id="1219-dfa1-a3e9-6f31" name="Conversion Beam Dissolutor" hidden="false" collective="false" import="true" targetId="84e4-236a-62a3-5462" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8dab-981f-44cb-2640" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="86bf-c321-9d31-3bba" name="Graviton Eradicator" hidden="false" collective="false" import="true" targetId="b349-3735-3692-4e7b" type="selectionEntry">
+            <entryLink id="86bf-c321-9d31-3bba" name="Graviton Eradicator" hidden="false" collective="false" import="true" targetId="6a49-f75b-c1bd-acd3" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="091b-690a-3a06-fb90" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="556e-4490-6e72-693e" name="Warhound Swarmer Missiles" hidden="false" collective="false" import="true" targetId="609d-091d-ed3a-84e5" type="selectionEntry">
+            <entryLink id="556e-4490-6e72-693e" name="Warhound Swarmer Missiles" hidden="false" collective="false" import="true" targetId="27c8-e434-fc8e-7a9b" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="722b-768d-60ce-ffad" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="51a0-a6db-4335-091c" name="Warhound Shudder Missiles" hidden="false" collective="false" import="true" targetId="cf91-a09a-fc40-704f" type="selectionEntry">
+            <entryLink id="51a0-a6db-4335-091c" name="Warhound Shudder Missiles" hidden="false" collective="false" import="true" targetId="5e16-8458-980a-8be0" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1152-bcd2-a65d-8f8b" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="6266-ed2f-e3e3-06de" name="Vulcan Mega-bolter" hidden="false" collective="false" import="true" targetId="460a-886c-3d1a-69f0" type="selectionEntry">
+            <entryLink id="6266-ed2f-e3e3-06de" name="Vulcan Mega-bolter" hidden="false" collective="false" import="true" targetId="d733-fc65-2f9e-93f4" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc9c-0914-60e9-f761" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="8924-86ff-55dd-ecad" name="Volkite Eradicator" hidden="false" collective="false" import="true" targetId="d6ef-d268-b736-1952" type="selectionEntry">
+            <entryLink id="8924-86ff-55dd-ecad" name="Volkite Eradicator" hidden="false" collective="false" import="true" targetId="a238-0677-ebbe-acb3" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bfe9-a6c0-96dc-c796" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="988f-36ea-cccb-bf6b" name="Ursus Claw" hidden="false" collective="false" import="true" targetId="383e-dc0a-6d6b-a1b9" type="selectionEntry">
+            <entryLink id="988f-36ea-cccb-bf6b" name="Ursus Claw" hidden="false" collective="false" import="true" targetId="8f25-b5bf-8619-fd15" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2762-35ca-11dd-7a97" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="5cb9-a897-2844-d55c" name="Turbo-laser Destructor" hidden="false" collective="false" import="true" targetId="ceec-759e-ca4f-30c3" type="selectionEntry">
+            <entryLink id="5cb9-a897-2844-d55c" name="Turbo-laser Destructor" hidden="false" collective="false" import="true" targetId="2f3f-176d-400e-95fd" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4fc8-94f8-7473-d7d5" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="4c86-e163-f56b-5cd3" name="Plasma Blastgun" hidden="false" collective="false" import="true" targetId="5bd7-d1db-e6ed-3029" type="selectionEntry">
+            <entryLink id="4c86-e163-f56b-5cd3" name="Plasma Blastgun" hidden="false" collective="false" import="true" targetId="6005-4990-ac1d-fbd4" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f68-7fb0-4722-0a29" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="e020-1ed6-fabe-f919" name="Natrix Shock Lance" hidden="false" collective="false" import="true" targetId="f018-4a7b-70a8-c816" type="selectionEntry">
+            <entryLink id="e020-1ed6-fabe-f919" name="Natrix Shock Lance" hidden="false" collective="false" import="true" targetId="26d3-746f-c03e-876a" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c6c7-e59f-4556-d031" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="6431-0403-bb68-2400" name="Inferno Gun" hidden="false" collective="false" import="true" targetId="421f-cdc7-7d4f-67f3" type="selectionEntry">
+            <entryLink id="6431-0403-bb68-2400" name="Inferno Gun" hidden="false" collective="false" import="true" targetId="a619-d92c-1779-9b50" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d04-803b-6138-108e" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="a510-07dd-af70-8012" name="Incisor Pattern Melta Lance" hidden="false" collective="false" import="true" targetId="0fe0-0923-5fea-1a5c" type="selectionEntry">
+            <entryLink id="a510-07dd-af70-8012" name="Incisor Pattern Melta Lance" hidden="false" collective="false" import="true" targetId="9337-ad14-f621-71c9" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d476-34d6-7a56-59aa" type="max"/>
               </constraints>
@@ -2649,341 +2653,6 @@
       </selectionEntryGroups>
       <costs>
         <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="323.0"/>
-        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="695b-2d5c-843b-96bf" name="Conversion Beam Dissolutor" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="3d4c-2659-0309-d862" name="Conversion Beam Dissolutor (Close)" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">6&quot;</characteristic>
-            <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">2</characteristic>
-            <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">4+</characteristic>
-            <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-2</characteristic>
-            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Arc (Front)</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="bea8-abb0-c06f-5fc0" name="Conversion Beam Dissolutor (Medium)" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">6&quot;-18&quot;</characteristic>
-            <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">2</characteristic>
-            <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">3+</characteristic>
-            <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-3</characteristic>
-            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Arc (Front), Demolisher</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="ff52-7cea-0236-0502" name="Conversion Beam Dissolutor (Far)" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">18&quot;-35&quot;</characteristic>
-            <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">2</characteristic>
-            <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">2+</characteristic>
-            <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-4</characteristic>
-            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Arc (Front), Demolisher</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="ee49-5a16-fefa-98b3" name="Arc (Front/Rear)" hidden="false" targetId="4b5a744f-9cc6-4201-9423-f3c580a16854" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Arc (Front)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="4ddc-f90b-a7b2-3109" name="Demolisher" hidden="false" targetId="788-9d12-3358-b236" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
-        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="b349-3735-3692-4e7b" name="Graviton Eradicator" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="47d7-fbe2-edf6-841c" name="Graviton Eradicator" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">30&quot;</characteristic>
-            <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">2</characteristic>
-            <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">-</characteristic>
-            <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-2</characteristic>
-            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Arc (Front), Demolisher, Graviton Pulse</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="0c86-f2be-55d2-ff9a" name="Arc (Front/Rear)" hidden="false" targetId="4b5a744f-9cc6-4201-9423-f3c580a16854" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Arc (Front)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="b271-5010-915c-8919" name="Graviton Pulse" hidden="false" targetId="afefdbf5-a7f2-4919-989c-d6fa2022600b" type="rule"/>
-        <infoLink id="3cbc-2c18-9798-51cf" name="Demolisher" hidden="false" targetId="788-9d12-3358-b236" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
-        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="609d-091d-ed3a-84e5" name="Warhound Swarmer Missiles" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="162e-7834-689c-9e17" name="Warhound Swarmer Missiles" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">35&quot;</characteristic>
-            <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">8</characteristic>
-            <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">5+</characteristic>
-            <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-1</characteristic>
-            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Arc (Front), Light AT, Rapid Fire, Shieldbane</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="b866-e97e-7942-db96" name="Arc (Front/Rear)" hidden="false" targetId="4b5a744f-9cc6-4201-9423-f3c580a16854" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Arc (Front)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="eddd-282c-8f57-ef6b" name="Light AT" hidden="false" targetId="58c6bbe7-51c3-4eff-aa9f-a5c17b976571" type="rule"/>
-        <infoLink id="c29f-44c7-7523-ab30" name="Shieldbane" hidden="false" targetId="acd7fcc7-7e15-4b96-8756-c3e1be75dea7" type="rule"/>
-        <infoLink id="4aa2-400a-5422-474a" name="Rapid Fire" hidden="false" targetId="8e369f05-86ca-40a8-8496-954ba836c21b" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
-        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="cf91-a09a-fc40-704f" name="Warhound Shudder Missiles" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="d81a-ab72-b435-1816" name="Warhound Shudder Missiles" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">35&quot;</characteristic>
-            <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">2</characteristic>
-            <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">4+</characteristic>
-            <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-1</characteristic>
-            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Arc (Front), Barrage, Quake</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="e7ee-7e7c-df3e-654a" name="Arc (Front/Rear)" hidden="false" targetId="4b5a744f-9cc6-4201-9423-f3c580a16854" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Arc (Front)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="9aaf-f8be-d98a-d47f" name="Barrage" hidden="false" targetId="df28f074-c82b-418a-8fa6-25754402ada8" type="rule"/>
-        <infoLink id="428d-39ce-2e44-9f98" name="Quake" hidden="false" targetId="96f5decf-34d6-4be8-9924-9790ef5665d1" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
-        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="460a-886c-3d1a-69f0" name="Vulcan Mega-bolter" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="7b82-8ed4-1739-20df" name="Vulcan Mega-bolter" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">22&quot;</characteristic>
-            <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">10</characteristic>
-            <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">5+</characteristic>
-            <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-1</characteristic>
-            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Arc (Front), Light AT, Rapid Fire, Shieldbane</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="a574-dffc-b777-0d4e" name="Arc (Front/Rear)" hidden="false" targetId="4b5a744f-9cc6-4201-9423-f3c580a16854" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Arc (Front)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="b206-42ca-ad3c-d53c" name="Light AT" hidden="false" targetId="58c6bbe7-51c3-4eff-aa9f-a5c17b976571" type="rule"/>
-        <infoLink id="b4d5-ccca-62b7-3ede" name="Rapid Fire" hidden="false" targetId="8e369f05-86ca-40a8-8496-954ba836c21b" type="rule"/>
-        <infoLink id="4624-cc83-6fdc-2140" name="Shieldbane" hidden="false" targetId="acd7fcc7-7e15-4b96-8756-c3e1be75dea7" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
-        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="d6ef-d268-b736-1952" name="Volkite Eradicator" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="e0ff-64e8-ff6b-12a5" name="Volkite Eradicator" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">16&quot;</characteristic>
-            <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">3</characteristic>
-            <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">4+</characteristic>
-            <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-2</characteristic>
-            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Arc (Front), Beam, Deflagrate, Light AT, Shieldbane</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="0ba7-1055-6d74-bcd4" name="Arc (Front/Rear)" hidden="false" targetId="4b5a744f-9cc6-4201-9423-f3c580a16854" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Arc (Front)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="32ef-20d1-ce5c-1dc2" name="Beam" hidden="false" targetId="a4ef12c0-d47c-47c9-9756-e2788c8d234b" type="rule"/>
-        <infoLink id="8e1c-dc40-af24-b207" name="Deflagrate" hidden="false" targetId="77cbdd47-e81f-43fe-9b70-148ab9bbd53a" type="rule"/>
-        <infoLink id="478a-bfab-bfad-e5cd" name="Light AT" hidden="false" targetId="58c6bbe7-51c3-4eff-aa9f-a5c17b976571" type="rule"/>
-        <infoLink id="4f4d-5fa1-fc6e-22bf" name="Shieldbane" hidden="false" targetId="acd7fcc7-7e15-4b96-8756-c3e1be75dea7" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
-        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="383e-dc0a-6d6b-a1b9" name="Ursus Claw" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="580d-ecc7-2502-de31" name="Ursus Claw" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">6&quot;</characteristic>
-            <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">1</characteristic>
-            <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">4+</characteristic>
-            <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">SP</characteristic>
-            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Impale</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="6594-d198-98c7-ad16" name="Impale" hidden="false" targetId="d86d847f-9fb3-4f62-9a4a-86d33c0bfeab" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
-        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="ceec-759e-ca4f-30c3" name="Turbo-laser Destructor" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="0e56-0711-e19b-d9cc" name="Turbo-laser Destructor" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">40&quot;</characteristic>
-            <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">2</characteristic>
-            <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">4+</characteristic>
-            <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-3</characteristic>
-            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Accurate, Arc (Front)</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="7a3a-a036-8c74-f376" name="Arc (Front/Rear)" hidden="false" targetId="4b5a744f-9cc6-4201-9423-f3c580a16854" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Arc (Front)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="dcb8-2b2b-ff8d-8f46" name="Accurate" hidden="false" targetId="09fffa4e-76ab-4d9e-a749-d57d60897581" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
-        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="5bd7-d1db-e6ed-3029" name="Plasma Blastgun" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="f7a1-6896-4256-94e9" name="Plasma Blastgun" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">20&quot;</characteristic>
-            <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">2</characteristic>
-            <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">3+</characteristic>
-            <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-3</characteristic>
-            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Arc (Front)</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="a341-67dd-7dde-37a1" name="Arc (Front/Rear)" hidden="false" targetId="4b5a744f-9cc6-4201-9423-f3c580a16854" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Arc (Front)"/>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
-      <costs>
-        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
-        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="f018-4a7b-70a8-c816" name="Natrix Shock Lance" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="96e1-27ab-a7de-7eab" name="Natrix Shock Lance" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">6&quot;</characteristic>
-            <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">1</characteristic>
-            <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">2+</characteristic>
-            <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-1</characteristic>
-            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Bypass, Shock Pulse</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="47c2-50a5-7887-6cd4" name="Shock Pulse" hidden="false" targetId="495a-71fc-de48-96a" type="rule"/>
-        <infoLink id="11c9-fe9d-6d4c-9779" name="Bypass" hidden="false" targetId="05fe0896-a100-4cf5-933b-a32c3b0f1b6e" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
-        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="421f-cdc7-7d4f-67f3" name="Inferno Gun" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="46d8-3eb8-4a7f-8e97" name="Inferno Gun" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">1&quot;</characteristic>
-            <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">-</characteristic>
-            <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">4+</characteristic>
-            <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-2</characteristic>
-            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Arc (Front), Firestorm, Light AT, Shieldbane</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="005e-4a8c-5782-db8a" name="Arc (Front/Rear)" hidden="false" targetId="4b5a744f-9cc6-4201-9423-f3c580a16854" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Arc (Front)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="897c-23da-94b6-98b8" name="Light AT" hidden="false" targetId="58c6bbe7-51c3-4eff-aa9f-a5c17b976571" type="rule"/>
-        <infoLink id="f6b8-7f66-cc75-20be" name="Firestorm" hidden="false" targetId="0a2eea0f-e781-44ff-8a2a-dc8999f4d0d3" type="rule"/>
-        <infoLink id="589e-5a3b-b958-f9d7" name="Shieldbane" hidden="false" targetId="acd7fcc7-7e15-4b96-8756-c3e1be75dea7" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
-        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="0fe0-0923-5fea-1a5c" name="Incisor Pattern Melta Lance" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="ed58-c03a-8c4c-6fa9" name="Incisor Pattern Melta Lance (Far)" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">14&quot;</characteristic>
-            <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">1</characteristic>
-            <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">4+</characteristic>
-            <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-3</characteristic>
-            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Accurate, Anti-Tank, Arc (Front), Demolisher</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="4153-add1-35d4-daee" name="Incisor Pattern Melta Lance (Close)" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">6&quot;</characteristic>
-            <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">1</characteristic>
-            <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">3+</characteristic>
-            <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-4</characteristic>
-            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Accurate, Anti-Tank, Arc (Front), Demolisher, Engine Killer (2)</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="25b2-0e4f-76a8-972f" name="Arc (Front/Rear)" hidden="false" targetId="4b5a744f-9cc6-4201-9423-f3c580a16854" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Arc (Front)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="0143-d675-1243-88e2" name="Anti-tank" hidden="false" targetId="bea2b218-c79e-4c95-9405-8461a8779800" type="rule"/>
-        <infoLink id="76be-4bf0-ddd4-022b" name="Accurate" hidden="false" targetId="09fffa4e-76ab-4d9e-a749-d57d60897581" type="rule"/>
-        <infoLink id="45fc-01b8-71bd-e299" name="Demolisher" hidden="false" targetId="788-9d12-3358-b236" type="rule"/>
-        <infoLink id="933e-7ab0-6acc-86f1" name="Engine Killer (X)" hidden="false" targetId="9fbc675f-1e60-4d81-bc5b-779d0555693b" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Engine Killer (2)"/>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
-      <costs>
-        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -4024,16 +3693,4 @@
       </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
-  <sharedProfiles>
-    <profile id="8dc8-aeaf-22f1-12f5" name="Warhound Titan" hidden="false" typeId="746bcfa7-66de-4644-97e8-07da9cec42b6" typeName="Detachment">
-      <characteristics>
-        <characteristic name="Move" typeId="d2bd2fb5-fd8a-4566-842e-dd987e88f298">7&quot;</characteristic>
-        <characteristic name="Sv" typeId="2d7dcb0f-f0aa-4ab9-8c47-b3db3f611a39">2+</characteristic>
-        <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+10</characteristic>
-        <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">-</characteristic>
-        <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">4</characteristic>
-        <characteristic name="Traits" typeId="060a-0c06-20a0-e62c">Agile, Void Shields (2)</characteristic>
-      </characteristics>
-    </profile>
-  </sharedProfiles>
 </catalogue>
