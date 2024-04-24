@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="30cb-c173-1e8e-037f" name="Adeptus Mechanicus" revision="39" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="52" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="30cb-c173-1e8e-037f" name="Adeptus Mechanicus" revision="40" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="55" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="4e75-ca8c-415c-3af3" name="Mechanicus Armoured Company" hidden="false">
       <categoryLinks>
@@ -1267,6 +1267,43 @@ Artillery detachments do not suffer -1 to hit when firing indirectly with Barrag
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="cb7d-511b-ff84-3ae7" name="Domitar-Ferrum Iron Circle Maniple" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="4df5be74-f6f9-448b-8a05-4336c54baa7d">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6286-2a64-dbbb-1bc9" type="lessThan"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7463c8ee-68d1-4659-b949-2a93f386e957" type="notInstanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="1450-ad28-3468-6ec6" name="Walker (1)" hidden="false" targetId="4ed239fb-3012-4d49-8c82-19de993b7221" primary="false"/>
+        <categoryLink id="6ded-c0e7-3c00-aaf6" name="Bastion" hidden="false" targetId="7f7126c2-fd49-4c60-ab12-b5e25b945127" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="0772-15b4-b9d5-08d1" name="Models" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8588-ef19-2917-e680" type="max"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c7a-abdc-8cb4-6f10" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="64b1-70bc-2db3-fa86" name="Domitar-Ferrum" hidden="false" collective="false" import="true" targetId="c561-1af1-6da8-8481" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cac5-e03c-20ee-39c5" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry id="27c4-3dd7-d0d9-4700" name="Skitarii Vanguard" hidden="false" collective="false" import="true" type="model">
@@ -1568,8 +1605,8 @@ Artillery detachments do not suffer -1 to hit when firing indirectly with Barrag
         <infoLink id="7c07-5c08-0a67-e47e" name="Tech-Priest Dominus" hidden="false" targetId="b4c4-de68-128a-9a14" type="profile">
           <modifiers>
             <modifier type="set" field="name" value="Tech-Priest Dominus w/ Myrmidon Secutors"/>
-            <modifier type="set" field="060a-0c06-20a0-e62c" value="Commander, Inspire (8&quot;), Invulnerable Save (6+), Master Tactician, Battlesmith, Bulky, Implacable, Steadfast"/>
-            <modifier type="set" field="060a-0c06-20a0-e62c" value="Commander, Inspire (8&quot;), Invulnerable Save (6+), Master Tactician, Battlesmith, Bulky, Implacable, Steadfast, Infiltrate">
+            <modifier type="set" field="060a-0c06-20a0-e62c" value="Commander, Inspire (8&quot;), Invulnerable Save (6+), Master Tactician, Battlesmith, Bulky, Implacable, Steadfast, Cybernetica Cortex"/>
+            <modifier type="set" field="060a-0c06-20a0-e62c" value="Commander, Inspire (8&quot;), Invulnerable Save (6+), Master Tactician, Battlesmith, Bulky, Implacable, Steadfast, Infiltrate, Cybernetica Cortex">
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3190-c92e-6ee3-973f" type="greaterThan"/>
               </conditions>
@@ -1589,6 +1626,7 @@ Artillery detachments do not suffer -1 to hit when firing indirectly with Barrag
         </infoLink>
         <infoLink id="079d-c9c6-e26b-419a" name="Master Tactician" hidden="false" targetId="66564d31-c529-4730-89b5-cce45f6863be" type="rule"/>
         <infoLink id="528a-4a19-9928-b447" name="Battlesmith" hidden="false" targetId="90f7e900-e6cf-4a29-a2e5-80ccc7f146d8" type="rule"/>
+        <infoLink id="a065-4c68-9c5e-fc80" name="Cybernetica Cortex" hidden="false" targetId="61b6-6905-b21a-ac98" type="rule"/>
       </infoLinks>
       <entryLinks>
         <entryLink id="ee62-b113-be62-f835" name="Maxima Bolters" hidden="false" collective="false" import="true" targetId="8ed1-4541-e660-c275" type="selectionEntry">
@@ -1680,8 +1718,8 @@ Artillery detachments do not suffer -1 to hit when firing indirectly with Barrag
         <infoLink id="ec82-e9d6-4783-db30" name="Tech-Priest Dominus" hidden="false" targetId="b4c4-de68-128a-9a14" type="profile">
           <modifiers>
             <modifier type="set" field="name" value="Tech-Priest Dominus w/ Skitarii Rangers"/>
-            <modifier type="set" field="060a-0c06-20a0-e62c" value="Commander, Inspire (8&quot;), Invulnerable Save (6+), Master Tactician, Battlesmith, Line, Scout"/>
-            <modifier type="set" field="060a-0c06-20a0-e62c" value="Commander, Inspire (8&quot;), Invulnerable Save (6+), Master Tactician, Battlesmith, Line, Scout, Infiltrate">
+            <modifier type="set" field="060a-0c06-20a0-e62c" value="Commander, Inspire (8&quot;), Invulnerable Save (6+), Master Tactician, Battlesmith, Line, Scout, Cybernetica Cortex"/>
+            <modifier type="set" field="060a-0c06-20a0-e62c" value="Commander, Inspire (8&quot;), Invulnerable Save (6+), Master Tactician, Battlesmith, Line, Scout, Infiltrate, Cybernetica Cortex">
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3190-c92e-6ee3-973f" type="greaterThan"/>
               </conditions>
@@ -1689,6 +1727,7 @@ Artillery detachments do not suffer -1 to hit when firing indirectly with Barrag
           </modifiers>
         </infoLink>
         <infoLink id="86a7-02f0-003e-c216" name="Battlesmith" hidden="false" targetId="90f7e900-e6cf-4a29-a2e5-80ccc7f146d8" type="rule"/>
+        <infoLink id="63ca-e7e4-263a-da5f" name="Cybernetica Cortex" hidden="false" targetId="61b6-6905-b21a-ac98" type="rule"/>
       </infoLinks>
       <entryLinks>
         <entryLink id="ebe8-1e76-5318-0029" name="Galvanic Rifles" hidden="false" collective="false" import="true" targetId="c7fb-fbf9-e8be-fe0e" type="selectionEntry">
@@ -1721,8 +1760,8 @@ Artillery detachments do not suffer -1 to hit when firing indirectly with Barrag
         <infoLink id="bcc9-6f7d-9a25-1fde" name="Tech-Priest Dominus" hidden="false" targetId="b4c4-de68-128a-9a14" type="profile">
           <modifiers>
             <modifier type="set" field="name" value="Tech-Priest Dominus w/ Skitarii Vanguard"/>
-            <modifier type="set" field="060a-0c06-20a0-e62c" value="Commander, Inspire (8&quot;), Invulnerable Save (6+), Master Tactician, Battlesmith, Line, Rad-Phage Aura (4&quot;)"/>
-            <modifier type="set" field="060a-0c06-20a0-e62c" value="Commander, Inspire (8&quot;), Invulnerable Save (6+), Master Tactician, Battlesmith, Line, Rad-Phage Aura (4&quot;), Infiltrate">
+            <modifier type="set" field="060a-0c06-20a0-e62c" value="Commander, Inspire (8&quot;), Invulnerable Save (6+), Master Tactician, Battlesmith, Line, Rad-Phage Aura (4&quot;), Cybernetica Cortex"/>
+            <modifier type="set" field="060a-0c06-20a0-e62c" value="Commander, Inspire (8&quot;), Invulnerable Save (6+), Master Tactician, Battlesmith, Line, Rad-Phage Aura (4&quot;), Infiltrate, Cybernetica Cortex">
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3190-c92e-6ee3-973f" type="greaterThan"/>
               </conditions>
@@ -1747,6 +1786,7 @@ Artillery detachments do not suffer -1 to hit when firing indirectly with Barrag
             <modifier type="set" field="name" value="Rad-Phage Aura (4&quot;)"/>
           </modifiers>
         </infoLink>
+        <infoLink id="9e1f-0525-80d5-3d32" name="Cybernetica Cortex" hidden="false" targetId="61b6-6905-b21a-ac98" type="rule"/>
       </infoLinks>
       <entryLinks>
         <entryLink id="895f-563d-833b-5f4c" name="Radium Carbines" hidden="false" collective="false" import="true" targetId="4cd7-b981-7972-ad21" type="selectionEntry">
@@ -1839,6 +1879,58 @@ Artillery detachments do not suffer -1 to hit when firing indirectly with Barrag
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="c561-1af1-6da8-8481" name="Domitar-Ferrum" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="8103-00cc-1116-2369" name="Domitar-Ferrum" hidden="false" typeId="746bcfa7-66de-4644-97e8-07da9cec42b6" typeName="Detachment">
+          <modifiers>
+            <modifier type="set" field="060a-0c06-20a0-e62c" value="Armoured, Invulnerable Save (5+), Furious Charge, Automata, Forward Deployment">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3190-c92e-6ee3-973f" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="Move" typeId="d2bd2fb5-fd8a-4566-842e-dd987e88f298">5&quot;</characteristic>
+            <characteristic name="Sv" typeId="2d7dcb0f-f0aa-4ab9-8c47-b3db3f611a39">4+</characteristic>
+            <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+5</characteristic>
+            <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">-</characteristic>
+            <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">1</characteristic>
+            <characteristic name="Traits" typeId="060a-0c06-20a0-e62c">Armoured, Invulnerable Save (5+), Furious Charge, Automata</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="1379-e404-3c86-89d8" name="Armoured" hidden="false" targetId="fac37761-8359-445a-9de4-18a6e0882acd" type="rule"/>
+        <infoLink id="af94-567d-07a2-aebd" name="Invulnerable Save (X)" hidden="false" targetId="336f61d9-f104-4e49-888d-72b222b7565c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Invulnerable Save (5+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="fa10-ff79-3007-c4dd" name="Furious Charge" hidden="false" targetId="2b0a691d-4bbc-4f7b-8dec-a134fd9f923e" type="rule"/>
+        <infoLink id="6c15-fffc-565a-6d9d" name="Automata" hidden="false" targetId="e4a4-a0f3-7b80-7acd" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="2b42-aca2-73a8-91ab" name="Walker (1)" hidden="false" targetId="4ed239fb-3012-4d49-8c82-19de993b7221" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="defe-2611-8536-f7f8" name="Shrapnel Cannon" hidden="false" collective="false" import="true" targetId="3f0f-1288-f406-5a20" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c505-bd89-0a48-64d2" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c2ca-d431-5739-c64b" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="f7af-6473-ab40-d533" name="Graviton Maul" hidden="false" collective="false" import="true" targetId="16f9-99ec-1f1e-34b0" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5fe5-ca6a-23c2-98d6" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b611-b354-ed83-460b" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="17.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
     <profile id="b4c4-de68-128a-9a14" name="Tech-Priest Dominus" hidden="false" typeId="746bcfa7-66de-4644-97e8-07da9cec42b6" typeName="Detachment">
@@ -1848,7 +1940,7 @@ Artillery detachments do not suffer -1 to hit when firing indirectly with Barrag
         <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+2</characteristic>
         <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">2+</characteristic>
         <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">1</characteristic>
-        <characteristic name="Traits" typeId="060a-0c06-20a0-e62c">Commander, Inspire (8&quot;), Invulnerable Save (6+), Master Tactician, Battlesmith</characteristic>
+        <characteristic name="Traits" typeId="060a-0c06-20a0-e62c">Commander, Inspire (8&quot;), Invulnerable Save (6+), Master Tactician, Battlesmith, Cybernetica Cortex</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

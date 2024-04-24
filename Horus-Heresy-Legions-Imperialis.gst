@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="2c9332de-54e2-4bfc-9423-269293af3a88" name="Horus Heresy: Legions Imperialis: Kenosis Edition" revision="53" battleScribeVersion="2.03" authorName="BSData Team" authorContact="" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="2c9332de-54e2-4bfc-9423-269293af3a88" name="Horus Heresy: Legions Imperialis: Kenosis Edition" revision="55" battleScribeVersion="2.03" authorName="BSData Team" authorContact="" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="c3da3c2a-6a3a-4fb8-8b85-7f94e2c8f894" name="Legions Imperialis Rulebook" shortName="LI" publicationDate="2023" publisherUrl="https://thehorusheresy.com/legions-imperialis"/>
     <publication id="641fbf79-252a-4a03-8af3-8e3cc6988f81" name="GitHub" shortName="BSData/Horus-Heresy-Legions-Imperialis" publisherUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis"/>
@@ -1071,6 +1071,46 @@
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="3f0f-1288-f406-5a20" name="Shrapnel Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="fc6f-15f2-8cb9-fff4" name="Shrapnel Cannon" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">12&quot;</characteristic>
+            <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">2</characteristic>
+            <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">5+</characteristic>
+            <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">0</characteristic>
+            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Light</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="e826-79b0-233c-525a" name="Light" hidden="false" targetId="bb25fe8e-6b0a-40a9-bc11-d9508716ded5" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="16f9-99ec-1f1e-34b0" name="Graviton Maul" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="a7ad-3a18-4d02-da95" name="Graviton Maul" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">-</characteristic>
+            <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">-</characteristic>
+            <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">-</characteristic>
+            <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-</characteristic>
+            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Rend</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="4334-84ea-117e-f8ec" name="Rend" hidden="false" targetId="b1094ac5-aa6f-45ff-9360-9e9cad6491af" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="db223b76-7613-4dce-ac45-f28d7a03dc16" name="Assault" publicationId="c3da3c2a-6a3a-4fb8-8b85-7f94e2c8f894" page="77" hidden="false">
@@ -1538,6 +1578,19 @@ If a Detachment contains more than one model with this rule, the controlling pla
     <rule id="a94d-77d2-74c1-0f2f" name="Patrol" hidden="false">
       <description>Models with the Patrol special rule function with a greater degree of autonomy. All models with this special rule within a Detachment must maintain a 6&quot; Detachment Coherency with other models in the same Detachment instead of 2&quot;.
 </description>
+    </rule>
+    <rule id="e4a4-a0f3-7b80-7acd" name="Automata" hidden="false">
+      <description>Detachments with this special rule are ignored for the purposes of calculating a Formation&apos;s Break Point.
+
+Any Automata Detachments that are within 4&quot; of another Detachment with the Cybernetica Cortex can be issued Orders as normal. 
+
+If not within 4&quot; of another Detachment with the Cybernetica Cortex the Detachments are not issued with an Order. Instead, when a Detachment with the Automata special rule is activated during the Movement phase it must charge if within charge distance otherwise it may fire. If there are no viable targets, then it is activated and may fire in the Advancing Fire phase of the Combat phase instead. When firing with a model with the Automata special rule in this manner, the controlling player does not choose targets in the normal manner. Instead, it fires any weapons with the Anti-tank trait at the closest eligible enemy Detachment containing Walkers, Vehicles, Super-heavy Vehicles, Knights or Titans and any weapon with the Light trait at the closest eligible enemy Infantry or Cavalry Detachment. If a weapon has the Skyfire trait, the controlling player may choose to target the nearest Detachment with the Flyer special rule instead.
+An Automata model fires any other weapon at the closest eligible enemy Detachment.
+
+Automata Detachments can fire when Engaged &amp; Pinned. When selecting targets, they ignore any Detachment which is Engaged &amp; Pinned, including any Detachment they are Engaged &amp; Pinned with.</description>
+    </rule>
+    <rule id="61b6-6905-b21a-ac98" name="Cybernetica Cortex" hidden="false">
+      <description>Refer to the Automata special rule for the effects of Cybernetica Cortex on other Detachments. This special rule does not affect a Detachment with the Cybernetica Cortex special rule.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
