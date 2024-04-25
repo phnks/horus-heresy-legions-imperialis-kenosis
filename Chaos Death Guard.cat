@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4733-f9f6-faa7-ae42" name="Chaos: Death Guard" revision="49" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="61" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4733-f9f6-faa7-ae42" name="Chaos: Death Guard" revision="50" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="62" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="39bd-547d-3d4d-5ffb" name="Death Guard Maladictum" hidden="false">
       <categoryLinks>
@@ -1364,6 +1364,43 @@ Can include one of the following:
         <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="20ad-fe29-9055-fadd" name="Nurgle Vindicator Squadron" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="4df5be74-f6f9-448b-8a05-4336c54baa7d">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3543-ed3b-3fea-0cd4" type="lessThan"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7463c8ee-68d1-4659-b949-2a93f386e957" type="notInstanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="c7ac-2b27-1232-a99f" name="Vehicle (2)" hidden="false" targetId="49b3-dae7-33f8-f8e" primary="false"/>
+        <categoryLink id="2533-bd7e-0c1e-17c5" name="Artillery" hidden="false" targetId="45d6c947-80a0-4e29-a4be-a4089467fc2d" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="0ae2-6631-e2ea-1233" name="Models" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="32e0-ffa1-ee4b-de52" type="min"/>
+            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8092-e7d6-d40a-eea8" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="d62c-1738-9e72-f18d" name="Nurgle Vindicator" hidden="false" collective="false" import="true" targetId="a28e-454f-6c2d-a2de" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c6a6-7477-a1af-d67a" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry id="f00b-af41-73e7-c6d5" name="Plague Marines" hidden="false" collective="false" import="true" type="model">
@@ -2172,6 +2209,36 @@ Can include one of the following:
       </entryLinks>
       <costs>
         <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="108.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a28e-454f-6c2d-a2de" name="Nurgle Vindicator" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="aa25-ae8a-156c-02e1" name="Nurgle Vindicator" hidden="false" typeId="746bcfa7-66de-4644-97e8-07da9cec42b6" typeName="Detachment">
+          <characteristics>
+            <characteristic name="Move" typeId="d2bd2fb5-fd8a-4566-842e-dd987e88f298">9&quot;</characteristic>
+            <characteristic name="Sv" typeId="2d7dcb0f-f0aa-4ab9-8c47-b3db3f611a39">3+</characteristic>
+            <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+0</characteristic>
+            <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">3+</characteristic>
+            <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">1</characteristic>
+            <characteristic name="Traits" typeId="060a-0c06-20a0-e62c">Disgustingly Resilient, Implacable</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="0d8d-450a-a56e-9815" name="Disgustingly Resilient" hidden="false" targetId="b9ff-5594-6936-1a03" type="rule"/>
+        <infoLink id="75d8-4a0d-64ab-d5c0" name="Implacable" hidden="false" targetId="c5dc7dc8-1358-4fab-9167-abb36b8184a2" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="d5b9-b4ab-b2f1-3608" name="Hull Mounted Demolisher Cannon" hidden="false" collective="false" import="true" targetId="e5e2-ed8f-9bc8-01a3" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dfb0-8fb4-3d89-1d35" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e1e6-2008-f7cc-ddf5" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="32.0"/>
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
       </costs>
     </selectionEntry>

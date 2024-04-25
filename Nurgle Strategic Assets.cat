@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5df0-8413-3cb7-97df" name="Nurgle Strategic Assets" revision="20" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="60" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5df0-8413-3cb7-97df" name="Nurgle Strategic Assets" revision="21" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="61" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="ba56-feb3-ae8f-f5eb" name="Daemon Host" hidden="false">
       <categoryLinks>
@@ -180,6 +180,7 @@
           <modifiers>
             <modifier type="set" field="060a-0c06-20a0-e62c" value="Independent, Ion Shield (4+), Nimble, Disgustingly Resilient, Implacable"/>
             <modifier type="set" field="d2bd2fb5-fd8a-4566-842e-dd987e88f298" value="7&quot;"/>
+            <modifier type="set" field="name" value="Nurgle Knight Despoiler-Crusader"/>
           </modifiers>
         </infoLink>
         <infoLink id="a51b-149b-3246-f099" name="Disgustingly Resilient" hidden="false" targetId="b9ff-5594-6936-1a03" type="rule"/>
@@ -237,6 +238,7 @@
           <modifiers>
             <modifier type="set" field="060a-0c06-20a0-e62c" value="Independent, Ion Shield (4+), Nimble, Disgustingly Resilient, Implacable"/>
             <modifier type="set" field="d2bd2fb5-fd8a-4566-842e-dd987e88f298" value="7&quot;"/>
+            <modifier type="set" field="name" value="Nurgle Knight Despoiler-Paladin"/>
           </modifiers>
         </infoLink>
         <infoLink id="d98d-15a3-54c9-18b4" name="Disgustingly Resilient" hidden="false" targetId="b9ff-5594-6936-1a03" type="rule"/>
@@ -305,6 +307,7 @@
           <modifiers>
             <modifier type="set" field="060a-0c06-20a0-e62c" value="Independent, Ion Shield (4+), Nimble, Disgustingly Resilient, Implacable"/>
             <modifier type="set" field="d2bd2fb5-fd8a-4566-842e-dd987e88f298" value="7&quot;"/>
+            <modifier type="set" field="name" value="Nurgle Knight Despoiler-Warden"/>
           </modifiers>
         </infoLink>
         <infoLink id="a998-e9c4-af35-d124" name="Disgustingly Resilient" hidden="false" targetId="b9ff-5594-6936-1a03" type="rule"/>

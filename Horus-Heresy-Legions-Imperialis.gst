@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="2c9332de-54e2-4bfc-9423-269293af3a88" name="Horus Heresy: Legions Imperialis: Kenosis Edition" revision="61" battleScribeVersion="2.03" authorName="BSData Team" authorContact="" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="2c9332de-54e2-4bfc-9423-269293af3a88" name="Horus Heresy: Legions Imperialis: Kenosis Edition" revision="62" battleScribeVersion="2.03" authorName="BSData Team" authorContact="" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="c3da3c2a-6a3a-4fb8-8b85-7f94e2c8f894" name="Legions Imperialis Rulebook" shortName="LI" publicationDate="2023" publisherUrl="https://thehorusheresy.com/legions-imperialis"/>
     <publication id="641fbf79-252a-4a03-8af3-8e3cc6988f81" name="GitHub" shortName="BSData/Horus-Heresy-Legions-Imperialis" publisherUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis"/>
@@ -1211,17 +1211,14 @@
             <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">1</characteristic>
             <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">4+</characteristic>
             <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-3</characteristic>
-            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Engine Killer (1), Demolisher</characteristic>
+            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Demolisher, Armourbane, Anti-Tank</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="a7b9-dbda-5fec-595f" name="Engine Killer (X)" hidden="false" targetId="9fbc675f-1e60-4d81-bc5b-779d0555693b" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Engine Killer (1)"/>
-          </modifiers>
-        </infoLink>
         <infoLink id="e6d2-e6a9-a681-993e" name="Demolisher" hidden="false" targetId="788-9d12-3358-b236" type="rule"/>
+        <infoLink id="54e4-c3d3-3e09-02c3" name="Armourbane" hidden="false" targetId="2d094656-bbb3-47a1-ac73-b2041f7c2401" type="rule"/>
+        <infoLink id="15bb-a0a7-201a-86a2" name="Anti-tank" hidden="false" targetId="bea2b218-c79e-4c95-9405-8461a8779800" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
