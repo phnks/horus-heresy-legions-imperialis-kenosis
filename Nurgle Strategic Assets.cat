@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5df0-8413-3cb7-97df" name="Nurgle Strategic Assets" revision="18" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="53" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5df0-8413-3cb7-97df" name="Nurgle Strategic Assets" revision="20" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="60" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="ba56-feb3-ae8f-f5eb" name="Daemon Host" hidden="false">
       <categoryLinks>
@@ -178,10 +178,12 @@
         <infoLink id="d418-cad0-cb9c-cb3f" name="Nimble" hidden="false" targetId="4e652d67-da9f-42e6-867a-900f862cc219" type="rule"/>
         <infoLink id="a8e6-7093-9304-d234" name="Questoris Knight" hidden="false" targetId="18dd-11cf-c8af-c54b" type="profile">
           <modifiers>
-            <modifier type="set" field="060a-0c06-20a0-e62c" value="Independent, Ion Shield (4+), Nimble, Disgustingly Resilient"/>
+            <modifier type="set" field="060a-0c06-20a0-e62c" value="Independent, Ion Shield (4+), Nimble, Disgustingly Resilient, Implacable"/>
+            <modifier type="set" field="d2bd2fb5-fd8a-4566-842e-dd987e88f298" value="7&quot;"/>
           </modifiers>
         </infoLink>
         <infoLink id="a51b-149b-3246-f099" name="Disgustingly Resilient" hidden="false" targetId="b9ff-5594-6936-1a03" type="rule"/>
+        <infoLink id="add2-a06d-d521-df7b" name="Implacable" hidden="false" targetId="c5dc7dc8-1358-4fab-9167-abb36b8184a2" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="2afa-8ae0-4c0e-940a" name="Arm Weapon" hidden="false" collective="false" import="true">
@@ -233,10 +235,12 @@
         <infoLink id="f097-3c92-4a51-06db" name="Nimble" hidden="false" targetId="4e652d67-da9f-42e6-867a-900f862cc219" type="rule"/>
         <infoLink id="7bc6-2009-e562-45c3" name="Questoris Knight" hidden="false" targetId="18dd-11cf-c8af-c54b" type="profile">
           <modifiers>
-            <modifier type="set" field="060a-0c06-20a0-e62c" value="Independent, Ion Shield (4+), Nimble, Disgustingly Resilient"/>
+            <modifier type="set" field="060a-0c06-20a0-e62c" value="Independent, Ion Shield (4+), Nimble, Disgustingly Resilient, Implacable"/>
+            <modifier type="set" field="d2bd2fb5-fd8a-4566-842e-dd987e88f298" value="7&quot;"/>
           </modifiers>
         </infoLink>
         <infoLink id="d98d-15a3-54c9-18b4" name="Disgustingly Resilient" hidden="false" targetId="b9ff-5594-6936-1a03" type="rule"/>
+        <infoLink id="a6d9-8e0a-db1d-c081" name="Implacable" hidden="false" targetId="c5dc7dc8-1358-4fab-9167-abb36b8184a2" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="dcd5-6bce-0776-83d9" name="Melee Weapons" hidden="false" collective="false" import="true">
@@ -299,10 +303,12 @@
         <infoLink id="ae8f-acfd-a985-62c2" name="Nimble" hidden="false" targetId="4e652d67-da9f-42e6-867a-900f862cc219" type="rule"/>
         <infoLink id="6c38-7755-ce92-e263" name="Questoris Knight" hidden="false" targetId="18dd-11cf-c8af-c54b" type="profile">
           <modifiers>
-            <modifier type="set" field="060a-0c06-20a0-e62c" value="Independent, Ion Shield (4+), Nimble, Disgustingly Resilient"/>
+            <modifier type="set" field="060a-0c06-20a0-e62c" value="Independent, Ion Shield (4+), Nimble, Disgustingly Resilient, Implacable"/>
+            <modifier type="set" field="d2bd2fb5-fd8a-4566-842e-dd987e88f298" value="7&quot;"/>
           </modifiers>
         </infoLink>
         <infoLink id="a998-e9c4-af35-d124" name="Disgustingly Resilient" hidden="false" targetId="b9ff-5594-6936-1a03" type="rule"/>
+        <infoLink id="2c3e-ad2a-9bac-e8b4" name="Implacable" hidden="false" targetId="c5dc7dc8-1358-4fab-9167-abb36b8184a2" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="5b5f-68e0-4eb9-3da2" name="Melee Weapons" hidden="false" collective="false" import="true">
@@ -365,10 +371,12 @@
         <infoLink id="f59d-a32c-ffeb-c48d" name="Warhound Titan" hidden="false" targetId="b609-d9cd-b7a6-d47b" type="profile">
           <modifiers>
             <modifier type="set" field="name" value="Nurgle Warhound Titan"/>
-            <modifier type="set" field="060a-0c06-20a0-e62c" value="Agile, Void Shields (2), Disgustingly Resilient"/>
+            <modifier type="set" field="060a-0c06-20a0-e62c" value="Agile, Void Shields (2), Disgustingly Resilient, Implacable"/>
+            <modifier type="set" field="d2bd2fb5-fd8a-4566-842e-dd987e88f298" value="6&quot;"/>
           </modifiers>
         </infoLink>
         <infoLink id="13f2-3501-aae3-0b22" name="Disgustingly Resilient" hidden="false" targetId="b9ff-5594-6936-1a03" type="rule"/>
+        <infoLink id="78a1-33b7-0b8b-f2ac" name="Implacable" hidden="false" targetId="c5dc7dc8-1358-4fab-9167-abb36b8184a2" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="57c5-150a-3e4e-47a3" name="Weapons" hidden="false" collective="false" import="true">
