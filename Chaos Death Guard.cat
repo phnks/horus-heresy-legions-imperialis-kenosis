@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4733-f9f6-faa7-ae42" name="Chaos: Death Guard" revision="40" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="52" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4733-f9f6-faa7-ae42" name="Chaos: Death Guard" revision="42" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="56" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="39bd-547d-3d4d-5ffb" name="Death Guard Maladictum" hidden="false">
       <categoryLinks>
@@ -469,6 +469,18 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="d7b0-ebf4-0fd0-a9e5" name="Colony Command Detachment" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="add" field="category" value="4df5be74-f6f9-448b-8a05-4336c54baa7d">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3543-ed3b-3fea-0cd4" type="lessThan"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7463c8ee-68d1-4659-b949-2a93f386e957" type="notInstanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="5f8f-b196-419c-ff46" name="New CategoryLink" hidden="false" targetId="d950-ad23-9b2-9325" primary="true"/>
         <categoryLink id="2182-f458-8317-edbb" name="Infantry (1)" hidden="false" targetId="3e3d12cf-27be-4415-af5e-e47be58e343c" primary="false"/>
@@ -1203,22 +1215,23 @@ Can include one of the following:
             <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+2</characteristic>
             <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">2+</characteristic>
             <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">1</characteristic>
-            <characteristic name="Traits" typeId="060a-0c06-20a0-e62c">Disgustingly Resilient, Explorator Adaption</characteristic>
+            <characteristic name="Traits" typeId="060a-0c06-20a0-e62c">Disgustingly Resilient, Explorator Adaption, Siege Tank</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink id="7c8d-9f17-04d2-30f4" name="Explorator Adaption" hidden="false" targetId="2e95f354-63d6-436c-a468-e03635c83937" type="rule"/>
         <infoLink id="3930-46dc-cdfe-34c6" name="Disgustingly Resilient" hidden="false" targetId="b9ff-5594-6936-1a03" type="rule"/>
+        <infoLink id="c991-8382-1bdb-afd4" name="Siege Tank" hidden="false" targetId="3b58-2f6e-c64d-1caa" type="rule"/>
       </infoLinks>
       <entryLinks>
-        <entryLink id="966d-7d7c-f607-cdf1" name="Entropy Cannons" hidden="false" collective="false" import="true" targetId="59d7-9bd2-c0b0-7c96" type="selectionEntry">
+        <entryLink id="966d-7d7c-f607-cdf1" name="Sponson Mounted Entropy Cannons" hidden="false" collective="false" import="true" targetId="407b-fb8d-62a6-f94c" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad3c-2c29-b656-6b62" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="58b5-2d0e-7496-8df6" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="8964-0bac-2f0c-7296" name="Hull Mounted Plagueburst Mortar" hidden="false" collective="false" import="true" targetId="adec-b633-88b7-2b4c" type="selectionEntry">
+        <entryLink id="8964-0bac-2f0c-7296" name="Plagueburst Mortar" hidden="false" collective="false" import="true" targetId="adec-b633-88b7-2b4c" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d71-6e9f-bab3-ba69" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d210-b809-2200-a3f2" type="min"/>
@@ -1237,17 +1250,6 @@ Can include one of the following:
       </costs>
     </selectionEntry>
     <selectionEntry id="59d7-9bd2-c0b0-7c96" name="Entropy Cannons" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="3058-afff-d84f-1474" name="Entropy Cannons" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">22&quot;</characteristic>
-            <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">1</characteristic>
-            <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">4+</characteristic>
-            <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-1</characteristic>
-            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Arc (Front), Anti-Tank</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="4a39-45f7-7af5-c118" name="Arc (Front/Rear)" hidden="false" targetId="4b5a744f-9cc6-4201-9423-f3c580a16854" type="rule">
           <modifiers>
@@ -1255,6 +1257,7 @@ Can include one of the following:
           </modifiers>
         </infoLink>
         <infoLink id="2dce-1f1b-a11c-f8d1" name="Anti-tank" hidden="false" targetId="bea2b218-c79e-4c95-9405-8461a8779800" type="rule"/>
+        <infoLink id="0134-3e6a-c421-7c40" name="Entropy Cannons" hidden="false" targetId="dbe1-c35c-754d-f6ba" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
@@ -1593,6 +1596,26 @@ Can include one of the following:
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="407b-fb8d-62a6-f94c" name="Sponson Mounted Entropy Cannons" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="416e-dd8c-b3fc-c091" name="Arc (Front/Rear)" hidden="false" targetId="4b5a744f-9cc6-4201-9423-f3c580a16854" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Arc (Front)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="c308-b29b-4a28-d0b4" name="Anti-tank" hidden="false" targetId="bea2b218-c79e-4c95-9405-8461a8779800" type="rule"/>
+        <infoLink id="dd8d-a572-41c2-0846" name="Entropy Cannons" hidden="false" targetId="dbe1-c35c-754d-f6ba" type="profile">
+          <modifiers>
+            <modifier type="set" field="name" value="Sponson Mounted Entropy Cannons"/>
+            <modifier type="set" field="244f923a-6c4d-45cc-bb7b-a344e6642f2c" value="Arc (Front), Anti-Tank"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
     <profile id="985b-18c9-fa8f-9f97" name="Lord of Contagion" hidden="false" typeId="746bcfa7-66de-4644-97e8-07da9cec42b6" typeName="Detachment">
@@ -1603,6 +1626,15 @@ Can include one of the following:
         <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">2+</characteristic>
         <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">1</characteristic>
         <characteristic name="Traits" typeId="060a-0c06-20a0-e62c">Commander, Inspire (8&quot;), Invulnerable Save (6+), Bulky, Implacable, Steadfast, Feel No Pain</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="dbe1-c35c-754d-f6ba" name="Entropy Cannons" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">22&quot;</characteristic>
+        <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">1</characteristic>
+        <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">4+</characteristic>
+        <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-1</characteristic>
+        <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Anti-Tank</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="2c9332de-54e2-4bfc-9423-269293af3a88" name="Horus Heresy: Legions Imperialis: Kenosis Edition" revision="55" battleScribeVersion="2.03" authorName="BSData Team" authorContact="" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="2c9332de-54e2-4bfc-9423-269293af3a88" name="Horus Heresy: Legions Imperialis: Kenosis Edition" revision="56" battleScribeVersion="2.03" authorName="BSData Team" authorContact="" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="c3da3c2a-6a3a-4fb8-8b85-7f94e2c8f894" name="Legions Imperialis Rulebook" shortName="LI" publicationDate="2023" publisherUrl="https://thehorusheresy.com/legions-imperialis"/>
     <publication id="641fbf79-252a-4a03-8af3-8e3cc6988f81" name="GitHub" shortName="BSData/Horus-Heresy-Legions-Imperialis" publisherUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis"/>
@@ -1591,6 +1591,9 @@ Automata Detachments can fire when Engaged &amp; Pinned. When selecting targets,
     </rule>
     <rule id="61b6-6905-b21a-ac98" name="Cybernetica Cortex" hidden="false">
       <description>Refer to the Automata special rule for the effects of Cybernetica Cortex on other Detachments. This special rule does not affect a Detachment with the Cybernetica Cortex special rule.</description>
+    </rule>
+    <rule id="3b58-2f6e-c64d-1caa" name="Siege Tank" hidden="false">
+      <description>Models with the Siege Tank special rule may choose to fire any Barrage weapons on its Detachment&apos;s target or a Secondary Target; a Secondary Target is an eligible target (i.e., within range and line of sight of the firing model) different from the first chosen target. All Barrage weapons in a Detachment must fire at the same target, unless another rule overrides this.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
