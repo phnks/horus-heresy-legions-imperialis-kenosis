@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="2c9332de-54e2-4bfc-9423-269293af3a88" name="Horus Heresy: Legions Imperialis: Kenosis Edition" revision="60" battleScribeVersion="2.03" authorName="BSData Team" authorContact="" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="2c9332de-54e2-4bfc-9423-269293af3a88" name="Horus Heresy: Legions Imperialis: Kenosis Edition" revision="61" battleScribeVersion="2.03" authorName="BSData Team" authorContact="" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="c3da3c2a-6a3a-4fb8-8b85-7f94e2c8f894" name="Legions Imperialis Rulebook" shortName="LI" publicationDate="2023" publisherUrl="https://thehorusheresy.com/legions-imperialis"/>
     <publication id="641fbf79-252a-4a03-8af3-8e3cc6988f81" name="GitHub" shortName="BSData/Horus-Heresy-Legions-Imperialis" publisherUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis"/>
@@ -1133,6 +1133,133 @@
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="fe63-0575-4a3d-c693" name="Sponson Mounted Quad-Lascannons" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="ca41-84ec-2119-484c" name="Anti-tank" hidden="false" targetId="bea2b218-c79e-4c95-9405-8461a8779800" type="rule"/>
+        <infoLink id="d27d-6550-bf66-2b12" name="Quad-Lascannons" hidden="false" targetId="6497-786c-d18e-a028" type="profile">
+          <modifiers>
+            <modifier type="set" field="244f923a-6c4d-45cc-bb7b-a344e6642f2c" value="Anti-Tank, Arc (Front)"/>
+            <modifier type="set" field="name" value="Sponson Mounted Quad-Lascannons"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="fde5-f0fa-31da-d77e" name="Arc (Front/Rear)" hidden="false" targetId="4b5a744f-9cc6-4201-9423-f3c580a16854" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Arc (Front)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e035-121a-f108-5291" name="Quad-Lascannons" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="2d2f-63d7-d5ee-60fc" name="Anti-tank" hidden="false" targetId="bea2b218-c79e-4c95-9405-8461a8779800" type="rule"/>
+        <infoLink id="9580-f1a9-db7b-aec3" name="Quad-Lascannons" hidden="false" targetId="6497-786c-d18e-a028" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cd33-6aa4-e952-907d" name="Hull Mounted Heavy Bolter" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="cbcc-77bd-9a8c-33e6" name="Light" hidden="false" targetId="bb25fe8e-6b0a-40a9-bc11-d9508716ded5" type="rule"/>
+        <infoLink id="aee0-78d3-e09f-2a37" name="Point Defence" hidden="false" targetId="ddbfcec5-daab-4124-abb7-0eb88a1960e6" type="rule"/>
+        <infoLink id="3239-f04d-0ebb-126e" name="Heavy Bolter" hidden="false" targetId="d050-f5f0-eb2b-1647" type="profile">
+          <modifiers>
+            <modifier type="set" field="name" value="Hull Mounted Heavy Bolter"/>
+            <modifier type="set" field="244f923a-6c4d-45cc-bb7b-a344e6642f2c" value="Light, Arc (Front), Point Defense"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="a4af-123f-b200-6a05" name="Arc (Front/Rear)" hidden="false" targetId="4b5a744f-9cc6-4201-9423-f3c580a16854" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Arc (Front)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bafb-1ba3-b87a-65fe" name="Heavy Bolter" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="e0d5-03a0-035e-0db2" name="Light" hidden="false" targetId="bb25fe8e-6b0a-40a9-bc11-d9508716ded5" type="rule"/>
+        <infoLink id="5418-145b-ee8f-5d3d" name="Heavy Bolter" hidden="false" targetId="d050-f5f0-eb2b-1647" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fbdf-423d-4057-5116" name="Fellblade Accelerator Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="4502-95f6-0723-2cc4" name="Fellblade Accelerator Cannon - HE Shells" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">25&quot;</characteristic>
+            <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">2</characteristic>
+            <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">4+</characteristic>
+            <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-2</characteristic>
+            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c"/>
+          </characteristics>
+        </profile>
+        <profile id="aabc-23c9-facc-7439" name="Fellblade Accelerator Cannon - AE Shells" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">25&quot;</characteristic>
+            <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">1</characteristic>
+            <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">4+</characteristic>
+            <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-3</characteristic>
+            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Engine Killer (1), Demolisher</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="a7b9-dbda-5fec-595f" name="Engine Killer (X)" hidden="false" targetId="9fbc675f-1e60-4d81-bc5b-779d0555693b" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Engine Killer (1)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="e6d2-e6a9-a681-993e" name="Demolisher" hidden="false" targetId="788-9d12-3358-b236" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e5e2-ed8f-9bc8-01a3" name="Hull Mounted Demolisher Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="1d6f-d440-4d5d-e2bf" name="Demolisher" hidden="false" targetId="788-9d12-3358-b236" type="rule"/>
+        <infoLink id="57c1-23e1-e89f-43f3" name="Ignores Cover" hidden="false" targetId="6a7e8b3f-d8bd-4d50-aec6-f4893069b255" type="rule"/>
+        <infoLink id="067d-ebdc-2d27-6fe5" name="Demolisher Cannon" hidden="false" targetId="11e3-2413-616f-5394" type="profile">
+          <modifiers>
+            <modifier type="set" field="name" value="Hull Mounted Demolisher Cannon"/>
+            <modifier type="set" field="244f923a-6c4d-45cc-bb7b-a344e6642f2c" value="Arc (Front), Demolisher, Ignores Cover"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="e766-aaab-62c9-cd50" name="Arc (Front/Rear)" hidden="false" targetId="4b5a744f-9cc6-4201-9423-f3c580a16854" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Arc (Front)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="16ac-0349-32a2-2265" name="Demolisher Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="fa51-6570-46bc-6720" name="Demolisher" hidden="false" targetId="788-9d12-3358-b236" type="rule"/>
+        <infoLink id="64b5-6c9f-cea6-3a4d" name="Ignores Cover" hidden="false" targetId="6a7e8b3f-d8bd-4d50-aec6-f4893069b255" type="rule"/>
+        <infoLink id="8fa9-3428-968a-7c2f" name="Demolisher Cannon" hidden="false" targetId="11e3-2413-616f-5394" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="db223b76-7613-4dce-ac45-f28d7a03dc16" name="Assault" publicationId="c3da3c2a-6a3a-4fb8-8b85-7f94e2c8f894" page="77" hidden="false">
@@ -1674,6 +1801,33 @@ Automata Detachments can fire when Engaged &amp; Pinned. When selecting targets,
         <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">-</characteristic>
         <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">1</characteristic>
         <characteristic name="Traits" typeId="060a-0c06-20a0-e62c">Drop Pod, Large Transport (2)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6497-786c-d18e-a028" name="Quad-Lascannons" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">22&quot;</characteristic>
+        <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">4</characteristic>
+        <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">4+</characteristic>
+        <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-1</characteristic>
+        <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Anti-tank</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d050-f5f0-eb2b-1647" name="Heavy Bolter" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">12&quot;</characteristic>
+        <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">2</characteristic>
+        <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">5+</characteristic>
+        <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">0</characteristic>
+        <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Light</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="11e3-2413-616f-5394" name="Demolisher Cannon" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">12&quot;</characteristic>
+        <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">1</characteristic>
+        <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">4+</characteristic>
+        <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-3</characteristic>
+        <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Demolisher, Ignores Cover</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4733-f9f6-faa7-ae42" name="Chaos: Death Guard" revision="48" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="60" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4733-f9f6-faa7-ae42" name="Chaos: Death Guard" revision="49" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="61" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="39bd-547d-3d4d-5ffb" name="Death Guard Maladictum" hidden="false">
       <categoryLinks>
@@ -1327,6 +1327,43 @@ Can include one of the following:
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="5d1e-1567-7f80-8a83" name="Nurgle Fellblade Super-Heavy Tank Squadron" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="4df5be74-f6f9-448b-8a05-4336c54baa7d">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7463c8ee-68d1-4659-b949-2a93f386e957" type="notInstanceOf"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3543-ed3b-3fea-0cd4" type="lessThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="7586-f936-a588-30f7" name="New CategoryLink" hidden="false" targetId="cd344500-c2df-4bbb-aa95-62d12bed4f56" primary="false"/>
+        <categoryLink id="72b6-f24f-5538-1f1c" name="New CategoryLink" hidden="false" targetId="c5ec467a-696c-49ec-9a60-dc95ee465cf5" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="b596-ccb2-b50a-d4c4" name="Models" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="695a-becc-07d3-3cf1" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5298-0882-4170-2abb" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="dab8-1b0b-c1ab-dc8e" name="Nurgle Fellblade Super-Heavy Tank" hidden="false" collective="false" import="true" targetId="7dca-ab11-9754-3681" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f47-d4c3-5182-b804" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry id="f00b-af41-73e7-c6d5" name="Plague Marines" hidden="false" collective="false" import="true" type="model">
@@ -2086,6 +2123,55 @@ Can include one of the following:
       </entryLinks>
       <costs>
         <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="8.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7dca-ab11-9754-3681" name="Nurgle Fellblade Super-Heavy Tank" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="4600-ec76-7916-1578" name="Nurgle Fellblade Super-Heavy Tank" hidden="false" typeId="746bcfa7-66de-4644-97e8-07da9cec42b6" typeName="Detachment">
+          <characteristics>
+            <characteristic name="Move" typeId="d2bd2fb5-fd8a-4566-842e-dd987e88f298">7&quot;</characteristic>
+            <characteristic name="Sv" typeId="2d7dcb0f-f0aa-4ab9-8c47-b3db3f611a39">2+</characteristic>
+            <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+4</characteristic>
+            <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">3+</characteristic>
+            <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">2</characteristic>
+            <characteristic name="Traits" typeId="060a-0c06-20a0-e62c">Disgustingly Resilient, Implacable, Explorator Adaption</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="d218-c0fb-0420-8e40" name="Explorator Adaption" hidden="false" targetId="2e95f354-63d6-436c-a468-e03635c83937" type="rule"/>
+        <infoLink id="323d-72f3-9419-8cb1" name="Disgustingly Resilient" hidden="false" targetId="b9ff-5594-6936-1a03" type="rule"/>
+        <infoLink id="866b-891c-21ae-1308" name="Implacable" hidden="false" targetId="c5dc7dc8-1358-4fab-9167-abb36b8184a2" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="8caf-a492-071e-9b36" name="Quad-Lascannons" hidden="false" collective="false" import="true" targetId="e035-121a-f108-5291" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="92f9-23f6-0d68-98de" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e7e6-f67b-7b6b-fe65" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="d87e-afe4-ac3e-f168" name="Hull Mounted Heavy Bolter" hidden="false" collective="false" import="true" targetId="cd33-6aa4-e952-907d" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f50-6978-af99-559c" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b84-ffca-6f15-fdfd" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="0d6e-e3ff-de32-f3f8" name="Fellblade Accelerator Cannon" hidden="false" collective="false" import="true" targetId="fbdf-423d-4057-5116" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bdff-6ed6-c861-f713" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57e5-5fbc-39f4-297c" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="d057-82a7-71ba-4e50" name="Hull Mounted Demolisher Cannon" hidden="false" collective="false" import="true" targetId="e5e2-ed8f-9bc8-01a3" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="472d-93c3-9b14-5e1c" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8080-7682-edbb-faa8" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="108.0"/>
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
       </costs>
     </selectionEntry>
