@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="30cb-c173-1e8e-037f" name="Adeptus Mechanicus" revision="43" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="56" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="30cb-c173-1e8e-037f" name="Adeptus Mechanicus" revision="44" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="59" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="4e75-ca8c-415c-3af3" name="Mechanicus Armoured Company" hidden="false">
       <categoryLinks>
@@ -336,17 +336,6 @@
         <constraint field="1804a1ce-97f8-474c-bef5-d308d28bd093" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10af-a011-179e-3d8e" type="min"/>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="38bd-6a84-9981-0b07" type="min"/>
       </constraints>
-      <infoLinks>
-        <infoLink id="d6a9-cc91-44d3-280b" name="Infiltrate" hidden="false" targetId="d33a99a4-35ea-4862-ba44-e212643ad36a" type="rule">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3190-c92e-6ee3-973f" type="notInstanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
       <categoryLinks>
         <categoryLink id="9733-d1fc-d2d4-f5d2" name="Infantry (1)" hidden="false" targetId="3e3d12cf-27be-4415-af5e-e47be58e343c" primary="false"/>
         <categoryLink id="8205-a218-fa0a-759d" name="New CategoryLink" hidden="false" targetId="e0fe110f-b15d-4340-9583-557d57cd2981" primary="true"/>
@@ -357,6 +346,17 @@
             <constraint field="selections" scope="parent" value="16.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8312-0573-2c39-ee59" type="max"/>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="34ef-ed1b-f205-6d9b" type="min"/>
           </constraints>
+          <infoLinks>
+            <infoLink id="3d6f-66a7-10b2-251a" name="Infiltrate" hidden="false" targetId="d33a99a4-35ea-4862-ba44-e212643ad36a" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3190-c92e-6ee3-973f" type="notInstanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
           <entryLinks>
             <entryLink id="53b3-f52a-08a0-8a11" name="Skitarii Vanguard" hidden="false" collective="false" import="true" targetId="27c4-3dd7-d0d9-4700" type="selectionEntry">
               <modifiers>
@@ -478,17 +478,6 @@
         <constraint field="1804a1ce-97f8-474c-bef5-d308d28bd093" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5725-8c9b-bed2-b269" type="min"/>
         <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c95-586f-6e9a-6546" type="max"/>
       </constraints>
-      <infoLinks>
-        <infoLink id="8217-b8b7-c3e0-60fb" name="Infiltrate" hidden="false" targetId="d33a99a4-35ea-4862-ba44-e212643ad36a" type="rule">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3190-c92e-6ee3-973f" type="notInstanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
       <categoryLinks>
         <categoryLink id="80fa-6755-b179-00ce" name="Infantry (1)" hidden="false" targetId="3e3d12cf-27be-4415-af5e-e47be58e343c" primary="false"/>
         <categoryLink id="fbc4-a01e-2ebe-933a" name="New CategoryLink" hidden="false" targetId="e0fe110f-b15d-4340-9583-557d57cd2981" primary="true"/>
@@ -499,6 +488,17 @@
             <constraint field="selections" scope="parent" value="16.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7848-4678-e332-4fbf" type="max"/>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba0e-8664-a388-e82f" type="min"/>
           </constraints>
+          <infoLinks>
+            <infoLink id="7051-4da0-3995-b7da" name="Infiltrate" hidden="false" targetId="d33a99a4-35ea-4862-ba44-e212643ad36a" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3190-c92e-6ee3-973f" type="notInstanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
           <entryLinks>
             <entryLink id="e421-cd9f-9a32-0171" name="Skitarii Vanguard" hidden="false" collective="false" import="true" targetId="27c4-3dd7-d0d9-4700" type="selectionEntry">
               <modifiers>
@@ -812,6 +812,10 @@
           </conditionGroups>
         </modifier>
       </modifiers>
+      <constraints>
+        <constraint field="1804a1ce-97f8-474c-bef5-d308d28bd093" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9577-e9a1-a94f-e521" type="max"/>
+        <constraint field="1804a1ce-97f8-474c-bef5-d308d28bd093" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd28-1899-dbfb-36a4" type="min"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="47ba-ad5b-7d13-144c" name="Infantry (1)" hidden="false" targetId="3e3d12cf-27be-4415-af5e-e47be58e343c" primary="false"/>
         <categoryLink id="7ec0-63f1-44f3-64de" name="New CategoryLink" hidden="false" targetId="d950-ad23-9b2-9325" primary="true"/>
@@ -835,21 +839,101 @@
           </infoLinks>
           <entryLinks>
             <entryLink id="6eea-ec91-65d8-f479" name="Myrmidon Secutors w/ Tech-Priest Dominus" hidden="false" collective="false" import="true" targetId="bc23-72aa-358b-653d" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="1804a1ce-97f8-474c-bef5-d308d28bd093" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="eac6-7ce4-8a15-a428" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5813-9dd8-45c2-20fa" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b371-4878-1b19-4618" type="max"/>
               </constraints>
             </entryLink>
             <entryLink id="0fc1-110d-1b97-6eec" name="Skitarii Rangers w/ Tech-Priest Dominus" hidden="false" collective="false" import="true" targetId="8f64-fd77-070f-9f9e" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="1804a1ce-97f8-474c-bef5-d308d28bd093" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="eac6-7ce4-8a15-a428" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5813-9dd8-45c2-20fa" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0891-739a-453e-55ae" type="max"/>
               </constraints>
             </entryLink>
             <entryLink id="9e59-2c52-af64-6c89" name="Skitarii Vanguard w/ Tech-Priest Dominus" hidden="false" collective="false" import="true" targetId="3b8e-760d-86d0-a06f" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="1804a1ce-97f8-474c-bef5-d308d28bd093" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="eac6-7ce4-8a15-a428" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5813-9dd8-45c2-20fa" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="736d-de34-fea6-80e6" type="max"/>
               </constraints>
             </entryLink>
           </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="6846-d784-ec68-2d04" name="Dedicated Transports" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ac3-b555-5dce-a9ad" type="lessThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <selectionEntries>
+            <selectionEntry id="5813-9dd8-45c2-20fa" name="Dedicated Transports" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="f53f-1fdc-cc07-de36" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ac3-b555-5dce-a9ad" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="adb4-2fc8-c664-4b25" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f53f-1fdc-cc07-de36" type="min"/>
+              </constraints>
+              <costs>
+                <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+                <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="9a50-26d2-2444-edf6" name="Triaros Armoured Converyors" hidden="false" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5813-9dd8-45c2-20fa" type="lessThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a84-9220-e704-73cb" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="63d5-5c50-1379-b377" name="Triaros Armoured Conveyer" hidden="false" collective="false" import="true" targetId="1101-a6b7-70e1-9717" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="1804a1ce-97f8-474c-bef5-d308d28bd093" value="-2.0">
+                      <conditions>
+                        <condition field="selections" scope="eac6-7ce4-8a15-a428" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5813-9dd8-45c2-20fa" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4fdc-e890-8ca6-f91d" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="‏‏‎ ‎Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="-2.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -2081,7 +2165,7 @@ Artillery detachments do not suffer -1 to hit when firing indirectly with Barrag
             <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+0</characteristic>
             <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">3+</characteristic>
             <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">1</characteristic>
-            <characteristic name="Traits" typeId="060a-0c06-20a0-e62c"></characteristic>
+            <characteristic name="Traits" typeId="060a-0c06-20a0-e62c"/>
           </characteristics>
         </profile>
       </profiles>
