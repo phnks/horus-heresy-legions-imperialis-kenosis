@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4733-f9f6-faa7-ae42" name="Chaos: Death Guard" revision="53" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="63" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4733-f9f6-faa7-ae42" name="Chaos: Death Guard" revision="54" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="67" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="39bd-547d-3d4d-5ffb" name="Death Guard Maladictum" hidden="false">
       <categoryLinks>
@@ -1401,6 +1401,117 @@ Can include one of the following:
         <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="ab56-31a8-0a85-e549" name="Nurgle Helbrute Talon" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="4df5be74-f6f9-448b-8a05-4336c54baa7d">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3543-ed3b-3fea-0cd4" type="lessThan"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7463c8ee-68d1-4659-b949-2a93f386e957" type="notInstanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="1804a1ce-97f8-474c-bef5-d308d28bd093" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aed8-c9e8-9f3e-7642" type="min"/>
+        <constraint field="1804a1ce-97f8-474c-bef5-d308d28bd093" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a09b-e4cd-8084-18db" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="c3c8-2489-996a-9bc7" name="Support" hidden="false" targetId="ae9be095-043a-4fd4-b809-d160d4b5e1fa" primary="true"/>
+        <categoryLink id="fbff-8852-a452-032b" name="Walker (1)" hidden="false" targetId="4ed239fb-3012-4d49-8c82-19de993b7221" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="a939-c59f-12b1-6a58" name="Models" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1739-8651-ecca-f5ed" type="max"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="26f0-5641-07c5-abc0" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="adde-fd19-39ef-61fa" name="Nurgle Helbrute" hidden="false" collective="false" import="true" targetId="5a2b-c405-b0dd-3886" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="1804a1ce-97f8-474c-bef5-d308d28bd093" value="2.0">
+                  <conditions>
+                    <condition field="selections" scope="ab56-31a8-0a85-e549" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8e8b-76a8-8332-f9de" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d321-f64a-03f1-13a0" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="28db-5d6d-a99b-b981" name="Dedicated Transports" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4327-09cd-4b9e-8a64" type="lessThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <selectionEntries>
+            <selectionEntry id="8e8b-76a8-8332-f9de" name="Dedicated Transports" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="4050-0bc8-1b37-0e46" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4327-09cd-4b9e-8a64" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d88-f91a-9e71-a54c" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4050-0bc8-1b37-0e46" type="min"/>
+              </constraints>
+              <costs>
+                <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+                <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="7fcd-33be-faaa-cc37" name="Drop Pods" hidden="false" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4327-09cd-4b9e-8a64" type="lessThan"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8e8b-76a8-8332-f9de" type="lessThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="307c-0f5a-61da-6ae9" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="47c4-cf9b-2d94-3daa" name="Nurgle Drop Pod" hidden="false" collective="false" import="true" targetId="7301-626d-a86d-37c0" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="1804a1ce-97f8-474c-bef5-d308d28bd093" value="-2.0">
+                      <conditions>
+                        <condition field="selections" scope="ab56-31a8-0a85-e549" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8e8b-76a8-8332-f9de" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ec7-68c9-dad6-8da6" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="‏‏‎ ‎Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="-2.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry id="f00b-af41-73e7-c6d5" name="Plague Marines" hidden="false" collective="false" import="true" type="model">
@@ -2242,6 +2353,72 @@ Can include one of the following:
       </entryLinks>
       <costs>
         <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="32.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5a2b-c405-b0dd-3886" name="Nurgle Helbrute" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="9085-d036-cd18-c8d8" name="Nurgle Helbrute" hidden="false" typeId="746bcfa7-66de-4644-97e8-07da9cec42b6" typeName="Detachment">
+          <characteristics>
+            <characteristic name="Move" typeId="d2bd2fb5-fd8a-4566-842e-dd987e88f298">4&quot;</characteristic>
+            <characteristic name="Sv" typeId="2d7dcb0f-f0aa-4ab9-8c47-b3db3f611a39">4+</characteristic>
+            <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+5</characteristic>
+            <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">2+</characteristic>
+            <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">1</characteristic>
+            <characteristic name="Traits" typeId="060a-0c06-20a0-e62c">Feel No Pain, Armoured, Implacable, Invulnerable Save (6+), Furious Charge</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="3680-39c8-e01c-8eb3" name="Armoured" hidden="false" targetId="fac37761-8359-445a-9de4-18a6e0882acd" type="rule"/>
+        <infoLink id="23da-390e-f58b-7218" name="Invulnerable Save (X)" hidden="false" targetId="336f61d9-f104-4e49-888d-72b222b7565c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Invulnerable Save (6+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="fe5e-d69e-4ffd-de5d" name="Feel No Pain" hidden="false" targetId="43073af9-85d3-497c-818d-35eaffdc41f7" type="rule"/>
+        <infoLink id="79c7-0f4a-1b77-446f" name="Implacable" hidden="false" targetId="c5dc7dc8-1358-4fab-9167-abb36b8184a2" type="rule"/>
+        <infoLink id="8a95-799a-b96b-8dc6" name="Furious Charge" hidden="false" targetId="2b0a691d-4bbc-4f7b-8dec-a134fd9f923e" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="5b52-a165-480e-5968" name="Walker (1)" hidden="false" targetId="4ed239fb-3012-4d49-8c82-19de993b7221" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="119d-ac2e-7471-d97d" name="Twin-Linked Lascannon" hidden="false" collective="false" import="true" targetId="9d74-1592-46a5-b88d" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab21-20ba-842e-20ae" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db9f-e577-2e05-98b7" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="0335-4bb5-f23b-2a99" name="Helbrute Hammer" hidden="false" collective="false" import="true" targetId="abe0-e916-b6bc-1e95" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="68a4-153e-bb21-0cf5" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="33e3-16c1-b00b-7242" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="19.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="abe0-e916-b6bc-1e95" name="Helbrute Hammer" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="0e70-a2a2-c9c3-1010" name="Helbrute Hammer" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">-</characteristic>
+            <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">-</characteristic>
+            <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">-</characteristic>
+            <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-</characteristic>
+            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Rend</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="6f20-5d58-4f35-cc7e" name="Rend" hidden="false" targetId="b1094ac5-aa6f-45ff-9360-9e9cad6491af" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
       </costs>
     </selectionEntry>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="2c9332de-54e2-4bfc-9423-269293af3a88" name="Horus Heresy: Legions Imperialis: Kenosis Edition" revision="66" battleScribeVersion="2.03" authorName="BSData Team" authorContact="" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="2c9332de-54e2-4bfc-9423-269293af3a88" name="Horus Heresy: Legions Imperialis: Kenosis Edition" revision="67" battleScribeVersion="2.03" authorName="BSData Team" authorContact="" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="c3da3c2a-6a3a-4fb8-8b85-7f94e2c8f894" name="Legions Imperialis Rulebook" shortName="LI" publicationDate="2023" publisherUrl="https://thehorusheresy.com/legions-imperialis"/>
     <publication id="641fbf79-252a-4a03-8af3-8e3cc6988f81" name="GitHub" shortName="BSData/Horus-Heresy-Legions-Imperialis" publisherUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis"/>
@@ -918,9 +918,9 @@
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2f3f-176d-400e-95fd" name="Turbo-laser Destructor" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="2f3f-176d-400e-95fd" name="Turbo-Laser Destructor" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="8f72-6e23-ac10-928a" name="Turbo-laser Destructor" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
+        <profile id="8f72-6e23-ac10-928a" name="Turbo-Laser Destructor" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">40&quot;</characteristic>
             <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">2</characteristic>
@@ -1111,9 +1111,9 @@
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="495b-af04-d394-75f8" name="Turret Mounted twin bolter" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="495b-af04-d394-75f8" name="Turret Mounted Twin Bolter" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="9185-4517-185c-eea1" name="Turret Mounted twin bolter" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
+        <profile id="9185-4517-185c-eea1" name="Turret Mounted Twin Bolter" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">8&quot;</characteristic>
             <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">1</characteristic>
@@ -1386,6 +1386,22 @@
         <infoLink id="861b-56d1-2b51-cbf4" name="Barrage" hidden="false" targetId="df28f074-c82b-418a-8fa6-25754402ada8" type="rule"/>
         <infoLink id="f88e-4fb1-5787-9469" name="Armourbane" hidden="false" targetId="2d094656-bbb3-47a1-ac73-b2041f7c2401" type="rule"/>
         <infoLink id="901f-f239-5108-4b5a" name="Shred" hidden="false" targetId="f7c8d438-2705-453b-a1c3-18dfc1cd2010" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9d74-1592-46a5-b88d" name="Twin-Linked Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="847c-4548-c804-5777" name="Anti-tank" hidden="false" targetId="bea2b218-c79e-4c95-9405-8461a8779800" type="rule"/>
+        <infoLink id="4a1f-428d-f7c3-8e89" name="Lascannon" hidden="false" targetId="6497-786c-d18e-a028" type="profile">
+          <modifiers>
+            <modifier type="set" field="name" value="Twin-Linked Lascannon"/>
+            <modifier type="set" field="244f923a-6c4d-45cc-bb7b-a344e6642f2c" value="Anti-Tank, Accurate"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="f222-fb48-d4c3-9365" name="Accurate" hidden="false" targetId="09fffa4e-76ab-4d9e-a749-d57d60897581" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="30cb-c173-1e8e-037f" name="Adeptus Mechanicus" revision="50" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="66" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="30cb-c173-1e8e-037f" name="Adeptus Mechanicus" revision="51" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="66" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="4e75-ca8c-415c-3af3" name="Mechanicus Armoured Company" hidden="false">
       <categoryLinks>
@@ -2412,6 +2412,13 @@ Artillery detachments do not suffer -1 to hit when firing indirectly with Barrag
     <selectionEntry id="304b-294e-c78b-eaad" name="Ironstrider Ballistarii" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="f4ea-c1cf-fbb8-b407" name="Ironstrider Ballistarii" hidden="false" typeId="746bcfa7-66de-4644-97e8-07da9cec42b6" typeName="Detachment">
+          <modifiers>
+            <modifier type="set" field="060a-0c06-20a0-e62c" value="Outflank, Forward Deployment">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3190-c92e-6ee3-973f" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="Move" typeId="d2bd2fb5-fd8a-4566-842e-dd987e88f298">10&quot;</characteristic>
             <characteristic name="Sv" typeId="2d7dcb0f-f0aa-4ab9-8c47-b3db3f611a39">5+</characteristic>
@@ -2441,6 +2448,13 @@ Artillery detachments do not suffer -1 to hit when firing indirectly with Barrag
     <selectionEntry id="d051-ec5a-844f-c5b4" name="Colossus Bombard Crawler" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="ede4-78ae-172d-3be5" name="Colossus Bombard Crawler" hidden="false" typeId="746bcfa7-66de-4644-97e8-07da9cec42b6" typeName="Detachment">
+          <modifiers>
+            <modifier type="set" field="060a-0c06-20a0-e62c" value="Explorator Adaption, Forward Deployment">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3190-c92e-6ee3-973f" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="Move" typeId="d2bd2fb5-fd8a-4566-842e-dd987e88f298">5&quot;</characteristic>
             <characteristic name="Sv" typeId="2d7dcb0f-f0aa-4ab9-8c47-b3db3f611a39">3+</characteristic>
