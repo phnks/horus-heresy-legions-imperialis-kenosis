@@ -330,14 +330,6 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="decrement" field="dc992662-6d4b-4120-a6a2-9acf4516238a" value="2.0">
-          <repeats>
-            <repeat field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
-          </repeats>
-          <conditions>
-            <condition field="selections" scope="self" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f715-2775-760e-28ce" type="greaterThan"/>
-          </conditions>
-        </modifier>
       </modifiers>
       <constraints>
         <constraint field="1804a1ce-97f8-474c-bef5-d308d28bd093" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bbfd-e9c6-daef-6d42" type="max"/>
@@ -460,6 +452,7 @@
       </selectionEntryGroups>
       <costs>
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="8.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e69e-2ac2-19fb-d750" name="Vanguard Battle Maniple Detachment" hidden="false" collective="false" import="true" type="unit">
@@ -601,6 +594,7 @@
       </selectionEntryGroups>
       <costs>
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="10.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8620-a445-f8a6-be72" name="Myrmidon Detachment" hidden="false" collective="false" import="true" type="unit">
@@ -706,6 +700,7 @@
       </selectionEntryGroups>
       <costs>
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="20.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="88e5-098a-2ead-2425" name="Karacnos Assault Tank Detachment" hidden="false" collective="false" import="true" type="unit">
@@ -739,7 +734,7 @@
       <selectionEntryGroups>
         <selectionEntryGroup id="76f8-15c1-b0f2-9bbe" name="Models" hidden="false" collective="false" import="true" defaultSelectionEntryId="f812-2503-b6bd-d5d3">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="49ef-a535-7cc4-b57c" type="min"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="49ef-a535-7cc4-b57c" type="min"/>
             <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b1e6-bc98-52a8-3155" type="max"/>
           </constraints>
           <entryLinks>
@@ -752,7 +747,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="8.0"/>
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -787,7 +782,7 @@
       <selectionEntryGroups>
         <selectionEntryGroup id="ba58-8de1-b825-e48f" name="Models" hidden="false" collective="false" import="true" defaultSelectionEntryId="4a7b-3a8c-1ade-ab28">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02a2-a9fb-e9cb-494d" type="min"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02a2-a9fb-e9cb-494d" type="min"/>
             <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c81-7501-7548-e3e1" type="max"/>
           </constraints>
           <entryLinks>
@@ -800,7 +795,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="8.0"/>
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -1469,7 +1464,7 @@ Artillery detachments do not suffer -1 to hit when firing indirectly with Barrag
       </selectionEntryGroups>
       <costs>
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
-        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="12.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9b0a-b470-0107-20cb" name="Krios Battle Tank Squadron" hidden="false" collective="false" import="true" type="unit">
@@ -1517,7 +1512,7 @@ Artillery detachments do not suffer -1 to hit when firing indirectly with Barrag
       </selectionEntryGroups>
       <costs>
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
-        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="9.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9071-b340-b51f-dc46" name="Stormhammer Super-Heavy Tank Squadron" hidden="false" collective="false" import="true" type="unit">
@@ -1728,7 +1723,7 @@ Artillery detachments do not suffer -1 to hit when firing indirectly with Barrag
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="7.0"/>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="6.0"/>
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
       </costs>
     </selectionEntry>

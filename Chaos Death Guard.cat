@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4733-f9f6-faa7-ae42" name="Chaos: Death Guard" revision="54" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="67" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4733-f9f6-faa7-ae42" name="Chaos: Death Guard" revision="56" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="67" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="39bd-547d-3d4d-5ffb" name="Death Guard Maladictum" hidden="false">
       <categoryLinks>
@@ -417,7 +417,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="11.0"/>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="12.0"/>
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -583,10 +583,10 @@
         <categoryLink id="82fd-ca7f-77c8-fe18" name="Vehicle (2)" hidden="false" targetId="49b3-dae7-33f8-f8e" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="afa6-e6a6-8eba-3d70" name="Models" hidden="false" collective="false" import="true" defaultSelectionEntryId="6fe6-f383-17c7-367a">
+        <selectionEntryGroup id="afa6-e6a6-8eba-3d70" name="Models" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a0f-4ba9-b0ab-f7f8" type="min"/>
-            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="32f2-bf5a-3fbf-88a3" type="max"/>
+            <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="32f2-bf5a-3fbf-88a3" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="6fe6-f383-17c7-367a" name="Plagueburst Crawler" hidden="false" collective="false" import="true" targetId="f289-2de8-8af8-d997" type="selectionEntry">
@@ -599,7 +599,7 @@
       </selectionEntryGroups>
       <costs>
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
-        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="8.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d7b0-ebf4-0fd0-a9e5" name="Colony Command Detachment" hidden="false" collective="false" import="true" type="upgrade">
@@ -1216,7 +1216,7 @@ Can include one of the following:
       </selectionEntryGroups>
       <costs>
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
-        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="8.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="25be-8683-4ef0-38d2" name="Myphitic Blight-hauler Squadron" hidden="false" collective="false" import="true" type="unit">
@@ -1253,10 +1253,10 @@ Can include one of the following:
       </selectionEntryGroups>
       <costs>
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
-        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="9.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7fa3-bd3f-59d0-d5fa" name="Foetid Bloat-drone Squadron" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="7fa3-bd3f-59d0-d5fa" name="Foetid Bloat-Drone Squadron" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="add" field="category" value="4df5be74-f6f9-448b-8a05-4336c54baa7d">
           <conditionGroups>
@@ -1347,7 +1347,7 @@ Can include one of the following:
       <selectionEntryGroups>
         <selectionEntryGroup id="b596-ccb2-b50a-d4c4" name="Models" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="695a-becc-07d3-3cf1" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="695a-becc-07d3-3cf1" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5298-0882-4170-2abb" type="min"/>
           </constraints>
           <entryLinks>
@@ -1510,6 +1510,7 @@ Can include one of the following:
       </selectionEntryGroups>
       <costs>
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="12.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
@@ -2136,7 +2137,7 @@ Can include one of the following:
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="86b6-cc57-796d-67b7" name="Foetid Bloat-drone w/ Fleshmower" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="86b6-cc57-796d-67b7" name="Foetid Bloat-Drone w/ Fleshmower" hidden="false" collective="false" import="true" type="model">
       <infoLinks>
         <infoLink id="7fac-c7be-a7bd-33a3" name="Disgustingly Resilient" hidden="false" targetId="b9ff-5594-6936-1a03" type="rule"/>
         <infoLink id="75d7-c094-1471-ed18" name="Foetid Bloat-drone" hidden="false" targetId="c04f-f0e6-eb99-50f6" type="profile">
@@ -2167,7 +2168,7 @@ Can include one of the following:
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="fa63-9249-fc9b-0ab5" name="Foetid Bloat-drone w/ Plaguespitters" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="fa63-9249-fc9b-0ab5" name="Foetid Bloat-Drone w/ Plaguespitters" hidden="false" collective="false" import="true" type="model">
       <infoLinks>
         <infoLink id="9feb-9dd8-4718-57de" name="Disgustingly Resilient" hidden="false" targetId="b9ff-5594-6936-1a03" type="rule"/>
         <infoLink id="0647-1d5d-d29c-085e" name="Foetid Bloat-drone" hidden="false" targetId="c04f-f0e6-eb99-50f6" type="profile">
@@ -2443,7 +2444,7 @@ Can include one of the following:
         <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Anti-Tank</characteristic>
       </characteristics>
     </profile>
-    <profile id="c04f-f0e6-eb99-50f6" name="Foetid Bloat-drone" hidden="false" typeId="746bcfa7-66de-4644-97e8-07da9cec42b6" typeName="Detachment">
+    <profile id="c04f-f0e6-eb99-50f6" name="Foetid Bloat-Drone" hidden="false" typeId="746bcfa7-66de-4644-97e8-07da9cec42b6" typeName="Detachment">
       <characteristics>
         <characteristic name="Move" typeId="d2bd2fb5-fd8a-4566-842e-dd987e88f298">10&quot;</characteristic>
         <characteristic name="Sv" typeId="2d7dcb0f-f0aa-4ab9-8c47-b3db3f611a39">3+</characteristic>
