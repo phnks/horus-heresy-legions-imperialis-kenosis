@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4733-f9f6-faa7-ae42" name="Chaos: Death Guard" revision="51" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="62" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4733-f9f6-faa7-ae42" name="Chaos: Death Guard" revision="53" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="63" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="39bd-547d-3d4d-5ffb" name="Death Guard Maladictum" hidden="false">
       <categoryLinks>
@@ -2041,6 +2041,7 @@ Can include one of the following:
         </infoLink>
         <infoLink id="a412-580f-9236-197e" name="Skimmer" hidden="false" targetId="59de5f24-e8af-49ed-b9e7-278eb1abb20a" type="rule"/>
         <infoLink id="2948-5662-2a18-f5a7" name="Implacable" hidden="false" targetId="c5dc7dc8-1358-4fab-9167-abb36b8184a2" type="rule"/>
+        <infoLink id="a852-7200-459d-9e9d" name="Outflank" hidden="false" targetId="8785-676-b80f-8709" type="rule"/>
       </infoLinks>
       <entryLinks>
         <entryLink id="b837-977b-5adc-5b44" name="Fleshmower" hidden="false" collective="false" import="true" targetId="1b5c-68c5-860a-a757" type="selectionEntry">
@@ -2070,6 +2071,7 @@ Can include one of the following:
         </infoLink>
         <infoLink id="32f5-1243-34ae-bf24" name="Skimmer" hidden="false" targetId="59de5f24-e8af-49ed-b9e7-278eb1abb20a" type="rule"/>
         <infoLink id="5d87-9eff-401c-24e9" name="Implacable" hidden="false" targetId="c5dc7dc8-1358-4fab-9167-abb36b8184a2" type="rule"/>
+        <infoLink id="cb79-b281-4e0d-4877" name="Outflank" hidden="false" targetId="8785-676-b80f-8709" type="rule"/>
       </infoLinks>
       <entryLinks>
         <entryLink id="58f8-959d-a75f-78da" name="Hull Mounted Plaguespitters" hidden="false" collective="false" import="true" targetId="31eb-7add-56ff-056f" type="selectionEntry">
@@ -2145,7 +2147,7 @@ Can include one of the following:
         <infoLink id="b07c-1697-31ee-71e1" name="Drop Pod" hidden="false" targetId="8915-786f-8663-6e03" type="profile">
           <modifiers>
             <modifier type="set" field="name" value="Nurgle Drop Pod"/>
-            <modifier type="set" field="060a-0c06-20a0-e62c" value="Drop Pod, Transport (2), Disgustingly Resilient"/>
+            <modifier type="set" field="060a-0c06-20a0-e62c" value="Drop Pod, Large Transport (2), Disgustingly Resilient"/>
           </modifiers>
         </infoLink>
         <infoLink id="4cd4-0be5-f4e0-d075" name="Disgustingly Resilient" hidden="false" targetId="b9ff-5594-6936-1a03" type="rule"/>
@@ -2183,7 +2185,7 @@ Can include one of the following:
         <infoLink id="866b-891c-21ae-1308" name="Implacable" hidden="false" targetId="c5dc7dc8-1358-4fab-9167-abb36b8184a2" type="rule"/>
       </infoLinks>
       <entryLinks>
-        <entryLink id="8caf-a492-071e-9b36" name="Quad-Lascannons" hidden="false" collective="false" import="true" targetId="e035-121a-f108-5291" type="selectionEntry">
+        <entryLink id="8caf-a492-071e-9b36" name="Sponson Mounted Quad-Lascannons" hidden="false" collective="false" import="true" targetId="fe63-0575-4a3d-c693" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="92f9-23f6-0d68-98de" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e7e6-f67b-7b6b-fe65" type="min"/>
@@ -2271,7 +2273,7 @@ Can include one of the following:
         <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+0</characteristic>
         <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">2+</characteristic>
         <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">1</characteristic>
-        <characteristic name="Traits" typeId="060a-0c06-20a0-e62c">Disgustingly Resilient, Implacable, Jink (6+), Skimmer</characteristic>
+        <characteristic name="Traits" typeId="060a-0c06-20a0-e62c">Disgustingly Resilient, Implacable, Jink (6+), Skimmer, Outflank</characteristic>
       </characteristics>
     </profile>
     <profile id="e45f-f106-b2c8-0e3d" name="Plaguespitters" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">

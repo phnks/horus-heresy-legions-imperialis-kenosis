@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="2c9332de-54e2-4bfc-9423-269293af3a88" name="Horus Heresy: Legions Imperialis: Kenosis Edition" revision="63" battleScribeVersion="2.03" authorName="BSData Team" authorContact="" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="2c9332de-54e2-4bfc-9423-269293af3a88" name="Horus Heresy: Legions Imperialis: Kenosis Edition" revision="65" battleScribeVersion="2.03" authorName="BSData Team" authorContact="" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="c3da3c2a-6a3a-4fb8-8b85-7f94e2c8f894" name="Legions Imperialis Rulebook" shortName="LI" publicationDate="2023" publisherUrl="https://thehorusheresy.com/legions-imperialis"/>
     <publication id="641fbf79-252a-4a03-8af3-8e3cc6988f81" name="GitHub" shortName="BSData/Horus-Heresy-Legions-Imperialis" publisherUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis"/>
@@ -1285,6 +1285,10 @@
         <infoLink id="b967-ad34-2b56-0470" name="Light AT" hidden="false" targetId="58c6bbe7-51c3-4eff-aa9f-a5c17b976571" type="rule"/>
         <infoLink id="954a-5153-d2fb-c014" name="Multi-Laser" hidden="false" targetId="18b2-fb33-c996-c869" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="a969-d32d-73a8-2015" name="Dual Battlecannon" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1332,6 +1336,32 @@
             <modifier type="set" field="d1009090-1447-4eaf-8268-ab092452f540" value="4"/>
           </modifiers>
         </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7c17-0c42-a0f7-c692" name="Twin Cognis Autocannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="3671-2663-36df-4f54" name="Light AT" hidden="false" targetId="58c6bbe7-51c3-4eff-aa9f-a5c17b976571" type="rule"/>
+        <infoLink id="d19c-6c0a-cf39-bdb7" name="Autocannon" hidden="false" targetId="52be-91f3-96ad-e30d" type="profile">
+          <modifiers>
+            <modifier type="set" field="name" value="Twin Cognis Autocannon"/>
+            <modifier type="set" field="244f923a-6c4d-45cc-bb7b-a344e6642f2c" value="Light AT, Accurate"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="2213-8219-af6b-a348" name="Accurate" hidden="false" targetId="09fffa4e-76ab-4d9e-a749-d57d60897581" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="81f2-32e8-e541-301b" name="Autocannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="ce09-694e-6926-47dc" name="Light AT" hidden="false" targetId="58c6bbe7-51c3-4eff-aa9f-a5c17b976571" type="rule"/>
+        <infoLink id="a489-1d64-9ec9-b68f" name="Autocannon" hidden="false" targetId="52be-91f3-96ad-e30d" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
@@ -1788,7 +1818,7 @@ During the End phase, in the Resolve End Phase Effects stage, a model with the V
 If a Detachment contains more than one model with this rule, the controlling player can choose which models detonate and which do not, doing so before resolving any detonation. Models that detonate are not affected by friendly models that are detonating at the same time. Any model that does not detonate is affected if it is under the Blast template as normal.</description>
     </rule>
     <rule id="c160-4b79-14e6-4f5b" name="Subordinate" hidden="false">
-      <description>A model with the Subordinate special rule counts its Tactical Strength as zero unless it is part of a detachment that contains models without the Subordinate special rule. </description>
+      <description>A model with the Subordinate special rule counts its Tactical Strength as zero unless it is capturing an objective with another friendly detachment that contains models without the Subordinate special rule. </description>
     </rule>
     <rule id="b9ff-5594-6936-1a03" name="Disgustingly Resilient" hidden="false">
       <description>Hits scored by a weapon against a model with the Disgustingly Resilient special rule reduce their AP by 1 (to a minimum of 0). </description>
@@ -1914,6 +1944,15 @@ Automata Detachments can fire when Engaged &amp; Pinned. When selecting targets,
         <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">2</characteristic>
         <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">4+</characteristic>
         <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">0</characteristic>
+        <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Light AT</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="52be-91f3-96ad-e30d" name="Autocannon" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">22&quot;</characteristic>
+        <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">1</characteristic>
+        <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">4+</characteristic>
+        <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-1</characteristic>
         <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Light AT</characteristic>
       </characteristics>
     </profile>
