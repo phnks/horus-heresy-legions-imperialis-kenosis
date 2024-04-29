@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="30cb-c173-1e8e-037f" name="Adeptus Mechanicus" revision="52" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="67" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="30cb-c173-1e8e-037f" name="Adeptus Mechanicus" revision="53" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="67" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="4e75-ca8c-415c-3af3" name="Mechanicus Armoured Company" hidden="false">
       <categoryLinks>
@@ -349,7 +349,7 @@
         <categoryLink id="8205-a218-fa0a-759d" name="New CategoryLink" hidden="false" targetId="e0fe110f-b15d-4340-9583-557d57cd2981" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="f598-2258-1213-3678" name="Models" hidden="false" collective="false" import="true" defaultSelectionEntryId="f715-2775-760e-28ce">
+        <selectionEntryGroup id="f598-2258-1213-3678" name="Models" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="16.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8312-0573-2c39-ee59" type="max"/>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="34ef-ed1b-f205-6d9b" type="min"/>
@@ -459,7 +459,6 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="6.0"/>
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -491,7 +490,7 @@
         <categoryLink id="fbc4-a01e-2ebe-933a" name="New CategoryLink" hidden="false" targetId="e0fe110f-b15d-4340-9583-557d57cd2981" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="72f4-ca54-122d-b42d" name="Models" hidden="false" collective="false" import="true" defaultSelectionEntryId="e421-cd9f-9a32-0171">
+        <selectionEntryGroup id="72f4-ca54-122d-b42d" name="Models" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="16.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7848-4678-e332-4fbf" type="max"/>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba0e-8664-a388-e82f" type="min"/>
@@ -601,7 +600,6 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="6.0"/>
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -707,7 +705,6 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="20.0"/>
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
       </costs>
     </selectionEntry>
