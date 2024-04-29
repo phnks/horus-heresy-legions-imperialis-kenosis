@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="2c9332de-54e2-4bfc-9423-269293af3a88" name="Horus Heresy: Legions Imperialis: Kenosis Edition" revision="62" battleScribeVersion="2.03" authorName="BSData Team" authorContact="" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="2c9332de-54e2-4bfc-9423-269293af3a88" name="Horus Heresy: Legions Imperialis: Kenosis Edition" revision="63" battleScribeVersion="2.03" authorName="BSData Team" authorContact="" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="c3da3c2a-6a3a-4fb8-8b85-7f94e2c8f894" name="Legions Imperialis Rulebook" shortName="LI" publicationDate="2023" publisherUrl="https://thehorusheresy.com/legions-imperialis"/>
     <publication id="641fbf79-252a-4a03-8af3-8e3cc6988f81" name="GitHub" shortName="BSData/Horus-Heresy-Legions-Imperialis" publisherUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis"/>
@@ -1136,15 +1136,16 @@
     <selectionEntry id="fe63-0575-4a3d-c693" name="Sponson Mounted Quad-Lascannons" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="ca41-84ec-2119-484c" name="Anti-tank" hidden="false" targetId="bea2b218-c79e-4c95-9405-8461a8779800" type="rule"/>
-        <infoLink id="d27d-6550-bf66-2b12" name="Quad-Lascannons" hidden="false" targetId="6497-786c-d18e-a028" type="profile">
-          <modifiers>
-            <modifier type="set" field="244f923a-6c4d-45cc-bb7b-a344e6642f2c" value="Anti-Tank, Arc (Front)"/>
-            <modifier type="set" field="name" value="Sponson Mounted Quad-Lascannons"/>
-          </modifiers>
-        </infoLink>
         <infoLink id="fde5-f0fa-31da-d77e" name="Arc (Front/Rear)" hidden="false" targetId="4b5a744f-9cc6-4201-9423-f3c580a16854" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Arc (Front)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="02cf-6d7c-6a79-45c8" name="Lascannon" hidden="false" targetId="6497-786c-d18e-a028" type="profile">
+          <modifiers>
+            <modifier type="set" field="name" value="Sponson Mounted Quad-Lascannons"/>
+            <modifier type="set" field="244f923a-6c4d-45cc-bb7b-a344e6642f2c" value="Anti-Tank, Arc (Front)"/>
+            <modifier type="set" field="d1009090-1447-4eaf-8268-ab092452f540" value="4"/>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -1156,7 +1157,12 @@
     <selectionEntry id="e035-121a-f108-5291" name="Quad-Lascannons" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="2d2f-63d7-d5ee-60fc" name="Anti-tank" hidden="false" targetId="bea2b218-c79e-4c95-9405-8461a8779800" type="rule"/>
-        <infoLink id="9580-f1a9-db7b-aec3" name="Quad-Lascannons" hidden="false" targetId="6497-786c-d18e-a028" type="profile"/>
+        <infoLink id="9580-f1a9-db7b-aec3" name="Lascannon" hidden="false" targetId="6497-786c-d18e-a028" type="profile">
+          <modifiers>
+            <modifier type="set" field="name" value="Quad-Lascannons"/>
+            <modifier type="set" field="d1009090-1447-4eaf-8268-ab092452f540" value="4"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
@@ -1251,6 +1257,81 @@
         <infoLink id="fa51-6570-46bc-6720" name="Demolisher" hidden="false" targetId="788-9d12-3358-b236" type="rule"/>
         <infoLink id="64b5-6c9f-cea6-3a4d" name="Ignores Cover" hidden="false" targetId="6a7e8b3f-d8bd-4d50-aec6-f4893069b255" type="rule"/>
         <infoLink id="8fa9-3428-968a-7c2f" name="Demolisher Cannon" hidden="false" targetId="11e3-2413-616f-5394" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c769-3486-74dc-d35e" name="Co-Axial Multi-Laser" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="afb9-40e3-8d16-8394" name="Arc (Front/Rear)" hidden="false" targetId="4b5a744f-9cc6-4201-9423-f3c580a16854" type="rule"/>
+        <infoLink id="4d26-dbf4-67fe-1fd5" name="Light AT" hidden="false" targetId="58c6bbe7-51c3-4eff-aa9f-a5c17b976571" type="rule"/>
+        <infoLink id="f44e-7dd7-28d1-d6f2" name="Co-axial" hidden="false" targetId="3ee6527d-e006-4f57-9a49-0d85b981c514" type="rule"/>
+        <infoLink id="1136-85cf-73c0-09cc" name="Multi-Laser" hidden="false" targetId="18b2-fb33-c996-c869" type="profile">
+          <modifiers>
+            <modifier type="set" field="name" value="Co-Axial Multi-Laser"/>
+            <modifier type="set" field="244f923a-6c4d-45cc-bb7b-a344e6642f2c" value="Arc (Front), Co-axial, Light AT"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="70a4-8f54-c7db-0a63" name="Multi-Laser" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="b967-ad34-2b56-0470" name="Light AT" hidden="false" targetId="58c6bbe7-51c3-4eff-aa9f-a5c17b976571" type="rule"/>
+        <infoLink id="954a-5153-d2fb-c014" name="Multi-Laser" hidden="false" targetId="18b2-fb33-c996-c869" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="a969-d32d-73a8-2015" name="Dual Battlecannon" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="d2cd-d06f-bf12-9e94" name="Dual battlecannon" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">25&quot;</characteristic>
+            <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">2</characteristic>
+            <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">4+</characteristic>
+            <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-1</characteristic>
+            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Arc (Front)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="4257-56a8-30d6-c0c2" name="Arc (Front/Rear)" hidden="false" targetId="4b5a744f-9cc6-4201-9423-f3c580a16854" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7304-abe1-a21a-5a00" name="Hull Mounted Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="6507-7a0a-f523-c72b" name="Arc (Front/Rear)" hidden="false" targetId="4b5a744f-9cc6-4201-9423-f3c580a16854" type="rule"/>
+        <infoLink id="9d43-ea3d-b7be-e11e" name="Anti-tank" hidden="false" targetId="bea2b218-c79e-4c95-9405-8461a8779800" type="rule"/>
+        <infoLink id="bca2-5695-db67-0320" name="Lascannon" hidden="false" targetId="6497-786c-d18e-a028" type="profile">
+          <modifiers>
+            <modifier type="set" field="name" value="Hull Mounted Lascannon"/>
+            <modifier type="set" field="244f923a-6c4d-45cc-bb7b-a344e6642f2c" value="Anti-Tank, Arc (Front)"/>
+            <modifier type="set" field="d1009090-1447-4eaf-8268-ab092452f540" value="1"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
+        <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7fe3-b676-4365-aef6" name="Stormhammer Lascannon Sponsons" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="ce57-1e2e-87a2-d8f3" name="Anti-tank" hidden="false" targetId="bea2b218-c79e-4c95-9405-8461a8779800" type="rule"/>
+        <infoLink id="4d3a-fe75-f59b-6f6c" name="Lascannon" hidden="false" targetId="6497-786c-d18e-a028" type="profile">
+          <modifiers>
+            <modifier type="set" field="name" value="Stormhammer Lascannon Sponsons"/>
+            <modifier type="set" field="d1009090-1447-4eaf-8268-ab092452f540" value="4"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
@@ -1800,10 +1881,10 @@ Automata Detachments can fire when Engaged &amp; Pinned. When selecting targets,
         <characteristic name="Traits" typeId="060a-0c06-20a0-e62c">Drop Pod, Large Transport (2)</characteristic>
       </characteristics>
     </profile>
-    <profile id="6497-786c-d18e-a028" name="Quad-Lascannons" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
+    <profile id="6497-786c-d18e-a028" name="Lascannon" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">22&quot;</characteristic>
-        <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">4</characteristic>
+        <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">1</characteristic>
         <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">4+</characteristic>
         <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-1</characteristic>
         <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Anti-tank</characteristic>
@@ -1825,6 +1906,15 @@ Automata Detachments can fire when Engaged &amp; Pinned. When selecting targets,
         <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">4+</characteristic>
         <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-3</characteristic>
         <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Demolisher, Ignores Cover</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="18b2-fb33-c996-c869" name="Multi-Laser" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">14&quot;</characteristic>
+        <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">2</characteristic>
+        <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">4+</characteristic>
+        <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">0</characteristic>
+        <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Light AT</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4733-f9f6-faa7-ae42" name="Chaos: Death Guard" revision="50" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="62" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4733-f9f6-faa7-ae42" name="Chaos: Death Guard" revision="51" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="62" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="39bd-547d-3d4d-5ffb" name="Death Guard Maladictum" hidden="false">
       <categoryLinks>
@@ -2138,7 +2138,7 @@ Can include one of the following:
       <infoLinks>
         <infoLink id="8a92-aa6d-6aec-5925" name="Large Transport (X)" hidden="false" targetId="136a85c6-cc28-4b6a-b6de-aef5935202b9" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Transport (2)"/>
+            <modifier type="set" field="name" value="Large Transport (2)"/>
           </modifiers>
         </infoLink>
         <infoLink id="4d50-85a0-fe79-c9f7" name="Drop Pod" hidden="false" targetId="39d-d61c-ebfe-15d9" type="rule"/>
@@ -2149,6 +2149,7 @@ Can include one of the following:
           </modifiers>
         </infoLink>
         <infoLink id="4cd4-0be5-f4e0-d075" name="Disgustingly Resilient" hidden="false" targetId="b9ff-5594-6936-1a03" type="rule"/>
+        <infoLink id="177d-e3dc-32cd-0082" name="Deep Strike" hidden="false" targetId="d0fafb75-e43a-409a-9e32-f3cd442ef37d" type="rule"/>
       </infoLinks>
       <entryLinks>
         <entryLink id="fc03-2f94-cc0c-7a7d" name="Turret Mounted twin bolter" hidden="false" collective="false" import="true" targetId="495b-af04-d394-75f8" type="selectionEntry">
