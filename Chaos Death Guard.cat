@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4733-f9f6-faa7-ae42" name="Chaos: Death Guard" revision="58" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="68" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4733-f9f6-faa7-ae42" name="Chaos: Death Guard" revision="59" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="68" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="39bd-547d-3d4d-5ffb" name="Death Guard Maladictum" hidden="false">
       <categoryLinks>
@@ -1202,7 +1202,7 @@ Can include one of the following:
       <selectionEntryGroups>
         <selectionEntryGroup id="9c7d-e2fd-c485-734f" name="Models" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75f8-5f9b-d94d-28b5" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75f8-5f9b-d94d-28b5" type="min"/>
             <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6321-6901-9ddc-1c5d" type="max"/>
           </constraints>
           <entryLinks>
@@ -1216,7 +1216,7 @@ Can include one of the following:
       </selectionEntryGroups>
       <costs>
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
-        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="20.0"/>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="10.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="25be-8683-4ef0-38d2" name="Myphitic Blight-hauler Squadron" hidden="false" collective="false" import="true" type="unit">
@@ -1765,7 +1765,7 @@ Can include one of the following:
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="46.0"/>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="42.0"/>
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -2025,7 +2025,7 @@ Can include one of the following:
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="20.0"/>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="17.0"/>
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -2087,7 +2087,7 @@ Can include one of the following:
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="37.0"/>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="33.0"/>
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -2355,7 +2355,7 @@ Can include one of the following:
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="32.0"/>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="30.0"/>
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -2402,7 +2402,7 @@ Can include one of the following:
       </entryLinks>
       <costs>
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
-        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="19.0"/>
+        <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="17.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="abe0-e916-b6bc-1e95" name="Helbrute Hammer" hidden="false" collective="false" import="true" type="upgrade">
