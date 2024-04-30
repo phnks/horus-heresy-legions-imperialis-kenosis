@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="30cb-c173-1e8e-037f" name="Adeptus Mechanicus" revision="55" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="67" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="30cb-c173-1e8e-037f" name="Adeptus Mechanicus" revision="56" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="67" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="4e75-ca8c-415c-3af3" name="Mechanicus Armoured Company" hidden="false">
       <categoryLinks>
@@ -2421,7 +2421,7 @@ Artillery detachments do not suffer -1 to hit when firing indirectly with Barrag
           </modifiers>
           <characteristics>
             <characteristic name="Move" typeId="d2bd2fb5-fd8a-4566-842e-dd987e88f298">10&quot;</characteristic>
-            <characteristic name="Sv" typeId="2d7dcb0f-f0aa-4ab9-8c47-b3db3f611a39">5+</characteristic>
+            <characteristic name="Sv" typeId="2d7dcb0f-f0aa-4ab9-8c47-b3db3f611a39">4+</characteristic>
             <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+2</characteristic>
             <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">3+</characteristic>
             <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">1</characteristic>
@@ -2449,7 +2449,7 @@ Artillery detachments do not suffer -1 to hit when firing indirectly with Barrag
       <profiles>
         <profile id="ede4-78ae-172d-3be5" name="Colossus Bombard Crawler" hidden="false" typeId="746bcfa7-66de-4644-97e8-07da9cec42b6" typeName="Detachment">
           <modifiers>
-            <modifier type="set" field="060a-0c06-20a0-e62c" value="Explorator Adaption, Forward Deployment">
+            <modifier type="set" field="060a-0c06-20a0-e62c" value="Explorator Adaption, Nimble, Forward Deployment">
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3190-c92e-6ee3-973f" type="greaterThan"/>
               </conditions>
@@ -2461,12 +2461,13 @@ Artillery detachments do not suffer -1 to hit when firing indirectly with Barrag
             <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+0</characteristic>
             <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">3+</characteristic>
             <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">1</characteristic>
-            <characteristic name="Traits" typeId="060a-0c06-20a0-e62c">Explorator Adaption</characteristic>
+            <characteristic name="Traits" typeId="060a-0c06-20a0-e62c">Explorator Adaption, Nimble</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink id="a27f-f653-b0a5-4a3c" name="Explorator Adaption" hidden="false" targetId="2e95f354-63d6-436c-a468-e03635c83937" type="rule"/>
+        <infoLink id="4db8-2494-5f0e-e1f2" name="Nimble" hidden="false" targetId="4e652d67-da9f-42e6-867a-900f862cc219" type="rule"/>
       </infoLinks>
       <entryLinks>
         <entryLink id="e799-c76e-9448-bb20" name="Colossus Siege Mortar" hidden="false" collective="false" import="true" targetId="4616-21b3-fbe0-7ffd" type="selectionEntry">
