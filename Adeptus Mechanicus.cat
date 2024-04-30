@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="30cb-c173-1e8e-037f" name="Adeptus Mechanicus" revision="57" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="68" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="30cb-c173-1e8e-037f" name="Adeptus Mechanicus" revision="58" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="68" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="4e75-ca8c-415c-3af3" name="Mechanicus Armoured Company" hidden="false">
       <categoryLinks>
@@ -840,7 +840,7 @@
           <entryLinks>
             <entryLink id="6eea-ec91-65d8-f479" name="Myrmidon Secutors w/ Tech-Priest Dominus" hidden="false" collective="false" import="true" targetId="bc23-72aa-358b-653d" type="selectionEntry">
               <modifiers>
-                <modifier type="set" field="1804a1ce-97f8-474c-bef5-d308d28bd093" value="1.0">
+                <modifier type="set" field="1804a1ce-97f8-474c-bef5-d308d28bd093" value="2.0">
                   <conditions>
                     <condition field="selections" scope="eac6-7ce4-8a15-a428" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5813-9dd8-45c2-20fa" type="atLeast"/>
                   </conditions>
@@ -852,7 +852,7 @@
             </entryLink>
             <entryLink id="0fc1-110d-1b97-6eec" name="Skitarii Rangers w/ Tech-Priest Dominus" hidden="false" collective="false" import="true" targetId="8f64-fd77-070f-9f9e" type="selectionEntry">
               <modifiers>
-                <modifier type="set" field="1804a1ce-97f8-474c-bef5-d308d28bd093" value="1.0">
+                <modifier type="set" field="1804a1ce-97f8-474c-bef5-d308d28bd093" value="2.0">
                   <conditions>
                     <condition field="selections" scope="eac6-7ce4-8a15-a428" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5813-9dd8-45c2-20fa" type="atLeast"/>
                   </conditions>
@@ -864,7 +864,7 @@
             </entryLink>
             <entryLink id="9e59-2c52-af64-6c89" name="Skitarii Vanguard w/ Tech-Priest Dominus" hidden="false" collective="false" import="true" targetId="3b8e-760d-86d0-a06f" type="selectionEntry">
               <modifiers>
-                <modifier type="set" field="1804a1ce-97f8-474c-bef5-d308d28bd093" value="1.0">
+                <modifier type="set" field="1804a1ce-97f8-474c-bef5-d308d28bd093" value="2.0">
                   <conditions>
                     <condition field="selections" scope="eac6-7ce4-8a15-a428" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5813-9dd8-45c2-20fa" type="atLeast"/>
                   </conditions>
@@ -958,11 +958,7 @@
           <profiles>
             <profile id="c36a-46b3-0992-1efb" name="Elimination Volley" hidden="false" typeId="9cad60ce-e21a-47bb-858b-4c1662674cab" typeName="Special Rules">
               <characteristics>
-                <characteristic name="Description" typeId="8fccb603-1618-4248-8576-f5925eefd7a0">If an Adeptus Mechanicus Infantry or Walker Detachment is issued with the First Fire Order, any weapons models within the Detachment have that are listed below gain the Accurate trait until the end of that round:
-
-- Galvanic Rifles
-- Radium Carbines
-- Maxima Bolters</characteristic>
+                <characteristic name="Description" typeId="8fccb603-1618-4248-8576-f5925eefd7a0">If an Adeptus Mechanicus Infantry, Cavalry or Walker Detachment is issued with the First Fire Order, any weapons models within the Detachment have that have the Light or Light AT trait gain the Accurate trait until the end of that round:</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2505,10 +2501,10 @@ Artillery detachments do not suffer -1 to hit when firing indirectly with Barrag
     </profile>
     <profile id="e899-a5de-0f82-6750" name="Lightning Cannon" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">12&quot;</characteristic>
+        <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">22&quot;</characteristic>
         <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">2</characteristic>
         <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">4+</characteristic>
-        <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-3</characteristic>
+        <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-2</characteristic>
         <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c"/>
       </characteristics>
     </profile>

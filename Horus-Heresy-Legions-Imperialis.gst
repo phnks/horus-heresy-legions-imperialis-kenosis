@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="2c9332de-54e2-4bfc-9423-269293af3a88" name="Horus Heresy: Legions Imperialis: Kenosis Edition" revision="68" battleScribeVersion="2.03" authorName="BSData Team" authorContact="" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="2c9332de-54e2-4bfc-9423-269293af3a88" name="Horus Heresy: Legions Imperialis: Kenosis Edition" revision="69" battleScribeVersion="2.03" authorName="BSData Team" authorContact="" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="c3da3c2a-6a3a-4fb8-8b85-7f94e2c8f894" name="Legions Imperialis Rulebook" shortName="LI" publicationDate="2023" publisherUrl="https://thehorusheresy.com/legions-imperialis"/>
     <publication id="641fbf79-252a-4a03-8af3-8e3cc6988f81" name="GitHub" shortName="BSData/Horus-Heresy-Legions-Imperialis" publisherUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis"/>
@@ -308,15 +308,15 @@
         <cost name="Transport Usage" typeId="1804a1ce-97f8-474c-bef5-d308d28bd093" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7b10-fbca-e1b9-3d26" name="Neutron Beam Laser" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="7b10-fbca-e1b9-3d26" name="Onager Neutron Laser" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="878f-34f9-a236-0038" name="Neutron Beam Laser" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
+        <profile id="878f-34f9-a236-0038" name="Onager Neutron Laser" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">22&quot;</characteristic>
             <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">1</characteristic>
             <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">4+</characteristic>
             <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-3</characteristic>
-            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Arc (Front), Shock Pulse</characteristic>
+            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Arc (Front), Electromagnetic Pulse</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -326,7 +326,7 @@
             <modifier type="set" field="name" value="Arc (Front)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="7322-0350-36c0-d601" name="Shock Pulse" hidden="false" targetId="495a-71fc-de48-96a" type="rule"/>
+        <infoLink id="7322-0350-36c0-d601" name="Electromagnetic Pulse" hidden="false" targetId="44a0-00b4-b032-5f69" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
@@ -1891,6 +1891,9 @@ Automata Detachments can fire when Engaged &amp; Pinned. When selecting targets,
     </rule>
     <rule id="3b58-2f6e-c64d-1caa" name="Siege Tank" hidden="false">
       <description>Models with the Siege Tank special rule may choose to fire any Barrage weapons on its Detachment&apos;s target or a Secondary Target; a Secondary Target is an eligible target (i.e., within range and line of sight of the firing model) different from the first chosen target. All Barrage weapons in a Detachment must fire at the same target, unless another rule overrides this.</description>
+    </rule>
+    <rule id="44a0-00b4-b032-5f69" name="Electromagnetic Pulse" publicationId="c3da3c2a-6a3a-4fb8-8b85-7f94e2c8f894" page="84" hidden="false">
+      <description>Any Vehicle, Super-heavy Vehicle, Knight or Titan that suffers one or more Hits from a weapon with the Electromagnetic Pulse trait reduces its To Hit trait on all weapons by 1 for the remainer of the Round.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
