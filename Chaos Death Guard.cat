@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4733-f9f6-faa7-ae42" name="Chaos: Death Guard" revision="57" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="67" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4733-f9f6-faa7-ae42" name="Chaos: Death Guard" revision="58" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="68" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="39bd-547d-3d4d-5ffb" name="Death Guard Maladictum" hidden="false">
       <categoryLinks>
@@ -2171,7 +2171,7 @@ Can include one of the following:
     <selectionEntry id="fa63-9249-fc9b-0ab5" name="Foetid Bloat-Drone w/ Plaguespitters" hidden="false" collective="false" import="true" type="model">
       <infoLinks>
         <infoLink id="9feb-9dd8-4718-57de" name="Disgustingly Resilient" hidden="false" targetId="b9ff-5594-6936-1a03" type="rule"/>
-        <infoLink id="0647-1d5d-d29c-085e" name="Foetid Bloat-drone" hidden="false" targetId="c04f-f0e6-eb99-50f6" type="profile">
+        <infoLink id="0647-1d5d-d29c-085e" name="Foetid Bloat-Drone" hidden="false" targetId="c04f-f0e6-eb99-50f6" type="profile">
           <modifiers>
             <modifier type="set" field="name" value="Foetid Bloat-drone w/ Plaguespitters"/>
           </modifiers>
@@ -2222,6 +2222,7 @@ Can include one of the following:
       <infoLinks>
         <infoLink id="3b37-2911-715a-f05d" name="Light AT" hidden="false" targetId="58c6bbe7-51c3-4eff-aa9f-a5c17b976571" type="rule"/>
         <infoLink id="73e9-4897-7c18-1e68" name="Plaguespitters" hidden="false" targetId="e45f-f106-b2c8-0e3d" type="profile"/>
+        <infoLink id="2104-8728-220b-a18d" name="Assault" hidden="false" targetId="db223b76-7613-4dce-ac45-f28d7a03dc16" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
@@ -2239,9 +2240,10 @@ Can include one of the following:
         <infoLink id="8e5c-b847-9d3c-91b9" name="Plaguespitters" hidden="false" targetId="e45f-f106-b2c8-0e3d" type="profile">
           <modifiers>
             <modifier type="set" field="name" value="Hull Mounted Plaguespitters"/>
-            <modifier type="set" field="244f923a-6c4d-45cc-bb7b-a344e6642f2c" value="Arc (Front), Light AT"/>
+            <modifier type="set" field="244f923a-6c4d-45cc-bb7b-a344e6642f2c" value="Arc (Front), Light AT, Assault"/>
           </modifiers>
         </infoLink>
+        <infoLink id="30ae-0f76-3372-07e3" name="Assault" hidden="false" targetId="db223b76-7613-4dce-ac45-f28d7a03dc16" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
@@ -2457,10 +2459,10 @@ Can include one of the following:
     <profile id="e45f-f106-b2c8-0e3d" name="Plaguespitters" hidden="false" typeId="a32d92d5-cb7b-4f9e-953a-56ca1d0c04d6" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">10&quot;</characteristic>
-        <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">2</characteristic>
+        <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">1</characteristic>
         <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">4+</characteristic>
         <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">-1</characteristic>
-        <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Light AT</characteristic>
+        <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Light AT, Assault</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
