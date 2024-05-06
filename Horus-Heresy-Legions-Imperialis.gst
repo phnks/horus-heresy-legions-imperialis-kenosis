@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="2c9332de-54e2-4bfc-9423-269293af3a88" name="Horus Heresy: Legions Imperialis: Kenosis Edition" revision="69" battleScribeVersion="2.03" authorName="BSData Team" authorContact="" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="2c9332de-54e2-4bfc-9423-269293af3a88" name="Horus Heresy: Legions Imperialis: Kenosis Edition" revision="70" battleScribeVersion="2.03" authorName="BSData Team" authorContact="" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="c3da3c2a-6a3a-4fb8-8b85-7f94e2c8f894" name="Legions Imperialis Rulebook" shortName="LI" publicationDate="2023" publisherUrl="https://thehorusheresy.com/legions-imperialis"/>
     <publication id="641fbf79-252a-4a03-8af3-8e3cc6988f81" name="GitHub" shortName="BSData/Horus-Heresy-Legions-Imperialis" publisherUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis"/>
@@ -1881,10 +1881,8 @@ If a Detachment contains more than one model with this rule, the controlling pla
 
 Any Automata Detachments that are within 4&quot; of another Detachment with the Cybernetica Cortex can be issued Orders as normal. 
 
-If not within 4&quot; of another Detachment with the Cybernetica Cortex the Detachments are not issued with an Order. Instead, when a Detachment with the Automata special rule is activated during the Movement phase it must charge if within charge distance otherwise it may fire. If there are no viable targets, then it is activated and may fire in the Advancing Fire phase of the Combat phase instead. When firing with a model with the Automata special rule in this manner, the controlling player does not choose targets in the normal manner. Instead, it fires any weapons with the Anti-tank trait at the closest eligible enemy Detachment containing Walkers, Vehicles, Super-heavy Vehicles, Knights or Titans and any weapon with the Light trait at the closest eligible enemy Infantry or Cavalry Detachment. If a weapon has the Skyfire trait, the controlling player may choose to target the nearest Detachment with the Flyer special rule instead.
-An Automata model fires any other weapon at the closest eligible enemy Detachment.
-
-Automata Detachments can fire when Engaged &amp; Pinned. When selecting targets, they ignore any Detachment which is Engaged &amp; Pinned, including any Detachment they are Engaged &amp; Pinned with.</description>
+If not within 4&quot; of another Detachment with the Cybernetica Cortex the Detachments are not issued with an Order. Instead, when a Detachment with the Automata special rule is activated during the Movement phase it must charge if within charge distance otherwise it must move it&apos;s full movement distance towards the nearest enemy Detachment. When activated during the Advance Fire phase it may fire. When firing with a model with the Automata special rule in this manner, the controlling player does not choose targets in the normal manner. Instead, it fires any weapons with the Anti-tank trait at the closest eligible enemy Detachment containing Walkers, Vehicles, Super-heavy Vehicles, Knights or Titans and any weapon with the Light trait at the closest eligible enemy Infantry or Cavalry Detachment. If a weapon has the Skyfire trait, the controlling player may choose to target the nearest Detachment with the Flyer special rule instead.
+An Automata model fires any other weapon at the closest eligible enemy Detachment.</description>
     </rule>
     <rule id="61b6-6905-b21a-ac98" name="Cybernetica Cortex" hidden="false">
       <description>Refer to the Automata special rule for the effects of Cybernetica Cortex on other Detachments. This special rule does not affect a Detachment with the Cybernetica Cortex special rule.</description>

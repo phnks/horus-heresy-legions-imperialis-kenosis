@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4733-f9f6-faa7-ae42" name="Chaos: Death Guard" revision="61" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="69" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4733-f9f6-faa7-ae42" name="Chaos: Death Guard" revision="62" battleScribeVersion="2.03" library="false" gameSystemId="2c9332de-54e2-4bfc-9423-269293af3a88" gameSystemRevision="70" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="39bd-547d-3d4d-5ffb" name="Death Guard Maladictum" hidden="false">
       <categoryLinks>
@@ -1522,7 +1522,7 @@ Can include one of the following:
             <characteristic name="Move" typeId="d2bd2fb5-fd8a-4566-842e-dd987e88f298">4&quot;</characteristic>
             <characteristic name="Sv" typeId="2d7dcb0f-f0aa-4ab9-8c47-b3db3f611a39">5+</characteristic>
             <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+2</characteristic>
-            <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">2+</characteristic>
+            <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">3+</characteristic>
             <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">1</characteristic>
             <characteristic name="Traits" typeId="060a-0c06-20a0-e62c">Feel No Pain, Implacable</characteristic>
           </characteristics>
@@ -1607,7 +1607,7 @@ Can include one of the following:
             <characteristic name="Move" typeId="d2bd2fb5-fd8a-4566-842e-dd987e88f298">4&quot;</characteristic>
             <characteristic name="Sv" typeId="2d7dcb0f-f0aa-4ab9-8c47-b3db3f611a39">4+</characteristic>
             <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+4</characteristic>
-            <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">2+</characteristic>
+            <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">3+</characteristic>
             <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">1</characteristic>
             <characteristic name="Traits" typeId="060a-0c06-20a0-e62c">Bulky, Feel No Pain, Implacable, Invulnerable Save (6+), Steadfast</characteristic>
           </characteristics>
@@ -1694,7 +1694,7 @@ Can include one of the following:
             <characteristic name="Move" typeId="d2bd2fb5-fd8a-4566-842e-dd987e88f298">9&quot;</characteristic>
             <characteristic name="Sv" typeId="2d7dcb0f-f0aa-4ab9-8c47-b3db3f611a39">4+</characteristic>
             <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+0</characteristic>
-            <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">2+</characteristic>
+            <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">3+</characteristic>
             <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">1</characteristic>
             <characteristic name="Traits" typeId="060a-0c06-20a0-e62c">Disgustingly Resilient, Transport (2), Implacable</characteristic>
           </characteristics>
@@ -1732,7 +1732,7 @@ Can include one of the following:
             <characteristic name="Move" typeId="d2bd2fb5-fd8a-4566-842e-dd987e88f298">8&quot;</characteristic>
             <characteristic name="Sv" typeId="2d7dcb0f-f0aa-4ab9-8c47-b3db3f611a39">2+</characteristic>
             <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+2</characteristic>
-            <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">2+</characteristic>
+            <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">3+</characteristic>
             <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">1</characteristic>
             <characteristic name="Traits" typeId="060a-0c06-20a0-e62c">Disgustingly Resilient, Explorator Adaption, Siege Tank, Implacable</characteristic>
           </characteristics>
@@ -1844,7 +1844,7 @@ Can include one of the following:
         <infoLink id="cb71-5f97-5491-9cb8" name="Lord of Contagion" hidden="false" targetId="985b-18c9-fa8f-9f97" type="profile">
           <modifiers>
             <modifier type="set" field="name" value="Plague Marines w/ Lord of Contagion"/>
-            <modifier type="set" field="060a-0c06-20a0-e62c" value="Commander, Inspire (8&quot;), Invulnerable Save (6+), Bulky, Implacable, Steadfast, Feel No Pain"/>
+            <modifier type="set" field="060a-0c06-20a0-e62c" value="Commander, Inspire (8&quot;), Invulnerable Save (6+), Bulky, Implacable, Steadfast, Feel No Pain, Master Tactician"/>
           </modifiers>
         </infoLink>
         <infoLink id="4a58-6213-8132-98f4" name="Commander" hidden="false" targetId="9501d65d-30ac-43cf-a8ba-cb5c3a5e9f29" type="rule"/>
@@ -1859,6 +1859,7 @@ Can include one of the following:
           </modifiers>
         </infoLink>
         <infoLink id="1021-dc58-3e59-3066" name="Feel No Pain" hidden="false" targetId="43073af9-85d3-497c-818d-35eaffdc41f7" type="rule"/>
+        <infoLink id="4fa5-c318-9c04-d248" name="Master Tactician" hidden="false" targetId="66564d31-c529-4730-89b5-cce45f6863be" type="rule"/>
       </infoLinks>
       <entryLinks>
         <entryLink id="0a4a-64c5-7549-283b" name="Bolters" hidden="false" collective="false" import="true" targetId="f284-bbb1-291c-349e" type="selectionEntry">
@@ -1907,7 +1908,7 @@ Can include one of the following:
         <infoLink id="e168-d459-ed72-a0ed" name="Lord of Contagion" hidden="false" targetId="985b-18c9-fa8f-9f97" type="profile">
           <modifiers>
             <modifier type="set" field="name" value="Blightlord Terminators w/ Lord of Contagion"/>
-            <modifier type="set" field="060a-0c06-20a0-e62c" value="Commander, Inspire (8&quot;), Invulnerable Save (6+), Bulky, Implacable, Steadfast, Feel No Pain"/>
+            <modifier type="set" field="060a-0c06-20a0-e62c" value="Commander, Inspire (8&quot;), Invulnerable Save (6+), Bulky, Implacable, Steadfast, Feel No Pain, Master Tactician"/>
           </modifiers>
         </infoLink>
         <infoLink id="52e8-ccd7-bb17-0399" name="Commander" hidden="false" targetId="9501d65d-30ac-43cf-a8ba-cb5c3a5e9f29" type="rule"/>
@@ -1922,6 +1923,7 @@ Can include one of the following:
           </modifiers>
         </infoLink>
         <infoLink id="a5ee-93e4-22f6-d26b" name="Feel No Pain" hidden="false" targetId="43073af9-85d3-497c-818d-35eaffdc41f7" type="rule"/>
+        <infoLink id="94d0-9c8a-07da-f070" name="Master Tactician" hidden="false" targetId="66564d31-c529-4730-89b5-cce45f6863be" type="rule"/>
       </infoLinks>
       <entryLinks>
         <entryLink id="2303-6ee0-f858-1dea" name="Plaguereaper" hidden="false" collective="false" import="true" targetId="c393-eb8c-e079-d688" type="selectionEntry">
@@ -1956,7 +1958,7 @@ Can include one of the following:
         <infoLink id="49de-c629-840e-79fa" name="Lord of Contagion" hidden="false" targetId="985b-18c9-fa8f-9f97" type="profile">
           <modifiers>
             <modifier type="set" field="name" value="Pox Walkers w/ Lord of Contagion"/>
-            <modifier type="set" field="060a-0c06-20a0-e62c" value="Commander, Inspire (8&quot;), Invulnerable Save (6+), Bulky, Implacable, Steadfast, Feel No Pain, Furious Charge"/>
+            <modifier type="set" field="060a-0c06-20a0-e62c" value="Commander, Inspire (8&quot;), Invulnerable Save (6+), Bulky, Implacable, Steadfast, Feel No Pain, Furious Charge, Master Tactician"/>
           </modifiers>
         </infoLink>
         <infoLink id="3ceb-7738-e9dd-dfe9" name="Commander" hidden="false" targetId="9501d65d-30ac-43cf-a8ba-cb5c3a5e9f29" type="rule"/>
@@ -1972,6 +1974,7 @@ Can include one of the following:
         </infoLink>
         <infoLink id="a999-00a0-5734-23c2" name="Feel No Pain" hidden="false" targetId="43073af9-85d3-497c-818d-35eaffdc41f7" type="rule"/>
         <infoLink id="a252-2e42-ddbb-54b6" name="Furious Charge" hidden="false" targetId="2b0a691d-4bbc-4f7b-8dec-a134fd9f923e" type="rule"/>
+        <infoLink id="ce81-adcb-409d-3e08" name="Master Tactician" hidden="false" targetId="66564d31-c529-4730-89b5-cce45f6863be" type="rule"/>
       </infoLinks>
       <entryLinks>
         <entryLink id="8423-93ed-6e99-4393" name="Plaguereaper" hidden="false" collective="false" import="true" targetId="c393-eb8c-e079-d688" type="selectionEntry">
@@ -2035,14 +2038,15 @@ Can include one of the following:
           <characteristics>
             <characteristic name="Range" typeId="b282c463-80c5-4c41-a36a-daff0de8d9ad">4&quot;</characteristic>
             <characteristic name="Dice" typeId="d1009090-1447-4eaf-8268-ab092452f540">2</characteristic>
-            <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">5+</characteristic>
+            <characteristic name="To Hit" typeId="e5116275-53f8-4370-954b-2bb09badeba2">4+</characteristic>
             <characteristic name="AP" typeId="bc8825ae-21f3-4143-8638-0b2d939497c3">0</characteristic>
-            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Light</characteristic>
+            <characteristic name="Traits" typeId="244f923a-6c4d-45cc-bb7b-a344e6642f2c">Light, Ignores Cover</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink id="568f-82b8-abd4-9d4d" name="Light" hidden="false" targetId="bb25fe8e-6b0a-40a9-bc11-d9508716ded5" type="rule"/>
+        <infoLink id="ab9e-3a66-aeaa-a255" name="Ignores Cover" hidden="false" targetId="6a7e8b3f-d8bd-4d50-aec6-f4893069b255" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="points" typeId="dc992662-6d4b-4120-a6a2-9acf4516238a" value="0.0"/>
@@ -2056,7 +2060,7 @@ Can include one of the following:
             <characteristic name="Move" typeId="d2bd2fb5-fd8a-4566-842e-dd987e88f298">10&quot;</characteristic>
             <characteristic name="Sv" typeId="2d7dcb0f-f0aa-4ab9-8c47-b3db3f611a39">3+</characteristic>
             <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+2</characteristic>
-            <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">2+</characteristic>
+            <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">3+</characteristic>
             <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">1</characteristic>
             <characteristic name="Traits" typeId="060a-0c06-20a0-e62c">Disgustingly Resilient, Implacable</characteristic>
           </characteristics>
@@ -2140,7 +2144,7 @@ Can include one of the following:
     <selectionEntry id="86b6-cc57-796d-67b7" name="Foetid Bloat-Drone w/ Fleshmower" hidden="false" collective="false" import="true" type="model">
       <infoLinks>
         <infoLink id="7fac-c7be-a7bd-33a3" name="Disgustingly Resilient" hidden="false" targetId="b9ff-5594-6936-1a03" type="rule"/>
-        <infoLink id="75d7-c094-1471-ed18" name="Foetid Bloat-drone" hidden="false" targetId="c04f-f0e6-eb99-50f6" type="profile">
+        <infoLink id="75d7-c094-1471-ed18" name="Foetid Bloat-Drone" hidden="false" targetId="c04f-f0e6-eb99-50f6" type="profile">
           <modifiers>
             <modifier type="set" field="name" value="Foetid Bloat-drone w/ Fleshmower"/>
             <modifier type="set" field="f5f2c48a-b499-46a1-93b8-02caba556947" value="+5"/>
@@ -2363,10 +2367,10 @@ Can include one of the following:
       <profiles>
         <profile id="9085-d036-cd18-c8d8" name="Nurgle Helbrute" hidden="false" typeId="746bcfa7-66de-4644-97e8-07da9cec42b6" typeName="Detachment">
           <characteristics>
-            <characteristic name="Move" typeId="d2bd2fb5-fd8a-4566-842e-dd987e88f298">4&quot;</characteristic>
+            <characteristic name="Move" typeId="d2bd2fb5-fd8a-4566-842e-dd987e88f298">5&quot;</characteristic>
             <characteristic name="Sv" typeId="2d7dcb0f-f0aa-4ab9-8c47-b3db3f611a39">4+</characteristic>
             <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+5</characteristic>
-            <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">2+</characteristic>
+            <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">3+</characteristic>
             <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">1</characteristic>
             <characteristic name="Traits" typeId="060a-0c06-20a0-e62c">Feel No Pain, Armoured, Implacable, Invulnerable Save (6+), Furious Charge</characteristic>
           </characteristics>
@@ -2450,8 +2454,8 @@ Can include one of the following:
       <characteristics>
         <characteristic name="Move" typeId="d2bd2fb5-fd8a-4566-842e-dd987e88f298">10&quot;</characteristic>
         <characteristic name="Sv" typeId="2d7dcb0f-f0aa-4ab9-8c47-b3db3f611a39">3+</characteristic>
-        <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+0</characteristic>
-        <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">2+</characteristic>
+        <characteristic name="CAF" typeId="f5f2c48a-b499-46a1-93b8-02caba556947">+2</characteristic>
+        <characteristic name="Morale" typeId="2e7fe7d6-adaf-4ec1-b6ad-13c00da068fa">3+</characteristic>
         <characteristic name="W" typeId="f21a7e2e-aea9-43bb-bac6-8131f005e905">1</characteristic>
         <characteristic name="Traits" typeId="060a-0c06-20a0-e62c">Disgustingly Resilient, Implacable, Jink (6+), Skimmer, Outflank</characteristic>
       </characteristics>
